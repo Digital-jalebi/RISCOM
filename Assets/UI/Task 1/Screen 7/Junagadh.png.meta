@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6d8a003bcfee678499dd83ea28955358
+guid: 07fdf17a05d88f6489094494d9b76c5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530564911472380330
-    second: button_0
+      213: 2333640801663135448
+    second: Junagadh_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: Junagadh_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 287
-        height: 88
+        width: 110
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa90165216f5e1320800000000000000
-      internalID: 2530564911472380330
+      spriteID: 8de2d78e1f1c26020800000000000000
+      internalID: 2333640801663135448
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_0: 2530564911472380330
+      Junagadh_0: 2333640801663135448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6d8a003bcfee678499dd83ea28955358
+guid: fb56c721723ffa44c99f37064d4038a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530564911472380330
-    second: button_0
+      213: 5602498224580900931
+    second: Gir somnath_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: Gir somnath_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 287
-        height: 88
+        width: 109
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa90165216f5e1320800000000000000
-      internalID: 2530564911472380330
+      spriteID: 348b6e2b37210cd40800000000000000
+      internalID: 5602498224580900931
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_0: 2530564911472380330
+      Gir somnath_0: 5602498224580900931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

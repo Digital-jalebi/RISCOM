@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6d8a003bcfee678499dd83ea28955358
+guid: f8c68fcfe9cb569498a8bb7600111b3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530564911472380330
-    second: button_0
+      213: -991160798862462091
+    second: Porbandar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: Porbandar_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 287
+        width: 85
         height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa90165216f5e1320800000000000000
-      internalID: 2530564911472380330
+      spriteID: 573b28c3180be32f0800000000000000
+      internalID: -991160798862462091
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_0: 2530564911472380330
+      Porbandar_0: -991160798862462091
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

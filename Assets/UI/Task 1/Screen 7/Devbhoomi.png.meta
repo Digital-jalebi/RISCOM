@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 6d8a003bcfee678499dd83ea28955358
+guid: 639c00b8d66155645b42aefec92cb5e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530564911472380330
-    second: button_0
+      213: -7804633603761824963
+    second: Devbhoomi_0
+  - first:
+      213: 2463516972526424679
+    second: Devbhoomi_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: Devbhoomi_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 287
-        height: 88
+        width: 110
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa90165216f5e1320800000000000000
-      internalID: 2530564911472380330
+      spriteID: d3b13bd861f50b390800000000000000
+      internalID: -7804633603761824963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devbhoomi_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 82
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762559d52ab203220800000000000000
+      internalID: 2463516972526424679
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_0: 2530564911472380330
+      Devbhoomi_0: -7804633603761824963
+      Devbhoomi_1: 2463516972526424679
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
