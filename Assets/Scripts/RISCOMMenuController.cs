@@ -14,7 +14,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
     [SerializeField] private string[] hazardNames = { "Cyclone", "Flood", "Drought", "Industrial" };
 
     private readonly List<HazardOption> hazardOptions = new List<HazardOption>();
-    private readonly List<GameObject> tourScreens = new List<GameObject>();
+    private readonly List<GameObject> hazardFlows = new List<GameObject>();
 
     public string SelectedHazard { get; private set; }
 
@@ -29,7 +29,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
     {
         SetActive(startMenuScreen, true);
         SetActive(hazardSelectionScreen, false);
-        HideTourScreens();
+        HideHazardFlows();
         ClearHazardSelection();
     }
 
@@ -37,7 +37,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
     {
         SetActive(startMenuScreen, false);
         SetActive(hazardSelectionScreen, true);
-        HideTourScreens();
+        HideHazardFlows();
         ClearHazardSelection();
     }
 
@@ -65,17 +65,30 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
-        GameObject tourScreen = FindTourScreenFor(SelectedHazard);
-        if (tourScreen == null)
+        GameObject hazardFlow = FindHazardFlowFor(SelectedHazard);
+        if (hazardFlow == null)
         {
-            Debug.LogWarning($"No tour screen has been configured yet for {SelectedHazard}.");
+            Debug.LogWarning($"No game flow has been configured yet for {SelectedHazard}.");
             return;
         }
 
         SetActive(startMenuScreen, false);
         SetActive(hazardSelectionScreen, false);
-        HideTourScreens();
-        tourScreen.SetActive(true);
+        HideHazardFlows();
+        hazardFlow.SetActive(true);
+
+        if (string.Equals(SelectedHazard, "Cyclone", StringComparison.OrdinalIgnoreCase))
+        {
+            RISCOMCycloneFlowController cycloneFlow = hazardFlow.GetComponent<RISCOMCycloneFlowController>();
+            if (cycloneFlow == null)
+            {
+                Debug.LogWarning("CycloneGameFlow is missing RISCOMCycloneFlowController.");
+                return;
+            }
+
+            cycloneFlow.BeginFlow();
+        }
+
         Debug.Log($"Starting {SelectedHazard} tour.");
     }
 
@@ -96,7 +109,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
         }
 
         CacheHazardOptions();
-        CacheTourScreens();
+        CacheHazardFlows();
     }
 
     private void CacheHazardOptions()
@@ -134,9 +147,9 @@ public sealed class RISCOMMenuController : MonoBehaviour
         }
     }
 
-    private void CacheTourScreens()
+    private void CacheHazardFlows()
     {
-        tourScreens.Clear();
+        hazardFlows.Clear();
 
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -146,10 +159,11 @@ public sealed class RISCOMMenuController : MonoBehaviour
                 continue;
             }
 
-            if (child.name.EndsWith("Summary", StringComparison.OrdinalIgnoreCase) ||
+            if (child.name.EndsWith("GameFlow", StringComparison.OrdinalIgnoreCase) ||
+                child.name.EndsWith("Summary", StringComparison.OrdinalIgnoreCase) ||
                 child.name.EndsWith("Tour", StringComparison.OrdinalIgnoreCase))
             {
-                tourScreens.Add(child);
+                hazardFlows.Add(child);
             }
         }
     }
@@ -188,21 +202,21 @@ public sealed class RISCOMMenuController : MonoBehaviour
         }
     }
 
-    private void HideTourScreens()
+    private void HideHazardFlows()
     {
-        foreach (GameObject tourScreen in tourScreens)
+        foreach (GameObject hazardFlow in hazardFlows)
         {
-            SetActive(tourScreen, false);
+            SetActive(hazardFlow, false);
         }
     }
 
-    private GameObject FindTourScreenFor(string hazardName)
+    private GameObject FindHazardFlowFor(string hazardName)
     {
-        foreach (GameObject tourScreen in tourScreens)
+        foreach (GameObject hazardFlow in hazardFlows)
         {
-            if (tourScreen.name.StartsWith(hazardName, StringComparison.OrdinalIgnoreCase))
+            if (hazardFlow.name.StartsWith(hazardName, StringComparison.OrdinalIgnoreCase))
             {
-                return tourScreen;
+                return hazardFlow;
             }
         }
 
