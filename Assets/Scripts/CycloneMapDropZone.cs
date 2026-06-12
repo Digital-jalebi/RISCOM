@@ -5,18 +5,27 @@ public sealed class CycloneMapDropZone : MonoBehaviour
 {
     private static readonly Color PlacedColor = new Color(0.9f, 0.06f, 0.04f, 1f);
 
-    private Image image;
+    [SerializeField] private Image image;
+    [SerializeField] private bool proneArea;
+
     private Color originalColor;
-    private bool isProneArea;
     private bool isPlaced;
 
-    public bool CanAcceptMarker => isProneArea && !isPlaced;
+    public bool CanAcceptMarker => proneArea && !isPlaced;
 
-    public void Initialize(bool proneArea, Image areaImage)
+    public void Configure()
     {
-        isProneArea = proneArea;
-        image = areaImage;
         originalColor = image != null ? image.color : Color.white;
+
+        if (image != null)
+        {
+            image.raycastTarget = true;
+        }
+    }
+
+    public bool Contains(GameObject candidate)
+    {
+        return candidate != null && (candidate == gameObject || candidate.transform.IsChildOf(transform));
     }
 
     public void ResetZone()

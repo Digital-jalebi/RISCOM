@@ -3,12 +3,7 @@ using UnityEngine.EventSystems;
 
 public sealed class CycloneDistrictMarkerDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private CycloneMissionController missionController;
-
-    public void Initialize(CycloneMissionController controller)
-    {
-        missionController = controller;
-    }
+    [SerializeField] private CycloneMissionController missionController;
 
     public void OnBeginDrag(PointerEventData eventData)
     {

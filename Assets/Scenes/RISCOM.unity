@@ -207,6 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 4006512}
+  proneArea: 1
 --- !u!1 &34393460
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0687fc2dafe4c0d844ca2b7e0ef660f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missionController: {fileID: 2039122352}
 --- !u!1 &135971459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 435416425}
+  proneArea: 1
 --- !u!1 &502931261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 563752236}
+  proneArea: 1
 --- !u!1 &618766675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,6 +2173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 659570121}
+  proneArea: 1
 --- !u!1 &691906568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,6 +2458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 768722703}
+  proneArea: 1
 --- !u!1 &828865093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,6 +3058,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b993ccf80470cb0d781d5b2c0129f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cycloneSummary: {fileID: 159200573}
+  summaryBackground: {fileID: 1277202975}
+  instructorImage: {fileID: 1560920957}
+  missionOneGame: {fileID: 2039122350}
+  missionCompleteScreen: {fileID: 34393460}
+  directFlowChildren:
+  - {fileID: 159200573}
+  - {fileID: 2039122350}
+  - {fileID: 34393460}
+  - {fileID: 1856854527}
+  summaryScreens:
+  - {fileID: 1677021511}
+  - {fileID: 239208812}
+  - {fileID: 72971762}
+  - {fileID: 81056683}
+  - {fileID: 1783674988}
+  summaryNextButtons:
+  - {fileID: 1161361696}
+  - {fileID: 1451760288}
+  - {fileID: 1920050299}
+  - {fileID: 828865095}
+  - {fileID: 1062899102}
+  missionOneController: {fileID: 2039122352}
 --- !u!1 &894644049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3540,6 +3574,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 1099834734}
+  proneArea: 0
 --- !u!1 &1122140947
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4207,7 @@ RectTransform:
   - {fileID: 81056684}
   - {fileID: 1783674989}
   - {fileID: 1909622286}
+  - {fileID: 1560920958}
   m_Father: {fileID: 159200574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4461,6 +4498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 1355069188}
+  proneArea: 1
 --- !u!1 &1363136095
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,6 +4902,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543020954}
+  m_CullTransparentMesh: 1
+--- !u!1 &1560920957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1560920958}
+  - component: {fileID: 1560920960}
+  - component: {fileID: 1560920959}
+  m_Layer: 5
+  m_Name: InstructorImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1560920958
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560920957}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1277202976}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 62, y: -70}
+  m_SizeDelta: {x: 313, y: 313}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &1560920959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560920957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8869252943536380371, guid: e71d9e57bbd22f348bf32d736d948381, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1560920960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560920957}
   m_CullTransparentMesh: 1
 --- !u!1 &1610331803
 GameObject:
@@ -5389,6 +5503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f86c855d9c24f47b01a641617f4230c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 1717643027}
+  proneArea: 1
 --- !u!1 &1745753022
 GameObject:
   m_ObjectHideFlags: 0
@@ -6767,6 +6883,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2fc3d3fddbb4b9c98a998e581a47621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  markerTransform: {fileID: 112731173}
+  dragMarkerTransform: {fileID: 2147483601}
+  markerImage: {fileID: 112731174}
+  dragMarkerImage: {fileID: 2147483602}
+  dragMarkerSprite: {fileID: 7963143635259032179, guid: 044af79456081db429acc55f6ef6c9ae, type: 3}
+  dragMarkerSizeMultiplier: 0.5
+  markerDragHandler: {fileID: 112731176}
+  dropZones:
+  - {fileID: 659570123}
+  - {fileID: 1355069190}
+  - {fileID: 4006514}
+  - {fileID: 563752238}
+  - {fileID: 768722705}
+  - {fileID: 435416427}
+  - {fileID: 1717643029}
+  - {fileID: 1099834736}
+  missionProgressSlider: {fileID: 1533433447}
+  timeRemainingSlider: {fileID: 917357274}
+  timeRemainingLabel: {fileID: 63615830}
 --- !u!1 &2083952497
 GameObject:
   m_ObjectHideFlags: 0
@@ -7262,7 +7397,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b4612b039560404a8071b5a842b4e96, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

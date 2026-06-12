@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,29 +7,23 @@ using UnityEngine.UI;
 
 public sealed class CycloneMissionController : MonoBehaviour
 {
-    private static readonly string[] ProneAreaNames =
-    {
-        "Kutch",
-        "DevBhoomi",
-        "RamNagar",
-        "Morbi",
-        "Porbandar",
-        "Junagadh",
-        "GirSomnath"
-    };
-
     private const int TotalMarkers = 7;
     private const float MissionDurationSeconds = 600f;
 
-    private readonly List<CycloneMapDropZone> dropZones = new List<CycloneMapDropZone>();
-    private readonly List<RaycastResult> raycastResults = new List<RaycastResult>();
+    [SerializeField] private RectTransform markerTransform;
+    [SerializeField] private RectTransform dragMarkerTransform;
+    [SerializeField] private Image markerImage;
+    [SerializeField] private Image dragMarkerImage;
+    [SerializeField] private Sprite dragMarkerSprite;
+    [SerializeField, Range(0.1f, 2f)] private float dragMarkerSizeMultiplier = 0.85f;
+    [SerializeField] private CycloneDistrictMarkerDragHandler markerDragHandler;
+    [SerializeField] private CycloneMapDropZone[] dropZones;
+    [SerializeField] private Slider missionProgressSlider;
+    [SerializeField] private Slider timeRemainingSlider;
+    [SerializeField] private TextMeshProUGUI timeRemainingLabel;
 
-    private RectTransform markerTransform;
-    private RectTransform dragMarkerTransform;
-    private Image markerImage;
-    private Slider missionProgressSlider;
-    private Slider timeRemainingSlider;
-    private TextMeshProUGUI timeRemainingLabel;
+    private readonly System.Collections.Generic.List<RaycastResult> raycastResults = new System.Collections.Generic.List<RaycastResult>();
+
     private Vector2 markerStartPosition;
     private Coroutine shakeRoutine;
     private Action onMissionComplete;
@@ -48,32 +41,17 @@ public sealed class CycloneMissionController : MonoBehaviour
             return;
         }
 
-        markerTransform = FindChildTransform(transform, "DistrictMarker") as RectTransform;
-        dragMarkerTransform = FindChildTransform(transform, "DraggingDistrictMarker") as RectTransform;
-        Transform mapTransform = FindChildTransform(transform, "Map");
-        missionProgressSlider = GetSlider("MissionProgressBar");
-        timeRemainingSlider = GetSlider("TimeRemainingSlider");
-        timeRemainingLabel = timeRemainingSlider != null
-            ? timeRemainingSlider.GetComponentInChildren<TextMeshProUGUI>(true)
-            : null;
-
         if (markerTransform != null)
         {
             markerStartPosition = markerTransform.anchoredPosition;
-            markerImage = markerTransform.GetComponent<Image>();
             if (markerImage != null)
             {
                 markerImage.raycastTarget = true;
             }
 
-            CycloneDistrictMarkerDragHandler dragHandler = markerTransform.GetComponent<CycloneDistrictMarkerDragHandler>();
-            if (dragHandler == null)
+            if (markerDragHandler == null)
             {
-                Debug.LogWarning("DistrictMarker is missing CycloneDistrictMarkerDragHandler.");
-            }
-            else
-            {
-                dragHandler.Initialize(this);
+                Debug.LogWarning("Cyclone mission is missing its marker drag handler reference.");
             }
         }
 
@@ -86,7 +64,7 @@ public sealed class CycloneMissionController : MonoBehaviour
             Debug.LogWarning("Mission 1 Game is missing DraggingDistrictMarker.");
         }
 
-        CacheDropZones(mapTransform);
+        CacheDropZones();
         ConfigureSliders();
 
         isConfigured = true;
@@ -131,12 +109,12 @@ public sealed class CycloneMissionController : MonoBehaviour
 
     public void MoveMarker(PointerEventData eventData)
     {
-        if (!isRunning || dragMarkerTransform == null || markerTransform == null || markerTransform.parent == null)
+        if (!isRunning || dragMarkerTransform == null || dragMarkerTransform.parent == null)
         {
             return;
         }
 
-        RectTransform parentRect = markerTransform.parent as RectTransform;
+        RectTransform parentRect = dragMarkerTransform.parent as RectTransform;
         if (parentRect == null)
         {
             return;
@@ -222,7 +200,7 @@ public sealed class CycloneMissionController : MonoBehaviour
 
         for (int i = 0; i < raycastResults.Count; i++)
         {
-            CycloneMapDropZone dropZone = raycastResults[i].gameObject.GetComponentInParent<CycloneMapDropZone>();
+            CycloneMapDropZone dropZone = FindDropZoneFor(raycastResults[i].gameObject);
             if (dropZone != null)
             {
                 return dropZone;
@@ -232,36 +210,39 @@ public sealed class CycloneMissionController : MonoBehaviour
         return null;
     }
 
-    private void CacheDropZones(Transform mapTransform)
+    private CycloneMapDropZone FindDropZoneFor(GameObject raycastTarget)
     {
-        dropZones.Clear();
-
-        if (mapTransform == null)
+        if (dropZones == null)
         {
-            Debug.LogWarning("Cyclone mission Map object was not found.");
+            return null;
+        }
+
+        for (int i = 0; i < dropZones.Length; i++)
+        {
+            CycloneMapDropZone dropZone = dropZones[i];
+            if (dropZone != null && dropZone.Contains(raycastTarget))
+            {
+                return dropZone;
+            }
+        }
+
+        return null;
+    }
+
+    private void CacheDropZones()
+    {
+        if (dropZones == null)
+        {
             return;
         }
 
-        for (int i = 0; i < mapTransform.childCount; i++)
+        for (int i = 0; i < dropZones.Length; i++)
         {
-            Transform area = mapTransform.GetChild(i);
-            Image image = area.GetComponent<Image>();
-            if (image == null)
+            CycloneMapDropZone zone = dropZones[i];
+            if (zone != null)
             {
-                continue;
+                zone.Configure();
             }
-
-            image.raycastTarget = true;
-
-            CycloneMapDropZone zone = area.GetComponent<CycloneMapDropZone>();
-            if (zone == null)
-            {
-                Debug.LogWarning($"{area.name} is missing CycloneMapDropZone.");
-                continue;
-            }
-
-            zone.Initialize(IsProneArea(area.name), image);
-            dropZones.Add(zone);
         }
     }
 
@@ -285,9 +266,17 @@ public sealed class CycloneMissionController : MonoBehaviour
 
     private void ResetDropZones()
     {
-        for (int i = 0; i < dropZones.Count; i++)
+        if (dropZones == null)
         {
-            dropZones[i].ResetZone();
+            return;
+        }
+
+        for (int i = 0; i < dropZones.Length; i++)
+        {
+            if (dropZones[i] != null)
+            {
+                dropZones[i].ResetZone();
+            }
         }
     }
 
@@ -378,32 +367,23 @@ public sealed class CycloneMissionController : MonoBehaviour
         }
 
         dragMarkerTransform.gameObject.SetActive(true);
-        dragMarkerTransform.anchorMin = markerTransform.anchorMin;
-        dragMarkerTransform.anchorMax = markerTransform.anchorMax;
-        dragMarkerTransform.pivot = markerTransform.pivot;
-        dragMarkerTransform.sizeDelta = markerTransform.sizeDelta;
-        dragMarkerTransform.anchoredPosition = markerStartPosition;
-        dragMarkerTransform.localScale = markerTransform.localScale;
-        dragMarkerTransform.localRotation = markerTransform.localRotation;
+        dragMarkerTransform.position = markerTransform.position;
         dragMarkerTransform.SetAsLastSibling();
 
-        Image dragImage = dragMarkerTransform.GetComponent<Image>();
-        if (markerImage != null)
+        if (dragMarkerImage != null)
         {
-            dragImage.sprite = markerImage.sprite;
-            dragImage.color = markerImage.color;
-            dragImage.material = markerImage.material;
-            dragImage.type = markerImage.type;
-            dragImage.preserveAspect = markerImage.preserveAspect;
-            dragImage.fillCenter = markerImage.fillCenter;
-            dragImage.fillMethod = markerImage.fillMethod;
-            dragImage.fillAmount = markerImage.fillAmount;
-            dragImage.fillClockwise = markerImage.fillClockwise;
-            dragImage.fillOrigin = markerImage.fillOrigin;
-            dragImage.pixelsPerUnitMultiplier = markerImage.pixelsPerUnitMultiplier;
-        }
+            Sprite sprite = dragMarkerSprite != null ? dragMarkerSprite : markerImage != null ? markerImage.sprite : null;
+            dragMarkerImage.sprite = sprite;
+            dragMarkerImage.color = markerImage != null ? markerImage.color : Color.white;
+            dragMarkerImage.material = markerImage != null ? markerImage.material : null;
+            dragMarkerImage.raycastTarget = false;
 
-        dragImage.raycastTarget = false;
+            if (dragMarkerSprite != null && sprite != null)
+            {
+                dragMarkerImage.SetNativeSize();
+                dragMarkerTransform.sizeDelta *= dragMarkerSizeMultiplier;
+            }
+        }
     }
 
     private void DestroyDragMarker()
@@ -416,46 +396,4 @@ public sealed class CycloneMissionController : MonoBehaviour
         dragMarkerTransform.gameObject.SetActive(false);
     }
 
-    private Slider GetSlider(string objectName)
-    {
-        Transform sliderTransform = FindChildTransform(transform, objectName);
-        return sliderTransform != null ? sliderTransform.GetComponent<Slider>() : null;
-    }
-
-    private static bool IsProneArea(string areaName)
-    {
-        for (int i = 0; i < ProneAreaNames.Length; i++)
-        {
-            if (string.Equals(areaName, ProneAreaNames[i], StringComparison.OrdinalIgnoreCase))
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private static Transform FindChildTransform(Transform root, string childName)
-    {
-        if (root == null)
-        {
-            return null;
-        }
-
-        if (string.Equals(root.name, childName, StringComparison.OrdinalIgnoreCase))
-        {
-            return root;
-        }
-
-        for (int i = 0; i < root.childCount; i++)
-        {
-            Transform match = FindChildTransform(root.GetChild(i), childName);
-            if (match != null)
-            {
-                return match;
-            }
-        }
-
-        return null;
-    }
 }
