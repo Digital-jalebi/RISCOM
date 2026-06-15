@@ -7,6 +7,7 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
     [SerializeField] private GameObject summaryBackground;
     [SerializeField] private GameObject instructorImage;
     [SerializeField] private GameObject missionOneGame;
+    [SerializeField] private GameObject missionOneGameplayLayout;
     [SerializeField] private GameObject missionCompleteScreen;
     [SerializeField] private Button missionOneReportNextButton;
     [SerializeField] private GameObject[] directFlowChildren;
@@ -15,6 +16,7 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
     [SerializeField] private CycloneMissionController missionOneController;
     [SerializeField] private CycloneMissionTwoController missionTwoController;
     [SerializeField] private CycloneMissionThreeController missionThreeController;
+    [SerializeField] private CycloneMissionFourController missionFourController;
 
     private bool buttonsWired;
     private int currentSummaryIndex;
@@ -25,6 +27,7 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
         PrepareMissionOne();
         PrepareMissionTwo();
         PrepareMissionThree();
+        PrepareMissionFour();
 
         gameObject.SetActive(true);
         HideDirectFlowChildren();
@@ -102,7 +105,18 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
             return;
         }
 
-        missionThreeController.Configure();
+        missionThreeController.Configure(StartMissionFourIntro);
+    }
+
+    private void PrepareMissionFour()
+    {
+        if (missionFourController == null)
+        {
+            Debug.LogWarning("Cyclone flow is missing its Mission 4 controller reference.");
+            return;
+        }
+
+        missionFourController.Configure();
     }
 
     private void HandleSummaryNext(int screenIndex)
@@ -153,12 +167,14 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
     {
         missionTwoController?.Hide();
         missionThreeController?.Hide();
+        missionFourController?.Hide();
 
         SetActive(cycloneSummary, false);
         SetActive(summaryBackground, false);
         SetActive(instructorImage, false);
         SetActive(missionCompleteScreen, false);
         SetActive(missionOneGame, true);
+        SetActive(missionOneGameplayLayout, true);
 
         if (missionOneController != null)
         {
@@ -168,10 +184,12 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
 
     private void CompleteMissionOne()
     {
-        SetActive(missionOneGame, false);
+        SetActive(missionOneGame, true);
+        SetActive(missionOneGameplayLayout, false);
         SetActive(instructorImage, false);
         missionTwoController?.Hide();
         missionThreeController?.Hide();
+        missionFourController?.Hide();
         SetActive(missionCompleteScreen, true);
     }
 
@@ -179,11 +197,12 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
     {
         PrepareMissionTwo();
         missionThreeController?.Hide();
+        missionFourController?.Hide();
 
         SetActive(missionCompleteScreen, false);
         SetActive(missionOneGame, false);
         SetActive(cycloneSummary, true);
-        SetActive(summaryBackground, true);
+        SetActive(summaryBackground, false);
         SetActive(instructorImage, false);
         HideSummaryScreens();
 
@@ -194,13 +213,28 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
     {
         PrepareMissionThree();
         missionTwoController?.Hide();
+        missionFourController?.Hide();
 
         SetActive(cycloneSummary, true);
-        SetActive(summaryBackground, true);
+        SetActive(summaryBackground, false);
         SetActive(instructorImage, false);
         HideSummaryScreens();
 
         missionThreeController?.ShowIntro();
+    }
+
+    private void StartMissionFourIntro()
+    {
+        PrepareMissionFour();
+        missionTwoController?.Hide();
+        missionThreeController?.Hide();
+
+        SetActive(cycloneSummary, true);
+        SetActive(summaryBackground, false);
+        SetActive(instructorImage, false);
+        HideSummaryScreens();
+
+        missionFourController?.ShowIntro();
     }
 
     private void HideDirectFlowChildren()

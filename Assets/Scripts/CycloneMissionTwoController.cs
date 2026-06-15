@@ -11,6 +11,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     private const float MissionDurationSeconds = 600f;
     private const float EffectAnimationDuration = 0.85f;
     private const float BoatMoveDuration = 0.85f;
+    private const int BoatMoveGroupCount = 3;
     private const float ReportDelaySeconds = 2f;
 
     [SerializeField] private GameObject alertScreen;
@@ -34,6 +35,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     [SerializeField] private GameObject boatDockingEffect;
     [SerializeField] private Image boatDockingEffectImage;
     [SerializeField] private RectTransform[] boats;
+    [SerializeField] private GameObject[] boatJets;
     [SerializeField] private RectTransform[] boatTargets;
 
     private readonly MissionTwoStep[] steps = new MissionTwoStep[StepCount];
@@ -90,6 +92,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         }
 
         CacheBoatStartPositions();
+        ResetBoats();
 
         if (timeRemainingSlider != null)
         {
@@ -181,6 +184,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
                 HideEffect(steps[i]);
             }
         }
+
+        ResetBoats();
     }
 
     private void StopMissionRoutines()
@@ -393,6 +398,16 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         stepIndex++;
         ResetTool(step, false);
 
+        if (IsRadarScannerStep(step))
+        {
+            SetBoatsVisible(true);
+        }
+
+        if (IsRadioTransmitterStep(step))
+        {
+            SetBoatJetsVisible(true);
+        }
+
         if (stepIndex >= steps.Length)
         {
             isRunning = false;
@@ -409,7 +424,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     private IEnumerator PlayEffect(MissionTwoStep step)
     {
         bool moveBoats = IsBoatDockingStep(step);
-        float duration = moveBoats ? Mathf.Max(EffectAnimationDuration, BoatMoveDuration) : EffectAnimationDuration;
+        float boatMoveDuration = moveBoats ? BoatMoveDuration * BoatMoveGroupCount : 0f;
+        float duration = moveBoats ? Mathf.Max(EffectAnimationDuration, boatMoveDuration) : EffectAnimationDuration;
 
         if (step.EffectObject != null)
         {
@@ -437,7 +453,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
             if (moveBoats)
             {
-                MoveBoats(Mathf.Clamp01(elapsed / BoatMoveDuration));
+                MoveBoatsSequentially(Mathf.Clamp01(elapsed / boatMoveDuration));
             }
 
             yield return null;
@@ -445,7 +461,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
         if (moveBoats)
         {
-            MoveBoats(1f);
+            MoveBoatsSequentially(1f);
         }
 
         HideEffect(step);
@@ -489,6 +505,16 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         return steps.Length >= StepCount && step == steps[2];
     }
 
+    private bool IsRadarScannerStep(MissionTwoStep step)
+    {
+        return steps.Length >= StepCount && step == steps[0];
+    }
+
+    private bool IsRadioTransmitterStep(MissionTwoStep step)
+    {
+        return steps.Length >= StepCount && step == steps[1];
+    }
+
     private void CacheBoatStartPositions()
     {
         int boatCount = boats != null ? boats.Length : 0;
@@ -505,38 +531,83 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
     private void ResetBoats()
     {
-        if (boats == null || boatStartPositions == null)
+        if (boats != null && boatStartPositions != null)
+        {
+            int boatCount = Mathf.Min(boats.Length, boatStartPositions.Length);
+            for (int i = 0; i < boatCount; i++)
+            {
+                if (boats[i] != null)
+                {
+                    boats[i].position = boatStartPositions[i];
+                }
+            }
+        }
+
+        SetBoatsVisible(false);
+        SetBoatJetsVisible(false);
+    }
+
+    private void MoveBoatsSequentially(float progress)
+    {
+        float scaledProgress = Mathf.Clamp01(progress) * BoatMoveGroupCount;
+        MoveBoatGroup(0, 4, scaledProgress);
+        MoveBoatGroup(1, 3, scaledProgress - 1f);
+        MoveBoatGroup(2, -1, scaledProgress - 2f);
+    }
+
+    private void MoveBoatGroup(int firstIndex, int secondIndex, float progress)
+    {
+        float easedProgress = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(progress));
+        MoveBoatToTarget(firstIndex, easedProgress);
+
+        if (secondIndex >= 0)
+        {
+            MoveBoatToTarget(secondIndex, easedProgress);
+        }
+    }
+
+    private void MoveBoatToTarget(int index, float easedProgress)
+    {
+        if (boats == null || boatTargets == null || boatStartPositions == null ||
+            index < 0 || index >= boats.Length || index >= boatTargets.Length || index >= boatStartPositions.Length)
         {
             return;
         }
 
-        int boatCount = Mathf.Min(boats.Length, boatStartPositions.Length);
-        for (int i = 0; i < boatCount; i++)
+        RectTransform boat = boats[index];
+        RectTransform target = boatTargets[index];
+        if (boat != null && target != null)
+        {
+            boat.position = Vector3.Lerp(boatStartPositions[index], target.position, easedProgress);
+        }
+    }
+
+    private void SetBoatsVisible(bool visible)
+    {
+        if (boats == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < boats.Length; i++)
         {
             if (boats[i] != null)
             {
-                boats[i].position = boatStartPositions[i];
+                boats[i].gameObject.SetActive(visible);
             }
         }
     }
 
-    private void MoveBoats(float progress)
+    private void SetBoatJetsVisible(bool visible)
     {
-        if (boats == null || boatTargets == null || boatStartPositions == null)
+        if (boatJets == null)
         {
             return;
         }
 
-        float easedProgress = Mathf.SmoothStep(0f, 1f, progress);
-        int boatCount = Mathf.Min(Mathf.Min(boats.Length, boatTargets.Length), boatStartPositions.Length);
-        for (int i = 0; i < boatCount; i++)
+        for (int i = 0; i < boatJets.Length; i++)
         {
-            RectTransform boat = boats[i];
-            RectTransform target = boatTargets[i];
-            if (boat != null && target != null)
-            {
-                boat.position = Vector3.Lerp(boatStartPositions[i], target.position, easedProgress);
-            }
+            SetActive(boatJets[i], visible);
         }
     }
 

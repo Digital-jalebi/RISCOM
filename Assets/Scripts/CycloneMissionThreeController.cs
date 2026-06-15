@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -15,6 +16,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     [SerializeField] private Button alertNextButton;
     [SerializeField] private GameObject playRoot;
     [SerializeField] private GameObject completeScreen;
+    [SerializeField] private Button reportNextButton;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
     [SerializeField] private RectTransform busCapacity200Tool;
@@ -28,11 +30,15 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     [SerializeField] private RectTransform[] shelters;
     [SerializeField] private TextMeshProUGUI[] shelterCapacityLabels;
     [SerializeField] private int[] shelterCapacities;
-    [SerializeField] private RectTransform[] routePoints;
+    [SerializeField] private ShelterRoute[] shelterRoutes;
+    [SerializeField] private ShelterOverflowPlan[] shelterOverflowPlans;
+    [SerializeField] private ShelterPriority[] villageShelterPriorities;
+    [SerializeField] private VillageRoutePlan[] villageRoutePlans;
 
     private readonly MissionThreeBusTool[] busTools = new MissionThreeBusTool[BusToolCount];
     private readonly List<Vector3> pathBuffer = new List<Vector3>();
 
+    private Action onReportNext;
     private bool configured;
     private bool buttonsWired;
     private int[] villageRemainingCounts;
@@ -47,13 +53,23 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     private Coroutine shakeRoutine;
     private Coroutine tripRoutine;
 
-    public void Configure()
+    public void Configure(Action reportNextHandler = null)
     {
+        if (reportNextHandler != null)
+        {
+            onReportNext = reportNextHandler;
+        }
+
         if (!buttonsWired)
         {
             if (alertNextButton != null)
             {
                 alertNextButton.onClick.AddListener(StartMissionGame);
+            }
+
+            if (reportNextButton != null)
+            {
+                reportNextButton.onClick.AddListener(HandleReportNext);
             }
 
             buttonsWired = true;
@@ -82,6 +98,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
         villageRemainingCounts = CopyOrCreateCounts(villageInitialCounts, villages);
         shelterOccupiedCounts = CreateZeroCounts(shelters);
+        NormalizePreferredDirectShelterRoutes();
 
         if (timeRemainingSlider != null)
         {
@@ -91,6 +108,62 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         }
 
         configured = true;
+    }
+
+    private void NormalizePreferredDirectShelterRoutes()
+    {
+        int preferredShelterIndex = FindShelterIndexByCapacity(200);
+        if (preferredShelterIndex < 0)
+        {
+            return;
+        }
+
+        if (villageShelterPriorities != null)
+        {
+            for (int i = 0; i < villageShelterPriorities.Length; i++)
+            {
+                if (villageShelterPriorities[i] != null)
+                {
+                    villageShelterPriorities[i].MoveShelterToFront(preferredShelterIndex);
+                }
+            }
+        }
+
+        if (villageRoutePlans == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < villageRoutePlans.Length; i++)
+        {
+            if (villageRoutePlans[i] != null)
+            {
+                villageRoutePlans[i].MovePriorityRouteToFront(preferredShelterIndex);
+            }
+        }
+    }
+
+    private int FindShelterIndexByCapacity(int capacity)
+    {
+        if (shelterCapacities == null)
+        {
+            return -1;
+        }
+
+        for (int i = 0; i < shelterCapacities.Length; i++)
+        {
+            if (shelterCapacities[i] == capacity)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    private void HandleReportNext()
+    {
+        onReportNext?.Invoke();
     }
 
     public void ShowIntro()
@@ -132,7 +205,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
     private void BeginMission()
     {
-        Configure();
+        Configure(onReportNext);
 
         timeRemaining = MissionDurationSeconds;
         isRunning = true;
@@ -144,6 +217,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
         villageRemainingCounts = CopyOrCreateCounts(villageInitialCounts, villages);
         shelterOccupiedCounts = CreateZeroCounts(shelters);
+        NormalizePreferredDirectShelterRoutes();
 
         for (int i = 0; i < busTools.Length; i++)
         {
@@ -398,14 +472,14 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
                villageIndex >= 0 &&
                villageIndex < villageRemainingCounts.Length &&
                villageRemainingCounts[villageIndex] > 0 &&
-               GetTotalShelterRemainingCapacity() > 0;
+               GetReachableShelterRemainingCapacityFromVillage(villageIndex) > 0;
     }
 
     private void StartEvacuationTrip(MissionThreeBusTool tool, int villageIndex)
     {
         int passengerCount = Mathf.Min(
             Mathf.Min(tool.Capacity, villageRemainingCounts[villageIndex]),
-            GetTotalShelterRemainingCapacity());
+            GetReachableShelterRemainingCapacityFromVillage(villageIndex));
 
         if (passengerCount <= 0)
         {
@@ -434,39 +508,103 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
             yield break;
         }
 
-        missionBus.position = village.position;
+        missionBus.position = GetVillageRouteStartPosition(villageIndex, village.position);
         missionBus.gameObject.SetActive(true);
 
         villageRemainingCounts[villageIndex] = Mathf.Max(0, villageRemainingCounts[villageIndex] - passengerCount);
         UpdateVillageLabels();
 
         int passengersRemaining = passengerCount;
+        int currentShelterIndex = -1;
+        bool[] visitedShelters = CreateShelterVisitBuffer();
         while (passengersRemaining > 0)
         {
-            int shelterIndex = FindNearestAvailableShelter(missionBus.position);
-            if (shelterIndex < 0)
+            int shelterIndex;
+            PriorityRoute priorityRoute = null;
+            ShelterOverflowRoute overflowRoute = null;
+
+            if (currentShelterIndex >= 0)
+            {
+                shelterIndex = FindReachableShelterFromOverflow(currentShelterIndex, visitedShelters);
+                if (shelterIndex >= 0)
+                {
+                    overflowRoute = GetShelterOverflowRoute(currentShelterIndex, shelterIndex);
+                }
+            }
+            else
+            {
+                shelterIndex = FindNearestReachableShelter(village.position, villageIndex, visitedShelters);
+                if (shelterIndex >= 0)
+                {
+                    priorityRoute = GetVillagePriorityRouteForShelter(villageIndex, shelterIndex);
+                }
+            }
+
+            if (shelterIndex < 0 ||
+                currentShelterIndex >= 0 && overflowRoute == null ||
+                currentShelterIndex < 0 && HasConfiguredVillageRoutePlan(villageIndex) && priorityRoute == null)
             {
                 break;
             }
 
             RectTransform shelter = shelters[shelterIndex];
-            yield return MoveBusAlongRoute(missionBus.position, shelter.position);
+            if (currentShelterIndex >= 0)
+            {
+                yield return MoveBusAlongOverflowRoute(missionBus.position, shelter.position, currentShelterIndex, overflowRoute);
+            }
+            else
+            {
+                yield return MoveBusAlongVillageRoute(missionBus.position, shelter.position, villageIndex, shelterIndex, priorityRoute);
+            }
 
             int shelterRemaining = GetShelterRemainingCapacity(shelterIndex);
             int transferred = Mathf.Min(passengersRemaining, shelterRemaining);
-            shelterOccupiedCounts[shelterIndex] += transferred;
-            passengersRemaining -= transferred;
-            UpdateShelterLabels();
+            if (transferred > 0)
+            {
+                shelterOccupiedCounts[shelterIndex] += transferred;
+                passengersRemaining -= transferred;
+                UpdateShelterLabels();
+            }
+
+            currentShelterIndex = shelterIndex;
+            MarkShelterVisited(visitedShelters, shelterIndex);
+        }
+
+        if (passengersRemaining > 0)
+        {
+            villageRemainingCounts[villageIndex] += passengersRemaining;
+            UpdateVillageLabels();
         }
 
         missionBus.gameObject.SetActive(false);
         FinishTrip();
     }
 
-    private IEnumerator MoveBusAlongRoute(Vector3 from, Vector3 to)
+    private IEnumerator MoveBusAlongVillageRoute(
+        Vector3 from,
+        Vector3 to,
+        int villageIndex,
+        int shelterIndex,
+        PriorityRoute priorityRoute)
     {
-        BuildRoute(from, to);
+        BuildVillageRoute(from, to, villageIndex, shelterIndex, priorityRoute);
 
+        yield return MoveBusAlongPath(from);
+    }
+
+    private IEnumerator MoveBusAlongOverflowRoute(
+        Vector3 from,
+        Vector3 to,
+        int sourceShelterIndex,
+        ShelterOverflowRoute overflowRoute)
+    {
+        BuildOverflowRoute(from, to, sourceShelterIndex, overflowRoute);
+
+        yield return MoveBusAlongPath(from);
+    }
+
+    private IEnumerator MoveBusAlongPath(Vector3 from)
+    {
         Vector3 current = from;
         for (int i = 0; i < pathBuffer.Count; i++)
         {
@@ -618,6 +756,80 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         return total;
     }
 
+    private int GetReachableShelterRemainingCapacityFromVillage(int villageIndex)
+    {
+        if (shelters == null)
+        {
+            return 0;
+        }
+
+        VillageRoutePlan routePlan = GetVillageRoutePlan(villageIndex);
+        if (routePlan != null && routePlan.PriorityRoutes != null && routePlan.PriorityRoutes.Length > 0)
+        {
+            int routeTotal = 0;
+            bool[] countedShelters = CreateShelterVisitBuffer();
+            PriorityRoute[] priorityRoutes = routePlan.PriorityRoutes;
+            for (int i = 0; i < priorityRoutes.Length; i++)
+            {
+                PriorityRoute priorityRoute = priorityRoutes[i];
+                if (priorityRoute != null && IsValidShelterIndex(priorityRoute.ShelterIndex))
+                {
+                    routeTotal += GetReachableShelterRemainingCapacity(priorityRoute.ShelterIndex, countedShelters);
+                }
+            }
+
+            return routeTotal;
+        }
+
+        ShelterPriority priority = GetVillageShelterPriority(villageIndex);
+        if (priority != null && priority.ShelterIndexes != null && priority.ShelterIndexes.Length > 0)
+        {
+            int priorityTotal = 0;
+            bool[] countedShelters = CreateShelterVisitBuffer();
+            int[] shelterIndexes = priority.ShelterIndexes;
+            for (int i = 0; i < shelterIndexes.Length; i++)
+            {
+                priorityTotal += GetReachableShelterRemainingCapacity(shelterIndexes[i], countedShelters);
+            }
+
+            return priorityTotal;
+        }
+
+        return GetTotalShelterRemainingCapacity();
+    }
+
+    private int GetReachableShelterRemainingCapacity(int shelterIndex, bool[] countedShelters)
+    {
+        if (!IsValidShelterIndex(shelterIndex) ||
+            countedShelters == null ||
+            shelterIndex >= countedShelters.Length ||
+            countedShelters[shelterIndex])
+        {
+            return 0;
+        }
+
+        countedShelters[shelterIndex] = true;
+
+        int total = GetShelterRemainingCapacity(shelterIndex);
+        ShelterOverflowPlan overflowPlan = GetShelterOverflowPlan(shelterIndex);
+        if (overflowPlan == null || overflowPlan.OverflowRoutes == null)
+        {
+            return total;
+        }
+
+        ShelterOverflowRoute[] overflowRoutes = overflowPlan.OverflowRoutes;
+        for (int i = 0; i < overflowRoutes.Length; i++)
+        {
+            ShelterOverflowRoute overflowRoute = overflowRoutes[i];
+            if (overflowRoute != null)
+            {
+                total += GetReachableShelterRemainingCapacity(overflowRoute.ShelterIndex, countedShelters);
+            }
+        }
+
+        return total;
+    }
+
     private int GetShelterRemainingCapacity(int shelterIndex)
     {
         if (shelterCapacities == null ||
@@ -650,7 +862,31 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         return true;
     }
 
-    private int FindNearestAvailableShelter(Vector3 from)
+    private int FindNearestReachableShelter(Vector3 priorityOrigin, int villageIndex, bool[] visitedShelters)
+    {
+        if (shelters == null)
+        {
+            return -1;
+        }
+
+        int priorityShelterIndex = FindReachableShelterFromVillageRoutes(villageIndex, visitedShelters);
+        if (priorityShelterIndex >= 0)
+        {
+            return priorityShelterIndex;
+        }
+
+        priorityShelterIndex = FindAvailableShelterFromPriority(villageIndex);
+        if (priorityShelterIndex >= 0)
+        {
+            return priorityShelterIndex;
+        }
+
+        return HasConfiguredVillageRoutePlan(villageIndex)
+            ? -1
+            : FindNearestAvailableShelter(priorityOrigin, visitedShelters);
+    }
+
+    private int FindNearestAvailableShelter(Vector3 from, bool[] visitedShelters)
     {
         if (shelters == null)
         {
@@ -661,13 +897,13 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         float bestDistance = float.MaxValue;
         for (int i = 0; i < shelters.Length; i++)
         {
-            RectTransform shelter = shelters[i];
-            if (shelter == null || GetShelterRemainingCapacity(i) <= 0)
+            if (IsShelterVisited(visitedShelters, i) || !IsShelterAvailable(i))
             {
                 continue;
             }
 
-            float distance = CalculateRouteDistance(from, shelter.position);
+            RectTransform shelter = shelters[i];
+            float distance = shelter != null ? Vector3.SqrMagnitude(from - shelter.position) : float.MaxValue;
             if (distance < bestDistance)
             {
                 bestDistance = distance;
@@ -678,18 +914,225 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         return bestIndex;
     }
 
-    private int FindClosestRoutePointIndex(Vector3 from)
+    private int FindReachableShelterFromVillageRoutes(int villageIndex, bool[] visitedShelters)
     {
-        if (routePoints == null || routePoints.Length == 0)
+        VillageRoutePlan routePlan = GetVillageRoutePlan(villageIndex);
+        if (routePlan == null || routePlan.PriorityRoutes == null)
+        {
+            return -1;
+        }
+
+        PriorityRoute[] priorityRoutes = routePlan.PriorityRoutes;
+        for (int i = 0; i < priorityRoutes.Length; i++)
+        {
+            PriorityRoute priorityRoute = priorityRoutes[i];
+            if (priorityRoute == null)
+            {
+                continue;
+            }
+
+            if (!IsShelterVisited(visitedShelters, priorityRoute.ShelterIndex) &&
+                IsShelterAvailable(priorityRoute.ShelterIndex))
+            {
+                return priorityRoute.ShelterIndex;
+            }
+        }
+
+        for (int i = 0; i < priorityRoutes.Length; i++)
+        {
+            PriorityRoute priorityRoute = priorityRoutes[i];
+            if (priorityRoute == null || IsShelterVisited(visitedShelters, priorityRoute.ShelterIndex))
+            {
+                continue;
+            }
+
+            bool[] searchVisitedShelters = CopyShelterVisitBuffer(visitedShelters);
+            if (HasReachableShelterCapacity(priorityRoute.ShelterIndex, searchVisitedShelters))
+            {
+                return priorityRoute.ShelterIndex;
+            }
+        }
+
+        return -1;
+    }
+
+    private int FindReachableShelterFromOverflow(int sourceShelterIndex, bool[] visitedShelters)
+    {
+        ShelterOverflowPlan overflowPlan = GetShelterOverflowPlan(sourceShelterIndex);
+        if (overflowPlan == null || overflowPlan.OverflowRoutes == null)
+        {
+            return -1;
+        }
+
+        ShelterOverflowRoute[] overflowRoutes = overflowPlan.OverflowRoutes;
+        for (int i = 0; i < overflowRoutes.Length; i++)
+        {
+            ShelterOverflowRoute overflowRoute = overflowRoutes[i];
+            if (overflowRoute != null &&
+                !IsShelterVisited(visitedShelters, overflowRoute.ShelterIndex) &&
+                IsShelterAvailable(overflowRoute.ShelterIndex))
+            {
+                return overflowRoute.ShelterIndex;
+            }
+        }
+
+        for (int i = 0; i < overflowRoutes.Length; i++)
+        {
+            ShelterOverflowRoute overflowRoute = overflowRoutes[i];
+            if (overflowRoute == null || IsShelterVisited(visitedShelters, overflowRoute.ShelterIndex))
+            {
+                continue;
+            }
+
+            bool[] searchVisitedShelters = CopyShelterVisitBuffer(visitedShelters);
+            if (HasReachableShelterCapacity(overflowRoute.ShelterIndex, searchVisitedShelters))
+            {
+                return overflowRoute.ShelterIndex;
+            }
+        }
+
+        return -1;
+    }
+
+    private int FindAvailableShelterFromPriority(int villageIndex)
+    {
+        ShelterPriority priority = GetVillageShelterPriority(villageIndex);
+        if (priority == null || priority.ShelterIndexes == null)
+        {
+            return -1;
+        }
+
+        int[] shelterIndexes = priority.ShelterIndexes;
+        for (int i = 0; i < shelterIndexes.Length; i++)
+        {
+            int shelterIndex = shelterIndexes[i];
+            if ((!HasConfiguredVillageRoutePlan(villageIndex) ||
+                 GetVillagePriorityRouteForShelter(villageIndex, shelterIndex) != null) &&
+                IsShelterAvailable(shelterIndex))
+            {
+                return shelterIndex;
+            }
+        }
+
+        return -1;
+    }
+
+    private ShelterPriority GetVillageShelterPriority(int villageIndex)
+    {
+        if (villageShelterPriorities == null ||
+            villageIndex < 0 ||
+            villageIndex >= villageShelterPriorities.Length)
+        {
+            return null;
+        }
+
+        return villageShelterPriorities[villageIndex];
+    }
+
+    private bool IsShelterAvailable(int shelterIndex)
+    {
+        return IsValidShelterIndex(shelterIndex) &&
+               GetShelterRemainingCapacity(shelterIndex) > 0;
+    }
+
+    private bool IsValidShelterIndex(int shelterIndex)
+    {
+        return shelterIndex >= 0 &&
+               shelters != null &&
+               shelterIndex < shelters.Length &&
+               shelters[shelterIndex] != null;
+    }
+
+    private bool HasReachableShelterCapacity(int shelterIndex, bool[] visitedShelters)
+    {
+        if (!IsValidShelterIndex(shelterIndex) || IsShelterVisited(visitedShelters, shelterIndex))
+        {
+            return false;
+        }
+
+        if (IsShelterAvailable(shelterIndex))
+        {
+            return true;
+        }
+
+        MarkShelterVisited(visitedShelters, shelterIndex);
+
+        ShelterOverflowPlan overflowPlan = GetShelterOverflowPlan(shelterIndex);
+        if (overflowPlan == null || overflowPlan.OverflowRoutes == null)
+        {
+            return false;
+        }
+
+        ShelterOverflowRoute[] overflowRoutes = overflowPlan.OverflowRoutes;
+        for (int i = 0; i < overflowRoutes.Length; i++)
+        {
+            ShelterOverflowRoute overflowRoute = overflowRoutes[i];
+            if (overflowRoute != null && HasReachableShelterCapacity(overflowRoute.ShelterIndex, visitedShelters))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private bool HasConfiguredVillageRoutePlan(int villageIndex)
+    {
+        VillageRoutePlan routePlan = GetVillageRoutePlan(villageIndex);
+        return routePlan != null &&
+               routePlan.PriorityRoutes != null &&
+               routePlan.PriorityRoutes.Length > 0;
+    }
+
+    private bool[] CreateShelterVisitBuffer()
+    {
+        return shelters != null ? new bool[shelters.Length] : null;
+    }
+
+    private static bool[] CopyShelterVisitBuffer(bool[] source)
+    {
+        if (source == null)
+        {
+            return null;
+        }
+
+        bool[] copy = new bool[source.Length];
+        for (int i = 0; i < source.Length; i++)
+        {
+            copy[i] = source[i];
+        }
+
+        return copy;
+    }
+
+    private static bool IsShelterVisited(bool[] visitedShelters, int shelterIndex)
+    {
+        return visitedShelters != null &&
+               shelterIndex >= 0 &&
+               shelterIndex < visitedShelters.Length &&
+               visitedShelters[shelterIndex];
+    }
+
+    private static void MarkShelterVisited(bool[] visitedShelters, int shelterIndex)
+    {
+        if (visitedShelters != null && shelterIndex >= 0 && shelterIndex < visitedShelters.Length)
+        {
+            visitedShelters[shelterIndex] = true;
+        }
+    }
+
+    private static int FindClosestRoutePointIndex(Vector3 from, RectTransform[] points)
+    {
+        if (points == null || points.Length == 0)
         {
             return -1;
         }
 
         int bestIndex = -1;
         float bestDistance = float.MaxValue;
-        for (int i = 0; i < routePoints.Length; i++)
+        for (int i = 0; i < points.Length; i++)
         {
-            RectTransform point = routePoints[i];
+            RectTransform point = points[i];
             if (point == null)
             {
                 continue;
@@ -706,45 +1149,143 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         return bestIndex;
     }
 
-    private float CalculateRouteDistance(Vector3 from, Vector3 to)
-    {
-        BuildRoute(from, to);
-
-        float distance = 0f;
-        Vector3 current = from;
-        for (int i = 0; i < pathBuffer.Count; i++)
-        {
-            Vector3 target = pathBuffer[i];
-            distance += Vector3.Distance(current, target);
-            current = target;
-        }
-
-        return distance;
-    }
-
-    private void BuildRoute(Vector3 from, Vector3 to)
+    private void BuildVillageRoute(
+        Vector3 from,
+        Vector3 to,
+        int villageIndex,
+        int shelterIndex,
+        PriorityRoute priorityRoute)
     {
         pathBuffer.Clear();
 
-        int routePointCount = routePoints != null ? routePoints.Length : 0;
-        if (routePointCount == 0)
+        if (priorityRoute != null)
+        {
+            BuildVillagePriorityRoute(from, to, villageIndex, priorityRoute);
+            return;
+        }
+
+        RectTransform[] pathPoints = GetShelterRoutePoints(shelterIndex);
+        if (pathPoints != null && pathPoints.Length > 0)
+        {
+            BuildAssignedRoute(from, to, pathPoints);
+            return;
+        }
+
+        if (HasAnyShelterRoute())
         {
             pathBuffer.Add(to);
             return;
         }
 
-        int fromIndex = FindClosestRoutePointIndex(from);
-        int toIndex = FindClosestRoutePointIndex(to);
-        if (fromIndex < 0 || toIndex < 0)
+        pathBuffer.Add(to);
+    }
+
+    private void BuildVillagePriorityRoute(
+        Vector3 from,
+        Vector3 to,
+        int villageIndex,
+        PriorityRoute priorityRoute)
+    {
+        Vector3 routeStart = GetVillageRouteStartPosition(villageIndex, from);
+
+        if (!IsNear(from, routeStart))
+        {
+            AddRouteTarget(routeStart);
+        }
+
+        AddRoutePoints(priorityRoute.Points, false);
+        AddRouteTarget(to);
+    }
+
+    private void BuildOverflowRoute(
+        Vector3 from,
+        Vector3 to,
+        int sourceShelterIndex,
+        ShelterOverflowRoute overflowRoute)
+    {
+        pathBuffer.Clear();
+
+        if (overflowRoute == null)
         {
             pathBuffer.Add(to);
             return;
         }
 
-        int direction = fromIndex <= toIndex ? 1 : -1;
-        for (int i = fromIndex; i != toIndex + direction; i += direction)
+        Vector3 routeStart = GetShelterOverflowStartPosition(sourceShelterIndex, from);
+        if (!IsNear(from, routeStart))
         {
-            RectTransform point = routePoints[i];
+            AddRouteTarget(routeStart);
+        }
+
+        AddRoutePoints(overflowRoute.Points, false);
+        AddRouteTarget(to);
+    }
+
+    private void AddRoutePoints(RectTransform[] pointsToAdd, bool reverse)
+    {
+        if (pointsToAdd == null || pointsToAdd.Length == 0)
+        {
+            return;
+        }
+
+        if (reverse)
+        {
+            for (int i = pointsToAdd.Length - 1; i >= 0; i--)
+            {
+                AddRoutePoint(pointsToAdd[i]);
+            }
+
+            return;
+        }
+
+        for (int i = 0; i < pointsToAdd.Length; i++)
+        {
+            AddRoutePoint(pointsToAdd[i]);
+        }
+    }
+
+    private void AddRoutePoint(RectTransform point)
+    {
+        if (point != null)
+        {
+            AddRouteTarget(point.position);
+        }
+    }
+
+    private void AddRouteTarget(Vector3 target)
+    {
+        if (pathBuffer.Count == 0 || !IsNear(pathBuffer[pathBuffer.Count - 1], target))
+        {
+            pathBuffer.Add(target);
+        }
+    }
+
+    private static bool IsNear(Vector3 from, Vector3 to)
+    {
+        return Vector3.SqrMagnitude(from - to) <= 0.25f;
+    }
+
+    private void BuildAssignedRoute(Vector3 from, Vector3 to, RectTransform[] pathPoints)
+    {
+        int pointCount = pathPoints != null ? pathPoints.Length : 0;
+        if (pointCount == 0)
+        {
+            pathBuffer.Add(to);
+            return;
+        }
+
+        int fromIndex = FindClosestRoutePointIndex(from, pathPoints);
+        int shelterEndIndex = FindShelterEndRoutePointIndex(to, pathPoints);
+        if (fromIndex < 0 || shelterEndIndex < 0)
+        {
+            pathBuffer.Add(to);
+            return;
+        }
+
+        int direction = fromIndex <= shelterEndIndex ? 1 : -1;
+        for (int i = fromIndex; i != shelterEndIndex + direction; i += direction)
+        {
+            RectTransform point = pathPoints[i];
             if (point != null)
             {
                 pathBuffer.Add(point.position);
@@ -755,6 +1296,130 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         {
             pathBuffer.Add(to);
         }
+    }
+
+    private static int FindShelterEndRoutePointIndex(Vector3 shelterPosition, RectTransform[] pathPoints)
+    {
+        return FindClosestRoutePointIndex(shelterPosition, pathPoints);
+    }
+
+    private RectTransform[] GetShelterRoutePoints(int shelterIndex)
+    {
+        if (shelterRoutes == null ||
+            shelterIndex < 0 ||
+            shelterIndex >= shelterRoutes.Length ||
+            shelterRoutes[shelterIndex] == null)
+        {
+            return null;
+        }
+
+        return shelterRoutes[shelterIndex].Points;
+    }
+
+    private Vector3 GetShelterOverflowStartPosition(int shelterIndex, Vector3 fallback)
+    {
+        ShelterOverflowPlan overflowPlan = GetShelterOverflowPlan(shelterIndex);
+        return overflowPlan != null && overflowPlan.StartingPoint != null
+            ? overflowPlan.StartingPoint.position
+            : fallback;
+    }
+
+    private ShelterOverflowRoute GetShelterOverflowRoute(int sourceShelterIndex, int targetShelterIndex)
+    {
+        ShelterOverflowPlan overflowPlan = GetShelterOverflowPlan(sourceShelterIndex);
+        if (overflowPlan == null || overflowPlan.OverflowRoutes == null)
+        {
+            return null;
+        }
+
+        ShelterOverflowRoute[] overflowRoutes = overflowPlan.OverflowRoutes;
+        for (int i = 0; i < overflowRoutes.Length; i++)
+        {
+            ShelterOverflowRoute overflowRoute = overflowRoutes[i];
+            if (overflowRoute != null && overflowRoute.ShelterIndex == targetShelterIndex)
+            {
+                return overflowRoute;
+            }
+        }
+
+        return null;
+    }
+
+    private ShelterOverflowPlan GetShelterOverflowPlan(int shelterIndex)
+    {
+        if (shelterOverflowPlans == null ||
+            shelterIndex < 0 ||
+            shelterIndex >= shelterOverflowPlans.Length)
+        {
+            return null;
+        }
+
+        return shelterOverflowPlans[shelterIndex];
+    }
+
+    private Vector3 GetVillageRouteStartPosition(int villageIndex, Vector3 fallback)
+    {
+        VillageRoutePlan routePlan = GetVillageRoutePlan(villageIndex);
+        return routePlan != null && routePlan.StartingPoint != null
+            ? routePlan.StartingPoint.position
+            : fallback;
+    }
+
+    private PriorityRoute GetVillagePriorityRouteForShelter(int villageIndex, int shelterIndex)
+    {
+        VillageRoutePlan routePlan = GetVillageRoutePlan(villageIndex);
+        if (routePlan == null || routePlan.PriorityRoutes == null)
+        {
+            return null;
+        }
+
+        PriorityRoute[] priorityRoutes = routePlan.PriorityRoutes;
+        for (int i = 0; i < priorityRoutes.Length; i++)
+        {
+            PriorityRoute priorityRoute = priorityRoutes[i];
+            if (priorityRoute != null && priorityRoute.ShelterIndex == shelterIndex)
+            {
+                return priorityRoute;
+            }
+        }
+
+        return null;
+    }
+
+    private VillageRoutePlan GetVillageRoutePlan(int villageIndex)
+    {
+        if (villageRoutePlans == null ||
+            villageIndex < 0 ||
+            villageIndex >= villageRoutePlans.Length)
+        {
+            return null;
+        }
+
+        return villageRoutePlans[villageIndex];
+    }
+
+    private bool HasShelterRoute(int shelterIndex)
+    {
+        RectTransform[] points = GetShelterRoutePoints(shelterIndex);
+        return points != null && points.Length > 0;
+    }
+
+    private bool HasAnyShelterRoute()
+    {
+        if (shelterRoutes == null)
+        {
+            return false;
+        }
+
+        for (int i = 0; i < shelterRoutes.Length; i++)
+        {
+            if (HasShelterRoute(i))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void UpdateVillageLabels()
@@ -792,9 +1457,10 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
             TextMeshProUGUI label = shelterCapacityLabels[i];
             if (label != null)
             {
-                label.text = shelterOccupiedCounts[i] >= shelterCapacities[i]
+                int remainingCapacity = GetShelterRemainingCapacity(i);
+                label.text = remainingCapacity <= 0
                     ? "Max"
-                    : shelterCapacities[i].ToString();
+                    : remainingCapacity.ToString();
             }
         }
     }
@@ -836,6 +1502,133 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         {
             target.SetActive(active);
         }
+    }
+
+    [Serializable]
+    private sealed class ShelterRoute
+    {
+        [SerializeField] private RectTransform[] points;
+
+        public RectTransform[] Points => points;
+    }
+
+    [Serializable]
+    private sealed class ShelterOverflowPlan
+    {
+        [SerializeField] private RectTransform startingPoint;
+        [SerializeField] private ShelterOverflowRoute[] overflowRoutes;
+
+        public RectTransform StartingPoint => startingPoint;
+        public ShelterOverflowRoute[] OverflowRoutes => overflowRoutes;
+    }
+
+    [Serializable]
+    private sealed class ShelterOverflowRoute
+    {
+        [SerializeField] private int shelterIndex;
+        [SerializeField] private RectTransform[] points;
+
+        public int ShelterIndex => shelterIndex;
+        public RectTransform[] Points => points;
+    }
+
+    [Serializable]
+    private sealed class ShelterPriority
+    {
+        [SerializeField] private int[] shelterIndexes;
+
+        public int[] ShelterIndexes => shelterIndexes;
+
+        public void MoveShelterToFront(int shelterIndex)
+        {
+            int index = IndexOfShelter(shelterIndex);
+            if (index <= 0)
+            {
+                return;
+            }
+
+            int selectedShelterIndex = shelterIndexes[index];
+            for (int i = index; i > 0; i--)
+            {
+                shelterIndexes[i] = shelterIndexes[i - 1];
+            }
+
+            shelterIndexes[0] = selectedShelterIndex;
+        }
+
+        private int IndexOfShelter(int shelterIndex)
+        {
+            if (shelterIndexes == null)
+            {
+                return -1;
+            }
+
+            for (int i = 0; i < shelterIndexes.Length; i++)
+            {
+                if (shelterIndexes[i] == shelterIndex)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+    }
+
+    [Serializable]
+    private sealed class VillageRoutePlan
+    {
+        [SerializeField] private RectTransform startingPoint;
+        [SerializeField] private PriorityRoute[] priorityRoutes;
+
+        public RectTransform StartingPoint => startingPoint;
+        public PriorityRoute[] PriorityRoutes => priorityRoutes;
+
+        public void MovePriorityRouteToFront(int shelterIndex)
+        {
+            int index = IndexOfPriorityRoute(shelterIndex);
+            if (index <= 0)
+            {
+                return;
+            }
+
+            PriorityRoute selectedRoute = priorityRoutes[index];
+            for (int i = index; i > 0; i--)
+            {
+                priorityRoutes[i] = priorityRoutes[i - 1];
+            }
+
+            priorityRoutes[0] = selectedRoute;
+        }
+
+        private int IndexOfPriorityRoute(int shelterIndex)
+        {
+            if (priorityRoutes == null)
+            {
+                return -1;
+            }
+
+            for (int i = 0; i < priorityRoutes.Length; i++)
+            {
+                PriorityRoute route = priorityRoutes[i];
+                if (route != null && route.ShelterIndex == shelterIndex)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+    }
+
+    [Serializable]
+    private sealed class PriorityRoute
+    {
+        [SerializeField] private int shelterIndex;
+        [SerializeField] private RectTransform[] points;
+
+        public int ShelterIndex => shelterIndex;
+        public RectTransform[] Points => points;
     }
 
     private sealed class MissionThreeBusTool
