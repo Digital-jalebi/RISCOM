@@ -183,7 +183,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         placedMarkers++;
         markersRemaining--;
         UpdateProgress();
-        ShowPlacementNotification(placedMarkers - 1);
+        ShowPlacementNotification(dropZone);
 
         if (placedMarkers >= TotalMarkers)
         {
@@ -316,7 +316,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         ResetNotificationScroll();
     }
 
-    private void ShowPlacementNotification(int notificationIndex)
+    private void ShowPlacementNotification(CycloneMapDropZone dropZone)
     {
         if (notificationTemplate == null)
         {
@@ -336,7 +336,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         notification.gameObject.SetActive(true);
         notification.raycastTarget = false;
 
-        Sprite sprite = GetNotificationSprite(notificationIndex);
+        Sprite sprite = GetNotificationSprite(dropZone);
         if (sprite != null)
         {
             notification.sprite = sprite;
@@ -352,8 +352,14 @@ public sealed class CycloneMissionController : MonoBehaviour
         ScrollNotificationsToLatest();
     }
 
-    private Sprite GetNotificationSprite(int notificationIndex)
+    private Sprite GetNotificationSprite(CycloneMapDropZone dropZone)
     {
+        if (dropZone != null && dropZone.NotificationSprite != null)
+        {
+            return dropZone.NotificationSprite;
+        }
+
+        int notificationIndex = GetDropZoneIndex(dropZone);
         if (notificationSprites != null &&
             notificationIndex >= 0 &&
             notificationIndex < notificationSprites.Length &&
@@ -363,6 +369,24 @@ public sealed class CycloneMissionController : MonoBehaviour
         }
 
         return notificationTemplate != null ? notificationTemplate.sprite : null;
+    }
+
+    private int GetDropZoneIndex(CycloneMapDropZone dropZone)
+    {
+        if (dropZone == null || dropZones == null)
+        {
+            return -1;
+        }
+
+        for (int i = 0; i < dropZones.Length; i++)
+        {
+            if (dropZones[i] == dropZone)
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private void ResetNotificationScroll()
