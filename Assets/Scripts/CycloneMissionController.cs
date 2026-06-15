@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -21,9 +22,21 @@ public sealed class CycloneMissionController : MonoBehaviour
     [SerializeField] private Slider missionProgressSlider;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RectTransform notificationViewport;
+    [SerializeField] private RectTransform notificationContent;
+    [SerializeField] private Image notificationTemplate;
+    [SerializeField] private Scrollbar notificationScrollbar;
+    [SerializeField] private Sprite[] notificationSprites;
+    [SerializeField] private bool useNotificationNativeSize = true;
+    [SerializeField] private float notificationBottomPadding = 1f;
+    [SerializeField] private float notificationSpacing = 0f;
 
-    private readonly System.Collections.Generic.List<RaycastResult> raycastResults = new System.Collections.Generic.List<RaycastResult>();
+    private readonly List<RaycastResult> raycastResults = new List<RaycastResult>();
+    private readonly List<Image> activeNotifications = new List<Image>();
 
+    private Vector2 notificationContentStartSize;
+    private bool notificationScrollbarWired;
+    private bool suppressNotificationScrollbarCallback;
     private Vector2 markerStartPosition;
     private Coroutine shakeRoutine;
     private Action onMissionComplete;
@@ -66,6 +79,7 @@ public sealed class CycloneMissionController : MonoBehaviour
 
         CacheDropZones();
         ConfigureSliders();
+        ConfigureNotifications();
 
         isConfigured = true;
     }
@@ -82,6 +96,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         isComplete = false;
 
         ResetDropZones();
+        ClearNotifications();
         DestroyDragMarker();
         ResetMarkerPosition();
         SetMarkerVisible(true);
@@ -168,6 +183,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         placedMarkers++;
         markersRemaining--;
         UpdateProgress();
+        ShowPlacementNotification(placedMarkers - 1);
 
         if (placedMarkers >= TotalMarkers)
         {
@@ -262,6 +278,252 @@ public sealed class CycloneMissionController : MonoBehaviour
             timeRemainingSlider.maxValue = MissionDurationSeconds;
             timeRemainingSlider.interactable = false;
         }
+    }
+
+    private void ConfigureNotifications()
+    {
+        if (notificationContent != null)
+        {
+            notificationContentStartSize = notificationContent.sizeDelta;
+        }
+
+        if (notificationTemplate != null)
+        {
+            notificationTemplate.gameObject.SetActive(false);
+        }
+
+        ConfigureNotificationScrollbar();
+    }
+
+    private void ClearNotifications()
+    {
+        for (int i = 0; i < activeNotifications.Count; i++)
+        {
+            Image notification = activeNotifications[i];
+            if (notification != null)
+            {
+                Destroy(notification.gameObject);
+            }
+        }
+
+        activeNotifications.Clear();
+
+        if (notificationTemplate != null)
+        {
+            notificationTemplate.gameObject.SetActive(false);
+        }
+
+        ResetNotificationScroll();
+    }
+
+    private void ShowPlacementNotification(int notificationIndex)
+    {
+        if (notificationTemplate == null)
+        {
+            return;
+        }
+
+        RectTransform parent = notificationContent != null
+            ? notificationContent
+            : notificationTemplate.transform.parent as RectTransform;
+
+        if (parent == null)
+        {
+            return;
+        }
+
+        Image notification = Instantiate(notificationTemplate, parent);
+        notification.gameObject.SetActive(true);
+        notification.raycastTarget = false;
+
+        Sprite sprite = GetNotificationSprite(notificationIndex);
+        if (sprite != null)
+        {
+            notification.sprite = sprite;
+        }
+
+        if (useNotificationNativeSize && notification.sprite != null)
+        {
+            notification.SetNativeSize();
+        }
+
+        notification.rectTransform.SetAsLastSibling();
+        activeNotifications.Add(notification);
+        ScrollNotificationsToLatest();
+    }
+
+    private Sprite GetNotificationSprite(int notificationIndex)
+    {
+        if (notificationSprites != null &&
+            notificationIndex >= 0 &&
+            notificationIndex < notificationSprites.Length &&
+            notificationSprites[notificationIndex] != null)
+        {
+            return notificationSprites[notificationIndex];
+        }
+
+        return notificationTemplate != null ? notificationTemplate.sprite : null;
+    }
+
+    private void ResetNotificationScroll()
+    {
+        if (notificationContent == null)
+        {
+            UpdateNotificationScrollbar(0f, 1f);
+            return;
+        }
+
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = 0f;
+        notificationContent.anchoredPosition = anchoredPosition;
+        notificationContent.sizeDelta = notificationContentStartSize;
+        UpdateNotificationScrollbar(0f, 1f);
+    }
+
+    private void ScrollNotificationsToLatest()
+    {
+        if (notificationContent == null)
+        {
+            return;
+        }
+
+        UpdateNotificationContentHeight();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(notificationContent);
+
+        RectTransform viewport = GetNotificationViewport();
+
+        if (viewport == null || viewport == notificationContent)
+        {
+            UpdateNotificationScrollbar(0f, 1f);
+            return;
+        }
+
+        float overflow = GetNotificationOverflow(viewport);
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = overflow > 0f ? overflow + notificationBottomPadding : 0f;
+        notificationContent.anchoredPosition = anchoredPosition;
+        UpdateNotificationScrollbar(overflow, overflow > 0f ? 0f : 1f);
+    }
+
+    private void UpdateNotificationContentHeight()
+    {
+        RectTransform viewport = GetNotificationViewport();
+
+        if (viewport == null || viewport == notificationContent)
+        {
+            return;
+        }
+
+        float contentHeight = 0f;
+        for (int i = 0; i < activeNotifications.Count; i++)
+        {
+            Image notification = activeNotifications[i];
+            if (notification == null)
+            {
+                continue;
+            }
+
+            contentHeight += notification.rectTransform.rect.height;
+            if (i < activeNotifications.Count - 1)
+            {
+                contentHeight += notificationSpacing;
+            }
+        }
+
+        Vector2 size = notificationContent.sizeDelta;
+        size.y = Mathf.Max(notificationContentStartSize.y, viewport.rect.height, contentHeight);
+        notificationContent.sizeDelta = size;
+    }
+
+    private void ConfigureNotificationScrollbar()
+    {
+        if (notificationScrollbar == null)
+        {
+            return;
+        }
+
+        notificationScrollbar.direction = Scrollbar.Direction.BottomToTop;
+
+        if (!notificationScrollbarWired)
+        {
+            notificationScrollbar.onValueChanged.AddListener(HandleNotificationScrollbarChanged);
+            notificationScrollbarWired = true;
+        }
+
+        UpdateNotificationScrollbar(0f, 1f);
+    }
+
+    private void HandleNotificationScrollbarChanged(float value)
+    {
+        if (suppressNotificationScrollbarCallback || notificationContent == null)
+        {
+            return;
+        }
+
+        RectTransform viewport = GetNotificationViewport();
+        if (viewport == null || viewport == notificationContent)
+        {
+            return;
+        }
+
+        float overflow = GetNotificationOverflow(viewport);
+        if (overflow <= 0f)
+        {
+            return;
+        }
+
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = Mathf.Lerp(overflow + notificationBottomPadding, 0f, value);
+        notificationContent.anchoredPosition = anchoredPosition;
+    }
+
+    private RectTransform GetNotificationViewport()
+    {
+        return notificationViewport != null
+            ? notificationViewport
+            : notificationContent != null
+                ? notificationContent.parent as RectTransform
+                : null;
+    }
+
+    private float GetNotificationOverflow(RectTransform viewport)
+    {
+        if (notificationContent == null || viewport == null)
+        {
+            return 0f;
+        }
+
+        return Mathf.Max(0f, notificationContent.rect.height - viewport.rect.height);
+    }
+
+    private void UpdateNotificationScrollbar(float overflow, float normalizedPosition)
+    {
+        if (notificationScrollbar == null)
+        {
+            return;
+        }
+
+        RectTransform viewport = GetNotificationViewport();
+        float contentHeight = notificationContent != null ? notificationContent.rect.height : 0f;
+        float viewportHeight = viewport != null ? viewport.rect.height : 0f;
+        bool canScroll = overflow > 0f && contentHeight > 0f && viewportHeight > 0f;
+
+        notificationScrollbar.interactable = canScroll;
+        notificationScrollbar.size = canScroll ? Mathf.Clamp01(viewportHeight / contentHeight) : 1f;
+        SetNotificationScrollbarValue(canScroll ? normalizedPosition : 1f);
+    }
+
+    private void SetNotificationScrollbarValue(float value)
+    {
+        if (notificationScrollbar == null)
+        {
+            return;
+        }
+
+        suppressNotificationScrollbarCallback = true;
+        notificationScrollbar.value = Mathf.Clamp01(value);
+        suppressNotificationScrollbarCallback = false;
     }
 
     private void ResetDropZones()

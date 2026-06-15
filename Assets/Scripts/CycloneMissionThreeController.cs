@@ -10,7 +10,6 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 {
     private const int BusToolCount = 2;
     private const float MissionDurationSeconds = 600f;
-    private const float BusMoveSpeed = 520f;
 
     [SerializeField] private GameObject alertScreen;
     [SerializeField] private Button alertNextButton;
@@ -34,6 +33,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     [SerializeField] private ShelterOverflowPlan[] shelterOverflowPlans;
     [SerializeField] private ShelterPriority[] villageShelterPriorities;
     [SerializeField] private VillageRoutePlan[] villageRoutePlans;
+    [SerializeField] private float busMoveSpeed = 360f;
 
     private readonly MissionThreeBusTool[] busTools = new MissionThreeBusTool[BusToolCount];
     private readonly List<Vector3> pathBuffer = new List<Vector3>();
@@ -611,7 +611,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
             Vector3 target = pathBuffer[i];
             while (Vector3.Distance(current, target) > 0.5f)
             {
-                current = Vector3.MoveTowards(current, target, BusMoveSpeed * Time.deltaTime);
+                current = Vector3.MoveTowards(current, target, busMoveSpeed * Time.deltaTime);
                 missionBus.position = current;
                 yield return null;
             }

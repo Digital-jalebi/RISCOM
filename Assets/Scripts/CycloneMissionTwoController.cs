@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,8 +13,11 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     private const float MissionDurationSeconds = 600f;
     private const float EffectAnimationDuration = 0.85f;
     private const float BoatMoveDuration = 0.85f;
-    private const int BoatMoveGroupCount = 3;
+    private const float BoatReadyVibrationDuration = 0.18f;
+    private const int BoatReadyVibrato = 18;
+    private const float BoatReadyRandomness = 65f;
     private const float ReportDelaySeconds = 2f;
+    private static readonly Vector3 BoatReadyVibrationStrength = new Vector3(2f, 1.4f, 0f);
 
     [SerializeField] private GameObject alertScreen;
     [SerializeField] private Button alertNextButton;
@@ -20,6 +25,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     [SerializeField] private GameObject completeScreen;
     [SerializeField] private Button reportNextButton;
     [SerializeField] private RectTransform dropArea;
+    [SerializeField] private RectTransform boatDockingDropArea;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
     [SerializeField] private RectTransform radarScannerTool;
@@ -34,11 +40,11 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     [SerializeField] private Image boatDockingToolImage;
     [SerializeField] private GameObject boatDockingEffect;
     [SerializeField] private Image boatDockingEffectImage;
-    [SerializeField] private RectTransform[] boats;
     [SerializeField] private GameObject[] boatJets;
-    [SerializeField] private RectTransform[] boatTargets;
+    [SerializeField] private List<DockPlacement> dockPlacements = new List<DockPlacement>();
 
     private readonly MissionTwoStep[] steps = new MissionTwoStep[StepCount];
+    private readonly List<RectTransform> managedBoats = new List<RectTransform>();
 
     private Action onReportNext;
     private bool configured;
@@ -51,8 +57,10 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     private MissionTwoStep draggedStep;
     private Vector3 dragWorldOffset;
     private Vector3[] boatStartPositions;
+    private int dockPlacementIndex;
     private Coroutine shakeRoutine;
     private Coroutine effectRoutine;
+    private Tween[] boatReadyTweens;
     private Coroutine reportDelayRoutine;
 
     public void Configure(Action reportNextHandler)
@@ -93,6 +101,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
         CacheBoatStartPositions();
         ResetBoats();
+        ResetDocks();
 
         if (timeRemainingSlider != null)
         {
@@ -151,6 +160,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         Configure(onReportNext);
 
         stepIndex = 0;
+        dockPlacementIndex = 0;
         timeRemaining = MissionDurationSeconds;
         isRunning = true;
         isComplete = false;
@@ -166,6 +176,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         }
 
         ResetBoats();
+        ResetDocks();
         UpdateTimerDisplay();
     }
 
@@ -186,6 +197,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         }
 
         ResetBoats();
+        ResetDocks();
     }
 
     private void StopMissionRoutines()
@@ -201,6 +213,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
             StopCoroutine(effectRoutine);
             effectRoutine = null;
         }
+
+        StopBoatReadyShake(true);
 
         if (reportDelayRoutine != null)
         {
@@ -362,7 +376,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         draggedStep = null;
 
         bool isExpectedStep = stepIndex < steps.Length && droppedStep == steps[stepIndex];
-        bool isOnDropArea = dropArea != null && RectTransformUtility.RectangleContainsScreenPoint(dropArea, screenPosition, null);
+        bool isOnDropArea = IsOnRequiredDropArea(droppedStep, screenPosition);
 
         if (isExpectedStep && isOnDropArea)
         {
@@ -371,6 +385,16 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         }
 
         ResetToolWithShake(droppedStep);
+    }
+
+    private bool IsOnRequiredDropArea(MissionTwoStep step, Vector2 screenPosition)
+    {
+        RectTransform requiredDropArea = IsBoatDockingStep(step) && boatDockingDropArea != null
+            ? boatDockingDropArea
+            : dropArea;
+
+        return requiredDropArea != null &&
+               RectTransformUtility.RectangleContainsScreenPoint(requiredDropArea, screenPosition, null);
     }
 
     private MissionTwoStep FindToolAt(Vector2 screenPosition)
@@ -395,8 +419,16 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     private void AcceptTool(MissionTwoStep step)
     {
         inputLocked = true;
+
+        if (IsBoatDockingStep(step))
+        {
+            AcceptBoatDockingTool(step);
+            return;
+        }
+
         stepIndex++;
         ResetTool(step, false);
+        SetToolRaycast(step, false);
 
         if (IsRadarScannerStep(step))
         {
@@ -406,6 +438,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         if (IsRadioTransmitterStep(step))
         {
             SetBoatJetsVisible(true);
+            StartBoatReadyShake();
         }
 
         if (stepIndex >= steps.Length)
@@ -418,14 +451,60 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
             StopCoroutine(effectRoutine);
         }
 
-        effectRoutine = StartCoroutine(PlayEffect(step));
+        effectRoutine = StartCoroutine(PlayEffect(step, false));
     }
 
-    private IEnumerator PlayEffect(MissionTwoStep step)
+    private void AcceptBoatDockingTool(MissionTwoStep step)
     {
-        bool moveBoats = IsBoatDockingStep(step);
-        float boatMoveDuration = moveBoats ? BoatMoveDuration * BoatMoveGroupCount : 0f;
-        float duration = moveBoats ? Mathf.Max(EffectAnimationDuration, boatMoveDuration) : EffectAnimationDuration;
+        if (!HasDockPlacements())
+        {
+            inputLocked = false;
+            Debug.LogWarning("Cyclone Mission 2 needs Dock Placements assigned before boat docking can start.");
+            ResetToolWithShake(step);
+            return;
+        }
+
+        DockPlacement dockPlacement = ActivateNextDock();
+        bool allDocksPlaced = AreAllDocksPlaced();
+        if (dockPlacement != null)
+        {
+            StopBoatReadyShakeForMovements(dockPlacement.BoatMovements, true);
+        }
+        else if (allDocksPlaced)
+        {
+            StopBoatReadyShake(true);
+        }
+
+        ResetTool(step, !allDocksPlaced);
+        SetToolRaycast(step, !allDocksPlaced);
+
+        if (allDocksPlaced)
+        {
+            stepIndex = steps.Length;
+            isRunning = false;
+        }
+
+        if (effectRoutine != null)
+        {
+            StopCoroutine(effectRoutine);
+        }
+
+        effectRoutine = StartCoroutine(PlayEffect(step, dockPlacement, allDocksPlaced));
+    }
+
+    private IEnumerator PlayEffect(MissionTwoStep step, bool completeAfterEffect)
+    {
+        yield return PlayEffect(step, null, completeAfterEffect);
+    }
+
+    private IEnumerator PlayEffect(MissionTwoStep step, DockPlacement dockPlacement, bool completeAfterEffect)
+    {
+        List<BoatMovement> dockBoatMovements = dockPlacement != null ? dockPlacement.BoatMovements : null;
+        bool moveDockBoats = dockBoatMovements != null && dockBoatMovements.Count > 0;
+        int boatMoveCount = moveDockBoats ? dockBoatMovements.Count : 0;
+        float boatMoveDuration = boatMoveCount > 0 ? BoatMoveDuration * boatMoveCount : 0f;
+        float duration = boatMoveCount > 0 ? Mathf.Max(EffectAnimationDuration, boatMoveDuration) : EffectAnimationDuration;
+        Vector3[] movementStarts = moveDockBoats ? CreateBoatMovementStartPositions(dockBoatMovements) : null;
 
         if (step.EffectObject != null)
         {
@@ -451,23 +530,23 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
             SetImageAlpha(step.EffectImage, Mathf.Lerp(step.InitialEffectColor.a, 0f, effectT));
 
-            if (moveBoats)
+            if (moveDockBoats)
             {
-                MoveBoatsSequentially(Mathf.Clamp01(elapsed / boatMoveDuration));
+                MoveBoatsSequentially(dockBoatMovements, movementStarts, boatMoveDuration > 0f ? Mathf.Clamp01(elapsed / boatMoveDuration) : 1f);
             }
 
             yield return null;
         }
 
-        if (moveBoats)
+        if (moveDockBoats)
         {
-            MoveBoatsSequentially(1f);
+            MoveBoatsSequentially(dockBoatMovements, movementStarts, 1f);
         }
 
         HideEffect(step);
         effectRoutine = null;
 
-        if (stepIndex >= steps.Length)
+        if (completeAfterEffect)
         {
             CompleteMission();
             yield break;
@@ -482,6 +561,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         isComplete = true;
         inputLocked = false;
         draggedStep = null;
+        StopBoatReadyShake(false);
 
         if (reportDelayRoutine != null)
         {
@@ -517,28 +597,32 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
     private void CacheBoatStartPositions()
     {
-        int boatCount = boats != null ? boats.Length : 0;
+        BuildManagedBoatList();
+
+        int boatCount = managedBoats.Count;
         boatStartPositions = new Vector3[boatCount];
 
         for (int i = 0; i < boatCount; i++)
         {
-            if (boats[i] != null)
+            RectTransform boat = managedBoats[i];
+            if (boat != null)
             {
-                boatStartPositions[i] = boats[i].position;
+                boatStartPositions[i] = boat.position;
             }
         }
     }
 
     private void ResetBoats()
     {
-        if (boats != null && boatStartPositions != null)
+        if (boatStartPositions != null)
         {
-            int boatCount = Mathf.Min(boats.Length, boatStartPositions.Length);
+            int boatCount = Mathf.Min(managedBoats.Count, boatStartPositions.Length);
             for (int i = 0; i < boatCount; i++)
             {
-                if (boats[i] != null)
+                RectTransform boat = managedBoats[i];
+                if (boat != null)
                 {
-                    boats[i].position = boatStartPositions[i];
+                    boat.position = boatStartPositions[i];
                 }
             }
         }
@@ -547,53 +631,100 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         SetBoatJetsVisible(false);
     }
 
-    private void MoveBoatsSequentially(float progress)
+    private void MoveBoatsSequentially(List<BoatMovement> movements, Vector3[] starts, float progress)
     {
-        float scaledProgress = Mathf.Clamp01(progress) * BoatMoveGroupCount;
-        MoveBoatGroup(0, 4, scaledProgress);
-        MoveBoatGroup(1, 3, scaledProgress - 1f);
-        MoveBoatGroup(2, -1, scaledProgress - 2f);
-    }
-
-    private void MoveBoatGroup(int firstIndex, int secondIndex, float progress)
-    {
-        float easedProgress = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(progress));
-        MoveBoatToTarget(firstIndex, easedProgress);
-
-        if (secondIndex >= 0)
-        {
-            MoveBoatToTarget(secondIndex, easedProgress);
-        }
-    }
-
-    private void MoveBoatToTarget(int index, float easedProgress)
-    {
-        if (boats == null || boatTargets == null || boatStartPositions == null ||
-            index < 0 || index >= boats.Length || index >= boatTargets.Length || index >= boatStartPositions.Length)
+        if (movements == null || starts == null)
         {
             return;
         }
 
-        RectTransform boat = boats[index];
-        RectTransform target = boatTargets[index];
-        if (boat != null && target != null)
+        int boatCount = Mathf.Min(movements.Count, starts.Length);
+        float scaledProgress = Mathf.Clamp01(progress) * boatCount;
+        for (int i = 0; i < boatCount; i++)
         {
-            boat.position = Vector3.Lerp(boatStartPositions[index], target.position, easedProgress);
+            float easedProgress = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(scaledProgress - i));
+            MoveBoatToTarget(movements[i], starts[i], easedProgress);
         }
+    }
+
+    private static void MoveBoatToTarget(BoatMovement movement, Vector3 start, float easedProgress)
+    {
+        if (movement == null || movement.Boat == null || movement.Target == null)
+        {
+            return;
+        }
+
+        movement.Boat.position = Vector3.Lerp(start, movement.Target.position, easedProgress);
+        if (easedProgress >= 1f)
+        {
+            SetActive(movement.Jet, false);
+        }
+    }
+
+    private static Vector3[] CreateBoatMovementStartPositions(List<BoatMovement> movements)
+    {
+        if (movements == null)
+        {
+            return null;
+        }
+
+        Vector3[] starts = new Vector3[movements.Count];
+        for (int i = 0; i < movements.Count; i++)
+        {
+            BoatMovement movement = movements[i];
+            if (movement != null && movement.Boat != null)
+            {
+                starts[i] = movement.Boat.position;
+            }
+        }
+
+        return starts;
+    }
+
+    private void BuildManagedBoatList()
+    {
+        managedBoats.Clear();
+
+        if (dockPlacements == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < dockPlacements.Count; i++)
+        {
+            DockPlacement placement = dockPlacements[i];
+            if (placement == null || placement.BoatMovements == null)
+            {
+                continue;
+            }
+
+            List<BoatMovement> movements = placement.BoatMovements;
+            for (int movementIndex = 0; movementIndex < movements.Count; movementIndex++)
+            {
+                AddManagedBoat(movements[movementIndex] != null ? movements[movementIndex].Boat : null);
+            }
+        }
+    }
+
+    private void AddManagedBoat(RectTransform boat)
+    {
+        if (boat == null || managedBoats.Contains(boat))
+        {
+            return;
+        }
+
+        managedBoats.Add(boat);
     }
 
     private void SetBoatsVisible(bool visible)
     {
-        if (boats == null)
+        int boatCount = managedBoats.Count;
+        for (int i = 0; i < boatCount; i++)
         {
-            return;
-        }
-
-        for (int i = 0; i < boats.Length; i++)
-        {
-            if (boats[i] != null)
+            RectTransform boat = managedBoats[i];
+            if (boat != null)
             {
-                boats[i].gameObject.SetActive(visible);
+                boat.gameObject.SetActive(visible);
             }
         }
     }
@@ -602,6 +733,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     {
         if (boatJets == null)
         {
+            SetDockPlacementJetsVisible(visible);
             return;
         }
 
@@ -609,6 +741,210 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         {
             SetActive(boatJets[i], visible);
         }
+
+        SetDockPlacementJetsVisible(visible);
+    }
+
+    private void SetDockPlacementJetsVisible(bool visible)
+    {
+        if (dockPlacements == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < dockPlacements.Count; i++)
+        {
+            DockPlacement placement = dockPlacements[i];
+            if (placement == null || placement.BoatMovements == null)
+            {
+                continue;
+            }
+
+            List<BoatMovement> movements = placement.BoatMovements;
+            for (int movementIndex = 0; movementIndex < movements.Count; movementIndex++)
+            {
+                BoatMovement movement = movements[movementIndex];
+                if (movement != null)
+                {
+                    SetActive(movement.Jet, visible);
+                }
+            }
+        }
+    }
+
+    private void ResetDocks()
+    {
+        dockPlacementIndex = 0;
+
+        if (dockPlacements == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < dockPlacements.Count; i++)
+        {
+            DockPlacement placement = dockPlacements[i];
+            if (placement != null)
+            {
+                SetActive(placement.Dock, false);
+            }
+        }
+    }
+
+    private DockPlacement ActivateNextDock()
+    {
+        DockPlacement placement = GetCurrentDockPlacement();
+        if (placement != null)
+        {
+            SetActive(placement.Dock, true);
+            dockPlacementIndex++;
+            return placement;
+        }
+
+        dockPlacementIndex++;
+        return null;
+    }
+
+    private bool AreAllDocksPlaced()
+    {
+        int dockCount = dockPlacements != null ? dockPlacements.Count : 0;
+
+        return dockCount == 0 || dockPlacementIndex >= dockCount;
+    }
+
+    private DockPlacement GetCurrentDockPlacement()
+    {
+        return HasDockPlacements() && dockPlacementIndex >= 0 && dockPlacementIndex < dockPlacements.Count
+            ? dockPlacements[dockPlacementIndex]
+            : null;
+    }
+
+    private bool HasDockPlacements()
+    {
+        return dockPlacements != null && dockPlacements.Count > 0;
+    }
+
+    private void StartBoatReadyShake()
+    {
+        StopBoatReadyShake(true);
+
+        int boatCount = Mathf.Min(managedBoats.Count, boatStartPositions != null ? boatStartPositions.Length : 0);
+        boatReadyTweens = new Tween[boatCount];
+        for (int i = 0; i < boatCount; i++)
+        {
+            RectTransform boat = managedBoats[i];
+            if (boat == null || !boat.gameObject.activeInHierarchy)
+            {
+                continue;
+            }
+
+            boat.position = boatStartPositions[i];
+            boatReadyTweens[i] = boat
+                .DOShakePosition(
+                    BoatReadyVibrationDuration,
+                    BoatReadyVibrationStrength,
+                    BoatReadyVibrato,
+                    BoatReadyRandomness,
+                    false,
+                    false)
+                .SetLoops(-1, LoopType.Restart)
+                .SetEase(Ease.Linear);
+        }
+    }
+
+    private void StopBoatReadyShake(bool restoreStartPositions)
+    {
+        if (boatReadyTweens != null)
+        {
+            for (int i = 0; i < boatReadyTweens.Length; i++)
+            {
+                if (boatReadyTweens[i] != null && boatReadyTweens[i].IsActive())
+                {
+                    boatReadyTweens[i].Kill(false);
+                }
+            }
+
+            boatReadyTweens = null;
+        }
+
+        if (restoreStartPositions)
+        {
+            RestoreBoatStartPositions();
+        }
+    }
+
+    private void StopBoatReadyShakeForMovements(List<BoatMovement> movements, bool restoreTweenPosition)
+    {
+        if (movements == null || boatReadyTweens == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < movements.Count; i++)
+        {
+            BoatMovement movement = movements[i];
+            StopBoatReadyShakeForBoat(movement != null ? movement.Boat : null, restoreTweenPosition);
+        }
+    }
+
+    private void StopBoatReadyShakeForBoat(RectTransform boat, bool restoreTweenPosition)
+    {
+        int boatIndex = GetManagedBoatIndex(boat);
+        if (boatIndex < 0 ||
+            boatReadyTweens == null ||
+            boatIndex >= boatReadyTweens.Length ||
+            boatReadyTweens[boatIndex] == null ||
+            !boatReadyTweens[boatIndex].IsActive())
+        {
+            return;
+        }
+
+        boatReadyTweens[boatIndex].Kill(false);
+        boatReadyTweens[boatIndex] = null;
+
+        if (restoreTweenPosition &&
+            boatStartPositions != null &&
+            boatIndex < boatStartPositions.Length &&
+            boat != null)
+        {
+            boat.position = boatStartPositions[boatIndex];
+        }
+    }
+
+    private void RestoreBoatStartPositions()
+    {
+        if (boatStartPositions == null)
+        {
+            return;
+        }
+
+        int boatCount = Mathf.Min(managedBoats.Count, boatStartPositions.Length);
+        for (int i = 0; i < boatCount; i++)
+        {
+            RectTransform boat = managedBoats[i];
+            if (boat != null)
+            {
+                boat.position = boatStartPositions[i];
+            }
+        }
+    }
+
+    private int GetManagedBoatIndex(RectTransform boat)
+    {
+        if (boat == null)
+        {
+            return -1;
+        }
+
+        for (int i = 0; i < managedBoats.Count; i++)
+        {
+            if (managedBoats[i] == boat)
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private void ResetToolWithShake(MissionTwoStep step)
@@ -761,5 +1097,27 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
             InitialEffectScale = EffectObject != null ? EffectObject.transform.localScale : Vector3.one;
             InitialEffectColor = EffectImage != null ? EffectImage.color : Color.white;
         }
+    }
+
+    [Serializable]
+    private sealed class BoatMovement
+    {
+        [SerializeField] private RectTransform boat;
+        [SerializeField] private RectTransform target;
+        [SerializeField] private GameObject jet;
+
+        public RectTransform Boat => boat;
+        public RectTransform Target => target;
+        public GameObject Jet => jet;
+    }
+
+    [Serializable]
+    private sealed class DockPlacement
+    {
+        [SerializeField] private GameObject dock;
+        [SerializeField] private List<BoatMovement> boatMovements = new List<BoatMovement>();
+
+        public GameObject Dock => dock;
+        public List<BoatMovement> BoatMovements => boatMovements;
     }
 }
