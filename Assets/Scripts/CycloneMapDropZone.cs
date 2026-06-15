@@ -7,11 +7,13 @@ public sealed class CycloneMapDropZone : MonoBehaviour
 
     [SerializeField] private Image image;
     [SerializeField] private bool proneArea;
+    [SerializeField] private Sprite notificationSprite;
 
     private Color originalColor;
     private bool isPlaced;
 
     public bool CanAcceptMarker => proneArea && !isPlaced;
+    public Sprite NotificationSprite => notificationSprite;
 
     public void Configure()
     {
