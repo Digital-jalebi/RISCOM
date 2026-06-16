@@ -1,0 +1,3014 @@
+fileFormatVersion: 2
+guid: 42bbc7a7d5da7dd4aaeac83599d86822
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7367545364538426747
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__0"
+  - first:
+      213: 4125921358328146430
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__1"
+  - first:
+      213: -1177127147199255531
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__2"
+  - first:
+      213: 5307396158157388470
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__3"
+  - first:
+      213: -3510335727717632186
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__4"
+  - first:
+      213: 6838654562933825498
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__5"
+  - first:
+      213: 3295106754338527492
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__6"
+  - first:
+      213: -8729001187050106042
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__7"
+  - first:
+      213: 4283347740073005646
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__8"
+  - first:
+      213: -3536995929333226300
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__9"
+  - first:
+      213: 8187779160277783694
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__10"
+  - first:
+      213: 6980282772926135147
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__11"
+  - first:
+      213: -123816498755106570
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__12"
+  - first:
+      213: -471564889156548555
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__13"
+  - first:
+      213: 6787657148934195420
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__14"
+  - first:
+      213: 5141765069806403519
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__15"
+  - first:
+      213: -7446705134617901195
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__16"
+  - first:
+      213: 1578141897275364979
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__17"
+  - first:
+      213: 5021131240609975203
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__18"
+  - first:
+      213: -4820968983556543980
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__19"
+  - first:
+      213: -8073856694074369057
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__20"
+  - first:
+      213: 2919262339532486860
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__21"
+  - first:
+      213: -6447225845603192241
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__22"
+  - first:
+      213: 6482250914639275020
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__23"
+  - first:
+      213: 3547810762766606014
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__24"
+  - first:
+      213: 8560442583280873147
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__25"
+  - first:
+      213: 316242407979357436
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__26"
+  - first:
+      213: -2384229901945041639
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__27"
+  - first:
+      213: 4456789782312747824
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__28"
+  - first:
+      213: -3125051442879519811
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__29"
+  - first:
+      213: -6617984239236929088
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__30"
+  - first:
+      213: 1560686669789151849
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__31"
+  - first:
+      213: 8105296769316062859
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__32"
+  - first:
+      213: -7774023196004000432
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__33"
+  - first:
+      213: -6244386035993691936
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__34"
+  - first:
+      213: 3029085417535564310
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__35"
+  - first:
+      213: 6966301756977265762
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__36"
+  - first:
+      213: 6600044596404511295
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__37"
+  - first:
+      213: -802470810172957811
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__38"
+  - first:
+      213: 8507710872165998946
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__39"
+  - first:
+      213: -4615551543103086300
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__40"
+  - first:
+      213: 1769395330614109041
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__41"
+  - first:
+      213: 2576562654945538378
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__42"
+  - first:
+      213: -8703165433953569477
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__43"
+  - first:
+      213: -616120222429630041
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__44"
+  - first:
+      213: -3833121104063816973
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__45"
+  - first:
+      213: 1189513964940940991
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__46"
+  - first:
+      213: -749043063289842278
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__47"
+  - first:
+      213: -191096749973747458
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__48"
+  - first:
+      213: -1123624981277978529
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__49"
+  - first:
+      213: 6692451833416045114
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__50"
+  - first:
+      213: 1900349725115568937
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__51"
+  - first:
+      213: -6922689146842329911
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__52"
+  - first:
+      213: -2999491202521489271
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__53"
+  - first:
+      213: -6664963334555275646
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__54"
+  - first:
+      213: 6641133269597180129
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__55"
+  - first:
+      213: -6841532226416964498
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__56"
+  - first:
+      213: -8767579324781049227
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__57"
+  - first:
+      213: 8420471113428765095
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__58"
+  - first:
+      213: 2990846404400084050
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__59"
+  - first:
+      213: -370743954046751293
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__60"
+  - first:
+      213: 6334880614559094590
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__61"
+  - first:
+      213: -2114486828196410740
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__62"
+  - first:
+      213: -4226672215656769567
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__63"
+  - first:
+      213: -7675074467380157737
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__64"
+  - first:
+      213: 4165708671340456024
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__65"
+  - first:
+      213: -2132745775893837504
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__66"
+  - first:
+      213: 5718903431912897914
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__67"
+  - first:
+      213: -8756375871377547805
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__68"
+  - first:
+      213: 5908818133885737671
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__69"
+  - first:
+      213: 4137412090156088551
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__70"
+  - first:
+      213: 7668095474766730713
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__71"
+  - first:
+      213: 6142679220743235582
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__72"
+  - first:
+      213: -204438143575006917
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__73"
+  - first:
+      213: 2405047534444771597
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__74"
+  - first:
+      213: 2182219253991993548
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__75"
+  - first:
+      213: 8170062937496947849
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__76"
+  - first:
+      213: 2144379353036561252
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__77"
+  - first:
+      213: 1120161338735679944
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__78"
+  - first:
+      213: 6521373857303179621
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__79"
+  - first:
+      213: 4195130772571251196
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__80"
+  - first:
+      213: 968632255709528661
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__81"
+  - first:
+      213: 5120842960799465775
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__82"
+  - first:
+      213: 8575688996065052118
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__83"
+  - first:
+      213: 815222260687182439
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__84"
+  - first:
+      213: 3057874963224493330
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__85"
+  - first:
+      213: -3004605986795734923
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__86"
+  - first:
+      213: -861447709134269390
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__87"
+  - first:
+      213: 4175046745163122300
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__88"
+  - first:
+      213: 1593235853748456302
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__89"
+  - first:
+      213: 4784560843431011626
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__90"
+  - first:
+      213: -2070475099821238937
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__91"
+  - first:
+      213: 1653309233796241639
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__92"
+  - first:
+      213: 3518436136733847484
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__93"
+  - first:
+      213: -4618284183366176626
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__94"
+  - first:
+      213: 2990717373139264123
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__95"
+  - first:
+      213: -7894955194656212717
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__96"
+  - first:
+      213: 4332327617031239582
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__97"
+  - first:
+      213: -7368481386180802838
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__98"
+  - first:
+      213: 4692323204685602348
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__99"
+  - first:
+      213: -3992674290357665087
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__100"
+  - first:
+      213: 65788095400620726
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__101"
+  - first:
+      213: 3949916643521987251
+    second: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+      boats) Deploy communication tools\_ Manage Jetty Capacity\__102"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7583ef5977ce3660800000000000000
+      internalID: 7367545364538426747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__1"
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 84
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9a8568d97324930800000000000000
+      internalID: 4125921358328146430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__2"
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 84
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c28b7a8110aafe0800000000000000
+      internalID: -1177127147199255531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__3"
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 84
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba7e31afa8a7a940800000000000000
+      internalID: 5307396158157388470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__4"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 84
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64737031148c84fc0800000000000000
+      internalID: -3510335727717632186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__5"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 84
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf564d9718c7ee50800000000000000
+      internalID: 6838654562933825498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__6"
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 84
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409965582229abd20800000000000000
+      internalID: 3295106754338527492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__7"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 84
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6435ae92bab5cd680800000000000000
+      internalID: -8729001187050106042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__8"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 84
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4216805312817b30800000000000000
+      internalID: 4283347740073005646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__9"
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 84
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c4271c21f01aeec0800000000000000
+      internalID: -3536995929333226300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__10"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 84
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8414bbf3c5d0a170800000000000000
+      internalID: 8187779160277783694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__11"
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 84
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b7a08e232fed060800000000000000
+      internalID: 6980282772926135147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__12"
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 84
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f88e56ec8d184ef0800000000000000
+      internalID: -123816498755106570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__13"
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 84
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53807455b3aa479f0800000000000000
+      internalID: -471564889156548555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__14"
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 84
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd80d53e63a923e50800000000000000
+      internalID: 6787657148934195420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__15"
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 84
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf7258b6183b5740800000000000000
+      internalID: 5141765069806403519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__16"
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 82
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577c508622df7a890800000000000000
+      internalID: -7446705134617901195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__17"
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 84
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3765248b1bfa6e510800000000000000
+      internalID: 1578141897275364979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__18"
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 84
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab8c2f9244aea540800000000000000
+      internalID: 5021131240609975203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__19"
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 84
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41aafe5804a781db0800000000000000
+      internalID: -4820968983556543980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__20"
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 84
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb99462d16e3ff80800000000000000
+      internalID: -8073856694074369057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__21"
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 84
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8720281ad438820800000000000000
+      internalID: 2919262339532486860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__22"
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 84
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42ba16904ad686a0800000000000000
+      internalID: -6447225845603192241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__23"
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 84
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c046608ccd495f950800000000000000
+      internalID: 6482250914639275020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__24"
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 84
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebed205771b5c3130800000000000000
+      internalID: 3547810762766606014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__25"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 84
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe6590ac2dccc670800000000000000
+      internalID: 8560442583280873147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__26"
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 84
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf416866bc4836400800000000000000
+      internalID: 316242407979357436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__27"
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 84
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d83bf498389eed0800000000000000
+      internalID: -2384229901945041639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__28"
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 84
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0338755a1b2b9dd30800000000000000
+      internalID: 4456789782312747824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__29"
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 84
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3285a154691a4d0800000000000000
+      internalID: -3125051442879519811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__30"
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 84
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c92623e5623824a0800000000000000
+      internalID: -6617984239236929088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__31"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 57
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962487ed14ca8a510800000000000000
+      internalID: 1560686669789151849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__32"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 57
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86843ec77ccb7070800000000000000
+      internalID: 8105296769316062859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__33"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 57
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05dd88e771f1d1490800000000000000
+      internalID: -7774023196004000432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__34"
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8bf240cfb7759a0800000000000000
+      internalID: -6244386035993691936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__35"
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 57
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ae5827329790a20800000000000000
+      internalID: 3029085417535564310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__36"
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c3fc6f9864da060800000000000000
+      internalID: 6966301756977265762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__37"
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 53
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f326d668791189b50800000000000000
+      internalID: 6600044596404511295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__38"
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 57
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b5501cc0d0dd4f0800000000000000
+      internalID: -802470810172957811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__39"
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 53
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261ee2366f5711670800000000000000
+      internalID: 8507710872165998946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__40"
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 57
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421a5d6635442ffb0800000000000000
+      internalID: -4615551543103086300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__41"
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 57
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1732d74bda72e8810800000000000000
+      internalID: 1769395330614109041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__42"
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41f09d551ac1c320800000000000000
+      internalID: 2576562654945538378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__43"
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 57
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b353dbf2625283780800000000000000
+      internalID: -8703165433953569477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__44"
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 57
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1b52b0ce91377f0800000000000000
+      internalID: -616120222429630041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__45"
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 57
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa19332aa40ecac0800000000000000
+      internalID: -3833121104063816973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__46"
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 57
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6dba716a0028010800000000000000
+      internalID: 1189513964940940991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__47"
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 57
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9573237d4dda95f0800000000000000
+      internalID: -749043063289842278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__48"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef84514b486195df0800000000000000
+      internalID: -191096749973747458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__49"
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50db2268051860f0800000000000000
+      internalID: -1123624981277978529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__50"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 57
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32dc2ffb7d50ec50800000000000000
+      internalID: 6692451833416045114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__51"
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923568aa1066f5a10800000000000000
+      internalID: 1900349725115568937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__52"
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 57
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ccc20026eaadef90800000000000000
+      internalID: -6922689146842329911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__53"
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 57
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9802ccea4aaaf56d0800000000000000
+      internalID: -2999491202521489271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__54"
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 57
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e64d2e82b4183a0800000000000000
+      internalID: -6664963334555275646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__55"
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 57
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e05e50c58b0a2c50800000000000000
+      internalID: 6641133269597180129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__56"
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 57
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c870520befd01a0800000000000000
+      internalID: -6841532226416964498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__57"
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 57
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57acd568e0d435680800000000000000
+      internalID: -8767579324781049227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__58"
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 57
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a90c553dd58bd470800000000000000
+      internalID: 8420471113428765095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__59"
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 57
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254750865fe918920800000000000000
+      internalID: 2990846404400084050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__60"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 54
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd6b6c865adadaf0800000000000000
+      internalID: -370743954046751293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__61"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e379d45fa540ae750800000000000000
+      internalID: 6334880614559094590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__62"
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 30
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8a4c1bce65d7a2e0800000000000000
+      internalID: -2114486828196410740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__63"
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 30
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7d3c38308d755c0800000000000000
+      internalID: -4226672215656769567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__64"
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 30
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2a22baf68ac7590800000000000000
+      internalID: -7675074467380157737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__65"
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 26
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858230937f19fc930800000000000000
+      internalID: 4165708671340456024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__66"
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 30
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04902af3407f662e0800000000000000
+      internalID: -2132745775893837504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__67"
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 26
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d3eeb0f50ad5f40800000000000000
+      internalID: 5718903431912897914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__68"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed5dbac98a1b7680800000000000000
+      internalID: -8756375871377547805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__69"
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca55a859c6500250800000000000000
+      internalID: 5908818133885737671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__70"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 30
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecf823006a0b6930800000000000000
+      internalID: 4137412090156088551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__71"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 30
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5504df43c8a6a60800000000000000
+      internalID: 7668095474766730713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__72"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 30
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7e299b43e2f3550800000000000000
+      internalID: 6142679220743235582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__73"
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31eba17790b92df0800000000000000
+      internalID: -204438143575006917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__74"
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 30
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0972867df1706120800000000000000
+      internalID: 2405047534444771597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__75"
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0f53089dcc84e10800000000000000
+      internalID: 2182219253991993548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__76"
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 30
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c071e64f4e16170800000000000000
+      internalID: 8170062937496947849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__77"
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 30
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b1d6109ad52cd10800000000000000
+      internalID: 2144379353036561252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__78"
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 30
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9577e7dcc9b8f00800000000000000
+      internalID: 1120161338735679944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__79"
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 30
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5613314b8f2908a50800000000000000
+      internalID: 6521373857303179621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__80"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 30
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf16b6df539183a30800000000000000
+      internalID: 4195130772571251196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__81"
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 30
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5524d8f87e5417d00800000000000000
+      internalID: 968632255709528661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__82"
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 30
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21030d9a83e01740800000000000000
+      internalID: 5120842960799465775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__83"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d50faab4b7f20770800000000000000
+      internalID: 8575688996065052118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__84"
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a104da350405b00800000000000000
+      internalID: 815222260687182439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__85"
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d7e86e311cf6a20800000000000000
+      internalID: 3057874963224493330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__86"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578370b26ce7d46d0800000000000000
+      internalID: -3004605986795734923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__87"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 3
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2345a786fd58b04f0800000000000000
+      internalID: -861447709134269390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__88"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c764916f4eeb0f930800000000000000
+      internalID: 4175046745163122300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__89"
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bc712519f4c1610800000000000000
+      internalID: 1593235853748456302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__90"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25e2f6ccbc266240800000000000000
+      internalID: 4784560843431011626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__91"
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7651dd6ddd13443e0800000000000000
+      internalID: -2070475099821238937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__92"
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e85c401dfbb1f610800000000000000
+      internalID: 1653309233796241639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__93"
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf2bee560ff3d030800000000000000
+      internalID: 3518436136733847484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__94"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8077a2010f88efb0800000000000000
+      internalID: -4618284183366176626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__95"
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b722e89fa99218920800000000000000
+      internalID: 2990717373139264123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__96"
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 3
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31934e8641c7f6290800000000000000
+      internalID: -7894955194656212717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__97"
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97f2c793058f1c30800000000000000
+      internalID: 4332327617031239582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__98"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 0
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae68d9a1835edb990800000000000000
+      internalID: -7368481386180802838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__99"
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e9b9af71b7e1140800000000000000
+      internalID: 4692323204685602348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__100"
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2856313eb2798c0800000000000000
+      internalID: -3992674290357665087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__101"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 3
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2bdc89ce9b9e000800000000000000
+      internalID: 65788095400620726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Locate the boats (Use radars & boat\Ltracking systems to locate the
+        boats) Deploy communication tools\_ Manage Jetty Capacity\__102"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2088d724ce0d630800000000000000
+      internalID: 3949916643521987251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__0": 7367545364538426747
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__1": 4125921358328146430
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__10": 8187779160277783694
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__100": -3992674290357665087
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__101": 65788095400620726
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__102": 3949916643521987251
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__11": 6980282772926135147
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__12": -123816498755106570
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__13": -471564889156548555
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__14": 6787657148934195420
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__15": 5141765069806403519
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__16": -7446705134617901195
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__17": 1578141897275364979
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__18": 5021131240609975203
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__19": -4820968983556543980
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__2": -1177127147199255531
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__20": -8073856694074369057
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__21": 2919262339532486860
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__22": -6447225845603192241
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__23": 6482250914639275020
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__24": 3547810762766606014
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__25": 8560442583280873147
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__26": 316242407979357436
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__27": -2384229901945041639
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__28": 4456789782312747824
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__29": -3125051442879519811
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__3": 5307396158157388470
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__30": -6617984239236929088
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__31": 1560686669789151849
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__32": 8105296769316062859
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__33": -7774023196004000432
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__34": -6244386035993691936
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__35": 3029085417535564310
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__36": 6966301756977265762
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__37": 6600044596404511295
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__38": -802470810172957811
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__39": 8507710872165998946
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__4": -3510335727717632186
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__40": -4615551543103086300
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__41": 1769395330614109041
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__42": 2576562654945538378
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__43": -8703165433953569477
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__44": -616120222429630041
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__45": -3833121104063816973
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__46": 1189513964940940991
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__47": -749043063289842278
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__48": -191096749973747458
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__49": -1123624981277978529
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__5": 6838654562933825498
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__50": 6692451833416045114
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__51": 1900349725115568937
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__52": -6922689146842329911
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__53": -2999491202521489271
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__54": -6664963334555275646
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__55": 6641133269597180129
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__56": -6841532226416964498
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__57": -8767579324781049227
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__58": 8420471113428765095
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__59": 2990846404400084050
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__6": 3295106754338527492
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__60": -370743954046751293
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__61": 6334880614559094590
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__62": -2114486828196410740
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__63": -4226672215656769567
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__64": -7675074467380157737
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__65": 4165708671340456024
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__66": -2132745775893837504
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__67": 5718903431912897914
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__68": -8756375871377547805
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__69": 5908818133885737671
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__7": -8729001187050106042
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__70": 4137412090156088551
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__71": 7668095474766730713
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__72": 6142679220743235582
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__73": -204438143575006917
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__74": 2405047534444771597
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__75": 2182219253991993548
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__76": 8170062937496947849
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__77": 2144379353036561252
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__78": 1120161338735679944
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__79": 6521373857303179621
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__8": 4283347740073005646
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__80": 4195130772571251196
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__81": 968632255709528661
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__82": 5120842960799465775
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__83": 8575688996065052118
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__84": 815222260687182439
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__85": 3057874963224493330
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__86": -3004605986795734923
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__87": -861447709134269390
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__88": 4175046745163122300
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__89": 1593235853748456302
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__9": -3536995929333226300
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__90": 4784560843431011626
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__91": -2070475099821238937
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__92": 1653309233796241639
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__93": 3518436136733847484
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__94": -4618284183366176626
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__95": 2990717373139264123
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__96": -7894955194656212717
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__97": 4332327617031239582
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__98": -7368481386180802838
+      "Locate the boats (Use radars & boat\Ltracking systems to locate the boats) Deploy communication tools\_ Manage Jetty Capacity\__99": 4692323204685602348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
