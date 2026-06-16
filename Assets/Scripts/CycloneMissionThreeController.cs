@@ -37,6 +37,8 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
     private readonly MissionThreeBusTool[] busTools = new MissionThreeBusTool[BusToolCount];
     private readonly List<Vector3> pathBuffer = new List<Vector3>();
+    private readonly Vector3[] draggedToolWorldCorners = new Vector3[4];
+    private readonly Vector3[] targetWorldCorners = new Vector3[4];
 
     private Action onReportNext;
     private bool configured;
@@ -418,7 +420,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         MissionThreeBusTool droppedTool = draggedBusTool;
         draggedBusTool = null;
 
-        int villageIndex = FindVillageAt(screenPosition);
+        int villageIndex = FindVillageForDroppedTool(droppedTool, screenPosition);
         if (villageIndex >= 0 && CanEvacuateFromVillage(villageIndex))
         {
             StartEvacuationTrip(droppedTool, villageIndex);
@@ -464,6 +466,42 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         }
 
         return -1;
+    }
+
+    private int FindVillageForDroppedTool(MissionThreeBusTool tool, Vector2 screenPosition)
+    {
+        int overlappingVillageIndex = FindBestOverlappingVillage(tool != null ? tool.ToolTransform : null);
+        return overlappingVillageIndex >= 0 ? overlappingVillageIndex : FindVillageAt(screenPosition);
+    }
+
+    private int FindBestOverlappingVillage(RectTransform draggedTransform)
+    {
+        if (draggedTransform == null || villages == null)
+        {
+            return -1;
+        }
+
+        Rect draggedRect = GetScreenRect(draggedTransform, draggedToolWorldCorners);
+        float bestOverlapArea = 0f;
+        int bestIndex = -1;
+
+        for (int i = 0; i < villages.Length; i++)
+        {
+            RectTransform village = villages[i];
+            if (village == null || !village.gameObject.activeInHierarchy)
+            {
+                continue;
+            }
+
+            float overlapArea = GetOverlapArea(draggedRect, GetScreenRect(village, targetWorldCorners));
+            if (overlapArea > bestOverlapArea)
+            {
+                bestOverlapArea = overlapArea;
+                bestIndex = i;
+            }
+        }
+
+        return bestOverlapArea > 0f ? bestIndex : -1;
     }
 
     private bool CanEvacuateFromVillage(int villageIndex)
@@ -1463,6 +1501,29 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
                     : remainingCapacity.ToString();
             }
         }
+    }
+
+    private static Rect GetScreenRect(RectTransform rectTransform, Vector3[] worldCorners)
+    {
+        rectTransform.GetWorldCorners(worldCorners);
+
+        Vector2 min = RectTransformUtility.WorldToScreenPoint(null, worldCorners[0]);
+        Vector2 max = min;
+        for (int i = 1; i < worldCorners.Length; i++)
+        {
+            Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, worldCorners[i]);
+            min = Vector2.Min(min, screenPoint);
+            max = Vector2.Max(max, screenPoint);
+        }
+
+        return Rect.MinMaxRect(min.x, min.y, max.x, max.y);
+    }
+
+    private static float GetOverlapArea(Rect first, Rect second)
+    {
+        float overlapWidth = Mathf.Min(first.xMax, second.xMax) - Mathf.Max(first.xMin, second.xMin);
+        float overlapHeight = Mathf.Min(first.yMax, second.yMax) - Mathf.Max(first.yMin, second.yMin);
+        return overlapWidth > 0f && overlapHeight > 0f ? overlapWidth * overlapHeight : 0f;
     }
 
     private static bool TryGetPointerWorldPosition(MissionThreeBusTool tool, Vector2 screenPosition, out Vector3 pointerWorldPosition)

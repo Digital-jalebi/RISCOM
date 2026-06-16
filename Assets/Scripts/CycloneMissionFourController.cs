@@ -28,6 +28,8 @@ public sealed class CycloneMissionFourController : MonoBehaviour
     private MissionFourPair draggedPair;
     private Vector3 dragWorldOffset;
     private Coroutine shakeRoutine;
+    private readonly Vector3[] draggedToolWorldCorners = new Vector3[4];
+    private readonly Vector3[] targetWorldCorners = new Vector3[4];
 
     public void Configure(Action reportNextHandler = null)
     {
@@ -303,7 +305,7 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         MissionFourPair droppedPair = draggedPair;
         draggedPair = null;
 
-        MissionFourPair targetPair = FindNeedAt(screenPosition);
+        MissionFourPair targetPair = FindNeedForDroppedTool(droppedPair, screenPosition);
         if (CanFulfillNeedWithTool(targetPair, droppedPair))
         {
             AcceptPair(targetPair);
@@ -361,6 +363,44 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         }
 
         return null;
+    }
+
+    private MissionFourPair FindNeedForDroppedTool(MissionFourPair droppedPair, Vector2 screenPosition)
+    {
+        MissionFourPair overlappingPair = FindBestOverlappingNeed(droppedPair);
+        return overlappingPair != null ? overlappingPair : FindNeedAt(screenPosition);
+    }
+
+    private MissionFourPair FindBestOverlappingNeed(MissionFourPair droppedPair)
+    {
+        if (pairs == null || droppedPair == null || droppedPair.ToolTransform == null)
+        {
+            return null;
+        }
+
+        Rect draggedRect = GetScreenRect(droppedPair.ToolTransform, draggedToolWorldCorners);
+        float bestOverlapArea = 0f;
+        MissionFourPair bestPair = null;
+
+        for (int i = 0; i < pairs.Length; i++)
+        {
+            MissionFourPair pair = pairs[i];
+            if (pair == null || pair.Fulfilled || pair.NeedTransform == null ||
+                !pair.NeedTransform.gameObject.activeInHierarchy ||
+                !CanFulfillNeedWithTool(pair, droppedPair))
+            {
+                continue;
+            }
+
+            float overlapArea = GetOverlapArea(draggedRect, GetScreenRect(pair.NeedTransform, targetWorldCorners));
+            if (overlapArea > bestOverlapArea)
+            {
+                bestOverlapArea = overlapArea;
+                bestPair = pair;
+            }
+        }
+
+        return bestOverlapArea > 0f ? bestPair : null;
     }
 
     private void AcceptPair(MissionFourPair pair)
@@ -562,6 +602,29 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         RectTransform parentRect = pair.ToolTransform.parent as RectTransform;
         return parentRect != null &&
                RectTransformUtility.ScreenPointToWorldPointInRectangle(parentRect, screenPosition, null, out pointerWorldPosition);
+    }
+
+    private static Rect GetScreenRect(RectTransform rectTransform, Vector3[] worldCorners)
+    {
+        rectTransform.GetWorldCorners(worldCorners);
+
+        Vector2 min = RectTransformUtility.WorldToScreenPoint(null, worldCorners[0]);
+        Vector2 max = min;
+        for (int i = 1; i < worldCorners.Length; i++)
+        {
+            Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(null, worldCorners[i]);
+            min = Vector2.Min(min, screenPoint);
+            max = Vector2.Max(max, screenPoint);
+        }
+
+        return Rect.MinMaxRect(min.x, min.y, max.x, max.y);
+    }
+
+    private static float GetOverlapArea(Rect first, Rect second)
+    {
+        float overlapWidth = Mathf.Min(first.xMax, second.xMax) - Mathf.Max(first.xMin, second.xMin);
+        float overlapHeight = Mathf.Min(first.yMax, second.yMax) - Mathf.Max(first.yMin, second.yMin);
+        return overlapWidth > 0f && overlapHeight > 0f ? overlapWidth * overlapHeight : 0f;
     }
 
     private static void SetActive(GameObject target, bool active)
