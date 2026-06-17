@@ -1698,7 +1698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &81056684
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3306,7 +3306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &239208813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5289,6 +5289,111 @@ MonoBehaviour:
   - textImage: {fileID: 1543020957}
     englishSprite: {fileID: 7864736559111288526, guid: f6d0edc4a9244ad4b9b7bb294da97598, type: 3}
     gujaratiSprite: {fileID: -6551690676813609843, guid: d526e50f09433ed408c94cb10619e506, type: 3}
+  - textImage: {fileID: 292968125}
+    englishSprite: {fileID: 21300000, guid: cdafd438cb113c6429c7f970623fabf2, type: 3}
+    gujaratiSprite: {fileID: 6937817954938267909, guid: 4a26eac44aa8c594a8a902c4ac66b030, type: 3}
+  - textImage: {fileID: 3586595}
+    englishSprite: {fileID: 21300000, guid: 6f75bd7dcf77bc544aa8249e75d4198a, type: 3}
+    gujaratiSprite: {fileID: -1827596232547674411, guid: 39bf8f94d77262942bf26bedb6169bdd, type: 3}
+  - textImage: {fileID: 1187203231}
+    englishSprite: {fileID: -6525821349429924307, guid: 7c035da33651a73459f43fa1572649e8, type: 3}
+    gujaratiSprite: {fileID: 3451849350764321825, guid: d88f68341172fbd49998020b3ed3dea0, type: 3}
+  - textImage: {fileID: 848881704}
+    englishSprite: {fileID: -7468520094919412627, guid: 1da582607c9486843a2f92e73d62c181, type: 3}
+    gujaratiSprite: {fileID: 5295499055166363598, guid: 31421d878757eaa4abd2014670e05451, type: 3}
+  - textImage: {fileID: 1582218096}
+    englishSprite: {fileID: -7747501261149883207, guid: 094774051bf30274eb6f0fe25b2f6313, type: 3}
+    gujaratiSprite: {fileID: 4613688577863456977, guid: 428430afee2f7db4d84af4a2a961f16f, type: 3}
+  - textImage: {fileID: 1631940184}
+    englishSprite: {fileID: 21300000, guid: 92f2020dce159874191c4a906671bbef, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f7c0b49bc58ad3f40860878a44438287, type: 3}
+  - textImage: {fileID: 1161361697}
+    englishSprite: {fileID: 21300000, guid: 92f2020dce159874191c4a906671bbef, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f7c0b49bc58ad3f40860878a44438287, type: 3}
+  - textImage: {fileID: 1451760289}
+    englishSprite: {fileID: 21300000, guid: 92f2020dce159874191c4a906671bbef, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f7c0b49bc58ad3f40860878a44438287, type: 3}
+  - textImage: {fileID: 1920050300}
+    englishSprite: {fileID: 21300000, guid: 92f2020dce159874191c4a906671bbef, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f7c0b49bc58ad3f40860878a44438287, type: 3}
+  - textImage: {fileID: 828865096}
+    englishSprite: {fileID: 21300000, guid: 92f2020dce159874191c4a906671bbef, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f7c0b49bc58ad3f40860878a44438287, type: 3}
+  - textImage: {fileID: 1062899103}
+    englishSprite: {fileID: 21300000, guid: 92f2020dce159874191c4a906671bbef, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f7c0b49bc58ad3f40860878a44438287, type: 3}
+  - textImage: {fileID: 1677021513}
+    englishSprite: {fileID: -2288327927258726190, guid: 03ce9d054476af24cb846bce8645c059, type: 3}
+    gujaratiSprite: {fileID: 1404302004919415239, guid: f8374a7bf894861418d1894c3ee8b0b7, type: 3}
+  - textImage: {fileID: 1909622287}
+    englishSprite: {fileID: 2931364262102114148, guid: 956fe8da22f384944b01c00535b9134b, type: 3}
+    gujaratiSprite: {fileID: -1460164745606179854, guid: c13900b01c321dd4ab57f41d8bdd7a9f, type: 3}
+  - textImage: {fileID: 239208814}
+    englishSprite: {fileID: -8970690079746002727, guid: 8683317d4d80c244990eae3f8924648e, type: 3}
+    gujaratiSprite: {fileID: -8970690079746002727, guid: 7f6447b8a9f4c7342aaf96ed060483cf, type: 3}
+  - textImage: {fileID: 72971764}
+    englishSprite: {fileID: 2244546668441954952, guid: cd596c28996f379469a2cd539e36d6cf, type: 3}
+    gujaratiSprite: {fileID: 2244546668441954952, guid: c962b01998fd6344d979aa729876fb71, type: 3}
+  - textImage: {fileID: 81056685}
+    englishSprite: {fileID: 8227290697772606730, guid: b29337f054c47aa42b474445b25c54ce, type: 3}
+    gujaratiSprite: {fileID: 2244546668441954952, guid: c962b01998fd6344d979aa729876fb71, type: 3}
+  - textImage: {fileID: 1783674990}
+    englishSprite: {fileID: -2297062914721739327, guid: 64a63c4ce4eef4a45998f3e05e05a29a, type: 3}
+    gujaratiSprite: {fileID: -2297062914721739327, guid: be4078ea0551fc34c8b5158593083dd5, type: 3}
+  - textImage: {fileID: 831208575}
+    englishSprite: {fileID: -386218955779764164, guid: d151733faaf2230479e62bdcb9551518, type: 3}
+    gujaratiSprite: {fileID: -3927940584374554515, guid: 7017c277867d99844baa716ffca09b5a, type: 3}
+  - textImage: {fileID: 112731174}
+    englishSprite: {fileID: -3151393226727017578, guid: 1fc5444994699ef40b63e97ba28e8707, type: 3}
+    gujaratiSprite: {fileID: -3151393226727017578, guid: 79921c526303c50498feecb71e64dbbb, type: 3}
+  - textImage: {fileID: 135971461}
+    englishSprite: {fileID: 21300000, guid: 81d7170e18779004194970e145ab1203, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 6fddcc72c1d916e42aaa4a6a83d036ca, type: 3}
+  - textImage: {fileID: 1363136097}
+    englishSprite: {fileID: 21300000, guid: c9adddcf18e955a4eb8fb5c0a0cc3e29, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 2214cea3b89d930408813e995cc9a06e, type: 3}
+  - textImage: {fileID: 34393462}
+    englishSprite: {fileID: 8372127648892566664, guid: 7a0f3ec90f2f22a439b72627760b14bc, type: 3}
+    gujaratiSprite: {fileID: 222010923461496621, guid: a0514bfa06d910245b411dbbec232f41, type: 3}
+  - textImage: {fileID: 1139435605}
+    englishSprite: {fileID: 8037943663571231698, guid: aee1cf9b30c8d6248aae2a60a791cab6, type: 3}
+    gujaratiSprite: {fileID: 4367366583540224377, guid: 8da53fd3995d4f24481b0cb572a4fb09, type: 3}
+  - textImage: {fileID: 25031264}
+    englishSprite: {fileID: 3368179810062295822, guid: fffeb96515547bd4a9728a51198ddc84, type: 3}
+    gujaratiSprite: {fileID: -9142950622455541898, guid: b877546662bbdc34bac7d8a8840bae67, type: 3}
+  - textImage: {fileID: 2083952500}
+    englishSprite: {fileID: -237407356920413862, guid: 7f65c018c2db293439b8eea9ec185ed5, type: 3}
+    gujaratiSprite: {fileID: -8970690079746002727, guid: 2778c9d876e9adf49b21e3e6b1e356cc, type: 3}
+  - textImage: {fileID: 884338445}
+    englishSprite: {fileID: 2931364262102114148, guid: 98e57a99fa383aa4aa70ca0d6ea60097, type: 3}
+    gujaratiSprite: {fileID: -1460164745606179854, guid: ef27f39d5de9c44408e7e6b1ef8ad353, type: 3}
+  - textImage: {fileID: 567683124}
+    englishSprite: {fileID: -30749221642623036, guid: 1a00a7c8f92929046a57a6ff6b1b3418, type: 3}
+    gujaratiSprite: {fileID: 4219933621856408239, guid: d60e829b0cb44dd4bbf1bdb002951933, type: 3}
+  - textImage: {fileID: 1231513918}
+    englishSprite: {fileID: 1574822407111015968, guid: 57d39b6f240a23e4d91dcd24cf8a6f00, type: 3}
+    gujaratiSprite: {fileID: -3015637008908077144, guid: 0a63f1ea0ca0a2a4e97455a6ea48bfa5, type: 3}
+  - textImage: {fileID: 1345314680}
+    englishSprite: {fileID: 2878500096443800913, guid: b8fb7ec65697f7b4385001ae694cc530, type: 3}
+    gujaratiSprite: {fileID: 5207813627429835742, guid: c86fcbadcdae49a4a949890a15ae47ea, type: 3}
+  - textImage: {fileID: 590449076}
+    englishSprite: {fileID: 2926450154067503810, guid: 7e09bc6ae99112e4c8f76a398e1143ed, type: 3}
+    gujaratiSprite: {fileID: 3995490682841565733, guid: 79dbe227ac0736147ba448a795fe286b, type: 3}
+  - textImage: {fileID: 1329886624}
+    englishSprite: {fileID: 21300000, guid: ad1230eea110e1341ac377cf73ff541e, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 3d0dc69916ed0e34a999e01055ebf4f2, type: 3}
+  - textImage: {fileID: 666059594}
+    englishSprite: {fileID: 21300000, guid: ad1230eea110e1341ac377cf73ff541e, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 1137ab3b89c5a7e4c97d60a289e34a9f, type: 3}
+  - textImage: {fileID: 273370129}
+    englishSprite: {fileID: 5207813627429835742, guid: 40abd5f5b1916d34385ed1c46b3ccb27, type: 3}
+    gujaratiSprite: {fileID: 5207813627429835742, guid: 40abd5f5b1916d34385ed1c46b3ccb27, type: 3}
+  - textImage: {fileID: 1981005364}
+    englishSprite: {fileID: -237407356920413862, guid: 7f65c018c2db293439b8eea9ec185ed5, type: 3}
+    gujaratiSprite: {fileID: -8970690079746002727, guid: 2778c9d876e9adf49b21e3e6b1e356cc, type: 3}
+  - textImage: {fileID: 1762356030}
+    englishSprite: {fileID: -237407356920413862, guid: 7f65c018c2db293439b8eea9ec185ed5, type: 3}
+    gujaratiSprite: {fileID: -1460164745606179854, guid: efc189c0a5d422443b3b3448d559714a, type: 3}
 --- !u!4 &441838023
 Transform:
   m_ObjectHideFlags: 0
@@ -8908,7 +9013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25.099976, y: -22.888977}
+  m_AnchoredPosition: {x: -25.100098, y: -22.888916}
   m_SizeDelta: {x: 204.7197, y: 40.1163}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &827007516
@@ -10006,7 +10111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &887463252
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17391,7 +17496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1560920958
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17844,7 +17949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1610331804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18551,7 +18656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1677021512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19300,7 +19405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1783674989
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21184,7 +21289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1909622286
 RectTransform:
   m_ObjectHideFlags: 0
