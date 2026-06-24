@@ -31,10 +31,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
     [SerializeField] private RectTransform boatExitBounds;
     [SerializeField] private float boatExitPadding = 140f;
     [SerializeField] private float boatExitDurationSeconds = 1.35f;
-    [SerializeField] private float boatBobAmplitude = 8f;
-    [SerializeField] private float boatBobFrequency = 4f;
-    [SerializeField] private float boatTiltDegrees = 8f;
-    [SerializeField] private float boatRotationOffsetDegrees = -90f;
+    [SerializeField] private float boatRotationOffsetDegrees = -30f;
     [SerializeField] private List<SosHouseTarget> sosHouseTargets = new List<SosHouseTarget>();
     [SerializeField] private List<BuildingTarget> buildingTargets = new List<BuildingTarget>();
 
@@ -754,62 +751,111 @@ public sealed class FloodMissionThreeController : MonoBehaviour
 
     private IEnumerator MoveBoatOutOfMap(SosHouseTarget target, RectTransform boatTransform)
     {
-        Vector3 currentPosition = boatTransform.position;
-        List<Vector3> routePositions = target.GetBoatRouteWorldPositions();
+        Vector3 startPosition = boatTransform.position;
+        List<Vector3> routePositions = new List<Vector3> { startPosition };
+        routePositions.AddRange(target.GetBoatRouteWorldPositions());
 
-        if (routePositions.Count == 0)
+        if (routePositions.Count == 1)
         {
             routePositions.Add(GetBoatExitPosition(boatTransform));
         }
 
-        for (int i = 0; i < routePositions.Count && boatTransform != null; i++)
-        {
-            Vector3 nextPosition = routePositions[i];
-            nextPosition.z = currentPosition.z;
-            yield return MoveBoatToRoutePoint(boatTransform, currentPosition, nextPosition);
-            currentPosition = nextPosition;
-        }
+        NormalizeRouteDepth(routePositions, startPosition.z);
+        yield return MoveBoatAlongRoute(boatTransform, routePositions, target.GetBoatRotationOffset(boatRotationOffsetDegrees));
 
         target.HideBoatAfterExit();
     }
 
-    private IEnumerator MoveBoatToRoutePoint(RectTransform boatTransform, Vector3 startPosition, Vector3 targetPosition)
+    private IEnumerator MoveBoatAlongRoute(RectTransform boatTransform, List<Vector3> routePositions, float rotationOffsetDegrees)
     {
-        Vector3 travelVector = targetPosition - startPosition;
-        float distance = travelVector.magnitude;
-        if (distance <= 0.001f)
+        if (boatTransform == null || routePositions == null || routePositions.Count < 2)
         {
             yield break;
         }
 
-        Vector3 travelDirection = travelVector / distance;
-        Vector3 bobDirection = new Vector3(-travelDirection.y, travelDirection.x, 0f).normalized;
-        float targetAngle = Mathf.Atan2(travelDirection.y, travelDirection.x) * Mathf.Rad2Deg + boatRotationOffsetDegrees;
-        Quaternion startRotation = boatTransform.localRotation;
-        Quaternion targetRotation = Quaternion.Euler(0f, 0f, targetAngle);
-        float elapsed = 0f;
-        float duration = Mathf.Max(0.05f, boatExitDurationSeconds);
-
-        while (elapsed < duration && boatTransform != null)
+        for (int segmentIndex = 0; segmentIndex < routePositions.Count - 1 && boatTransform != null; segmentIndex++)
         {
-            elapsed += Time.deltaTime;
-            float progress = Mathf.Clamp01(elapsed / duration);
-            float easedProgress = Mathf.SmoothStep(0f, 1f, progress);
-            float wave = Mathf.Sin(progress * Mathf.PI * boatBobFrequency);
-            Quaternion facingRotation = Quaternion.Lerp(startRotation, targetRotation, easedProgress);
+            Vector3 previousPoint = routePositions[Mathf.Max(segmentIndex - 1, 0)];
+            Vector3 startPoint = routePositions[segmentIndex];
+            Vector3 endPoint = routePositions[segmentIndex + 1];
+            Vector3 nextPoint = routePositions[Mathf.Min(segmentIndex + 2, routePositions.Count - 1)];
+            float elapsed = 0f;
+            float duration = Mathf.Max(0.05f, boatExitDurationSeconds);
 
-            boatTransform.position = Vector3.Lerp(startPosition, targetPosition, easedProgress) +
-                                     bobDirection * (wave * boatBobAmplitude);
-            boatTransform.localRotation = facingRotation * Quaternion.Euler(0f, 0f, wave * boatTiltDegrees);
+            FaceBoatToward(boatTransform, GetRouteTangent(previousPoint, startPoint, endPoint, nextPoint, 0f), rotationOffsetDegrees);
 
-            yield return null;
+            while (elapsed < duration && boatTransform != null)
+            {
+                elapsed += Time.deltaTime;
+                float progress = Mathf.Clamp01(elapsed / duration);
+                Vector3 routePosition = GetRoutePosition(previousPoint, startPoint, endPoint, nextPoint, progress);
+                Vector3 routeTangent = GetRouteTangent(previousPoint, startPoint, endPoint, nextPoint, progress);
+
+                boatTransform.position = routePosition;
+                FaceBoatToward(boatTransform, routeTangent, rotationOffsetDegrees);
+
+                yield return null;
+            }
+
+            if (boatTransform != null)
+            {
+                boatTransform.position = endPoint;
+                FaceBoatToward(boatTransform, endPoint - startPoint, rotationOffsetDegrees);
+            }
+        }
+    }
+
+    private static void NormalizeRouteDepth(List<Vector3> routePositions, float z)
+    {
+        for (int i = 0; i < routePositions.Count; i++)
+        {
+            Vector3 position = routePositions[i];
+            position.z = z;
+            routePositions[i] = position;
+        }
+    }
+
+    private static Vector3 GetRoutePosition(Vector3 previousPoint, Vector3 startPoint, Vector3 endPoint, Vector3 nextPoint, float progress)
+    {
+        if ((previousPoint - startPoint).sqrMagnitude <= 0.001f &&
+            (endPoint - nextPoint).sqrMagnitude <= 0.001f)
+        {
+            return Vector3.Lerp(startPoint, endPoint, progress);
         }
 
-        if (boatTransform != null)
+        float t2 = progress * progress;
+        float t3 = t2 * progress;
+
+        return 0.5f * ((2f * startPoint) +
+                       (-previousPoint + endPoint) * progress +
+                       (2f * previousPoint - 5f * startPoint + 4f * endPoint - nextPoint) * t2 +
+                       (-previousPoint + 3f * startPoint - 3f * endPoint + nextPoint) * t3);
+    }
+
+    private static Vector3 GetRouteTangent(Vector3 previousPoint, Vector3 startPoint, Vector3 endPoint, Vector3 nextPoint, float progress)
+    {
+        if ((previousPoint - startPoint).sqrMagnitude <= 0.001f &&
+            (endPoint - nextPoint).sqrMagnitude <= 0.001f)
         {
-            boatTransform.position = targetPosition;
-            boatTransform.localRotation = targetRotation;
+            return endPoint - startPoint;
         }
+
+        float t2 = progress * progress;
+
+        return 0.5f * ((-previousPoint + endPoint) +
+                       2f * (2f * previousPoint - 5f * startPoint + 4f * endPoint - nextPoint) * progress +
+                       3f * (-previousPoint + 3f * startPoint - 3f * endPoint + nextPoint) * t2);
+    }
+
+    private static void FaceBoatToward(RectTransform boatTransform, Vector3 direction, float rotationOffsetDegrees)
+    {
+        if (boatTransform == null || direction.sqrMagnitude <= 0.001f)
+        {
+            return;
+        }
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + rotationOffsetDegrees;
+        boatTransform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
     private Vector3 GetBoatExitPosition(RectTransform boatTransform)
@@ -1012,6 +1058,8 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         [SerializeField] private GameObject boatObject;
         [SerializeField] private RectTransform boatTransform;
         [SerializeField] private List<RectTransform> boatRoutePoints = new List<RectTransform>();
+        [SerializeField] private bool overrideBoatRotationOffset;
+        [SerializeField] private float boatRotationOffsetDegrees;
         [SerializeField] private GameObject infoIcon;
 
         private Vector2 initialBoatPosition;
@@ -1060,6 +1108,11 @@ public sealed class FloodMissionThreeController : MonoBehaviour
             }
 
             return routePositions;
+        }
+
+        public float GetBoatRotationOffset(float defaultOffset)
+        {
+            return overrideBoatRotationOffset ? boatRotationOffsetDegrees : defaultOffset;
         }
 
         public void HideBoatAfterExit()

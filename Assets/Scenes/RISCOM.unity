@@ -13497,6 +13497,9 @@ MonoBehaviour:
   - textImage: {fileID: 1867104774}
     englishSprite: {fileID: 21300000, guid: 1e311861e99687b46b506ada20ae8a66, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: c3d0655873b0a244aa3c9afa23e344e1, type: 3}
+  - textImage: {fileID: 1798755403}
+    englishSprite: {fileID: 21300000, guid: 16ca71d32e4068c4ea32550c3d23cf21, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 785338b9a7eff7c4eb3b567c97fddd6b, type: 3}
   - textImage: {fileID: 1908685152}
     englishSprite: {fileID: 21300000, guid: b0e3f57c543062b4bb4766db4e4818f2, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: b62ec3f1398ba8b4bacc47df9379120e, type: 3}
@@ -18838,6 +18841,7 @@ RectTransform:
   m_Children:
   - {fileID: 693797801}
   - {fileID: 724620114}
+  - {fileID: 1777326172}
   - {fileID: 897380987}
   m_Father: {fileID: 848671638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22362,7 +22366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &716691049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22727,7 +22731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &724620114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24914,7 +24918,7 @@ RectTransform:
   m_Father: {fileID: 852308667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.000038146973, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -39326,7 +39330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1269842466
 RectTransform:
   m_ObjectHideFlags: 0
@@ -54974,6 +54978,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773126799}
   m_CullTransparentMesh: 1
+--- !u!1 &1777326171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777326172}
+  m_Layer: 5
+  m_Name: RoutePoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1777326172
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777326171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 605513732}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 37.2, y: -82.8}
+  m_SizeDelta: {x: 10, y: 10}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1778019425
 GameObject:
   m_ObjectHideFlags: 0
@@ -67388,10 +67427,7 @@ MonoBehaviour:
   boatExitBounds: {fileID: 2056354104}
   boatExitPadding: 140
   boatExitDurationSeconds: 1.35
-  boatBobAmplitude: 8
-  boatBobFrequency: 4
-  boatTiltDegrees: 8
-  boatRotationOffsetDegrees: -90
+  boatRotationOffsetDegrees: -30
   sosHouseTargets:
   - targetName: SOS House 1
     dropTarget: {fileID: 1884045861}
@@ -67400,6 +67436,8 @@ MonoBehaviour:
     boatRoutePoints:
     - {fileID: 1102314058}
     - {fileID: 1980050952}
+    overrideBoatRotationOffset: 0
+    boatRotationOffsetDegrees: 0
     infoIcon: {fileID: 1442907621}
   - targetName: SOS House 2
     dropTarget: {fileID: 605513732}
@@ -67407,6 +67445,8 @@ MonoBehaviour:
     boatTransform: {fileID: 724620114}
     boatRoutePoints:
     - {fileID: 897380987}
+    overrideBoatRotationOffset: 1
+    boatRotationOffsetDegrees: 35
     infoIcon: {fileID: 693797800}
   - targetName: SOS House 3
     dropTarget: {fileID: 1670025976}
@@ -67415,6 +67455,8 @@ MonoBehaviour:
     boatRoutePoints:
     - {fileID: 1590726496}
     - {fileID: 1793254676}
+    overrideBoatRotationOffset: 1
+    boatRotationOffsetDegrees: 35
     infoIcon: {fileID: 1395241264}
   buildingTargets:
   - targetName: Hospital
