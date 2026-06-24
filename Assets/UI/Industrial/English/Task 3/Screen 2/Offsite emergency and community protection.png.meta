@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: 7b595c18a7a9ceb4b90c00c0369ec0e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1824068198486215441
+    second: Offsite emergency and community protection_0
+  - first:
+      213: -8981823852734432827
+    second: Offsite emergency and community protection_1
+  - first:
+      213: 2819184774940652734
+    second: Offsite emergency and community protection_2
+  - first:
+      213: 8073982886231575754
+    second: Offsite emergency and community protection_3
+  - first:
+      213: -948770368209754399
+    second: Offsite emergency and community protection_4
+  - first:
+      213: -3152949480992013628
+    second: Offsite emergency and community protection_5
+  - first:
+      213: -3440431211410119150
+    second: Offsite emergency and community protection_6
+  - first:
+      213: 775504374800522697
+    second: Offsite emergency and community protection_7
+  - first:
+      213: 8644689621295720908
+    second: Offsite emergency and community protection_8
+  - first:
+      213: 4580898744129812275
+    second: Offsite emergency and community protection_9
+  - first:
+      213: -625790606179305409
+    second: Offsite emergency and community protection_10
+  - first:
+      213: 989371534700885924
+    second: Offsite emergency and community protection_11
+  - first:
+      213: 6153680253866731719
+    second: Offsite emergency and community protection_12
+  - first:
+      213: -7878902121798553596
+    second: Offsite emergency and community protection_13
+  - first:
+      213: 7592531666540241504
+    second: Offsite emergency and community protection_14
+  - first:
+      213: 1705182689180463005
+    second: Offsite emergency and community protection_15
+  - first:
+      213: 4079370796838333663
+    second: Offsite emergency and community protection_16
+  - first:
+      213: -4107300813831883120
+    second: Offsite emergency and community protection_17
+  - first:
+      213: 8559526221615398317
+    second: Offsite emergency and community protection_18
+  - first:
+      213: 2832331000133905159
+    second: Offsite emergency and community protection_19
+  - first:
+      213: 2318836481439531225
+    second: Offsite emergency and community protection_20
+  - first:
+      213: 6386793972080716659
+    second: Offsite emergency and community protection_21
+  - first:
+      213: -6998502793775510094
+    second: Offsite emergency and community protection_22
+  - first:
+      213: -5492601894233793156
+    second: Offsite emergency and community protection_23
+  - first:
+      213: -1538535011416241293
+    second: Offsite emergency and community protection_24
+  - first:
+      213: 7657030583866095010
+    second: Offsite emergency and community protection_25
+  - first:
+      213: -8430134284984862055
+    second: Offsite emergency and community protection_26
+  - first:
+      213: 59257209174909823
+    second: Offsite emergency and community protection_27
+  - first:
+      213: -1323691647273237006
+    second: Offsite emergency and community protection_28
+  - first:
+      213: -8851189430762863734
+    second: Offsite emergency and community protection_29
+  - first:
+      213: 7282086082688225535
+    second: Offsite emergency and community protection_30
+  - first:
+      213: 4137373369262703625
+    second: Offsite emergency and community protection_31
+  - first:
+      213: -7401085863334238374
+    second: Offsite emergency and community protection_32
+  - first:
+      213: 825601848902436564
+    second: Offsite emergency and community protection_33
+  - first:
+      213: -3351035594076068287
+    second: Offsite emergency and community protection_34
+  - first:
+      213: -7361563117158068909
+    second: Offsite emergency and community protection_35
+  - first:
+      213: 4932284114625959533
+    second: Offsite emergency and community protection_36
+  - first:
+      213: -3640917704854624017
+    second: Offsite emergency and community protection_37
+  - first:
+      213: -8547195281391509219
+    second: Offsite emergency and community protection_38
+  - first:
+      213: 2578262521009806698
+    second: Offsite emergency and community protection_39
+  - first:
+      213: 331778227113197726
+    second: Offsite emergency and community protection_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b8bd8bc54605910800000000000000
+      internalID: 1824068198486215441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c932ae2bc62a5380800000000000000
+      internalID: -8981823852734432827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 8
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4f68abd91cf1720800000000000000
+      internalID: 2819184774940652734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 34
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc8a6048ac8c0070800000000000000
+      internalID: 8073982886231575754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 7
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6e07d706a45d2f0800000000000000
+      internalID: -948770368209754399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 7
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c208bee6297e34d0800000000000000
+      internalID: -3152949480992013628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 34
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216abb99a022140d0800000000000000
+      internalID: -3440431211410119150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_7
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 7
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd1fbdbe1523ca00800000000000000
+      internalID: 775504374800522697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_8
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 7
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc966d6b86b18f770800000000000000
+      internalID: 8644689621295720908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_9
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 7
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337f3eb132f929f30800000000000000
+      internalID: 4580898744129812275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_10
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 34
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38f7ee52ceb057f0800000000000000
+      internalID: -625790606179305409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7babc3b24fabd00800000000000000
+      internalID: 989371534700885924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 8
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8ef095693466550800000000000000
+      internalID: 6153680253866731719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4003022b34488a290800000000000000
+      internalID: -7878902121798553596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_14
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0622902e2571e5960800000000000000
+      internalID: 7592531666540241504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_15
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 8
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f2fb11f960aa710800000000000000
+      internalID: 1705182689180463005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_16
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdca6a45026dc9830800000000000000
+      internalID: 4079370796838333663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_17
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 8
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096b0e5dbafeff6c0800000000000000
+      internalID: -4107300813831883120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_18
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadf60d8fbb89c670800000000000000
+      internalID: 8559526221615398317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bee4dc9067e4720800000000000000
+      internalID: 2832331000133905159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_20
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 8
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d08b608e792e2020800000000000000
+      internalID: 2318836481439531225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_21
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b2a77674372a850800000000000000
+      internalID: 6386793972080716659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_22
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd8e69e9c250ee90800000000000000
+      internalID: -6998502793775510094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d9e81adab56c3b0800000000000000
+      internalID: -5492601894233793156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_24
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 8
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b88020f8606aae0800000000000000
+      internalID: -1538535011416241293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_25
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5f3a15fbc334a60800000000000000
+      internalID: 7657030583866095010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ab2a65885220b80800000000000000
+      internalID: -8430134284984862055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_27
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 8
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7360472e1682d000800000000000000
+      internalID: 59257209174909823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_28
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 8
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f58024c57d41ade0800000000000000
+      internalID: -1323691647273237006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_29
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8300bbbb124a2580800000000000000
+      internalID: -8851189430762863734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_30
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 8
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff09276c5ba2f0560800000000000000
+      internalID: 7282086082688225535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_31
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 8
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904801a9827ea6930800000000000000
+      internalID: 4137373369262703625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_32
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a572cc3be9f0a4990800000000000000
+      internalID: -7401085863334238374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_33
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d64cb1e180257b00800000000000000
+      internalID: 825601848902436564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_34
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 8
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146e769b1eabe71d0800000000000000
+      internalID: -3351035594076068287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_35
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d0d22295976d990800000000000000
+      internalID: -7361563117158068909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_36
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d661597154ef27440800000000000000
+      internalID: 4932284114625959533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_37
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8a5b943acd87dc0800000000000000
+      internalID: -3640917704854624017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_38
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 8
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11a3c23d23426980800000000000000
+      internalID: -8547195281391509219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_39
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d1e764a14d7c320800000000000000
+      internalID: 2578262521009806698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Offsite emergency and community protection_40
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 8
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e908a4b2a86ba9400800000000000000
+      internalID: 331778227113197726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Offsite emergency and community protection_0: 1824068198486215441
+      Offsite emergency and community protection_1: -8981823852734432827
+      Offsite emergency and community protection_10: -625790606179305409
+      Offsite emergency and community protection_11: 989371534700885924
+      Offsite emergency and community protection_12: 6153680253866731719
+      Offsite emergency and community protection_13: -7878902121798553596
+      Offsite emergency and community protection_14: 7592531666540241504
+      Offsite emergency and community protection_15: 1705182689180463005
+      Offsite emergency and community protection_16: 4079370796838333663
+      Offsite emergency and community protection_17: -4107300813831883120
+      Offsite emergency and community protection_18: 8559526221615398317
+      Offsite emergency and community protection_19: 2832331000133905159
+      Offsite emergency and community protection_2: 2819184774940652734
+      Offsite emergency and community protection_20: 2318836481439531225
+      Offsite emergency and community protection_21: 6386793972080716659
+      Offsite emergency and community protection_22: -6998502793775510094
+      Offsite emergency and community protection_23: -5492601894233793156
+      Offsite emergency and community protection_24: -1538535011416241293
+      Offsite emergency and community protection_25: 7657030583866095010
+      Offsite emergency and community protection_26: -8430134284984862055
+      Offsite emergency and community protection_27: 59257209174909823
+      Offsite emergency and community protection_28: -1323691647273237006
+      Offsite emergency and community protection_29: -8851189430762863734
+      Offsite emergency and community protection_3: 8073982886231575754
+      Offsite emergency and community protection_30: 7282086082688225535
+      Offsite emergency and community protection_31: 4137373369262703625
+      Offsite emergency and community protection_32: -7401085863334238374
+      Offsite emergency and community protection_33: 825601848902436564
+      Offsite emergency and community protection_34: -3351035594076068287
+      Offsite emergency and community protection_35: -7361563117158068909
+      Offsite emergency and community protection_36: 4932284114625959533
+      Offsite emergency and community protection_37: -3640917704854624017
+      Offsite emergency and community protection_38: -8547195281391509219
+      Offsite emergency and community protection_39: 2578262521009806698
+      Offsite emergency and community protection_4: -948770368209754399
+      Offsite emergency and community protection_40: 331778227113197726
+      Offsite emergency and community protection_5: -3152949480992013628
+      Offsite emergency and community protection_6: -3440431211410119150
+      Offsite emergency and community protection_7: 775504374800522697
+      Offsite emergency and community protection_8: 8644689621295720908
+      Offsite emergency and community protection_9: 4580898744129812275
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

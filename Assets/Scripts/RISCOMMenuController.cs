@@ -5,10 +5,18 @@ using UnityEngine.UI;
 
 public sealed class RISCOMMenuController : MonoBehaviour
 {
+    [SerializeField] private GameObject languageSelectionScreen;
     [SerializeField] private GameObject startMenuScreen;
     [SerializeField] private GameObject hazardSelectionScreen;
+    [SerializeField] private Button englishLanguageButton;
+    [SerializeField] private Button gujaratiLanguageButton;
     [SerializeField] private Button startGameButton;
     [SerializeField] private Button nextButton;
+    [SerializeField] private RISCOMLanguageToggleController languageController;
+    [SerializeField] private RISCOMCycloneFlowController cycloneFlowController;
+    [SerializeField] private RISCOMFloodFlowController floodFlowController;
+    [SerializeField] private RISCOMDroughtFlowController droughtFlowController;
+    [SerializeField] private RISCOMIndustrialFlowController industrialFlowController;
     [SerializeField] private string hazardButtonsContainerName = "HazardButtons";
     [SerializeField] private string highlightChildName = "Highlight";
     [SerializeField] private string[] hazardNames = { "Cyclone", "Flood", "Drought", "Industrial" };
@@ -22,11 +30,29 @@ public sealed class RISCOMMenuController : MonoBehaviour
     {
         CacheReferences();
         WireButtons();
-        ShowStartMenu();
+
+        if (languageSelectionScreen != null)
+        {
+            ShowLanguageSelection();
+        }
+        else
+        {
+            ShowStartMenu();
+        }
+    }
+
+    public void ShowLanguageSelection()
+    {
+        SetActive(languageSelectionScreen, true);
+        SetActive(startMenuScreen, false);
+        SetActive(hazardSelectionScreen, false);
+        HideHazardFlows();
+        ClearHazardSelection();
     }
 
     public void ShowStartMenu()
     {
+        SetActive(languageSelectionScreen, false);
         SetActive(startMenuScreen, true);
         SetActive(hazardSelectionScreen, false);
         HideHazardFlows();
@@ -35,10 +61,21 @@ public sealed class RISCOMMenuController : MonoBehaviour
 
     public void ShowHazardSelection()
     {
+        SetActive(languageSelectionScreen, false);
         SetActive(startMenuScreen, false);
         SetActive(hazardSelectionScreen, true);
         HideHazardFlows();
         ClearHazardSelection();
+    }
+
+    public void SelectEnglishLanguage()
+    {
+        SelectLanguage(false);
+    }
+
+    public void SelectGujaratiLanguage()
+    {
+        SelectLanguage(true);
     }
 
     public void SelectHazard(string hazardName)
@@ -65,6 +102,63 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
+        SetActive(languageSelectionScreen, false);
+        SetActive(startMenuScreen, false);
+        SetActive(hazardSelectionScreen, false);
+        HideHazardFlows();
+
+        if (string.Equals(SelectedHazard, "Cyclone", StringComparison.OrdinalIgnoreCase))
+        {
+            if (cycloneFlowController == null)
+            {
+                Debug.LogWarning("Cyclone flow controller is not assigned.");
+                return;
+            }
+
+            cycloneFlowController.BeginFlow();
+            Debug.Log("Starting Cyclone tour.");
+            return;
+        }
+
+        if (string.Equals(SelectedHazard, "Flood", StringComparison.OrdinalIgnoreCase))
+        {
+            if (floodFlowController == null)
+            {
+                Debug.LogWarning("Flood flow controller is not assigned.");
+                return;
+            }
+
+            floodFlowController.BeginFlow();
+            Debug.Log("Starting Flood tour.");
+            return;
+        }
+
+        if (string.Equals(SelectedHazard, "Industrial", StringComparison.OrdinalIgnoreCase))
+        {
+            if (industrialFlowController == null)
+            {
+                Debug.LogWarning("Industrial flow controller is not assigned.");
+                return;
+            }
+
+            industrialFlowController.BeginFlow();
+            Debug.Log("Starting Industrial tour.");
+            return;
+        }
+
+        if (string.Equals(SelectedHazard, "Drought", StringComparison.OrdinalIgnoreCase))
+        {
+            if (droughtFlowController == null)
+            {
+                Debug.LogWarning("Drought flow controller is not assigned.");
+                return;
+            }
+
+            droughtFlowController.BeginFlow();
+            Debug.Log("Starting Drought tour.");
+            return;
+        }
+
         GameObject hazardFlow = FindHazardFlowFor(SelectedHazard);
         if (hazardFlow == null)
         {
@@ -72,30 +166,27 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
-        SetActive(startMenuScreen, false);
-        SetActive(hazardSelectionScreen, false);
-        HideHazardFlows();
         hazardFlow.SetActive(true);
-
-        if (string.Equals(SelectedHazard, "Cyclone", StringComparison.OrdinalIgnoreCase))
-        {
-            RISCOMCycloneFlowController cycloneFlow = hazardFlow.GetComponent<RISCOMCycloneFlowController>();
-            if (cycloneFlow == null)
-            {
-                Debug.LogWarning("CycloneGameFlow is missing RISCOMCycloneFlowController.");
-                return;
-            }
-
-            cycloneFlow.BeginFlow();
-        }
-
         Debug.Log($"Starting {SelectedHazard} tour.");
     }
 
     private void CacheReferences()
     {
+        languageSelectionScreen = languageSelectionScreen != null ? languageSelectionScreen : FindChildGameObject(transform, "LanguageSelectionScreen");
         startMenuScreen = startMenuScreen != null ? startMenuScreen : FindChildGameObject(transform, "StartMenu");
         hazardSelectionScreen = hazardSelectionScreen != null ? hazardSelectionScreen : FindChildGameObject(transform, "SelectHazardPanel");
+
+        if (englishLanguageButton == null && languageSelectionScreen != null)
+        {
+            Transform englishTransform = FindChildTransform(languageSelectionScreen.transform, "English");
+            englishLanguageButton = englishTransform != null ? englishTransform.GetComponent<Button>() : null;
+        }
+
+        if (gujaratiLanguageButton == null && languageSelectionScreen != null)
+        {
+            Transform gujaratiTransform = FindChildTransform(languageSelectionScreen.transform, "Gujarati");
+            gujaratiLanguageButton = gujaratiTransform != null ? gujaratiTransform.GetComponent<Button>() : null;
+        }
 
         if (startGameButton == null && startMenuScreen != null)
         {
@@ -154,7 +245,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             GameObject child = transform.GetChild(i).gameObject;
-            if (child == startMenuScreen || child == hazardSelectionScreen)
+            if (child == languageSelectionScreen || child == startMenuScreen || child == hazardSelectionScreen)
             {
                 continue;
             }
@@ -170,6 +261,16 @@ public sealed class RISCOMMenuController : MonoBehaviour
 
     private void WireButtons()
     {
+        if (englishLanguageButton != null)
+        {
+            englishLanguageButton.onClick.AddListener(SelectEnglishLanguage);
+        }
+
+        if (gujaratiLanguageButton != null)
+        {
+            gujaratiLanguageButton.onClick.AddListener(SelectGujaratiLanguage);
+        }
+
         if (startGameButton != null)
         {
             startGameButton.onClick.AddListener(ShowHazardSelection);
@@ -185,6 +286,20 @@ public sealed class RISCOMMenuController : MonoBehaviour
         {
             nextButton.onClick.AddListener(StartSelectedHazardTour);
         }
+    }
+
+    private void SelectLanguage(bool useGujarati)
+    {
+        if (languageController != null)
+        {
+            languageController.SetGujaratiEnabled(useGujarati);
+        }
+        else
+        {
+            Debug.LogWarning("Language controller is not assigned.");
+        }
+
+        ShowStartMenu();
     }
 
     private void ClearHazardSelection()

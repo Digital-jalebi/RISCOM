@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: b7998542f6471ab438e256ba415b6e52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3488708025509001317
+    second: area by tapping it._0
+  - first:
+      213: 5390594525958148034
+    second: area by tapping it._1
+  - first:
+      213: 4343365206250992386
+    second: area by tapping it._2
+  - first:
+      213: 5067836544427452662
+    second: area by tapping it._3
+  - first:
+      213: -1743289252300050262
+    second: area by tapping it._4
+  - first:
+      213: 4390534338282350056
+    second: area by tapping it._5
+  - first:
+      213: 3745724552918796997
+    second: area by tapping it._6
+  - first:
+      213: -6740942842664326747
+    second: area by tapping it._7
+  - first:
+      213: 4074571684079591163
+    second: area by tapping it._8
+  - first:
+      213: 7875582254570671993
+    second: area by tapping it._9
+  - first:
+      213: 2553811926207650284
+    second: area by tapping it._10
+  - first:
+      213: 1460697816270667851
+    second: area by tapping it._11
+  - first:
+      213: 8794468751877405036
+    second: area by tapping it._12
+  - first:
+      213: 3329879251113010828
+    second: area by tapping it._13
+  - first:
+      213: 2319014152378382916
+    second: area by tapping it._14
+  - first:
+      213: -98122646543568165
+    second: area by tapping it._15
+  - first:
+      213: 3802024739459728645
+    second: area by tapping it._16
+  - first:
+      213: 7842230903790764791
+    second: area by tapping it._17
+  - first:
+      213: -35248836003192238
+    second: area by tapping it._18
+  - first:
+      213: -6354893100061964471
+    second: area by tapping it._19
+  - first:
+      213: -8479799624124586618
+    second: area by tapping it._20
+  - first:
+      213: 1025939258390920006
+    second: area by tapping it._21
+  - first:
+      213: -2646805669681413924
+    second: area by tapping it._22
+  - first:
+      213: -1362177680300400566
+    second: area by tapping it._23
+  - first:
+      213: -2337782310413516172
+    second: area by tapping it._24
+  - first:
+      213: 1139749444559471319
+    second: area by tapping it._25
+  - first:
+      213: -4714941397791952649
+    second: area by tapping it._26
+  - first:
+      213: 39906480491880676
+    second: area by tapping it._27
+  - first:
+      213: -4411880664931207943
+    second: area by tapping it._28
+  - first:
+      213: 1306373935885826390
+    second: area by tapping it._29
+  - first:
+      213: 4927328795900509611
+    second: area by tapping it._30
+  - first:
+      213: 659785325511064071
+    second: area by tapping it._31
+  - first:
+      213: 232973247348263404
+    second: area by tapping it._32
+  - first:
+      213: 5313703808603313087
+    second: area by tapping it._33
+  - first:
+      213: 5426874732939797305
+    second: area by tapping it._34
+  - first:
+      213: -4659501381851227294
+    second: area by tapping it._35
+  - first:
+      213: -3306050819197749500
+    second: area by tapping it._36
+  - first:
+      213: -5714319328923386214
+    second: area by tapping it._37
+  - first:
+      213: -2076177171685580551
+    second: area by tapping it._38
+  - first:
+      213: 1457867441440356012
+    second: area by tapping it._39
+  - first:
+      213: -6111946363381970674
+    second: area by tapping it._40
+  - first:
+      213: 8165606610485536763
+    second: area by tapping it._41
+  - first:
+      213: -7078531863960718890
+    second: area by tapping it._42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: area by tapping it._0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b974b76e88e959fc0800000000000000
+      internalID: -3488708025509001317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf86e7292d3fca40800000000000000
+      internalID: 5390594525958148034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 5
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203b16894abb64c30800000000000000
+      internalID: 4343365206250992386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._3
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 5
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f867529c72945640800000000000000
+      internalID: 5067836544427452662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 4
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa036ef49a79ec7e0800000000000000
+      internalID: -1743289252300050262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 5
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e56977f7bf4eec30800000000000000
+      internalID: 4390534338282350056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._6
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca0f2b92ac7bf330800000000000000
+      internalID: 3745724552918796997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9e7cb133c5372a0800000000000000
+      internalID: -6740942842664326747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._8
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 5
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfedd61db59cb8830800000000000000
+      internalID: 4074571684079591163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._9
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 5
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f0e0b7550bb4d60800000000000000
+      internalID: 7875582254570671993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._10
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce953cc8a66f07320800000000000000
+      internalID: 2553811926207650284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40800fbce0754410800000000000000
+      internalID: 1460697816270667851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._12
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 4
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69fce71cba3c0a70800000000000000
+      internalID: 8794468751877405036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86e883598b163e20800000000000000
+      internalID: 3329879251113010828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._14
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 4
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44afd9db51bce2020800000000000000
+      internalID: 2319014152378382916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._15
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 4
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2795c09f563aef0800000000000000
+      internalID: -98122646543568165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._16
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 25
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5058eb64b5183c430800000000000000
+      internalID: 3802024739459728645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._17
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 5
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f20a03057335dc60800000000000000
+      internalID: 7842230903790764791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._18
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252a843de55c28ff0800000000000000
+      internalID: -35248836003192238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._19
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 4
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947c9392562eec7a0800000000000000
+      internalID: -6354893100061964471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._20
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 5
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68520957b23b15a80800000000000000
+      internalID: -8479799624124586618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._21
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 25
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bb481e15edc3e00800000000000000
+      internalID: 1025939258390920006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._22
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 5
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0462d4448a44bd0800000000000000
+      internalID: -2646805669681413924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._23
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40aabced92981de0800000000000000
+      internalID: -1362177680300400566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._24
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 4
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4724c91ff578e8fd0800000000000000
+      internalID: -2337782310413516172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._25
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d28ae7c41431df00800000000000000
+      internalID: 1139749444559471319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._26
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 5
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0b3df87c9219eb0800000000000000
+      internalID: -4714941397791952649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._27
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e064f98bb6cd8000800000000000000
+      internalID: 39906480491880676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._28
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f47c5f09e9d5c2c0800000000000000
+      internalID: -4411880664931207943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._29
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 4
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659bd485c2c212210800000000000000
+      internalID: 1306373935885826390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._30
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 0
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badf33b0f63616440800000000000000
+      internalID: 4927328795900509611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._31
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 4
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a3a130247082900800000000000000
+      internalID: 659785325511064071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._32
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 4
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9cc522fefab3300800000000000000
+      internalID: 232973247348263404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._33
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3d071f5711eb940800000000000000
+      internalID: 5313703808603313087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._34
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9336b6911d1205b40800000000000000
+      internalID: 5426874732939797305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._35
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 25
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bd0582e20265fb0800000000000000
+      internalID: -4659501381851227294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._36
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 5
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4073450db4c8e12d0800000000000000
+      internalID: -3306050819197749500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._37
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 5
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e7f5a98d8a2b0b0800000000000000
+      internalID: -5714319328923386214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._38
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0e7e6ccdfef23e0800000000000000
+      internalID: -2076177171685580551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._39
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 25
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6f8a0c6b26b3410800000000000000
+      internalID: 1457867441440356012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._40
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 5
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09806c3a210e2ba0800000000000000
+      internalID: -6111946363381970674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._41
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 4
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf76291f2ff025170800000000000000
+      internalID: 8165606610485536763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area by tapping it._42
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 5
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1765df5c004cd90800000000000000
+      internalID: -7078531863960718890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      area by tapping it._0: -3488708025509001317
+      area by tapping it._1: 5390594525958148034
+      area by tapping it._10: 2553811926207650284
+      area by tapping it._11: 1460697816270667851
+      area by tapping it._12: 8794468751877405036
+      area by tapping it._13: 3329879251113010828
+      area by tapping it._14: 2319014152378382916
+      area by tapping it._15: -98122646543568165
+      area by tapping it._16: 3802024739459728645
+      area by tapping it._17: 7842230903790764791
+      area by tapping it._18: -35248836003192238
+      area by tapping it._19: -6354893100061964471
+      area by tapping it._2: 4343365206250992386
+      area by tapping it._20: -8479799624124586618
+      area by tapping it._21: 1025939258390920006
+      area by tapping it._22: -2646805669681413924
+      area by tapping it._23: -1362177680300400566
+      area by tapping it._24: -2337782310413516172
+      area by tapping it._25: 1139749444559471319
+      area by tapping it._26: -4714941397791952649
+      area by tapping it._27: 39906480491880676
+      area by tapping it._28: -4411880664931207943
+      area by tapping it._29: 1306373935885826390
+      area by tapping it._3: 5067836544427452662
+      area by tapping it._30: 4927328795900509611
+      area by tapping it._31: 659785325511064071
+      area by tapping it._32: 232973247348263404
+      area by tapping it._33: 5313703808603313087
+      area by tapping it._34: 5426874732939797305
+      area by tapping it._35: -4659501381851227294
+      area by tapping it._36: -3306050819197749500
+      area by tapping it._37: -5714319328923386214
+      area by tapping it._38: -2076177171685580551
+      area by tapping it._39: 1457867441440356012
+      area by tapping it._4: -1743289252300050262
+      area by tapping it._40: -6111946363381970674
+      area by tapping it._41: 8165606610485536763
+      area by tapping it._42: -7078531863960718890
+      area by tapping it._5: 4390534338282350056
+      area by tapping it._6: 3745724552918796997
+      area by tapping it._7: -6740942842664326747
+      area by tapping it._8: 4074571684079591163
+      area by tapping it._9: 7875582254570671993
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

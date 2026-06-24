@@ -16,11 +16,13 @@ public sealed class CycloneMissionFourController : MonoBehaviour
     [SerializeField] private Button reportNextButton;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
     [SerializeField] private MissionFourPair[] pairs;
 
     private Action onReportNext;
     private bool configured;
     private bool buttonsWired;
+    private bool languageControllerWired;
     private float timeRemaining;
     private bool isRunning;
     private bool isComplete;
@@ -49,6 +51,8 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
             buttonsWired = true;
         }
+
+        WireLanguageController();
 
         if (configured)
         {
@@ -91,6 +95,11 @@ public sealed class CycloneMissionFourController : MonoBehaviour
     {
         StopMission();
         gameObject.SetActive(false);
+    }
+
+    private void OnDisable()
+    {
+        UnwireLanguageController();
     }
 
     private void Update()
@@ -447,13 +456,68 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
     private void ApplyFulfilledSprite(MissionFourPair pair)
     {
-        if (pair.NeedImage == null || pair.FulfilledSprite == null)
+        if (pair.NeedImage == null)
         {
             return;
         }
 
-        pair.NeedImage.sprite = pair.FulfilledSprite;
+        Sprite fulfilledSprite = pair.GetFulfilledSprite(IsGujaratiEnabled());
+        if (fulfilledSprite == null)
+        {
+            return;
+        }
+
+        pair.NeedImage.sprite = fulfilledSprite;
         pair.NeedImage.preserveAspect = true;
+    }
+
+    private void RefreshFulfilledSprites()
+    {
+        if (pairs == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < pairs.Length; i++)
+        {
+            MissionFourPair pair = pairs[i];
+            if (pair != null && pair.Fulfilled)
+            {
+                ApplyFulfilledSprite(pair);
+            }
+        }
+    }
+
+    private void WireLanguageController()
+    {
+        if (languageToggleController == null || languageControllerWired)
+        {
+            return;
+        }
+
+        languageToggleController.LanguageChanged += HandleLanguageChanged;
+        languageControllerWired = true;
+    }
+
+    private void UnwireLanguageController()
+    {
+        if (languageToggleController == null || !languageControllerWired)
+        {
+            return;
+        }
+
+        languageToggleController.LanguageChanged -= HandleLanguageChanged;
+        languageControllerWired = false;
+    }
+
+    private void HandleLanguageChanged(bool useGujarati)
+    {
+        RefreshFulfilledSprites();
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
     }
 
     private bool AreAllPairsFulfilled()
@@ -643,12 +707,12 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         [SerializeField] private RectTransform needTransform;
         [SerializeField] private Image needImage;
         [SerializeField] private Sprite fulfilledSprite;
+        [SerializeField] private Sprite gujaratiFulfilledSprite;
 
         public RectTransform ToolTransform => toolTransform;
         public Image ToolImage => toolImage;
         public RectTransform NeedTransform => needTransform;
         public Image NeedImage => needImage;
-        public Sprite FulfilledSprite => fulfilledSprite;
 
         public bool Fulfilled;
         public Vector2 InitialToolPosition;
@@ -671,6 +735,13 @@ public sealed class CycloneMissionFourController : MonoBehaviour
                 InitialNeedSprite = NeedImage.sprite;
                 InitialNeedPreserveAspect = NeedImage.preserveAspect;
             }
+        }
+
+        public Sprite GetFulfilledSprite(bool useGujarati)
+        {
+            return useGujarati && gujaratiFulfilledSprite != null
+                ? gujaratiFulfilledSprite
+                : fulfilledSprite;
         }
     }
 }

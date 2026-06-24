@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: c86789d380c666047a2a392044ce8269
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8613703037016812735
+    second: Prevent Humanitarian@2x_0
+  - first:
+      213: -924550893903363817
+    second: Prevent Humanitarian@2x_1
+  - first:
+      213: -2952263041577303778
+    second: Prevent Humanitarian@2x_2
+  - first:
+      213: 2197820951654099611
+    second: Prevent Humanitarian@2x_3
+  - first:
+      213: 5025571372518384029
+    second: Prevent Humanitarian@2x_4
+  - first:
+      213: 5212274757238426157
+    second: Prevent Humanitarian@2x_5
+  - first:
+      213: 8625051706775286860
+    second: Prevent Humanitarian@2x_6
+  - first:
+      213: -2658978526965043581
+    second: Prevent Humanitarian@2x_7
+  - first:
+      213: -7936118694275731425
+    second: Prevent Humanitarian@2x_8
+  - first:
+      213: 3699615453768752372
+    second: Prevent Humanitarian@2x_9
+  - first:
+      213: -8864400168291020172
+    second: Prevent Humanitarian@2x_10
+  - first:
+      213: 5613682235468814316
+    second: Prevent Humanitarian@2x_11
+  - first:
+      213: -2553055030023583938
+    second: Prevent Humanitarian@2x_12
+  - first:
+      213: -2290971545489091840
+    second: Prevent Humanitarian@2x_13
+  - first:
+      213: 5641368915727606111
+    second: Prevent Humanitarian@2x_14
+  - first:
+      213: -2907414414569166038
+    second: Prevent Humanitarian@2x_15
+  - first:
+      213: 8301692185659058984
+    second: Prevent Humanitarian@2x_16
+  - first:
+      213: 8630723732022589144
+    second: Prevent Humanitarian@2x_17
+  - first:
+      213: -1918776933899398905
+    second: Prevent Humanitarian@2x_18
+  - first:
+      213: 7138486887043646153
+    second: Prevent Humanitarian@2x_19
+  - first:
+      213: 8396299214308249356
+    second: Prevent Humanitarian@2x_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143d8e5a9baf57880800000000000000
+      internalID: -8613703037016812735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711ce184cd55b23f0800000000000000
+      internalID: -924550893903363817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_2
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11454bc7647707d0800000000000000
+      internalID: -2952263041577303778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ae04fc28a308e10800000000000000
+      internalID: 2197820951654099611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91a454698a6eb540800000000000000
+      internalID: 5025571372518384029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_5
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a8ee0a648b55840800000000000000
+      internalID: 5212274757238426157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_6
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 0
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44b7bf64d652b770800000000000000
+      internalID: 8625051706775286860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 88
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e6bda1e19691bd0800000000000000
+      internalID: -2658978526965043581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_8
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 0
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10bb5c481e3dd190800000000000000
+      internalID: -7936118694275731425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_9
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 0
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc9e6f57aca75330800000000000000
+      internalID: 3699615453768752372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_10
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 56
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472d91633035bf480800000000000000
+      internalID: -8864400168291020172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_11
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 38
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce71a07204ec7ed40800000000000000
+      internalID: 5613682235468814316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_12
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 0
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e378b631af9b19cd0800000000000000
+      internalID: -2553055030023583938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_13
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 0
+        width: 43
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00358987485d430e0800000000000000
+      internalID: -2290971545489091840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_14
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 56
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51efdcb32b2a4e40800000000000000
+      internalID: 5641368915727606111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_15
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 0
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b21cc7ef9c6a7d0800000000000000
+      internalID: -2907414414569166038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_16
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82b28d00f09853370800000000000000
+      internalID: 8301692185659058984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_17
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d67db9b18d76c770800000000000000
+      internalID: 8630723732022589144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_18
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 0
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70196b37b822f55e0800000000000000
+      internalID: -1918776933899398905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_19
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 0
+        width: 19
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c24500a000011360800000000000000
+      internalID: 7138486887043646153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian@2x_20
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 0
+        width: 19
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f0cb066a5a58470800000000000000
+      internalID: 8396299214308249356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Prevent Humanitarian@2x_0: -8613703037016812735
+      Prevent Humanitarian@2x_1: -924550893903363817
+      Prevent Humanitarian@2x_10: -8864400168291020172
+      Prevent Humanitarian@2x_11: 5613682235468814316
+      Prevent Humanitarian@2x_12: -2553055030023583938
+      Prevent Humanitarian@2x_13: -2290971545489091840
+      Prevent Humanitarian@2x_14: 5641368915727606111
+      Prevent Humanitarian@2x_15: -2907414414569166038
+      Prevent Humanitarian@2x_16: 8301692185659058984
+      Prevent Humanitarian@2x_17: 8630723732022589144
+      Prevent Humanitarian@2x_18: -1918776933899398905
+      Prevent Humanitarian@2x_19: 7138486887043646153
+      Prevent Humanitarian@2x_2: -2952263041577303778
+      Prevent Humanitarian@2x_20: 8396299214308249356
+      Prevent Humanitarian@2x_3: 2197820951654099611
+      Prevent Humanitarian@2x_4: 5025571372518384029
+      Prevent Humanitarian@2x_5: 5212274757238426157
+      Prevent Humanitarian@2x_6: 8625051706775286860
+      Prevent Humanitarian@2x_7: -2658978526965043581
+      Prevent Humanitarian@2x_8: -7936118694275731425
+      Prevent Humanitarian@2x_9: 3699615453768752372
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

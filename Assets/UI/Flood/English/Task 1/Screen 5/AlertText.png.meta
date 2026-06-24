@@ -1,0 +1,5135 @@
+fileFormatVersion: 2
+guid: ee79661c87b12564c97e4364aaf9fb4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4894256456217839625
+    second: AlertText_0
+  - first:
+      213: -3651176692326262524
+    second: AlertText_1
+  - first:
+      213: -1796087680334967679
+    second: AlertText_2
+  - first:
+      213: -7542591406257620369
+    second: AlertText_3
+  - first:
+      213: 4447478274456266122
+    second: AlertText_4
+  - first:
+      213: 5944998970550885753
+    second: AlertText_5
+  - first:
+      213: -3569246795153785296
+    second: AlertText_6
+  - first:
+      213: -5045935486478792019
+    second: AlertText_7
+  - first:
+      213: 7599700514347271500
+    second: AlertText_8
+  - first:
+      213: -1094983925334876488
+    second: AlertText_9
+  - first:
+      213: -5577958221612235561
+    second: AlertText_10
+  - first:
+      213: 1420927549591859966
+    second: AlertText_11
+  - first:
+      213: 7191467426269388
+    second: AlertText_12
+  - first:
+      213: 2341533466382472793
+    second: AlertText_13
+  - first:
+      213: -6490894540643169769
+    second: AlertText_14
+  - first:
+      213: -7460794937316246417
+    second: AlertText_15
+  - first:
+      213: 2109346991685717413
+    second: AlertText_16
+  - first:
+      213: -4313715671776066105
+    second: AlertText_17
+  - first:
+      213: -8575545832471789255
+    second: AlertText_18
+  - first:
+      213: -3530338508030348253
+    second: AlertText_19
+  - first:
+      213: -7678465815830418301
+    second: AlertText_20
+  - first:
+      213: -1613584357419410456
+    second: AlertText_21
+  - first:
+      213: 5612745064875185850
+    second: AlertText_22
+  - first:
+      213: -3402810202808967848
+    second: AlertText_23
+  - first:
+      213: -1071704102982678551
+    second: AlertText_24
+  - first:
+      213: -6747649471757492779
+    second: AlertText_25
+  - first:
+      213: -4040872391299635184
+    second: AlertText_26
+  - first:
+      213: -753000165290666830
+    second: AlertText_27
+  - first:
+      213: -3806601331194157
+    second: AlertText_28
+  - first:
+      213: 6495983941706853295
+    second: AlertText_29
+  - first:
+      213: 5175114620439255863
+    second: AlertText_30
+  - first:
+      213: 4288286037063627121
+    second: AlertText_31
+  - first:
+      213: -5395669427829668617
+    second: AlertText_32
+  - first:
+      213: -9025795066896119854
+    second: AlertText_33
+  - first:
+      213: -7553909186947730988
+    second: AlertText_34
+  - first:
+      213: 7787196311474722390
+    second: AlertText_35
+  - first:
+      213: -1761617865289081399
+    second: AlertText_36
+  - first:
+      213: -5506843557747642553
+    second: AlertText_37
+  - first:
+      213: 3187829525131851366
+    second: AlertText_38
+  - first:
+      213: -4835224782213804112
+    second: AlertText_39
+  - first:
+      213: -1441429984065690854
+    second: AlertText_40
+  - first:
+      213: -1886828368114952827
+    second: AlertText_41
+  - first:
+      213: -1860372780229665714
+    second: AlertText_42
+  - first:
+      213: 9025769500499902566
+    second: AlertText_43
+  - first:
+      213: -1028411042906071702
+    second: AlertText_44
+  - first:
+      213: 8371312126517729723
+    second: AlertText_45
+  - first:
+      213: -6543735441791168732
+    second: AlertText_46
+  - first:
+      213: 2841537633979354349
+    second: AlertText_47
+  - first:
+      213: 4008590691980778292
+    second: AlertText_48
+  - first:
+      213: 5174293420664000953
+    second: AlertText_49
+  - first:
+      213: -5741190378126908072
+    second: AlertText_50
+  - first:
+      213: -6514818745340493131
+    second: AlertText_51
+  - first:
+      213: -8392278132449767924
+    second: AlertText_52
+  - first:
+      213: -2507199406159108487
+    second: AlertText_53
+  - first:
+      213: 5621712468672046512
+    second: AlertText_54
+  - first:
+      213: -8977320794513506082
+    second: AlertText_55
+  - first:
+      213: -5596070492097955725
+    second: AlertText_56
+  - first:
+      213: -6095862820201227397
+    second: AlertText_57
+  - first:
+      213: 2040760502356083410
+    second: AlertText_58
+  - first:
+      213: 9219564050968223081
+    second: AlertText_59
+  - first:
+      213: 6855389856029195853
+    second: AlertText_60
+  - first:
+      213: -5101308003283319383
+    second: AlertText_61
+  - first:
+      213: -8262138738813077365
+    second: AlertText_62
+  - first:
+      213: -559671023991141690
+    second: AlertText_63
+  - first:
+      213: 4881706694172912221
+    second: AlertText_64
+  - first:
+      213: 3034143273161713838
+    second: AlertText_65
+  - first:
+      213: 638914278753153654
+    second: AlertText_66
+  - first:
+      213: 6733364005916952219
+    second: AlertText_67
+  - first:
+      213: 8760401395496240028
+    second: AlertText_68
+  - first:
+      213: -7928622697552580227
+    second: AlertText_69
+  - first:
+      213: -5521961176694003603
+    second: AlertText_70
+  - first:
+      213: 8601108159395399561
+    second: AlertText_71
+  - first:
+      213: 1144140491821121786
+    second: AlertText_72
+  - first:
+      213: 8316889881466591582
+    second: AlertText_73
+  - first:
+      213: -8685572481028931056
+    second: AlertText_74
+  - first:
+      213: -2396228853089174373
+    second: AlertText_75
+  - first:
+      213: 1911371361465466720
+    second: AlertText_76
+  - first:
+      213: 9175660466652458594
+    second: AlertText_77
+  - first:
+      213: -4078504704931861453
+    second: AlertText_78
+  - first:
+      213: 4837192407620995298
+    second: AlertText_79
+  - first:
+      213: -2269863235464302223
+    second: AlertText_80
+  - first:
+      213: -8976834472495189475
+    second: AlertText_81
+  - first:
+      213: -3417766719082004474
+    second: AlertText_82
+  - first:
+      213: 5823650133940830725
+    second: AlertText_83
+  - first:
+      213: -4174029645158612618
+    second: AlertText_84
+  - first:
+      213: -6158146478504335412
+    second: AlertText_85
+  - first:
+      213: -1186573157004756527
+    second: AlertText_86
+  - first:
+      213: -2707320457122506322
+    second: AlertText_87
+  - first:
+      213: 8397820939988147530
+    second: AlertText_88
+  - first:
+      213: 8724993224992185627
+    second: AlertText_89
+  - first:
+      213: -1203057582780762033
+    second: AlertText_90
+  - first:
+      213: -3609781516357958629
+    second: AlertText_91
+  - first:
+      213: -3009725919701287471
+    second: AlertText_92
+  - first:
+      213: 5066085184524823038
+    second: AlertText_93
+  - first:
+      213: 3601232841631714002
+    second: AlertText_94
+  - first:
+      213: 164593876982844285
+    second: AlertText_95
+  - first:
+      213: 7507805376087946462
+    second: AlertText_96
+  - first:
+      213: 8701377250763296796
+    second: AlertText_97
+  - first:
+      213: 8356973382771412913
+    second: AlertText_98
+  - first:
+      213: 1023774925414689693
+    second: AlertText_99
+  - first:
+      213: -6251355550363259547
+    second: AlertText_100
+  - first:
+      213: -2619570009635883912
+    second: AlertText_101
+  - first:
+      213: 966292741899410159
+    second: AlertText_102
+  - first:
+      213: -4480862995052427875
+    second: AlertText_103
+  - first:
+      213: -8754706077627469356
+    second: AlertText_104
+  - first:
+      213: -6191458686454456072
+    second: AlertText_105
+  - first:
+      213: -1072020413723353949
+    second: AlertText_106
+  - first:
+      213: 3724652921700918708
+    second: AlertText_107
+  - first:
+      213: 3506984187144126868
+    second: AlertText_108
+  - first:
+      213: 883151804354582317
+    second: AlertText_109
+  - first:
+      213: 3180650547322862378
+    second: AlertText_110
+  - first:
+      213: 5776980363081450622
+    second: AlertText_111
+  - first:
+      213: 7663368452821398176
+    second: AlertText_112
+  - first:
+      213: 1333935446877996095
+    second: AlertText_113
+  - first:
+      213: 7764226506954393700
+    second: AlertText_114
+  - first:
+      213: 4551841931427261945
+    second: AlertText_115
+  - first:
+      213: 6394832054927000874
+    second: AlertText_116
+  - first:
+      213: -1672408835059684522
+    second: AlertText_117
+  - first:
+      213: -8863230033424134132
+    second: AlertText_118
+  - first:
+      213: 6131217138877478335
+    second: AlertText_119
+  - first:
+      213: -47901301468506331
+    second: AlertText_120
+  - first:
+      213: -7655580547622527425
+    second: AlertText_121
+  - first:
+      213: -5826240399984828793
+    second: AlertText_122
+  - first:
+      213: 3503940584403227786
+    second: AlertText_123
+  - first:
+      213: 6503072418722589473
+    second: AlertText_124
+  - first:
+      213: -3369182899046541646
+    second: AlertText_125
+  - first:
+      213: -3263491666562045355
+    second: AlertText_126
+  - first:
+      213: -2605435969334153455
+    second: AlertText_127
+  - first:
+      213: 6312263640710070961
+    second: AlertText_128
+  - first:
+      213: 60165606363440674
+    second: AlertText_129
+  - first:
+      213: 8339815910305487743
+    second: AlertText_130
+  - first:
+      213: 6877715814108321148
+    second: AlertText_131
+  - first:
+      213: -5133462093377872721
+    second: AlertText_132
+  - first:
+      213: 3354924399265829575
+    second: AlertText_133
+  - first:
+      213: 7336519252681692617
+    second: AlertText_134
+  - first:
+      213: -938647539099091916
+    second: AlertText_135
+  - first:
+      213: 8031707782801526589
+    second: AlertText_136
+  - first:
+      213: -4637375195089590899
+    second: AlertText_137
+  - first:
+      213: 1036819632940147413
+    second: AlertText_138
+  - first:
+      213: -5205805696594522363
+    second: AlertText_139
+  - first:
+      213: 605351340366814718
+    second: AlertText_140
+  - first:
+      213: 7842454551791043836
+    second: AlertText_141
+  - first:
+      213: 5518981913363736424
+    second: AlertText_142
+  - first:
+      213: 8164447267027170200
+    second: AlertText_143
+  - first:
+      213: -8762640576414212071
+    second: AlertText_144
+  - first:
+      213: -5543169059345809435
+    second: AlertText_145
+  - first:
+      213: 2615252310190103239
+    second: AlertText_146
+  - first:
+      213: 5047719902054127610
+    second: AlertText_147
+  - first:
+      213: 1027489066385144099
+    second: AlertText_148
+  - first:
+      213: 6215947463665422315
+    second: AlertText_149
+  - first:
+      213: 8805308999471766714
+    second: AlertText_150
+  - first:
+      213: -8197207120920300347
+    second: AlertText_151
+  - first:
+      213: 3777241343995652747
+    second: AlertText_152
+  - first:
+      213: 4873567415723425379
+    second: AlertText_153
+  - first:
+      213: 4288260207399193615
+    second: AlertText_154
+  - first:
+      213: -3345293698236056751
+    second: AlertText_155
+  - first:
+      213: 3314704299099726094
+    second: AlertText_156
+  - first:
+      213: 2780280530984145083
+    second: AlertText_157
+  - first:
+      213: 8946748025765671731
+    second: AlertText_158
+  - first:
+      213: 8643734875245495285
+    second: AlertText_159
+  - first:
+      213: 1826604845878939177
+    second: AlertText_160
+  - first:
+      213: 851788070335959451
+    second: AlertText_161
+  - first:
+      213: 965622219478826429
+    second: AlertText_162
+  - first:
+      213: 87566235188308389
+    second: AlertText_163
+  - first:
+      213: 1300805097459343063
+    second: AlertText_164
+  - first:
+      213: -8829179244798359057
+    second: AlertText_165
+  - first:
+      213: -3123906781455364185
+    second: AlertText_166
+  - first:
+      213: -1231122475734651480
+    second: AlertText_167
+  - first:
+      213: 5026322727857825324
+    second: AlertText_168
+  - first:
+      213: -6078596222567184117
+    second: AlertText_169
+  - first:
+      213: 20789983347731582
+    second: AlertText_170
+  - first:
+      213: -1530870118233472792
+    second: AlertText_171
+  - first:
+      213: 3888977594470165733
+    second: AlertText_172
+  - first:
+      213: 5762065093862659545
+    second: AlertText_173
+  - first:
+      213: -1201968297260470387
+    second: AlertText_174
+  - first:
+      213: 823420638776764877
+    second: AlertText_175
+  - first:
+      213: 2808494595518311535
+    second: AlertText_176
+  - first:
+      213: 8674971821703887550
+    second: AlertText_177
+  - first:
+      213: -7797083773421531016
+    second: AlertText_178
+  - first:
+      213: -7239604552147969982
+    second: AlertText_179
+  - first:
+      213: -955977247433967356
+    second: AlertText_180
+  - first:
+      213: 8704909820284170920
+    second: AlertText_181
+  - first:
+      213: 653400475358858405
+    second: AlertText_182
+  - first:
+      213: -3744603792401827185
+    second: AlertText_183
+  - first:
+      213: 7471793081602440558
+    second: AlertText_184
+  - first:
+      213: 2388544296928192049
+    second: AlertText_185
+  - first:
+      213: 1226375939470544728
+    second: AlertText_186
+  - first:
+      213: -1023302836615385999
+    second: AlertText_187
+  - first:
+      213: -9190972968747009350
+    second: AlertText_188
+  - first:
+      213: 5542499299334615792
+    second: AlertText_189
+  - first:
+      213: 2448744874591761137
+    second: AlertText_190
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlertText_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f739771fab141cb0800000000000000
+      internalID: -4894256456217839625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 410
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40915b1a42a645dc0800000000000000
+      internalID: -3651176692326262524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 410
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ccd2455c30317e0800000000000000
+      internalID: -1796087680334967679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 410
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ab9101415535790800000000000000
+      internalID: -7542591406257620369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 410
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a85ab374ded98bd30800000000000000
+      internalID: 4447478274456266122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d9fb5d011e08250800000000000000
+      internalID: 5944998970550885753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_6
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 407
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e382353fc777ec0800000000000000
+      internalID: -3569246795153785296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 410
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daac4e8d86c39f9b0800000000000000
+      internalID: -5045935486478792019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 410
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45c5055a5f877960800000000000000
+      internalID: 7599700514347271500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_9
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bed6afdbe5ddc0f0800000000000000
+      internalID: -1094983925334876488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 410
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d445dcfc8c1792b0800000000000000
+      internalID: -5577958221612235561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_11
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 410
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef23df4f31628b310800000000000000
+      internalID: 1420927549591859966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 410
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc84b5df99c891000800000000000000
+      internalID: 7191467426269388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9569a6d184cce7020800000000000000
+      internalID: 2341533466382472793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_14
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 410
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a01763ec5bbe5a0800000000000000
+      internalID: -6490894540643169769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_15
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c7b33988ee57890800000000000000
+      internalID: -7460794937316246417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_16
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 410
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad4773c9e7e54d10800000000000000
+      internalID: 2109346991685717413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_17
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 407
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c580c9937a9224c0800000000000000
+      internalID: -4313715671776066105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_18
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9310074208a8df880800000000000000
+      internalID: -8575545832471789255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 410
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324f7fbd4d7b10fc0800000000000000
+      internalID: -3530338508030348253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_20
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 410
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ca273d50c907590800000000000000
+      internalID: -7678465815830418301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_21
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 407
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb93e873956b99e0800000000000000
+      internalID: -1613584357419410456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 376
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab656be16e974ed40800000000000000
+      internalID: 5612745064875185850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_23
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 376
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d1f7f362ac6c0d0800000000000000
+      internalID: -3402810202808967848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_24
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 376
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e78365ebca8021f0800000000000000
+      internalID: -1071704102982678551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 376
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddda075e888b52a0800000000000000
+      internalID: -6747649471757492779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_26
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 376
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018e6e538ffebe7c0800000000000000
+      internalID: -4040872391299635184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_27
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 376
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b41a08d65ecc85f0800000000000000
+      internalID: -753000165290666830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_28
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 376
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d64adf8ae972fff0800000000000000
+      internalID: -3806601331194157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 373
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab24105afe562a50800000000000000
+      internalID: 6495983941706853295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_30
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 376
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b563f0453b1d740800000000000000
+      internalID: 5175114620439255863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_31
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 376
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171f17e2e6d038b30800000000000000
+      internalID: 4288286037063627121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 376
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f407cc2e3bbe15b0800000000000000
+      internalID: -5395669427829668617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_33
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 376
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d70f26153fedb280800000000000000
+      internalID: -9025795066896119854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_34
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 376
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1bb66ed9f1b2790800000000000000
+      internalID: -7553909186947730988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_35
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 376
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656dea579cda11c60800000000000000
+      internalID: 7787196311474722390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_36
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 376
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd567d82e97d87e0800000000000000
+      internalID: -1761617865289081399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_37
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 376
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fadc2f5f2c393b0800000000000000
+      internalID: -5506843557747642553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6667cf130127d3c20800000000000000
+      internalID: 3187829525131851366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_39
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 342
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf0bfebda4d5ecb0800000000000000
+      internalID: -4835224782213804112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_40
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 342
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13ea2701130ffbe0800000000000000
+      internalID: -1441429984065690854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_41
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585d0669893a0d5e0800000000000000
+      internalID: -1886828368114952827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_42
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 342
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4cda9420d0ae26e0800000000000000
+      internalID: -1860372780229665714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_43
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6600ad54a89f14d70800000000000000
+      internalID: 9025769500499902566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_44
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d9e70fa995ab1f0800000000000000
+      internalID: -1028411042906071702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_45
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb95205a600ec2470800000000000000
+      internalID: 8371312126517729723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_46
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 342
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f47ef294bff25a0800000000000000
+      internalID: -6543735441791168732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_47
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 342
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec4e394c6b2f6720800000000000000
+      internalID: 2841537633979354349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_48
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b9375feff51a730800000000000000
+      internalID: 4008590691980778292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_49
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 342
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b191569378cec740800000000000000
+      internalID: 5174293420664000953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_50
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 342
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855eadbe4c13350b0800000000000000
+      internalID: -5741190378126908072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_51
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b28ceb3ed6b695a0800000000000000
+      internalID: -6514818745340493131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_52
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 342
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0e8d03b083a88b80800000000000000
+      internalID: -8392278132449767924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_53
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 342
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976e0de7c63a43dd0800000000000000
+      internalID: -2507199406159108487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_54
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 342
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5e49484b5540e40800000000000000
+      internalID: 5621712468672046512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_55
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 308
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed08b402d462a6380800000000000000
+      internalID: -8977320794513506082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_56
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 308
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378b4746983c652b0800000000000000
+      internalID: -5596070492097955725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_57
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 305
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b1562ff05276ba0800000000000000
+      internalID: -6095862820201227397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_58
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 308
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2059e4ddc325c10800000000000000
+      internalID: 2040760502356083410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_59
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 308
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d1ce138a872ff70800000000000000
+      internalID: 9219564050968223081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_60
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 308
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ebf6da0cc332f50800000000000000
+      internalID: 6855389856029195853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_61
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5c07e16638439b0800000000000000
+      internalID: -5101308003283319383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_62
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 308
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b887d0c779cf65d80800000000000000
+      internalID: -8262138738813077365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_63
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 308
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cacdef3b26ab38f0800000000000000
+      internalID: -559671023991141690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_64
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 308
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aa2dbbf5e4fb340800000000000000
+      internalID: 4881706694172912221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_65
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 308
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8e17a3b317b1a20800000000000000
+      internalID: 3034143273161713838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_66
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 308
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672b103c621edd800800000000000000
+      internalID: 638914278753153654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_67
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 308
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96c41473e6b17d50800000000000000
+      internalID: 6733364005916952219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 274
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93c36497a2339970800000000000000
+      internalID: 8760401395496240028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_69
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 274
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71774a0aafd7f190800000000000000
+      internalID: -7928622697552580227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_70
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 274
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68e7aff09d0e53b0800000000000000
+      internalID: -5521961176694003603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_71
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 274
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9870a73ec464d5770800000000000000
+      internalID: 8601108159395399561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_72
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 274
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0832427bdc0ef00800000000000000
+      internalID: 1144140491821121786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_73
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 274
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e595bdc48478b6370800000000000000
+      internalID: 8316889881466591582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_74
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 274
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012cc5db8d5a67780800000000000000
+      internalID: -8685572481028931056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_75
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 274
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9cf31bcd82eebed0800000000000000
+      internalID: -2396228853089174373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_76
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 274
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ff00a502e868a10800000000000000
+      internalID: 1911371361465466720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_77
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 274
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e2a66649e765f70800000000000000
+      internalID: 9175660466652458594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_78
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 274
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ce6c7649d3667c0800000000000000
+      internalID: -4078504704931861453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_79
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 274
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8477ebdd8212340800000000000000
+      internalID: 4837192407620995298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_80
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 274
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1717e61e963df70e0800000000000000
+      internalID: -2269863235464302223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_81
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 274
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12717bcb90eb6380800000000000000
+      internalID: -8976834472495189475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_82
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 274
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60007ffe647a190d0800000000000000
+      internalID: -3417766719082004474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_83
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 271
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50203b911f2c1d050800000000000000
+      internalID: 5823650133940830725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_84
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 274
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6710f56172ed216c0800000000000000
+      internalID: -4174029645158612618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_85
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 274
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc72de1b76ed98aa0800000000000000
+      internalID: -6158146478504335412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_86
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 240
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9b7bc1002788fe0800000000000000
+      internalID: -1186573157004756527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_87
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea99014636aad6ad0800000000000000
+      internalID: -2707320457122506322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_88
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d945fb6ad0b8470800000000000000
+      internalID: 8397820939988147530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_89
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 240
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d59537c17651970800000000000000
+      internalID: 8724993224992185627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_90
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 240
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f483306a081ed4fe0800000000000000
+      internalID: -1203057582780762033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_91
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1486b816da77edc0800000000000000
+      internalID: -3609781516357958629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_92
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 240
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd3be4e83e4b36d0800000000000000
+      internalID: -3009725919701287471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_93
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 240
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9a87152a95e4640800000000000000
+      internalID: 5066085184524823038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_94
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dacde670362af130800000000000000
+      internalID: 3601232841631714002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_95
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 240
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b44c15241c84200800000000000000
+      internalID: 164593876982844285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_96
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 240
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed47d742635113860800000000000000
+      internalID: 7507805376087946462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_97
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 240
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c105968f18081c870800000000000000
+      internalID: 8701377250763296796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_98
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 240
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf0c75b30fe9f370800000000000000
+      internalID: 8356973382771412913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b6b47dedd253e00800000000000000
+      internalID: 1023774925414689693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_100
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 206
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d6eef7f39be39a0800000000000000
+      internalID: -6251355550363259547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_101
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 203
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874f26f84fa65abd0800000000000000
+      internalID: -2619570009635883912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_102
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 206
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fead3fd0126f86d00800000000000000
+      internalID: 966292741899410159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_103
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 206
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9505bcb8d6c0d1c0800000000000000
+      internalID: -4480862995052427875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_104
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 206
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1bf02f439018680800000000000000
+      internalID: -8754706077627469356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_105
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 206
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f02060e025831aa0800000000000000
+      internalID: -6191458686454456072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_106
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 206
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac5d001d1b6f11f0800000000000000
+      internalID: -1072020413723353949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_107
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 206
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5aa952910a0b330800000000000000
+      internalID: 3724652921700918708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_108
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 206
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49143a3998f4ba030800000000000000
+      internalID: 3506984187144126868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_109
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 206
+        width: 38
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27dc4d03e5914c00800000000000000
+      internalID: 883151804354582317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_110
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 206
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2bb4db22d0f32c20800000000000000
+      internalID: 3180650547322862378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_111
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 172
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7480ef4805fb2050800000000000000
+      internalID: 5776980363081450622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_112
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 172
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2ba5d6101c95a60800000000000000
+      internalID: 7663368452821398176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_113
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 169
+        width: 40
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f340770b837138210800000000000000
+      internalID: 1333935446877996095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_114
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 172
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46840b61fd210cb60800000000000000
+      internalID: 7764226506954393700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_115
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 172
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd2374be146b2f30800000000000000
+      internalID: 4551841931427261945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_116
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 172
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2584386fd10fb850800000000000000
+      internalID: 6394832054927000874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_117
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 172
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bea0b76096ac8e0800000000000000
+      internalID: -1672408835059684522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_118
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 172
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c005e277e3b7ff480800000000000000
+      internalID: -8863230033424134132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_119
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 172
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb53493d085761550800000000000000
+      internalID: 6131217138877478335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_120
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 172
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527d0b52502d55ff0800000000000000
+      internalID: -47901301468506331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e919d8d0ae1c590800000000000000
+      internalID: -7655580547622527425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_122
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 138
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78edfd69939052fa0800000000000000
+      internalID: -5826240399984828793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_123
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 138
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84dd67956f70a030800000000000000
+      internalID: 3503940584403227786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_124
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 138
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ba99af8ed8f3a50800000000000000
+      internalID: 6503072418722589473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_125
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 138
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b6920701024e31d0800000000000000
+      internalID: -3369182899046541646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_126
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 135
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a2f17be9fb5b2d0800000000000000
+      internalID: -3263491666562045355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_127
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 138
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fefc24ac1a7dbd0800000000000000
+      internalID: -2605435969334153455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_128
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 138
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b24321665aa99750800000000000000
+      internalID: 6312263640710070961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_129
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 136
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2262dfadc40c5d000800000000000000
+      internalID: 60165606363440674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_130
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 138
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bd8e9526afcb370800000000000000
+      internalID: 8339815910305487743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_131
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 138
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75530ed71e827f50800000000000000
+      internalID: 6877715814108321148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_132
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 138
+        width: 35
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac5740ac6742c8b0800000000000000
+      internalID: -5133462093377872721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_133
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 138
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2d78a47f51f8e20800000000000000
+      internalID: 3354924399265829575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_134
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 138
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c518e7c36d80d560800000000000000
+      internalID: 7336519252681692617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_135
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 138
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c34be490149f2f0800000000000000
+      internalID: -938647539099091916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_136
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 104
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f00a5bcab567f60800000000000000
+      internalID: 8031707782801526589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_137
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 104
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d852a7674dbb4afb0800000000000000
+      internalID: -4637375195089590899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_138
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 104
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d26c8d76f5836e00800000000000000
+      internalID: 1036819632940147413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_139
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 104
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f47ccec4341c7b0800000000000000
+      internalID: -5205805696594522363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_140
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 104
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdded636d3a66800800000000000000
+      internalID: 605351340366814718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_141
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 104
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf486ae1ddef5dc60800000000000000
+      internalID: 7842454551791043836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_142
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 104
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867e9d33fcc579c40800000000000000
+      internalID: 5518981913363736424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_143
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 70
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89330924881fd4170800000000000000
+      internalID: 8164447267027170200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_144
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 70
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910286c72d8d46680800000000000000
+      internalID: -8762640576414212071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_145
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 67
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efb1c70c15b213b0800000000000000
+      internalID: -5543169059345809435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_146
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 70
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca96e2be1e3b4420800000000000000
+      internalID: 2615252310190103239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_147
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 67
+        width: 54
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af71b97c18a1d0640800000000000000
+      internalID: 5047719902054127610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_148
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 70
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329fb7cacdf524e00800000000000000
+      internalID: 1027489066385144099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_149
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 70
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef8442e84b734650800000000000000
+      internalID: 6215947463665422315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_150
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 70
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc901be1edb23a70800000000000000
+      internalID: 8805308999471766714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_151
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 70
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c43e3fdd8bad3e80800000000000000
+      internalID: -8197207120920300347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_152
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 70
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8aa7cb5df47b6430800000000000000
+      internalID: 3777241343995652747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_153
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 70
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36efc1b4eb362a340800000000000000
+      internalID: 4873567415723425379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_154
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 70
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cc87e30f5f28b30800000000000000
+      internalID: 4288260207399193615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_155
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b79470b112391d0800000000000000
+      internalID: -3345293698236056751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_156
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 36
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01ac4b7ff1300e20800000000000000
+      internalID: 3314704299099726094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_157
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 36
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb09e31996a859620800000000000000
+      internalID: 2780280530984145083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_158
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 36
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333b0b27deb392c70800000000000000
+      internalID: 8946748025765671731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_159
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 33
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3c9a39217b4f770800000000000000
+      internalID: 8643734875245495285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_160
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 36
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e0f97fd67695910800000000000000
+      internalID: 1826604845878939177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_161
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 36
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b915a4cacb822db00800000000000000
+      internalID: 851788070335959451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_162
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 36
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd7243ea44966d00800000000000000
+      internalID: 965622219478826429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_163
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 36
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9a7b6e609173100800000000000000
+      internalID: 87566235188308389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_164
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 36
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ded41c18536d0210800000000000000
+      internalID: 1300805097459343063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_165
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 36
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9ca8f7144787580800000000000000
+      internalID: -8829179244798359057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_166
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 36
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af4beb5557a5a4d0800000000000000
+      internalID: -3123906781455364185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_167
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 36
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad26de81ac2aeee0800000000000000
+      internalID: -1231122475734651480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_168
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 36
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c262070f3e511c540800000000000000
+      internalID: 5026322727857825324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_169
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 36
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b090adcf0fc74aba0800000000000000
+      internalID: -6078596222567184117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_170
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 36
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ce354316cd94000800000000000000
+      internalID: 20789983347731582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_171
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 36
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e00f650db141cae0800000000000000
+      internalID: -1530870118233472792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_172
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 36
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ece8d9748c68f530800000000000000
+      internalID: 3888977594470165733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_173
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 36
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d59c549ca7f6ff40800000000000000
+      internalID: 5762065093862659545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_174
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 36
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f2282b330c15fe0800000000000000
+      internalID: -1201968297260470387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_175
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9a30355b06d6b00800000000000000
+      internalID: 823420638776764877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_176
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c297f54f6c9f620800000000000000
+      internalID: 2808494595518311535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_177
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebafe2de8e0b36870800000000000000
+      internalID: 8674971821703887550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_178
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8705f396e913bc390800000000000000
+      internalID: -7797083773421531016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_179
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2485be25402c78b90800000000000000
+      internalID: -7239604552147969982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_180
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409b75922cfabb2f0800000000000000
+      internalID: -955977247433967356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_181
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2f8d76c5d0ec870800000000000000
+      internalID: 8704909820284170920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_182
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac06dd3548511900800000000000000
+      internalID: 653400475358858405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_183
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8afe49c0be780cc0800000000000000
+      internalID: -3744603792401827185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_184
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d7220783421b760800000000000000
+      internalID: 7471793081602440558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_185
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 2
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136a0bc0260d52120800000000000000
+      internalID: 2388544296928192049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_186
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f4a395b66f40110800000000000000
+      internalID: 1226375939470544728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_187
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ce3e5ed7f7cc1f0800000000000000
+      internalID: -1023302836615385999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_188
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abafd91e7ca137080800000000000000
+      internalID: -9190972968747009350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_189
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2f0b05fb9eaec40800000000000000
+      internalID: 5542499299334615792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlertText_190
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2b99b4d70bbf120800000000000000
+      internalID: 2448744874591761137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlertText_0: -4894256456217839625
+      AlertText_1: -3651176692326262524
+      AlertText_10: -5577958221612235561
+      AlertText_100: -6251355550363259547
+      AlertText_101: -2619570009635883912
+      AlertText_102: 966292741899410159
+      AlertText_103: -4480862995052427875
+      AlertText_104: -8754706077627469356
+      AlertText_105: -6191458686454456072
+      AlertText_106: -1072020413723353949
+      AlertText_107: 3724652921700918708
+      AlertText_108: 3506984187144126868
+      AlertText_109: 883151804354582317
+      AlertText_11: 1420927549591859966
+      AlertText_110: 3180650547322862378
+      AlertText_111: 5776980363081450622
+      AlertText_112: 7663368452821398176
+      AlertText_113: 1333935446877996095
+      AlertText_114: 7764226506954393700
+      AlertText_115: 4551841931427261945
+      AlertText_116: 6394832054927000874
+      AlertText_117: -1672408835059684522
+      AlertText_118: -8863230033424134132
+      AlertText_119: 6131217138877478335
+      AlertText_12: 7191467426269388
+      AlertText_120: -47901301468506331
+      AlertText_121: -7655580547622527425
+      AlertText_122: -5826240399984828793
+      AlertText_123: 3503940584403227786
+      AlertText_124: 6503072418722589473
+      AlertText_125: -3369182899046541646
+      AlertText_126: -3263491666562045355
+      AlertText_127: -2605435969334153455
+      AlertText_128: 6312263640710070961
+      AlertText_129: 60165606363440674
+      AlertText_13: 2341533466382472793
+      AlertText_130: 8339815910305487743
+      AlertText_131: 6877715814108321148
+      AlertText_132: -5133462093377872721
+      AlertText_133: 3354924399265829575
+      AlertText_134: 7336519252681692617
+      AlertText_135: -938647539099091916
+      AlertText_136: 8031707782801526589
+      AlertText_137: -4637375195089590899
+      AlertText_138: 1036819632940147413
+      AlertText_139: -5205805696594522363
+      AlertText_14: -6490894540643169769
+      AlertText_140: 605351340366814718
+      AlertText_141: 7842454551791043836
+      AlertText_142: 5518981913363736424
+      AlertText_143: 8164447267027170200
+      AlertText_144: -8762640576414212071
+      AlertText_145: -5543169059345809435
+      AlertText_146: 2615252310190103239
+      AlertText_147: 5047719902054127610
+      AlertText_148: 1027489066385144099
+      AlertText_149: 6215947463665422315
+      AlertText_15: -7460794937316246417
+      AlertText_150: 8805308999471766714
+      AlertText_151: -8197207120920300347
+      AlertText_152: 3777241343995652747
+      AlertText_153: 4873567415723425379
+      AlertText_154: 4288260207399193615
+      AlertText_155: -3345293698236056751
+      AlertText_156: 3314704299099726094
+      AlertText_157: 2780280530984145083
+      AlertText_158: 8946748025765671731
+      AlertText_159: 8643734875245495285
+      AlertText_16: 2109346991685717413
+      AlertText_160: 1826604845878939177
+      AlertText_161: 851788070335959451
+      AlertText_162: 965622219478826429
+      AlertText_163: 87566235188308389
+      AlertText_164: 1300805097459343063
+      AlertText_165: -8829179244798359057
+      AlertText_166: -3123906781455364185
+      AlertText_167: -1231122475734651480
+      AlertText_168: 5026322727857825324
+      AlertText_169: -6078596222567184117
+      AlertText_17: -4313715671776066105
+      AlertText_170: 20789983347731582
+      AlertText_171: -1530870118233472792
+      AlertText_172: 3888977594470165733
+      AlertText_173: 5762065093862659545
+      AlertText_174: -1201968297260470387
+      AlertText_175: 823420638776764877
+      AlertText_176: 2808494595518311535
+      AlertText_177: 8674971821703887550
+      AlertText_178: -7797083773421531016
+      AlertText_179: -7239604552147969982
+      AlertText_18: -8575545832471789255
+      AlertText_180: -955977247433967356
+      AlertText_181: 8704909820284170920
+      AlertText_182: 653400475358858405
+      AlertText_183: -3744603792401827185
+      AlertText_184: 7471793081602440558
+      AlertText_185: 2388544296928192049
+      AlertText_186: 1226375939470544728
+      AlertText_187: -1023302836615385999
+      AlertText_188: -9190972968747009350
+      AlertText_189: 5542499299334615792
+      AlertText_19: -3530338508030348253
+      AlertText_190: 2448744874591761137
+      AlertText_2: -1796087680334967679
+      AlertText_20: -7678465815830418301
+      AlertText_21: -1613584357419410456
+      AlertText_22: 5612745064875185850
+      AlertText_23: -3402810202808967848
+      AlertText_24: -1071704102982678551
+      AlertText_25: -6747649471757492779
+      AlertText_26: -4040872391299635184
+      AlertText_27: -753000165290666830
+      AlertText_28: -3806601331194157
+      AlertText_29: 6495983941706853295
+      AlertText_3: -7542591406257620369
+      AlertText_30: 5175114620439255863
+      AlertText_31: 4288286037063627121
+      AlertText_32: -5395669427829668617
+      AlertText_33: -9025795066896119854
+      AlertText_34: -7553909186947730988
+      AlertText_35: 7787196311474722390
+      AlertText_36: -1761617865289081399
+      AlertText_37: -5506843557747642553
+      AlertText_38: 3187829525131851366
+      AlertText_39: -4835224782213804112
+      AlertText_4: 4447478274456266122
+      AlertText_40: -1441429984065690854
+      AlertText_41: -1886828368114952827
+      AlertText_42: -1860372780229665714
+      AlertText_43: 9025769500499902566
+      AlertText_44: -1028411042906071702
+      AlertText_45: 8371312126517729723
+      AlertText_46: -6543735441791168732
+      AlertText_47: 2841537633979354349
+      AlertText_48: 4008590691980778292
+      AlertText_49: 5174293420664000953
+      AlertText_5: 5944998970550885753
+      AlertText_50: -5741190378126908072
+      AlertText_51: -6514818745340493131
+      AlertText_52: -8392278132449767924
+      AlertText_53: -2507199406159108487
+      AlertText_54: 5621712468672046512
+      AlertText_55: -8977320794513506082
+      AlertText_56: -5596070492097955725
+      AlertText_57: -6095862820201227397
+      AlertText_58: 2040760502356083410
+      AlertText_59: 9219564050968223081
+      AlertText_6: -3569246795153785296
+      AlertText_60: 6855389856029195853
+      AlertText_61: -5101308003283319383
+      AlertText_62: -8262138738813077365
+      AlertText_63: -559671023991141690
+      AlertText_64: 4881706694172912221
+      AlertText_65: 3034143273161713838
+      AlertText_66: 638914278753153654
+      AlertText_67: 6733364005916952219
+      AlertText_68: 8760401395496240028
+      AlertText_69: -7928622697552580227
+      AlertText_7: -5045935486478792019
+      AlertText_70: -5521961176694003603
+      AlertText_71: 8601108159395399561
+      AlertText_72: 1144140491821121786
+      AlertText_73: 8316889881466591582
+      AlertText_74: -8685572481028931056
+      AlertText_75: -2396228853089174373
+      AlertText_76: 1911371361465466720
+      AlertText_77: 9175660466652458594
+      AlertText_78: -4078504704931861453
+      AlertText_79: 4837192407620995298
+      AlertText_8: 7599700514347271500
+      AlertText_80: -2269863235464302223
+      AlertText_81: -8976834472495189475
+      AlertText_82: -3417766719082004474
+      AlertText_83: 5823650133940830725
+      AlertText_84: -4174029645158612618
+      AlertText_85: -6158146478504335412
+      AlertText_86: -1186573157004756527
+      AlertText_87: -2707320457122506322
+      AlertText_88: 8397820939988147530
+      AlertText_89: 8724993224992185627
+      AlertText_9: -1094983925334876488
+      AlertText_90: -1203057582780762033
+      AlertText_91: -3609781516357958629
+      AlertText_92: -3009725919701287471
+      AlertText_93: 5066085184524823038
+      AlertText_94: 3601232841631714002
+      AlertText_95: 164593876982844285
+      AlertText_96: 7507805376087946462
+      AlertText_97: 8701377250763296796
+      AlertText_98: 8356973382771412913
+      AlertText_99: 1023774925414689693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

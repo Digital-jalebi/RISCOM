@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 7ce5466247917cc4ea6fe3d7115ab949
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7759513817759699220
+    second: Contain the hazard and protect staff_0
+  - first:
+      213: -6947492386840839142
+    second: Contain the hazard and protect staff_1
+  - first:
+      213: -4533282625636472261
+    second: Contain the hazard and protect staff_2
+  - first:
+      213: 5323942644004540659
+    second: Contain the hazard and protect staff_3
+  - first:
+      213: -8682560580763352437
+    second: Contain the hazard and protect staff_4
+  - first:
+      213: -6584419090410397491
+    second: Contain the hazard and protect staff_5
+  - first:
+      213: 3255522110180057369
+    second: Contain the hazard and protect staff_6
+  - first:
+      213: -1716504986477730022
+    second: Contain the hazard and protect staff_7
+  - first:
+      213: -5790464580333524686
+    second: Contain the hazard and protect staff_8
+  - first:
+      213: -539260608928571663
+    second: Contain the hazard and protect staff_9
+  - first:
+      213: 137404639626309742
+    second: Contain the hazard and protect staff_10
+  - first:
+      213: -7957636365955041939
+    second: Contain the hazard and protect staff_11
+  - first:
+      213: -2302198063776102513
+    second: Contain the hazard and protect staff_12
+  - first:
+      213: -690488091019926246
+    second: Contain the hazard and protect staff_13
+  - first:
+      213: 3651034309629877225
+    second: Contain the hazard and protect staff_14
+  - first:
+      213: 3106991165566798991
+    second: Contain the hazard and protect staff_15
+  - first:
+      213: -3436453336029306885
+    second: Contain the hazard and protect staff_16
+  - first:
+      213: 8100809943503910829
+    second: Contain the hazard and protect staff_17
+  - first:
+      213: 6697044256849742552
+    second: Contain the hazard and protect staff_18
+  - first:
+      213: 1356807043501143508
+    second: Contain the hazard and protect staff_19
+  - first:
+      213: 907896787108862719
+    second: Contain the hazard and protect staff_20
+  - first:
+      213: 4230617960991045677
+    second: Contain the hazard and protect staff_21
+  - first:
+      213: 8909039998343754692
+    second: Contain the hazard and protect staff_22
+  - first:
+      213: 8831899756306328968
+    second: Contain the hazard and protect staff_23
+  - first:
+      213: 6394980379536402873
+    second: Contain the hazard and protect staff_24
+  - first:
+      213: 9208902344112018536
+    second: Contain the hazard and protect staff_25
+  - first:
+      213: -2314349411216218620
+    second: Contain the hazard and protect staff_26
+  - first:
+      213: -8765696420830324600
+    second: Contain the hazard and protect staff_27
+  - first:
+      213: 4869687931491876652
+    second: Contain the hazard and protect staff_28
+  - first:
+      213: 7457327649471125702
+    second: Contain the hazard and protect staff_29
+  - first:
+      213: -9185717665034316180
+    second: Contain the hazard and protect staff_30
+  - first:
+      213: 6372287150804640549
+    second: Contain the hazard and protect staff_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4115d41a4b45fab60800000000000000
+      internalID: 7759513817759699220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 6
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cfe9acb7c859f90800000000000000
+      internalID: -6947492386840839142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 33
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3aec78687b8611c0800000000000000
+      internalID: -4533282625636472261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 6
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0d17490a172e940800000000000000
+      internalID: 5323942644004540659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 7
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b828aca6729518780800000000000000
+      internalID: -8682560580763352437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 7
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0a9c719b17f94a0800000000000000
+      internalID: -6584419090410397491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_6
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 6
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91166b75c10fd2d20800000000000000
+      internalID: 3255522110180057369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 6
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17eec92fcfbd28e0800000000000000
+      internalID: -1716504986477730022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 6
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2392db4b42324afa0800000000000000
+      internalID: -5790464580333524686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_9
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 6
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe937355592488f0800000000000000
+      internalID: -539260608928571663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_10
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 6
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60ba6faac828e100800000000000000
+      internalID: 137404639626309742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_11
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 7
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65f483f2ebc09190800000000000000
+      internalID: -7957636365955041939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_12
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 7
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87880efe03fc00e0800000000000000
+      internalID: -2302198063776102513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 6
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15ae155db4ea66f0800000000000000
+      internalID: -690488091019926246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_14
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 7
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb90405c541ba230800000000000000
+      internalID: 3651034309629877225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 6
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8cc2e7e0004e1b20800000000000000
+      internalID: 3106991165566798991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_16
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 7
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff54c2e5e34f40d0800000000000000
+      internalID: -3436453336029306885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_17
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 7
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7b08349bbdb6070800000000000000
+      internalID: 8100809943503910829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_18
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 6
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da4996e44ea0fc50800000000000000
+      internalID: 6697044256849742552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 6
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d532a041d854d210800000000000000
+      internalID: 1356807043501143508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_20
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 7
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa9750515f799c00800000000000000
+      internalID: 907896787108862719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 6
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d283249ee9c26ba30800000000000000
+      internalID: 4230617960991045677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_22
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 7
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3b6072da443ab70800000000000000
+      internalID: 8909039998343754692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_23
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 6
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d6f72f806319a70800000000000000
+      internalID: 8831899756306328968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_24
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 7
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b92cdbe5c88fb850800000000000000
+      internalID: 6394980379536402873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_25
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8641f0024e79ccf70800000000000000
+      internalID: 9208902344112018536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_26
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 7
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406a252f877c1efd0800000000000000
+      internalID: -2314349411216218620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_27
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 6
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888de734c8df95680800000000000000
+      internalID: -8765696420830324600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_28
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 6
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f749b7f5b949340800000000000000
+      internalID: 4869687931491876652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_29
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 6
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8dc609cffbd7760800000000000000
+      internalID: 7457327649471125702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_30
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 6
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c665990a376c58080800000000000000
+      internalID: -9185717665034316180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contain the hazard and protect staff_31
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 6
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5232f7ed669ee6850800000000000000
+      internalID: 6372287150804640549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Contain the hazard and protect staff_0: 7759513817759699220
+      Contain the hazard and protect staff_1: -6947492386840839142
+      Contain the hazard and protect staff_10: 137404639626309742
+      Contain the hazard and protect staff_11: -7957636365955041939
+      Contain the hazard and protect staff_12: -2302198063776102513
+      Contain the hazard and protect staff_13: -690488091019926246
+      Contain the hazard and protect staff_14: 3651034309629877225
+      Contain the hazard and protect staff_15: 3106991165566798991
+      Contain the hazard and protect staff_16: -3436453336029306885
+      Contain the hazard and protect staff_17: 8100809943503910829
+      Contain the hazard and protect staff_18: 6697044256849742552
+      Contain the hazard and protect staff_19: 1356807043501143508
+      Contain the hazard and protect staff_2: -4533282625636472261
+      Contain the hazard and protect staff_20: 907896787108862719
+      Contain the hazard and protect staff_21: 4230617960991045677
+      Contain the hazard and protect staff_22: 8909039998343754692
+      Contain the hazard and protect staff_23: 8831899756306328968
+      Contain the hazard and protect staff_24: 6394980379536402873
+      Contain the hazard and protect staff_25: 9208902344112018536
+      Contain the hazard and protect staff_26: -2314349411216218620
+      Contain the hazard and protect staff_27: -8765696420830324600
+      Contain the hazard and protect staff_28: 4869687931491876652
+      Contain the hazard and protect staff_29: 7457327649471125702
+      Contain the hazard and protect staff_3: 5323942644004540659
+      Contain the hazard and protect staff_30: -9185717665034316180
+      Contain the hazard and protect staff_31: 6372287150804640549
+      Contain the hazard and protect staff_4: -8682560580763352437
+      Contain the hazard and protect staff_5: -6584419090410397491
+      Contain the hazard and protect staff_6: 3255522110180057369
+      Contain the hazard and protect staff_7: -1716504986477730022
+      Contain the hazard and protect staff_8: -5790464580333524686
+      Contain the hazard and protect staff_9: -539260608928571663
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

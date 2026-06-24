@@ -1,0 +1,1261 @@
+fileFormatVersion: 2
+guid: 66bb7d0c12833e348861912180f2ab45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1519105640730679612
+    second: Secure key infrastructure before the arrival of rain_0
+  - first:
+      213: 6472106077402647901
+    second: Secure key infrastructure before the arrival of rain_1
+  - first:
+      213: -5090162661973340969
+    second: Secure key infrastructure before the arrival of rain_2
+  - first:
+      213: -2868935658385395313
+    second: Secure key infrastructure before the arrival of rain_3
+  - first:
+      213: -8309769140712236868
+    second: Secure key infrastructure before the arrival of rain_4
+  - first:
+      213: 3014254249329854538
+    second: Secure key infrastructure before the arrival of rain_5
+  - first:
+      213: 2264328161792023834
+    second: Secure key infrastructure before the arrival of rain_6
+  - first:
+      213: -4724715275660682500
+    second: Secure key infrastructure before the arrival of rain_7
+  - first:
+      213: -22259543951700547
+    second: Secure key infrastructure before the arrival of rain_8
+  - first:
+      213: -6067666812383587377
+    second: Secure key infrastructure before the arrival of rain_9
+  - first:
+      213: 1243501665063567467
+    second: Secure key infrastructure before the arrival of rain_10
+  - first:
+      213: 55720540663771448
+    second: Secure key infrastructure before the arrival of rain_11
+  - first:
+      213: 6191686347829375203
+    second: Secure key infrastructure before the arrival of rain_12
+  - first:
+      213: 4082881871334048486
+    second: Secure key infrastructure before the arrival of rain_13
+  - first:
+      213: -3929314925181325296
+    second: Secure key infrastructure before the arrival of rain_14
+  - first:
+      213: -2433193751593115720
+    second: Secure key infrastructure before the arrival of rain_15
+  - first:
+      213: 1362995317934835751
+    second: Secure key infrastructure before the arrival of rain_16
+  - first:
+      213: 6951745437034434687
+    second: Secure key infrastructure before the arrival of rain_17
+  - first:
+      213: -9045475953247182116
+    second: Secure key infrastructure before the arrival of rain_18
+  - first:
+      213: -1635725059611082647
+    second: Secure key infrastructure before the arrival of rain_19
+  - first:
+      213: 8394068165848295637
+    second: Secure key infrastructure before the arrival of rain_20
+  - first:
+      213: 1107703665856660478
+    second: Secure key infrastructure before the arrival of rain_21
+  - first:
+      213: -4912635018958365226
+    second: Secure key infrastructure before the arrival of rain_22
+  - first:
+      213: -6895300656443489375
+    second: Secure key infrastructure before the arrival of rain_23
+  - first:
+      213: 5344220650360876980
+    second: Secure key infrastructure before the arrival of rain_24
+  - first:
+      213: 5484055700917418863
+    second: Secure key infrastructure before the arrival of rain_25
+  - first:
+      213: 165419157782298931
+    second: Secure key infrastructure before the arrival of rain_26
+  - first:
+      213: -1526794802153591296
+    second: Secure key infrastructure before the arrival of rain_27
+  - first:
+      213: 5651658959063746412
+    second: Secure key infrastructure before the arrival of rain_28
+  - first:
+      213: 2523180077414624877
+    second: Secure key infrastructure before the arrival of rain_29
+  - first:
+      213: 1735259901065294408
+    second: Secure key infrastructure before the arrival of rain_30
+  - first:
+      213: 975863127721912103
+    second: Secure key infrastructure before the arrival of rain_31
+  - first:
+      213: -5806222419453625648
+    second: Secure key infrastructure before the arrival of rain_32
+  - first:
+      213: 6760739875588646577
+    second: Secure key infrastructure before the arrival of rain_33
+  - first:
+      213: -4371297342961068739
+    second: Secure key infrastructure before the arrival of rain_34
+  - first:
+      213: 8732734509000907437
+    second: Secure key infrastructure before the arrival of rain_35
+  - first:
+      213: -2514454390382168287
+    second: Secure key infrastructure before the arrival of rain_36
+  - first:
+      213: 8468425243065850577
+    second: Secure key infrastructure before the arrival of rain_37
+  - first:
+      213: -4725821045836765896
+    second: Secure key infrastructure before the arrival of rain_38
+  - first:
+      213: 4403135451157930825
+    second: Secure key infrastructure before the arrival of rain_39
+  - first:
+      213: -5720329845119342945
+    second: Secure key infrastructure before the arrival of rain_40
+  - first:
+      213: 7796979069496473850
+    second: Secure key infrastructure before the arrival of rain_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6a4f3e77d0beae0800000000000000
+      internalID: -1519105640730679612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d4b3ccf2a81d950800000000000000
+      internalID: 6472106077402647901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc4f1c170c1c59b0800000000000000
+      internalID: -5090162661973340969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81bc7e083e7f28d0800000000000000
+      internalID: -2868935658385395313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8185a5ef4cdac80800000000000000
+      internalID: -8309769140712236868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4884020548c4d920800000000000000
+      internalID: 3014254249329854538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1dd68a57728c6f10800000000000000
+      internalID: 2264328161792023834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa12694d707e6eb0800000000000000
+      internalID: -4724715275660682500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd85ed001be0bff0800000000000000
+      internalID: -22259543951700547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc313789e215bcba0800000000000000
+      internalID: -6067666812383587377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_10
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6088bf0d2ec14110800000000000000
+      internalID: 1243501665063567467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_11
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831f4f85985f5c000800000000000000
+      internalID: 55720540663771448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0710bade94de550800000000000000
+      internalID: 6191686347829375203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e28fb01e6f49a830800000000000000
+      internalID: 4082881871334048486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_14
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 0
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0103de9d4e44879c0800000000000000
+      internalID: -3929314925181325296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf979eac2f8b3ed0800000000000000
+      internalID: -2433193751593115720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_16
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728c60c25055ae210800000000000000
+      internalID: 1362995317934835751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_17
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70516f94af897060800000000000000
+      internalID: 6951745437034434687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_18
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 20
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd22d56ab83087280800000000000000
+      internalID: -9045475953247182116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_19
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9604da789bcbc49e0800000000000000
+      internalID: -1635725059611082647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_20
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d86dcde588bd7470800000000000000
+      internalID: 8394068165848295637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_21
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3c8cf7d9a5f5f00800000000000000
+      internalID: 1107703665856660478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_22
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd97df7a70d2dbb0800000000000000
+      internalID: -4912635018958365226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_23
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 20
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a30b29f598fe40a0800000000000000
+      internalID: -6895300656443489375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_24
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf211add5c7a2a40800000000000000
+      internalID: 5344220650360876980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_25
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b73adaa974b1c40800000000000000
+      internalID: 5484055700917418863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_26
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33188aaf8dfab4200800000000000000
+      internalID: 165419157782298931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_27
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ee8bc773cbfcae0800000000000000
+      internalID: -1526794802153591296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_28
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6706a621e9be6e40800000000000000
+      internalID: 5651658959063746412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_29
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e24aa79e2240320800000000000000
+      internalID: 2523180077414624877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_30
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842f9fbafa1e41810800000000000000
+      internalID: 1735259901065294408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_31
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 20
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72724452856fa8d00800000000000000
+      internalID: 975863127721912103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_32
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 0
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dabe81e8772c6fa0800000000000000
+      internalID: -5806222419453625648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_33
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6a74fc819f2dd50800000000000000
+      internalID: 6760739875588646577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_34
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3552390a380653c0800000000000000
+      internalID: -4371297342961068739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_35
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa5bc694c7e03970800000000000000
+      internalID: 8732734509000907437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_36
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 0
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1277959dd0dda1dd0800000000000000
+      internalID: -2514454390382168287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_37
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da14e314e3e58570800000000000000
+      internalID: 8468425243065850577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_38
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835a5da1cc28a6eb0800000000000000
+      internalID: -4725821045836765896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_39
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943a2303d541b1d30800000000000000
+      internalID: 4403135451157930825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_40
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 0
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96a89f305e4d90b0800000000000000
+      internalID: -5720329845119342945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Secure key infrastructure before the arrival of rain_41
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af83e7e472f643c60800000000000000
+      internalID: 7796979069496473850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Secure key infrastructure before the arrival of rain_0: -1519105640730679612
+      Secure key infrastructure before the arrival of rain_1: 6472106077402647901
+      Secure key infrastructure before the arrival of rain_10: 1243501665063567467
+      Secure key infrastructure before the arrival of rain_11: 55720540663771448
+      Secure key infrastructure before the arrival of rain_12: 6191686347829375203
+      Secure key infrastructure before the arrival of rain_13: 4082881871334048486
+      Secure key infrastructure before the arrival of rain_14: -3929314925181325296
+      Secure key infrastructure before the arrival of rain_15: -2433193751593115720
+      Secure key infrastructure before the arrival of rain_16: 1362995317934835751
+      Secure key infrastructure before the arrival of rain_17: 6951745437034434687
+      Secure key infrastructure before the arrival of rain_18: -9045475953247182116
+      Secure key infrastructure before the arrival of rain_19: -1635725059611082647
+      Secure key infrastructure before the arrival of rain_2: -5090162661973340969
+      Secure key infrastructure before the arrival of rain_20: 8394068165848295637
+      Secure key infrastructure before the arrival of rain_21: 1107703665856660478
+      Secure key infrastructure before the arrival of rain_22: -4912635018958365226
+      Secure key infrastructure before the arrival of rain_23: -6895300656443489375
+      Secure key infrastructure before the arrival of rain_24: 5344220650360876980
+      Secure key infrastructure before the arrival of rain_25: 5484055700917418863
+      Secure key infrastructure before the arrival of rain_26: 165419157782298931
+      Secure key infrastructure before the arrival of rain_27: -1526794802153591296
+      Secure key infrastructure before the arrival of rain_28: 5651658959063746412
+      Secure key infrastructure before the arrival of rain_29: 2523180077414624877
+      Secure key infrastructure before the arrival of rain_3: -2868935658385395313
+      Secure key infrastructure before the arrival of rain_30: 1735259901065294408
+      Secure key infrastructure before the arrival of rain_31: 975863127721912103
+      Secure key infrastructure before the arrival of rain_32: -5806222419453625648
+      Secure key infrastructure before the arrival of rain_33: 6760739875588646577
+      Secure key infrastructure before the arrival of rain_34: -4371297342961068739
+      Secure key infrastructure before the arrival of rain_35: 8732734509000907437
+      Secure key infrastructure before the arrival of rain_36: -2514454390382168287
+      Secure key infrastructure before the arrival of rain_37: 8468425243065850577
+      Secure key infrastructure before the arrival of rain_38: -4725821045836765896
+      Secure key infrastructure before the arrival of rain_39: 4403135451157930825
+      Secure key infrastructure before the arrival of rain_4: -8309769140712236868
+      Secure key infrastructure before the arrival of rain_40: -5720329845119342945
+      Secure key infrastructure before the arrival of rain_41: 7796979069496473850
+      Secure key infrastructure before the arrival of rain_5: 3014254249329854538
+      Secure key infrastructure before the arrival of rain_6: 2264328161792023834
+      Secure key infrastructure before the arrival of rain_7: -4724715275660682500
+      Secure key infrastructure before the arrival of rain_8: -22259543951700547
+      Secure key infrastructure before the arrival of rain_9: -6067666812383587377
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1443 @@
+fileFormatVersion: 2
+guid: 93e9fbb3342c01e4aa81d1ca27b81bf5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2115251016169147937
+    second: "Identify the leakage areas and activate\Lthe alarm system_0"
+  - first:
+      213: 1767802302228846125
+    second: "Identify the leakage areas and activate\Lthe alarm system_1"
+  - first:
+      213: -1414606225094777215
+    second: "Identify the leakage areas and activate\Lthe alarm system_2"
+  - first:
+      213: -3668620559956428888
+    second: "Identify the leakage areas and activate\Lthe alarm system_3"
+  - first:
+      213: 3363881858107665405
+    second: "Identify the leakage areas and activate\Lthe alarm system_4"
+  - first:
+      213: 3392615854043879600
+    second: "Identify the leakage areas and activate\Lthe alarm system_5"
+  - first:
+      213: 1546892683370420990
+    second: "Identify the leakage areas and activate\Lthe alarm system_6"
+  - first:
+      213: 594448193469298521
+    second: "Identify the leakage areas and activate\Lthe alarm system_7"
+  - first:
+      213: -1975023033850869914
+    second: "Identify the leakage areas and activate\Lthe alarm system_8"
+  - first:
+      213: -8755975232681690303
+    second: "Identify the leakage areas and activate\Lthe alarm system_9"
+  - first:
+      213: -8382033395399952869
+    second: "Identify the leakage areas and activate\Lthe alarm system_10"
+  - first:
+      213: -8476829054160140398
+    second: "Identify the leakage areas and activate\Lthe alarm system_11"
+  - first:
+      213: -233044682266207930
+    second: "Identify the leakage areas and activate\Lthe alarm system_12"
+  - first:
+      213: -7474254896387312385
+    second: "Identify the leakage areas and activate\Lthe alarm system_13"
+  - first:
+      213: 300281980185321566
+    second: "Identify the leakage areas and activate\Lthe alarm system_14"
+  - first:
+      213: -1356011498028078676
+    second: "Identify the leakage areas and activate\Lthe alarm system_15"
+  - first:
+      213: 3916706441012540960
+    second: "Identify the leakage areas and activate\Lthe alarm system_16"
+  - first:
+      213: 2548416854457029544
+    second: "Identify the leakage areas and activate\Lthe alarm system_17"
+  - first:
+      213: -8582346818657452898
+    second: "Identify the leakage areas and activate\Lthe alarm system_18"
+  - first:
+      213: 3424498029338077593
+    second: "Identify the leakage areas and activate\Lthe alarm system_19"
+  - first:
+      213: 4017954092309130839
+    second: "Identify the leakage areas and activate\Lthe alarm system_20"
+  - first:
+      213: -4918354304894893827
+    second: "Identify the leakage areas and activate\Lthe alarm system_21"
+  - first:
+      213: 8753938018434999366
+    second: "Identify the leakage areas and activate\Lthe alarm system_22"
+  - first:
+      213: 3050835903282532664
+    second: "Identify the leakage areas and activate\Lthe alarm system_23"
+  - first:
+      213: 3401048920230177520
+    second: "Identify the leakage areas and activate\Lthe alarm system_24"
+  - first:
+      213: 7852014394108888840
+    second: "Identify the leakage areas and activate\Lthe alarm system_25"
+  - first:
+      213: 7198819379390844501
+    second: "Identify the leakage areas and activate\Lthe alarm system_26"
+  - first:
+      213: -5011609125270025552
+    second: "Identify the leakage areas and activate\Lthe alarm system_27"
+  - first:
+      213: -4665518329584182942
+    second: "Identify the leakage areas and activate\Lthe alarm system_28"
+  - first:
+      213: 8211163689374154763
+    second: "Identify the leakage areas and activate\Lthe alarm system_29"
+  - first:
+      213: 7559192707366503981
+    second: "Identify the leakage areas and activate\Lthe alarm system_30"
+  - first:
+      213: -3388658524771410052
+    second: "Identify the leakage areas and activate\Lthe alarm system_31"
+  - first:
+      213: -4208113223577021181
+    second: "Identify the leakage areas and activate\Lthe alarm system_32"
+  - first:
+      213: 2245172260573521173
+    second: "Identify the leakage areas and activate\Lthe alarm system_33"
+  - first:
+      213: -7717643296052204705
+    second: "Identify the leakage areas and activate\Lthe alarm system_34"
+  - first:
+      213: -482029683672983487
+    second: "Identify the leakage areas and activate\Lthe alarm system_35"
+  - first:
+      213: -5164702357152421009
+    second: "Identify the leakage areas and activate\Lthe alarm system_36"
+  - first:
+      213: -8323388339155392434
+    second: "Identify the leakage areas and activate\Lthe alarm system_37"
+  - first:
+      213: 7903537883524605578
+    second: "Identify the leakage areas and activate\Lthe alarm system_38"
+  - first:
+      213: 5190591840096713832
+    second: "Identify the leakage areas and activate\Lthe alarm system_39"
+  - first:
+      213: 5512577049224634060
+    second: "Identify the leakage areas and activate\Lthe alarm system_40"
+  - first:
+      213: 8368450928478538788
+    second: "Identify the leakage areas and activate\Lthe alarm system_41"
+  - first:
+      213: -305900144457871468
+    second: "Identify the leakage areas and activate\Lthe alarm system_42"
+  - first:
+      213: -1386429392855727797
+    second: "Identify the leakage areas and activate\Lthe alarm system_43"
+  - first:
+      213: 8058102033609964244
+    second: "Identify the leakage areas and activate\Lthe alarm system_44"
+  - first:
+      213: 3626113749838089513
+    second: "Identify the leakage areas and activate\Lthe alarm system_45"
+  - first:
+      213: 6729608811243070362
+    second: "Identify the leakage areas and activate\Lthe alarm system_46"
+  - first:
+      213: 1300298745268708750
+    second: "Identify the leakage areas and activate\Lthe alarm system_47"
+  - first:
+      213: -5428252178512290056
+    second: "Identify the leakage areas and activate\Lthe alarm system_48"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ecb859791ea5d10800000000000000
+      internalID: 2115251016169147937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_1"
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 53
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26d771e3de788810800000000000000
+      internalID: 1767802302228846125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_2"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 53
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1866b28122f4e5ce0800000000000000
+      internalID: -1414606225094777215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_3"
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 80
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a73a14b901761dc0800000000000000
+      internalID: -3668620559956428888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_4"
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 45
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb63e23ab8eeae20800000000000000
+      internalID: 3363881858107665405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_5"
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 53
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8d4a7f42ef41f20800000000000000
+      internalID: 3392615854043879600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_6"
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 54
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efad1f123baa77510800000000000000
+      internalID: 1546892683370420990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_7"
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 54
+        width: 9
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9573c118b77ef3800800000000000000
+      internalID: 594448193469298521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_8"
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 54
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667ca1cc30f4794e0800000000000000
+      internalID: -1975023033850869914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_9"
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 53
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bb3e1cae68c7680800000000000000
+      internalID: -8755975232681690303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_10"
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 53
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1679bb69090dab80800000000000000
+      internalID: -8382033395399952869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_11"
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 80
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297031d23e04c5a80800000000000000
+      internalID: -8476829054160140398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_12"
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 53
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6499ab0a81f04ccf0800000000000000
+      internalID: -233044682266207930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_13"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff43c14a5cc164890800000000000000
+      internalID: -7474254896387312385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_14"
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 54
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50a569bed0da2400800000000000000
+      internalID: 300281980185321566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_15"
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 54
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9e0bc1aba7e2de0800000000000000
+      internalID: -1356011498028078676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_16"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 53
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026790aa1cfea5630800000000000000
+      internalID: 3916706441012540960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_17"
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 53
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3978580abcd5320800000000000000
+      internalID: 2548416854457029544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_18"
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 53
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9cf7b62a0165e880800000000000000
+      internalID: -8582346818657452898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_19"
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 53
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999a8bc50d2468f20800000000000000
+      internalID: 3424498029338077593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_20"
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 45
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ea9eb75f3a2c730800000000000000
+      internalID: 4017954092309130839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_21"
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df00a3971de7ebbb0800000000000000
+      internalID: -4918354304894893827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_22"
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 53
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644ea965f3c3c7970800000000000000
+      internalID: 8753938018434999366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_23"
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 54
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831d92b071fb65a20800000000000000
+      internalID: 3050835903282532664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_24"
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faab0239f3f23f20800000000000000
+      internalID: 3401048920230177520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_25"
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 53
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8074d1c5d75f7fc60800000000000000
+      internalID: 7852014394108888840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_26"
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e0ac6a51857e360800000000000000
+      internalID: 7198819379390844501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_27"
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba8c2f9d00337ab0800000000000000
+      internalID: -5011609125270025552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_28"
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 54
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2699f085ccfb04fb0800000000000000
+      internalID: -4665518329584182942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_29"
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b008bb1fed9e3f170800000000000000
+      internalID: 8211163689374154763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_30"
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26cd4f87b5a7e860800000000000000
+      internalID: 7559192707366503981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_31"
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 54
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f96ed860119f0d0800000000000000
+      internalID: -3388658524771410052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_32"
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 54
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30551169157c995c0800000000000000
+      internalID: -4208113223577021181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_33"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 53
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515ab0b8644782f10800000000000000
+      internalID: 2245172260573521173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_34"
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 53
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b22a3ef4c65e490800000000000000
+      internalID: -7717643296052204705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_35"
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 7
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1485a7d7e8c7f49f0800000000000000
+      internalID: -482029683672983487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_36"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 8
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6bae47e19a4358b0800000000000000
+      internalID: -5164702357152421009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_37"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48a30d97626d7c80800000000000000
+      internalID: -8323388339155392434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_38"
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86a35094d10fad60800000000000000
+      internalID: 7903537883524605578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_39"
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 8
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c710317cfa80840800000000000000
+      internalID: 5190591840096713832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_40"
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce51009e9b908c40800000000000000
+      internalID: 5512577049224634060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_41"
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 8
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c404018c5b22470800000000000000
+      internalID: 8368450928478538788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_42"
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 8
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f09d8707931cbf0800000000000000
+      internalID: -305900144457871468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_43"
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b418ca410d962cce0800000000000000
+      internalID: -1386429392855727797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_44"
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 0
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dabc2d1b1124df60800000000000000
+      internalID: 8058102033609964244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_45"
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 7
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d42465e3b825230800000000000000
+      internalID: 3626113749838089513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_46"
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 7
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a936b7f0f8f546d50800000000000000
+      internalID: 6729608811243070362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_47"
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 7
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85a0adc1d69b0210800000000000000
+      internalID: 1300298745268708750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Identify the leakage areas and activate\Lthe alarm system_48"
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 8
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fed88c5769faa4b0800000000000000
+      internalID: -5428252178512290056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Identify the leakage areas and activate\Lthe alarm system_0": 2115251016169147937
+      "Identify the leakage areas and activate\Lthe alarm system_1": 1767802302228846125
+      "Identify the leakage areas and activate\Lthe alarm system_10": -8382033395399952869
+      "Identify the leakage areas and activate\Lthe alarm system_11": -8476829054160140398
+      "Identify the leakage areas and activate\Lthe alarm system_12": -233044682266207930
+      "Identify the leakage areas and activate\Lthe alarm system_13": -7474254896387312385
+      "Identify the leakage areas and activate\Lthe alarm system_14": 300281980185321566
+      "Identify the leakage areas and activate\Lthe alarm system_15": -1356011498028078676
+      "Identify the leakage areas and activate\Lthe alarm system_16": 3916706441012540960
+      "Identify the leakage areas and activate\Lthe alarm system_17": 2548416854457029544
+      "Identify the leakage areas and activate\Lthe alarm system_18": -8582346818657452898
+      "Identify the leakage areas and activate\Lthe alarm system_19": 3424498029338077593
+      "Identify the leakage areas and activate\Lthe alarm system_2": -1414606225094777215
+      "Identify the leakage areas and activate\Lthe alarm system_20": 4017954092309130839
+      "Identify the leakage areas and activate\Lthe alarm system_21": -4918354304894893827
+      "Identify the leakage areas and activate\Lthe alarm system_22": 8753938018434999366
+      "Identify the leakage areas and activate\Lthe alarm system_23": 3050835903282532664
+      "Identify the leakage areas and activate\Lthe alarm system_24": 3401048920230177520
+      "Identify the leakage areas and activate\Lthe alarm system_25": 7852014394108888840
+      "Identify the leakage areas and activate\Lthe alarm system_26": 7198819379390844501
+      "Identify the leakage areas and activate\Lthe alarm system_27": -5011609125270025552
+      "Identify the leakage areas and activate\Lthe alarm system_28": -4665518329584182942
+      "Identify the leakage areas and activate\Lthe alarm system_29": 8211163689374154763
+      "Identify the leakage areas and activate\Lthe alarm system_3": -3668620559956428888
+      "Identify the leakage areas and activate\Lthe alarm system_30": 7559192707366503981
+      "Identify the leakage areas and activate\Lthe alarm system_31": -3388658524771410052
+      "Identify the leakage areas and activate\Lthe alarm system_32": -4208113223577021181
+      "Identify the leakage areas and activate\Lthe alarm system_33": 2245172260573521173
+      "Identify the leakage areas and activate\Lthe alarm system_34": -7717643296052204705
+      "Identify the leakage areas and activate\Lthe alarm system_35": -482029683672983487
+      "Identify the leakage areas and activate\Lthe alarm system_36": -5164702357152421009
+      "Identify the leakage areas and activate\Lthe alarm system_37": -8323388339155392434
+      "Identify the leakage areas and activate\Lthe alarm system_38": 7903537883524605578
+      "Identify the leakage areas and activate\Lthe alarm system_39": 5190591840096713832
+      "Identify the leakage areas and activate\Lthe alarm system_4": 3363881858107665405
+      "Identify the leakage areas and activate\Lthe alarm system_40": 5512577049224634060
+      "Identify the leakage areas and activate\Lthe alarm system_41": 8368450928478538788
+      "Identify the leakage areas and activate\Lthe alarm system_42": -305900144457871468
+      "Identify the leakage areas and activate\Lthe alarm system_43": -1386429392855727797
+      "Identify the leakage areas and activate\Lthe alarm system_44": 8058102033609964244
+      "Identify the leakage areas and activate\Lthe alarm system_45": 3626113749838089513
+      "Identify the leakage areas and activate\Lthe alarm system_46": 6729608811243070362
+      "Identify the leakage areas and activate\Lthe alarm system_47": 1300298745268708750
+      "Identify the leakage areas and activate\Lthe alarm system_48": -5428252178512290056
+      "Identify the leakage areas and activate\Lthe alarm system_5": 3392615854043879600
+      "Identify the leakage areas and activate\Lthe alarm system_6": 1546892683370420990
+      "Identify the leakage areas and activate\Lthe alarm system_7": 594448193469298521
+      "Identify the leakage areas and activate\Lthe alarm system_8": -1975023033850869914
+      "Identify the leakage areas and activate\Lthe alarm system_9": -8755975232681690303
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

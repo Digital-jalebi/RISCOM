@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: d1dcbd3f5cd1e104ba54edbf22348e96
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6568984105149868483
+    second: Prevent Humanitarian collapse during peak drought_0
+  - first:
+      213: 6575759824425094188
+    second: Prevent Humanitarian collapse during peak drought_1
+  - first:
+      213: -2632397185697398338
+    second: Prevent Humanitarian collapse during peak drought_2
+  - first:
+      213: -8165819945981674030
+    second: Prevent Humanitarian collapse during peak drought_3
+  - first:
+      213: 6097042679416571443
+    second: Prevent Humanitarian collapse during peak drought_4
+  - first:
+      213: 5395260016086779967
+    second: Prevent Humanitarian collapse during peak drought_5
+  - first:
+      213: -3262472987925461206
+    second: Prevent Humanitarian collapse during peak drought_6
+  - first:
+      213: 4310018139356324219
+    second: Prevent Humanitarian collapse during peak drought_7
+  - first:
+      213: -8866789677467416612
+    second: Prevent Humanitarian collapse during peak drought_8
+  - first:
+      213: -2610389642620776214
+    second: Prevent Humanitarian collapse during peak drought_9
+  - first:
+      213: 5690663063571911333
+    second: Prevent Humanitarian collapse during peak drought_10
+  - first:
+      213: -7461584986431402334
+    second: Prevent Humanitarian collapse during peak drought_11
+  - first:
+      213: -4444673344421117383
+    second: Prevent Humanitarian collapse during peak drought_12
+  - first:
+      213: -5569499327007779655
+    second: Prevent Humanitarian collapse during peak drought_13
+  - first:
+      213: -4807539725159824903
+    second: Prevent Humanitarian collapse during peak drought_14
+  - first:
+      213: -1010425899640419922
+    second: Prevent Humanitarian collapse during peak drought_15
+  - first:
+      213: -3951446262268408674
+    second: Prevent Humanitarian collapse during peak drought_16
+  - first:
+      213: 959101048573830877
+    second: Prevent Humanitarian collapse during peak drought_17
+  - first:
+      213: 2694868930718752604
+    second: Prevent Humanitarian collapse during peak drought_18
+  - first:
+      213: -4343073007828551184
+    second: Prevent Humanitarian collapse during peak drought_19
+  - first:
+      213: -3831754983184780252
+    second: Prevent Humanitarian collapse during peak drought_20
+  - first:
+      213: 8656390280376405395
+    second: Prevent Humanitarian collapse during peak drought_21
+  - first:
+      213: 610856703268280393
+    second: Prevent Humanitarian collapse during peak drought_22
+  - first:
+      213: 7274382805453629479
+    second: Prevent Humanitarian collapse during peak drought_23
+  - first:
+      213: -3947479117498192428
+    second: Prevent Humanitarian collapse during peak drought_24
+  - first:
+      213: -8529659187183254576
+    second: Prevent Humanitarian collapse during peak drought_25
+  - first:
+      213: 2623918687177320558
+    second: Prevent Humanitarian collapse during peak drought_26
+  - first:
+      213: -8008043377586158536
+    second: Prevent Humanitarian collapse during peak drought_27
+  - first:
+      213: 2743399312749395291
+    second: Prevent Humanitarian collapse during peak drought_28
+  - first:
+      213: -3914765443921942044
+    second: Prevent Humanitarian collapse during peak drought_29
+  - first:
+      213: -7274835123649422649
+    second: Prevent Humanitarian collapse during peak drought_30
+  - first:
+      213: 6190947481449879082
+    second: Prevent Humanitarian collapse during peak drought_31
+  - first:
+      213: -4928184086841087960
+    second: Prevent Humanitarian collapse during peak drought_32
+  - first:
+      213: -3429069068626885313
+    second: Prevent Humanitarian collapse during peak drought_33
+  - first:
+      213: -7493210200018499455
+    second: Prevent Humanitarian collapse during peak drought_34
+  - first:
+      213: 5366719127922977484
+    second: Prevent Humanitarian collapse during peak drought_35
+  - first:
+      213: 1773851635164323182
+    second: Prevent Humanitarian collapse during peak drought_36
+  - first:
+      213: 3755925250875852108
+    second: Prevent Humanitarian collapse during peak drought_37
+  - first:
+      213: 7496377372985088270
+    second: Prevent Humanitarian collapse during peak drought_38
+  - first:
+      213: -18500120613920441
+    second: Prevent Humanitarian collapse during peak drought_39
+  - first:
+      213: -2168257307782106201
+    second: Prevent Humanitarian collapse during peak drought_40
+  - first:
+      213: -745254584917190000
+    second: Prevent Humanitarian collapse during peak drought_41
+  - first:
+      213: 4726633809639526391
+    second: Prevent Humanitarian collapse during peak drought_42
+  - first:
+      213: -1245153328982854422
+    second: Prevent Humanitarian collapse during peak drought_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36da55a2c746d4a0800000000000000
+      internalID: -6568984105149868483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c842f68bac14b50800000000000000
+      internalID: 6575759824425094188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1c4c6e4b8d77bd0800000000000000
+      internalID: -2632397185697398338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 4
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd76f3060e2dae80800000000000000
+      internalID: -8165819945981674030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336450f630c0d9450800000000000000
+      internalID: 6097042679416571443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3888b93660dfda40800000000000000
+      internalID: 5395260016086779967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 4
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2745615a1e59b2d0800000000000000
+      internalID: -3262472987925461206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_7
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 4
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71e2db89a240db30800000000000000
+      internalID: 4310018139356324219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7447044c5d2f480800000000000000
+      internalID: -8866789677467416612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0da32537806cbd0800000000000000
+      internalID: -2610389642620776214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_10
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2d3a8e7eb49fe40800000000000000
+      internalID: 5690663063571911333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 4
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae4e5eecff137890800000000000000
+      internalID: -7461584986431402334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_12
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 4
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932c12364295152c0800000000000000
+      internalID: -4444673344421117383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_13
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 4
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b49cecded925b2b0800000000000000
+      internalID: -5569499327007779655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f105466710384db0800000000000000
+      internalID: -4807539725159824903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_15
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 4
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9041c6ffe3af1f0800000000000000
+      internalID: -1010425899640419922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c42746f84a929c0800000000000000
+      internalID: -3951446262268408674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6a2f772596f4d00800000000000000
+      internalID: 959101048573830877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_18
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f5ab3b309166520800000000000000
+      internalID: 2694868930718752604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_19
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9bac62c1e4ab3c0800000000000000
+      internalID: -4343073007828551184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_20
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 4
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42430f0f42fd2dac0800000000000000
+      internalID: -3831754983184780252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_21
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 4
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dcaf2b81da12870800000000000000
+      internalID: 8656390280376405395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_22
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 4
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948d8f66fe23a7800800000000000000
+      internalID: 610856703268280393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 728e547ce9cc3f460800000000000000
+      internalID: 7274382805453629479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_24
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd6f3348acb739c0800000000000000
+      internalID: -3947479117498192428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 4
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d38bcc492090a980800000000000000
+      internalID: -8529659187183254576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_26
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68a6b4d4280a6420800000000000000
+      internalID: 2623918687177320558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_27
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 4
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834ce0df9f6bdd090800000000000000
+      internalID: -8008043377586158536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_28
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d7a79c323821620800000000000000
+      internalID: 2743399312749395291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9ee00f195fba9c0800000000000000
+      internalID: -3914765443921942044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_30
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 4
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca575faff79a0b90800000000000000
+      internalID: -7274835123649422649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_31
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a265beeeee9aae550800000000000000
+      internalID: 6190947481449879082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_32
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828aa140fa29b9bb0800000000000000
+      internalID: -4928184086841087960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_33
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35073e99df7960d0800000000000000
+      internalID: -3429069068626885313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_34
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18840981605c20890800000000000000
+      internalID: -7493210200018499455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_35
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaa42ddc9a6a7a40800000000000000
+      internalID: 5366719127922977484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_36
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 4
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d1736f9acfd9810800000000000000
+      internalID: 1773851635164323182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_37
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 4
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45006dad1abf1430800000000000000
+      internalID: 3755925250875852108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_38
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 4
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e095d03d08b780860800000000000000
+      internalID: 7496377372985088270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_39
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 4
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74161820d364ebff0800000000000000
+      internalID: -18500120613920441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_40
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 4
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3b00c677dc8e1e0800000000000000
+      internalID: -2168257307782106201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_41
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a97ce47e258a5f0800000000000000
+      internalID: -745254584917190000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_42
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 4
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff4ae63860689140800000000000000
+      internalID: 4726633809639526391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prevent Humanitarian collapse during peak drought_43
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4f417f4a358bee0800000000000000
+      internalID: -1245153328982854422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Prevent Humanitarian collapse during peak drought_0: -6568984105149868483
+      Prevent Humanitarian collapse during peak drought_1: 6575759824425094188
+      Prevent Humanitarian collapse during peak drought_10: 5690663063571911333
+      Prevent Humanitarian collapse during peak drought_11: -7461584986431402334
+      Prevent Humanitarian collapse during peak drought_12: -4444673344421117383
+      Prevent Humanitarian collapse during peak drought_13: -5569499327007779655
+      Prevent Humanitarian collapse during peak drought_14: -4807539725159824903
+      Prevent Humanitarian collapse during peak drought_15: -1010425899640419922
+      Prevent Humanitarian collapse during peak drought_16: -3951446262268408674
+      Prevent Humanitarian collapse during peak drought_17: 959101048573830877
+      Prevent Humanitarian collapse during peak drought_18: 2694868930718752604
+      Prevent Humanitarian collapse during peak drought_19: -4343073007828551184
+      Prevent Humanitarian collapse during peak drought_2: -2632397185697398338
+      Prevent Humanitarian collapse during peak drought_20: -3831754983184780252
+      Prevent Humanitarian collapse during peak drought_21: 8656390280376405395
+      Prevent Humanitarian collapse during peak drought_22: 610856703268280393
+      Prevent Humanitarian collapse during peak drought_23: 7274382805453629479
+      Prevent Humanitarian collapse during peak drought_24: -3947479117498192428
+      Prevent Humanitarian collapse during peak drought_25: -8529659187183254576
+      Prevent Humanitarian collapse during peak drought_26: 2623918687177320558
+      Prevent Humanitarian collapse during peak drought_27: -8008043377586158536
+      Prevent Humanitarian collapse during peak drought_28: 2743399312749395291
+      Prevent Humanitarian collapse during peak drought_29: -3914765443921942044
+      Prevent Humanitarian collapse during peak drought_3: -8165819945981674030
+      Prevent Humanitarian collapse during peak drought_30: -7274835123649422649
+      Prevent Humanitarian collapse during peak drought_31: 6190947481449879082
+      Prevent Humanitarian collapse during peak drought_32: -4928184086841087960
+      Prevent Humanitarian collapse during peak drought_33: -3429069068626885313
+      Prevent Humanitarian collapse during peak drought_34: -7493210200018499455
+      Prevent Humanitarian collapse during peak drought_35: 5366719127922977484
+      Prevent Humanitarian collapse during peak drought_36: 1773851635164323182
+      Prevent Humanitarian collapse during peak drought_37: 3755925250875852108
+      Prevent Humanitarian collapse during peak drought_38: 7496377372985088270
+      Prevent Humanitarian collapse during peak drought_39: -18500120613920441
+      Prevent Humanitarian collapse during peak drought_4: 6097042679416571443
+      Prevent Humanitarian collapse during peak drought_40: -2168257307782106201
+      Prevent Humanitarian collapse during peak drought_41: -745254584917190000
+      Prevent Humanitarian collapse during peak drought_42: 4726633809639526391
+      Prevent Humanitarian collapse during peak drought_43: -1245153328982854422
+      Prevent Humanitarian collapse during peak drought_5: 5395260016086779967
+      Prevent Humanitarian collapse during peak drought_6: -3262472987925461206
+      Prevent Humanitarian collapse during peak drought_7: 4310018139356324219
+      Prevent Humanitarian collapse during peak drought_8: -8866789677467416612
+      Prevent Humanitarian collapse during peak drought_9: -2610389642620776214
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

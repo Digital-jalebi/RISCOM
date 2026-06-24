@@ -11,6 +11,7 @@ public sealed class CycloneMissionController : MonoBehaviour
     private const int TotalMarkers = 7;
     private const float MissionDurationSeconds = 600f;
 
+    [SerializeField] private GameObject missionBackground;
     [SerializeField] private RectTransform markerTransform;
     [SerializeField] private RectTransform dragMarkerTransform;
     [SerializeField] private Image markerImage;
@@ -95,6 +96,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         isRunning = true;
         isComplete = false;
 
+        SetActive(missionBackground, true);
         ResetDropZones();
         ClearNotifications();
         DestroyDragMarker();
@@ -201,6 +203,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         isRunning = false;
         DestroyDragMarker();
         SetMarkerVisible(false);
+        SetActive(missionBackground, false);
         onMissionComplete?.Invoke();
     }
 
@@ -682,4 +685,11 @@ public sealed class CycloneMissionController : MonoBehaviour
         dragMarkerTransform.gameObject.SetActive(false);
     }
 
+    private static void SetActive(GameObject target, bool active)
+    {
+        if (target != null)
+        {
+            target.SetActive(active);
+        }
+    }
 }

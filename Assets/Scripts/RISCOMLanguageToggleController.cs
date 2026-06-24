@@ -1,50 +1,82 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public sealed class RISCOMLanguageToggleController : MonoBehaviour
 {
-    [SerializeField] private Toggle gujaratiToggle;
-    [SerializeField] private bool applyToggleStateOnEnable = true;
+    [SerializeField] private bool useGujaratiOnStart;
+    [SerializeField] private bool applyInitialLanguageOnEnable = true;
     [SerializeField] private bool setNativeSizeAfterSwap;
-    [SerializeField] private TextImageLanguageSwap[] textImageSwaps;
+    [SerializeField, FormerlySerializedAs("textImageSwaps")] private TextImageLanguageSwap[] cycloneTextImageSwaps;
+    [SerializeField] private TextImageLanguageSwap[] floodTextImageSwaps;
+    [SerializeField] private TextImageLanguageSwap[] droughtTextImageSwaps;
+    [SerializeField] private TextImageLanguageSwap[] industrialTextImageSwaps;
 
-    private bool isWired;
+    private bool isGujaratiEnabled;
+
+    public event Action<bool> LanguageChanged;
+    public bool IsGujaratiEnabled => isGujaratiEnabled;
 
     private void Awake()
     {
+        isGujaratiEnabled = useGujaratiOnStart;
         CacheInitialSprites();
     }
 
     private void OnEnable()
     {
-        WireToggle();
-
-        if (applyToggleStateOnEnable)
+        if (applyInitialLanguageOnEnable)
         {
-            ApplyLanguage(gujaratiToggle != null && gujaratiToggle.isOn);
-        }
-    }
-
-    private void OnDisable()
-    {
-        if (gujaratiToggle != null && isWired)
-        {
-            gujaratiToggle.onValueChanged.RemoveListener(ApplyLanguage);
-            isWired = false;
+            ApplyLanguage(isGujaratiEnabled);
         }
     }
 
     public void ApplyLanguage(bool useGujarati)
     {
-        if (textImageSwaps == null)
+        isGujaratiEnabled = useGujarati;
+
+        ApplySwaps(cycloneTextImageSwaps, useGujarati);
+        ApplySwaps(floodTextImageSwaps, useGujarati);
+        ApplySwaps(droughtTextImageSwaps, useGujarati);
+        ApplySwaps(industrialTextImageSwaps, useGujarati);
+
+        LanguageChanged?.Invoke(useGujarati);
+    }
+
+    public void SetGujaratiEnabled(bool enabled)
+    {
+        ApplyLanguage(enabled);
+    }
+
+    public void SelectEnglish()
+    {
+        ApplyLanguage(false);
+    }
+
+    public void SelectGujarati()
+    {
+        ApplyLanguage(true);
+    }
+
+    private void CacheInitialSprites()
+    {
+        CacheInitialSprites(cycloneTextImageSwaps);
+        CacheInitialSprites(floodTextImageSwaps);
+        CacheInitialSprites(droughtTextImageSwaps);
+        CacheInitialSprites(industrialTextImageSwaps);
+    }
+
+    private void ApplySwaps(TextImageLanguageSwap[] swaps, bool useGujarati)
+    {
+        if (swaps == null)
         {
             return;
         }
 
-        for (int i = 0; i < textImageSwaps.Length; i++)
+        for (int i = 0; i < swaps.Length; i++)
         {
-            TextImageLanguageSwap swap = textImageSwaps[i];
+            TextImageLanguageSwap swap = swaps[i];
             if (swap != null)
             {
                 swap.Apply(useGujarati, setNativeSizeAfterSwap);
@@ -52,38 +84,16 @@ public sealed class RISCOMLanguageToggleController : MonoBehaviour
         }
     }
 
-    public void SetGujaratiEnabled(bool enabled)
+    private static void CacheInitialSprites(TextImageLanguageSwap[] swaps)
     {
-        if (gujaratiToggle != null && gujaratiToggle.isOn != enabled)
-        {
-            gujaratiToggle.isOn = enabled;
-            return;
-        }
-
-        ApplyLanguage(enabled);
-    }
-
-    private void WireToggle()
-    {
-        if (gujaratiToggle == null || isWired)
+        if (swaps == null)
         {
             return;
         }
 
-        gujaratiToggle.onValueChanged.AddListener(ApplyLanguage);
-        isWired = true;
-    }
-
-    private void CacheInitialSprites()
-    {
-        if (textImageSwaps == null)
+        for (int i = 0; i < swaps.Length; i++)
         {
-            return;
-        }
-
-        for (int i = 0; i < textImageSwaps.Length; i++)
-        {
-            TextImageLanguageSwap swap = textImageSwaps[i];
+            TextImageLanguageSwap swap = swaps[i];
             if (swap != null)
             {
                 swap.CacheInitialSprite();

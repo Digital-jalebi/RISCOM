@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: e7ef3cb0fae9f154d908ae6348f4fc8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5830272860058649808
+    second: MISSION - 1 Preparedness_0
+  - first:
+      213: 5481239635999263813
+    second: MISSION - 1 Preparedness_1
+  - first:
+      213: -636630542588944926
+    second: MISSION - 1 Preparedness_2
+  - first:
+      213: -5587149801037135880
+    second: MISSION - 1 Preparedness_3
+  - first:
+      213: 3233733759263784450
+    second: MISSION - 1 Preparedness_4
+  - first:
+      213: 7507741649071569652
+    second: MISSION - 1 Preparedness_5
+  - first:
+      213: 5233018568440942679
+    second: MISSION - 1 Preparedness_6
+  - first:
+      213: -3299344475888429030
+    second: MISSION - 1 Preparedness_7
+  - first:
+      213: 7871596389033080671
+    second: MISSION - 1 Preparedness_8
+  - first:
+      213: -2760358866714225181
+    second: MISSION - 1 Preparedness_9
+  - first:
+      213: 8172544266467139865
+    second: MISSION - 1 Preparedness_10
+  - first:
+      213: -1244380461690416006
+    second: MISSION - 1 Preparedness_11
+  - first:
+      213: -2331263396349210962
+    second: MISSION - 1 Preparedness_12
+  - first:
+      213: -5799118107048192826
+    second: MISSION - 1 Preparedness_13
+  - first:
+      213: 1700296304738342749
+    second: MISSION - 1 Preparedness_14
+  - first:
+      213: 705628647405053173
+    second: MISSION - 1 Preparedness_15
+  - first:
+      213: 8686247054752623305
+    second: MISSION - 1 Preparedness_16
+  - first:
+      213: 5163454415179290728
+    second: MISSION - 1 Preparedness_17
+  - first:
+      213: 2748870439296209820
+    second: MISSION - 1 Preparedness_18
+  - first:
+      213: 3290738490442328339
+    second: MISSION - 1 Preparedness_19
+  - first:
+      213: 6515854104519254749
+    second: MISSION - 1 Preparedness_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4856fa64a49e050800000000000000
+      internalID: 5830272860058649808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 7
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c07887866411c40800000000000000
+      internalID: 5481239635999263813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 7
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ed52dff4eb3a27f0800000000000000
+      internalID: -636630542588944926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 7
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff7942abd47672b0800000000000000
+      internalID: -5587149801037135880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 7
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e3b1398b780ec20800000000000000
+      internalID: 3233733759263784450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 7
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faf05a804bd03860800000000000000
+      internalID: 7507741649071569652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 7
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75012fa89aa6f9840800000000000000
+      internalID: 5233018568440942679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 19
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18d50b0eaf5632d0800000000000000
+      internalID: -3299344475888429030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 7
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f577097d5378d3d60800000000000000
+      internalID: 7871596389033080671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 7
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e516e85c3c31b9d0800000000000000
+      internalID: -2760358866714225181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 7
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911ede9d5b5ba6170800000000000000
+      internalID: 8172544266467139865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_11
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 7
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74918720921bbee0800000000000000
+      internalID: -1244380461690416006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_12
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae0cb6ea40b5afd0800000000000000
+      internalID: -2331263396349210962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 7
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c45bd28ec4658fa0800000000000000
+      internalID: -5799118107048192826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_14
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 7
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5796d80b7aa89710800000000000000
+      internalID: 1700296304738342749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 7
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4eae72485eac900800000000000000
+      internalID: 705628647405053173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 7
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca20d1bcafbb8870800000000000000
+      internalID: 8686247054752623305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_17
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 7
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8681fa6fe6648a740800000000000000
+      internalID: 5163454415179290728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_18
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 7
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9392d3b913f52620800000000000000
+      internalID: 2748870439296209820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_19
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 7
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3192583d83d0bad20800000000000000
+      internalID: 3290738490442328339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION - 1 Preparedness_20
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 7
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2242c19c6fc6a50800000000000000
+      internalID: 6515854104519254749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MISSION - 1 Preparedness_0: 5830272860058649808
+      MISSION - 1 Preparedness_1: 5481239635999263813
+      MISSION - 1 Preparedness_10: 8172544266467139865
+      MISSION - 1 Preparedness_11: -1244380461690416006
+      MISSION - 1 Preparedness_12: -2331263396349210962
+      MISSION - 1 Preparedness_13: -5799118107048192826
+      MISSION - 1 Preparedness_14: 1700296304738342749
+      MISSION - 1 Preparedness_15: 705628647405053173
+      MISSION - 1 Preparedness_16: 8686247054752623305
+      MISSION - 1 Preparedness_17: 5163454415179290728
+      MISSION - 1 Preparedness_18: 2748870439296209820
+      MISSION - 1 Preparedness_19: 3290738490442328339
+      MISSION - 1 Preparedness_2: -636630542588944926
+      MISSION - 1 Preparedness_20: 6515854104519254749
+      MISSION - 1 Preparedness_3: -5587149801037135880
+      MISSION - 1 Preparedness_4: 3233733759263784450
+      MISSION - 1 Preparedness_5: 7507741649071569652
+      MISSION - 1 Preparedness_6: 5233018568440942679
+      MISSION - 1 Preparedness_7: -3299344475888429030
+      MISSION - 1 Preparedness_8: 7871596389033080671
+      MISSION - 1 Preparedness_9: -2760358866714225181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
