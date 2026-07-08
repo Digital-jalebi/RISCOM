@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public sealed class CycloneMissionController : MonoBehaviour
@@ -23,17 +24,21 @@ public sealed class CycloneMissionController : MonoBehaviour
     [SerializeField] private Slider missionProgressSlider;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
     [SerializeField] private RectTransform notificationViewport;
     [SerializeField] private RectTransform notificationContent;
     [SerializeField] private Image notificationTemplate;
     [SerializeField] private Scrollbar notificationScrollbar;
     [SerializeField] private Sprite[] notificationSprites;
+    [SerializeField] private Sprite[] gujaratiNotificationSprites;
     [SerializeField] private bool useNotificationNativeSize = true;
     [SerializeField] private float notificationBottomPadding = 1f;
     [SerializeField] private float notificationSpacing = 0f;
+    [SerializeField] private float notificationScrollWheelSensitivity = 1f;
 
     private readonly List<RaycastResult> raycastResults = new List<RaycastResult>();
     private readonly List<Image> activeNotifications = new List<Image>();
+    [SerializeField] private CycloneToolAlertMessageSequence toolAlertMessages;
 
     private Vector2 notificationContentStartSize;
     private bool notificationScrollbarWired;
@@ -81,6 +86,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         CacheDropZones();
         ConfigureSliders();
         ConfigureNotifications();
+        toolAlertMessages?.Configure();
 
         isConfigured = true;
     }
@@ -102,6 +108,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         DestroyDragMarker();
         ResetMarkerPosition();
         SetMarkerVisible(true);
+        toolAlertMessages?.SetActiveIndex(0);
         UpdateProgress();
         UpdateTimerDisplay();
     }
@@ -115,11 +122,14 @@ public sealed class CycloneMissionController : MonoBehaviour
 
         timeRemaining = Mathf.Max(0f, timeRemaining - Time.deltaTime);
         UpdateTimerDisplay();
+        UpdateNotificationScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (timeRemaining <= 0f)
         {
             isRunning = false;
             DestroyDragMarker();
+            toolAlertMessages?.HideAll();
             Debug.LogWarning("Cyclone mission timer expired.");
         }
     }
@@ -204,6 +214,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         DestroyDragMarker();
         SetMarkerVisible(false);
         SetActive(missionBackground, false);
+        toolAlertMessages?.HideAll();
         onMissionComplete?.Invoke();
     }
 
@@ -357,21 +368,45 @@ public sealed class CycloneMissionController : MonoBehaviour
 
     private Sprite GetNotificationSprite(CycloneMapDropZone dropZone)
     {
+        bool useGujarati = IsGujaratiEnabled();
+        int notificationIndex = GetDropZoneIndex(dropZone);
+
+        if (useGujarati)
+        {
+            if (dropZone != null && dropZone.GujaratiNotificationSprite != null)
+            {
+                return dropZone.GujaratiNotificationSprite;
+            }
+
+            Sprite gujaratiSprite = GetNotificationSpriteAt(gujaratiNotificationSprites, notificationIndex);
+            if (gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+        }
+
         if (dropZone != null && dropZone.NotificationSprite != null)
         {
             return dropZone.NotificationSprite;
         }
 
-        int notificationIndex = GetDropZoneIndex(dropZone);
-        if (notificationSprites != null &&
-            notificationIndex >= 0 &&
-            notificationIndex < notificationSprites.Length &&
-            notificationSprites[notificationIndex] != null)
+        Sprite englishSprite = GetNotificationSpriteAt(notificationSprites, notificationIndex);
+        if (englishSprite != null)
         {
-            return notificationSprites[notificationIndex];
+            return englishSprite;
         }
 
         return notificationTemplate != null ? notificationTemplate.sprite : null;
+    }
+
+    private static Sprite GetNotificationSpriteAt(Sprite[] sprites, int index)
+    {
+        return sprites != null && index >= 0 && index < sprites.Length ? sprites[index] : null;
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
     }
 
     private int GetDropZoneIndex(CycloneMapDropZone dropZone)
@@ -458,6 +493,12 @@ public sealed class CycloneMissionController : MonoBehaviour
             }
         }
 
+        float preferredHeight = LayoutUtility.GetPreferredHeight(notificationContent);
+        if (preferredHeight > 0f)
+        {
+            contentHeight = Mathf.Max(contentHeight, preferredHeight);
+        }
+
         Vector2 size = notificationContent.sizeDelta;
         size.y = Mathf.Max(notificationContentStartSize.y, viewport.rect.height, contentHeight);
         notificationContent.sizeDelta = size;
@@ -494,6 +535,10 @@ public sealed class CycloneMissionController : MonoBehaviour
             return;
         }
 
+        UpdateNotificationContentHeight();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(notificationContent);
+
         float overflow = GetNotificationOverflow(viewport);
         if (overflow <= 0f)
         {
@@ -503,6 +548,57 @@ public sealed class CycloneMissionController : MonoBehaviour
         Vector2 anchoredPosition = notificationContent.anchoredPosition;
         anchoredPosition.y = Mathf.Lerp(overflow + notificationBottomPadding, 0f, value);
         notificationContent.anchoredPosition = anchoredPosition;
+    }
+
+    private void UpdateNotificationScrollInput()
+    {
+        if (notificationContent == null || !notificationContent.gameObject.activeInHierarchy)
+        {
+            return;
+        }
+
+        Mouse mouse = Mouse.current;
+        if (mouse == null)
+        {
+            return;
+        }
+
+        float scrollY = mouse.scroll.ReadValue().y;
+        if (Mathf.Approximately(scrollY, 0f))
+        {
+            return;
+        }
+
+        RectTransform viewport = GetNotificationViewport();
+        if (viewport == null || viewport == notificationContent)
+        {
+            return;
+        }
+
+        UpdateNotificationContentHeight();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(notificationContent);
+
+        float overflow = GetNotificationOverflow(viewport);
+        if (overflow <= 0f)
+        {
+            UpdateNotificationScrollbar(0f, 1f);
+            return;
+        }
+
+        float maxScroll = overflow + notificationBottomPadding;
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = Mathf.Clamp(
+            anchoredPosition.y - scrollY * notificationScrollWheelSensitivity,
+            0f,
+            maxScroll);
+        notificationContent.anchoredPosition = anchoredPosition;
+        SetNotificationScrollbarValue(GetNotificationScrollbarValueForContentY(anchoredPosition.y, overflow));
+    }
+
+    private float GetNotificationScrollbarValueForContentY(float contentY, float overflow)
+    {
+        return overflow > 0f ? Mathf.InverseLerp(overflow + notificationBottomPadding, 0f, contentY) : 1f;
     }
 
     private RectTransform GetNotificationViewport()

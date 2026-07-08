@@ -21,6 +21,11 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
     [SerializeField] private RectTransform areaDropTarget;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites publicAnnouncementCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites rescueBusCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites sheltersCompleteNotification = new PhaseNotificationSprites();
     [SerializeField] private float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] private float completionDelaySeconds = 1f;
     [SerializeField] private float announcementVehicleMoveSpeed = 420f;
@@ -33,6 +38,8 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
     [SerializeField] private List<RectTransform> announcementVehicleRoutePoints = new List<RectTransform>();
     [SerializeField] private GameObject rescueBusObject;
     [SerializeField] private RectTransform rescueBusTransform;
+    [SerializeField] private Image rescueBusImage;
+    [SerializeField] private BusDirectionSprites rescueBusSprites = new BusDirectionSprites();
     [SerializeField] private List<RescueBusRoutePoint> rescueBusRoutePoints = new List<RescueBusRoutePoint>();
     [SerializeField] private GameObject shelterHighlight;
     [SerializeField] private GameObject shelterInfo;
@@ -46,12 +53,14 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
     private int placedShelters;
     private bool configured;
     private bool buttonsWired;
+    private bool languageControllerWired;
     private bool isRunning;
     private bool isComplete;
     private bool inputLocked;
     private Coroutine shakeRoutine;
     private Coroutine routeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private IndustrialToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(System.Action reportNextHandler = null)
     {
@@ -75,6 +84,8 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
             buttonsWired = true;
         }
 
+        WireLanguageController();
+
         if (configured)
         {
             return;
@@ -85,7 +96,14 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         shelterTool?.CacheInitialState();
         CacheShelterTargets();
         ConfigureTimerSlider();
+        if (rescueBusImage == null && rescueBusTransform != null)
+        {
+            rescueBusImage = rescueBusTransform.GetComponent<Image>();
+        }
+
         ResetRouteObjects();
+        notificationPanel.Configure();
+        toolAlertMessages?.Configure();
         SetActive(shelterHighlight, false);
         SetActive(shelterInfo, false);
 
@@ -117,6 +135,8 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -153,6 +173,8 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         ResetTools();
         ResetRouteObjects();
         ResetShelterTargets();
+        notificationPanel.Clear();
+        toolAlertMessages?.SetActiveIndex(0);
         SetActive(shelterHighlight, false);
         SetActive(shelterInfo, false);
         SetToolUsable(publicAnnouncementVehicleTool, true);
@@ -177,6 +199,8 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         ResetTools();
         ResetRouteObjects();
         ResetShelterTargets();
+        notificationPanel.Clear();
+        toolAlertMessages?.HideAll();
         SetActive(shelterHighlight, false);
         SetActive(shelterInfo, false);
     }
@@ -352,6 +376,7 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
 
         ResetTool(publicAnnouncementVehicleTool, false);
+        ShowNotification(publicAnnouncementCompleteNotification.GetSprite(IsGujaratiEnabled()));
         inputLocked = true;
         routeRoutine = StartCoroutine(RunAnnouncementVehicleRoute());
         return true;
@@ -365,6 +390,7 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
 
         ResetTool(busTool, false);
+        ShowNotification(rescueBusCompleteNotification.GetSprite(IsGujaratiEnabled()));
         inputLocked = true;
         routeRoutine = StartCoroutine(RunRescueBusRoute());
         return true;
@@ -385,6 +411,7 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
 
         if (!HasPendingShelters())
         {
+            ShowNotification(sheltersCompleteNotification.GetSprite(IsGujaratiEnabled()));
             CompleteMissionAfterDelay();
         }
 
@@ -423,6 +450,7 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         inputLocked = false;
         routeRoutine = null;
         SetToolUsable(busTool, true);
+        toolAlertMessages?.SetActiveIndex(1);
     }
 
     private IEnumerator RunRescueBusRoute()
@@ -471,6 +499,7 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         inputLocked = false;
         routeRoutine = null;
         SetToolUsable(shelterTool, true);
+        toolAlertMessages?.SetActiveIndex(2);
 
         if (GetShelterTargetCount() == 0)
         {
@@ -486,6 +515,11 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
 
         targetPosition.z = movingTransform.position.z;
+        if (movingTransform == rescueBusTransform)
+        {
+            ApplyRescueBusDirection(movingTransform.position, targetPosition);
+        }
+
         float moveSpeed = Mathf.Max(1f, speed);
 
         while (movingTransform != null && Vector3.Distance(movingTransform.position, targetPosition) > 0.5f)
@@ -503,6 +537,15 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
     }
 
+    private void ApplyRescueBusDirection(Vector3 from, Vector3 to)
+    {
+        Sprite sprite = rescueBusSprites.GetSprite(from, to);
+        if (rescueBusImage != null && sprite != null)
+        {
+            rescueBusImage.sprite = sprite;
+        }
+    }
+
     private void CompleteMissionAfterDelay()
     {
         if (isComplete)
@@ -515,6 +558,7 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         inputLocked = true;
         StopActiveDrag();
         SetToolUsable(shelterTool, false);
+        toolAlertMessages?.HideAll();
 
         if (completionRoutine != null)
         {
@@ -522,6 +566,19 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -755,6 +812,29 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
         }
     }
 
+    private void WireLanguageController()
+    {
+        if (languageToggleController == null || languageControllerWired)
+        {
+            return;
+        }
+
+        languageToggleController.LanguageChanged += HandleLanguageChanged;
+        languageControllerWired = true;
+    }
+
+    private void HandleLanguageChanged(bool useGujarati)
+    {
+        RefreshToolLanguageState();
+    }
+
+    private void RefreshToolLanguageState()
+    {
+        publicAnnouncementVehicleTool?.CacheCurrentLanguageState();
+        busTool?.CacheCurrentLanguageState();
+        shelterTool?.CacheCurrentLanguageState();
+    }
+
     private void UpdateTimerDisplay()
     {
         if (timeRemainingSlider != null)
@@ -848,6 +928,23 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
     }
 
     [System.Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
+        }
+    }
+
+    [System.Serializable]
     private sealed class IndustrialMissionThreeTool
     {
         [SerializeField] private RectTransform toolTransform;
@@ -882,6 +979,20 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
                 initialColor = toolImage.color;
                 initialPreserveAspect = toolImage.preserveAspect;
                 toolImage.raycastTarget = true;
+            }
+        }
+
+        public void CacheCurrentLanguageState()
+        {
+            if (toolTransform != null)
+            {
+                initialSizeDelta = toolTransform.sizeDelta;
+            }
+
+            if (toolImage != null)
+            {
+                initialSprite = toolImage.sprite;
+                initialPreserveAspect = toolImage.preserveAspect;
             }
         }
 
@@ -960,6 +1071,41 @@ public sealed class IndustrialMissionThreeController : MonoBehaviour
 
         public RectTransform Point => point;
         public float PauseSeconds => Mathf.Max(0f, pauseSeconds);
+    }
+
+    [System.Serializable]
+    private sealed class BusDirectionSprites
+    {
+        [SerializeField] private Sprite upSprite;
+        [SerializeField] private Sprite downSprite;
+        [SerializeField] private Sprite leftSprite;
+        [SerializeField] private Sprite rightSprite;
+
+        public Sprite GetSprite(Vector3 from, Vector3 to)
+        {
+            Vector3 delta = to - from;
+            if (delta.sqrMagnitude <= 0.01f)
+            {
+                return null;
+            }
+
+            if (Mathf.Approximately(delta.x, 0f))
+            {
+                return delta.y >= 0f ? upSprite : downSprite;
+            }
+
+            if (Mathf.Approximately(delta.y, 0f))
+            {
+                return delta.x >= 0f ? rightSprite : leftSprite;
+            }
+
+            if (delta.y > 0f)
+            {
+                return delta.x < 0f ? upSprite : rightSprite;
+            }
+
+            return delta.x < 0f ? leftSprite : downSprite;
+        }
     }
 
     [System.Serializable]

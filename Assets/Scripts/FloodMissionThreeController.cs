@@ -23,6 +23,10 @@ public sealed class FloodMissionThreeController : MonoBehaviour
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
     [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites boatsCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites generatorsCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites pumpsCompleteNotification = new PhaseNotificationSprites();
     [SerializeField] private float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] private float completionDelaySeconds = 2f;
     [SerializeField] private FloodTool boatTool;
@@ -53,6 +57,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
     private bool inputLocked;
     private Coroutine shakeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private FloodToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(Action reportNextHandler = null)
     {
@@ -89,7 +94,9 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         CacheSosHouseTargets();
         CacheBuildingTargets();
         ConfigureTimerSlider();
+        notificationPanel.Configure();
 
+        toolAlertMessages?.Configure();
         configured = true;
     }
 
@@ -123,6 +130,8 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -161,10 +170,12 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         ResetTools();
         ResetSosHouseTargets();
         ResetBuildingTargets();
+        notificationPanel.Clear();
         SetToolUsable(boatTool, true);
         SetToolUsable(generatorTool, false);
         SetToolUsable(dewateringPumpTool, false);
         UpdateTimerDisplay();
+        toolAlertMessages?.SetActiveIndex(0);
 
         if (GetSosHouseTargetCount() == 0)
         {
@@ -174,6 +185,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
 
     private void StopMission()
     {
+        toolAlertMessages?.HideAll();
         ResetActiveDrag();
         StopMissionRoutines();
 
@@ -189,6 +201,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         ResetTools();
         ResetSosHouseTargets();
         ResetBuildingTargets();
+        notificationPanel.Clear();
     }
 
     private void StopMissionRoutines()
@@ -360,6 +373,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
             ResetTool(droppedTool, HasPendingBoats());
             if (!HasPendingBoats())
             {
+                ShowNotification(boatsCompleteNotification.GetSprite(IsGujaratiEnabled()));
                 EnterGeneratorPhase();
             }
 
@@ -371,6 +385,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
             ResetTool(droppedTool, HasPendingGenerators());
             if (!HasPendingGenerators())
             {
+                ShowNotification(generatorsCompleteNotification.GetSprite(IsGujaratiEnabled()));
                 EnterPumpPhase();
             }
 
@@ -382,6 +397,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
             ResetTool(droppedTool, HasPendingPumps());
             if (!HasPendingPumps())
             {
+                ShowNotification(pumpsCompleteNotification.GetSprite(IsGujaratiEnabled()));
                 CompleteMissionAfterDelay();
             }
 
@@ -484,6 +500,8 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         {
             EnterPumpPhase();
         }
+
+        toolAlertMessages?.SetActiveIndex(1);
     }
 
     private void EnterPumpPhase()
@@ -496,10 +514,13 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         {
             CompleteMissionAfterDelay();
         }
+
+        toolAlertMessages?.SetActiveIndex(2);
     }
 
     private void CompleteMissionAfterDelay()
     {
+        toolAlertMessages?.HideAll();
         isRunning = false;
         isComplete = true;
         inputLocked = true;
@@ -511,6 +532,14 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -969,6 +998,23 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         Boats,
         Generators,
         DewateringPumps
+    }
+
+    [Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
+        }
     }
 
     [Serializable]

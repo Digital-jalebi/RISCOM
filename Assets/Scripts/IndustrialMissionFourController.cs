@@ -22,6 +22,11 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
     [SerializeField] private Image areaImage;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites healthAssessmentCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites cleanUpCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites recoveryCompleteNotification = new PhaseNotificationSprites();
     [SerializeField] private float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] private float completionDelaySeconds = 2f;
     [SerializeField] private IndustrialMissionFourTool healthTool;
@@ -40,11 +45,13 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
     private float timeRemaining;
     private bool configured;
     private bool buttonsWired;
+    private bool languageControllerWired;
     private bool isRunning;
     private bool isComplete;
     private bool inputLocked;
     private Coroutine shakeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private IndustrialToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(System.Action reportNextHandler = null)
     {
@@ -68,6 +75,8 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
             buttonsWired = true;
         }
 
+        WireLanguageController();
+
         if (configured)
         {
             return;
@@ -84,6 +93,8 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
 
         CacheAreaInitialState();
         ConfigureTimerSlider();
+        notificationPanel.Configure();
+        toolAlertMessages?.Configure();
         configured = true;
     }
 
@@ -112,6 +123,8 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -146,7 +159,9 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
 
         ResetArea();
         ResetTools();
+        notificationPanel.Clear();
         SetActiveToolPhase(phaseIndex);
+        toolAlertMessages?.SetActiveIndex(phaseIndex);
         UpdateTimerDisplay();
     }
 
@@ -165,6 +180,8 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
 
         ResetArea();
         ResetTools();
+        notificationPanel.Clear();
+        toolAlertMessages?.HideAll();
     }
 
     private void UpdateTimer()
@@ -342,6 +359,8 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
 
     private void AdvancePhaseOrComplete()
     {
+        ShowNotification(GetPhaseNotificationSprite(phaseIndex));
+
         if (phaseIndex >= ToolPhaseCount - 1)
         {
             CompleteMissionAfterDelay();
@@ -350,6 +369,7 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
 
         phaseIndex++;
         SetActiveToolPhase(phaseIndex);
+        toolAlertMessages?.SetActiveIndex(phaseIndex);
     }
 
     private void CompleteMissionAfterDelay()
@@ -364,6 +384,7 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
         inputLocked = true;
         StopActiveDrag();
         SetActiveToolPhase(-1);
+        toolAlertMessages?.HideAll();
 
         if (completionRoutine != null)
         {
@@ -371,6 +392,39 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
+    }
+
+    private Sprite GetPhaseNotificationSprite(int index)
+    {
+        if (index == 0)
+        {
+            return healthAssessmentCompleteNotification.GetSprite(IsGujaratiEnabled());
+        }
+
+        if (index == 1)
+        {
+            return cleanUpCompleteNotification.GetSprite(IsGujaratiEnabled());
+        }
+
+        if (index == 2)
+        {
+            return recoveryCompleteNotification.GetSprite(IsGujaratiEnabled());
+        }
+
+        return null;
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -385,6 +439,23 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
     private IndustrialMissionFourTool GetActiveTool()
     {
         return phaseIndex >= 0 && phaseIndex < tools.Length ? tools[phaseIndex] : null;
+    }
+
+    [System.Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
+        }
     }
 
     private bool CanPlaceOnArea(RectTransform toolTransform)
@@ -518,6 +589,30 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
         }
     }
 
+    private void WireLanguageController()
+    {
+        if (languageToggleController == null || languageControllerWired)
+        {
+            return;
+        }
+
+        languageToggleController.LanguageChanged += HandleLanguageChanged;
+        languageControllerWired = true;
+    }
+
+    private void HandleLanguageChanged(bool useGujarati)
+    {
+        RefreshToolLanguageState();
+    }
+
+    private void RefreshToolLanguageState()
+    {
+        for (int i = 0; i < tools.Length; i++)
+        {
+            tools[i]?.CacheCurrentLanguageState();
+        }
+    }
+
     private void UpdateTimerDisplay()
     {
         if (timeRemainingSlider != null)
@@ -641,6 +736,20 @@ public sealed class IndustrialMissionFourController : MonoBehaviour
                 initialColor = toolImage.color;
                 initialPreserveAspect = toolImage.preserveAspect;
                 toolImage.raycastTarget = true;
+            }
+        }
+
+        public void CacheCurrentLanguageState()
+        {
+            if (toolTransform != null)
+            {
+                initialSizeDelta = toolTransform.sizeDelta;
+            }
+
+            if (toolImage != null)
+            {
+                initialSprite = toolImage.sprite;
+                initialPreserveAspect = toolImage.preserveAspect;
             }
         }
 

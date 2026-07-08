@@ -28,6 +28,10 @@ public sealed class FloodMissionTwoController : MonoBehaviour
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
     [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites sandbagsCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites drainsCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites sirensCompleteNotification = new PhaseNotificationSprites();
     [SerializeField] private float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] private float completionDelaySeconds = 2f;
     [SerializeField] private FloodTool sandbagsTool;
@@ -52,6 +56,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
     private bool inputLocked;
     private Coroutine shakeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private FloodToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(Action reportNextHandler)
     {
@@ -85,7 +90,9 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         CacheDrainTargets();
         CacheSirenTargets();
         ConfigureTimerSlider();
+        notificationPanel.Configure();
 
+        toolAlertMessages?.Configure();
         configured = true;
     }
 
@@ -119,6 +126,8 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (!isRunning || isComplete)
         {
@@ -166,12 +175,14 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         ResetSandbagTargets();
         ResetDrainTargets();
         ResetSirenTargets();
+        notificationPanel.Clear();
         SetActive(floodImage, false);
         SetActive(cloggedDrainsRoot, false);
         SetActive(sirensRoot, false);
         SetToolUsable(sandbagsTool, true);
         SetToolUsable(drainClearanceTool, false);
         UpdateTimerDisplay();
+        toolAlertMessages?.SetActiveIndex(0);
 
         if (GetSandbagTargetCount() == 0)
         {
@@ -181,6 +192,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
 
     private void StopMission()
     {
+        toolAlertMessages?.HideAll();
         ResetActiveDrag();
         StopMissionRoutines();
 
@@ -197,6 +209,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         ResetSandbagTargets();
         ResetDrainTargets();
         ResetSirenTargets();
+        notificationPanel.Clear();
         SetActive(floodImage, false);
         SetActive(cloggedDrainsRoot, false);
         SetActive(sirensRoot, false);
@@ -402,6 +415,11 @@ public sealed class FloodMissionTwoController : MonoBehaviour
 
         target.MarkPlaced();
         placedSandbags++;
+        if (!HasPendingSandbags())
+        {
+            ShowNotification(sandbagsCompleteNotification.GetSprite(IsGujaratiEnabled()));
+        }
+
         return true;
     }
 
@@ -415,6 +433,11 @@ public sealed class FloodMissionTwoController : MonoBehaviour
 
         target.MarkCleared(IsGujaratiEnabled());
         clearedDrains++;
+        if (!HasPendingDrains())
+        {
+            ShowNotification(drainsCompleteNotification.GetSprite(IsGujaratiEnabled()));
+        }
+
         return true;
     }
 
@@ -458,6 +481,8 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         {
             EnterSirenPhase();
         }
+
+        toolAlertMessages?.SetActiveIndex(1);
     }
 
     private void EnterSirenPhase()
@@ -470,6 +495,8 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         {
             CompleteMissionAfterDelay();
         }
+
+        toolAlertMessages?.SetActiveIndex(2);
     }
 
     private void UpdateSirenInput()
@@ -533,6 +560,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
 
             if (activatedSirens >= GetSirenTargetCount())
             {
+                ShowNotification(sirensCompleteNotification.GetSprite(IsGujaratiEnabled()));
                 CompleteMissionAfterDelay();
             }
 
@@ -542,6 +570,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
 
     private void CompleteMissionAfterDelay()
     {
+        toolAlertMessages?.HideAll();
         isRunning = false;
         isComplete = true;
         inputLocked = true;
@@ -552,6 +581,14 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -871,6 +908,23 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         Sandbags,
         DrainClearance,
         Sirens
+    }
+
+    [Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
+        }
     }
 
     [Serializable]

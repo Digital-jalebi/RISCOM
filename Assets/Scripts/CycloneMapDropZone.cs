@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public sealed class CycloneMapDropZone : MonoBehaviour
@@ -7,13 +8,15 @@ public sealed class CycloneMapDropZone : MonoBehaviour
 
     [SerializeField] private Image image;
     [SerializeField] private bool proneArea;
-    [SerializeField] private Sprite notificationSprite;
+    [SerializeField, FormerlySerializedAs("notificationSprite")] private Sprite englishNotificationSprite;
+    [SerializeField] private Sprite gujaratiNotificationSprite;
 
     private Color originalColor;
     private bool isPlaced;
 
     public bool CanAcceptMarker => proneArea && !isPlaced;
-    public Sprite NotificationSprite => notificationSprite;
+    public Sprite NotificationSprite => englishNotificationSprite;
+    public Sprite GujaratiNotificationSprite => gujaratiNotificationSprite;
 
     public void Configure()
     {

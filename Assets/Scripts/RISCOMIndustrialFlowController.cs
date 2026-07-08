@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -20,12 +21,24 @@ public sealed class RISCOMIndustrialFlowController : MonoBehaviour
 
     private bool buttonsWired;
     private int currentSummaryIndex;
+    private Action onFlowCompleted;
+
+    public void Configure(Action flowCompletedHandler = null)
+    {
+        if (flowCompletedHandler != null)
+        {
+            onFlowCompleted = flowCompletedHandler;
+        }
+
+        WireButtons();
+    }
 
     public void BeginFlow()
     {
         WireButtons();
 
         gameObject.SetActive(true);
+        ResetFlowState(false);
         HideDirectFlowChildren();
 
         SetActive(industrialSummary, true);
@@ -93,6 +106,19 @@ public sealed class RISCOMIndustrialFlowController : MonoBehaviour
         for (int i = 0; i < summaryScreens.Length; i++)
         {
             SetActive(summaryScreens[i], i == currentSummaryIndex);
+        }
+    }
+
+    private void HideSummaryScreens()
+    {
+        if (summaryScreens == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < summaryScreens.Length; i++)
+        {
+            SetActive(summaryScreens[i], false);
         }
     }
 
@@ -176,8 +202,35 @@ public sealed class RISCOMIndustrialFlowController : MonoBehaviour
 
     private void HandleMissionFourReportNext()
     {
+        ResetFlowState(true);
+        onFlowCompleted?.Invoke();
+    }
+
+    public void ResetFlow()
+    {
+        ResetFlowState(true);
+    }
+
+    private void ResetFlowState(bool hideRoot)
+    {
+        missionTwoController?.Hide();
+        missionThreeController?.Hide();
         missionFourController?.Hide();
-        Debug.Log("Industrial flow completed.");
+
+        SetActive(industrialSummary, false);
+        SetActive(summaryBackground, false);
+        SetActive(instructorImage, false);
+        SetActive(missionOneGame, false);
+        SetActive(missionOneGameplayLayout, false);
+        HideSummaryScreens();
+        HideDirectFlowChildren();
+
+        currentSummaryIndex = 0;
+
+        if (hideRoot)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private static void SetActive(GameObject target, bool active)

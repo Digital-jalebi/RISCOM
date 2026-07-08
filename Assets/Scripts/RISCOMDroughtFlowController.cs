@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,12 +19,24 @@ public sealed class RISCOMDroughtFlowController : MonoBehaviour
 
     private bool buttonsWired;
     private int currentSummaryIndex;
+    private Action onFlowCompleted;
+
+    public void Configure(Action flowCompletedHandler = null)
+    {
+        if (flowCompletedHandler != null)
+        {
+            onFlowCompleted = flowCompletedHandler;
+        }
+
+        WireButtons();
+    }
 
     public void BeginFlow()
     {
         WireButtons();
 
         gameObject.SetActive(true);
+        ResetFlowState(false);
         HideDirectFlowChildren();
 
         SetActive(droughtSummary, true);
@@ -103,6 +116,19 @@ public sealed class RISCOMDroughtFlowController : MonoBehaviour
         for (int i = 0; i < summaryScreens.Length; i++)
         {
             SetActive(summaryScreens[i], i == currentSummaryIndex);
+        }
+    }
+
+    private void HideSummaryScreens()
+    {
+        if (summaryScreens == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < summaryScreens.Length; i++)
+        {
+            SetActive(summaryScreens[i], false);
         }
     }
 
@@ -199,7 +225,36 @@ public sealed class RISCOMDroughtFlowController : MonoBehaviour
 
     private void HandleMissionFourReportNext()
     {
-        Debug.Log("Drought Mission 4 completed. No next drought screen is configured yet.");
+        ResetFlowState(true);
+        onFlowCompleted?.Invoke();
+    }
+
+    public void ResetFlow()
+    {
+        ResetFlowState(true);
+    }
+
+    private void ResetFlowState(bool hideRoot)
+    {
+        missionOneController?.Hide();
+        missionTwoController?.Hide();
+        missionThreeController?.Hide();
+        missionFourController?.Hide();
+
+        SetActive(droughtSummary, false);
+        SetActive(summaryBackground, false);
+        SetActive(instructorImage, false);
+        SetActive(missionOneGame, false);
+        SetActive(missionOneGameplayRoot, false);
+        HideSummaryScreens();
+        HideDirectFlowChildren();
+
+        currentSummaryIndex = 0;
+
+        if (hideRoot)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private static void SetActive(GameObject target, bool active)

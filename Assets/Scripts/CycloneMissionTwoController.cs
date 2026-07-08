@@ -28,6 +28,17 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     [SerializeField] private RectTransform boatDockingDropArea;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RectTransform notificationViewport;
+    [SerializeField] private RectTransform notificationContent;
+    [SerializeField] private Image notificationTemplate;
+    [SerializeField] private Scrollbar notificationScrollbar;
+    [SerializeField] private Sprite[] englishNotificationSprites;
+    [SerializeField] private Sprite[] gujaratiNotificationSprites;
+    [SerializeField] private bool useNotificationNativeSize = true;
+    [SerializeField] private float notificationBottomPadding = 1f;
+    [SerializeField] private float notificationSpacing = 0f;
+    [SerializeField] private float notificationScrollWheelSensitivity = 1f;
     [SerializeField] private RectTransform radarScannerTool;
     [SerializeField] private Image radarScannerToolImage;
     [SerializeField] private GameObject radarScannerEffect;
@@ -45,11 +56,19 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
     private readonly MissionTwoStep[] steps = new MissionTwoStep[StepCount];
     private readonly List<RectTransform> managedBoats = new List<RectTransform>();
+    private readonly List<Image> activeNotifications = new List<Image>();
+    private readonly List<Coroutine> effectRoutines = new List<Coroutine>();
+    [SerializeField] private CycloneToolAlertMessageSequence toolAlertMessages;
 
     private Action onReportNext;
     private bool configured;
     private bool buttonsWired;
+    private bool notificationsConfigured;
+    private bool notificationScrollbarWired;
+    private bool suppressNotificationScrollbarCallback;
+    private Vector2 notificationContentStartSize;
     private int stepIndex;
+    private int notificationPlacementIndex;
     private float timeRemaining;
     private bool isRunning;
     private bool isComplete;
@@ -59,7 +78,6 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
     private Vector3[] boatStartPositions;
     private int dockPlacementIndex;
     private Coroutine shakeRoutine;
-    private Coroutine effectRoutine;
     private Tween[] boatReadyTweens;
     private Coroutine reportDelayRoutine;
 
@@ -102,6 +120,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         CacheBoatStartPositions();
         ResetBoats();
         ResetDocks();
+        ConfigureNotifications();
+        toolAlertMessages?.Configure();
 
         if (timeRemainingSlider != null)
         {
@@ -136,6 +156,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         }
 
         UpdateTimer();
+        UpdateNotificationScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
         if (isRunning && !isComplete)
         {
             UpdateDragInput();
@@ -160,6 +182,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         Configure(onReportNext);
 
         stepIndex = 0;
+        notificationPlacementIndex = 0;
         dockPlacementIndex = 0;
         timeRemaining = MissionDurationSeconds;
         isRunning = true;
@@ -177,6 +200,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
         ResetBoats();
         ResetDocks();
+        ClearNotifications();
+        toolAlertMessages?.SetActiveIndex(0);
         UpdateTimerDisplay();
     }
 
@@ -198,6 +223,8 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
 
         ResetBoats();
         ResetDocks();
+        ClearNotifications();
+        toolAlertMessages?.HideAll();
     }
 
     private void StopMissionRoutines()
@@ -208,12 +235,15 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
             shakeRoutine = null;
         }
 
-        if (effectRoutine != null)
+        for (int i = 0; i < effectRoutines.Count; i++)
         {
-            StopCoroutine(effectRoutine);
-            effectRoutine = null;
+            if (effectRoutines[i] != null)
+            {
+                StopCoroutine(effectRoutines[i]);
+            }
         }
 
+        effectRoutines.Clear();
         StopBoatReadyShake(true);
 
         if (reportDelayRoutine != null)
@@ -429,6 +459,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         stepIndex++;
         ResetTool(step, false);
         SetToolRaycast(step, false);
+        toolAlertMessages?.SetActiveIndex(stepIndex);
 
         if (IsRadarScannerStep(step))
         {
@@ -441,17 +472,16 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
             StartBoatReadyShake();
         }
 
+        ShowToolNotification(step);
+
         if (stepIndex >= steps.Length)
         {
             isRunning = false;
+            toolAlertMessages?.HideAll();
         }
 
-        if (effectRoutine != null)
-        {
-            StopCoroutine(effectRoutine);
-        }
-
-        effectRoutine = StartCoroutine(PlayEffect(step, false));
+        StartEffect(step, false);
+        inputLocked = false;
     }
 
     private void AcceptBoatDockingTool(MissionTwoStep step)
@@ -482,14 +512,23 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         {
             stepIndex = steps.Length;
             isRunning = false;
+            toolAlertMessages?.HideAll();
         }
 
-        if (effectRoutine != null)
-        {
-            StopCoroutine(effectRoutine);
-        }
+        ShowToolNotification(step);
 
-        effectRoutine = StartCoroutine(PlayEffect(step, dockPlacement, allDocksPlaced));
+        StartEffect(step, dockPlacement, allDocksPlaced);
+        inputLocked = allDocksPlaced;
+    }
+
+    private void StartEffect(MissionTwoStep step, bool completeAfterEffect)
+    {
+        StartEffect(step, null, completeAfterEffect);
+    }
+
+    private void StartEffect(MissionTwoStep step, DockPlacement dockPlacement, bool completeAfterEffect)
+    {
+        effectRoutines.Add(StartCoroutine(PlayEffect(step, dockPlacement, completeAfterEffect)));
     }
 
     private IEnumerator PlayEffect(MissionTwoStep step, bool completeAfterEffect)
@@ -544,15 +583,12 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         }
 
         HideEffect(step);
-        effectRoutine = null;
 
         if (completeAfterEffect)
         {
             CompleteMission();
             yield break;
         }
-
-        inputLocked = false;
     }
 
     private void CompleteMission()
@@ -562,6 +598,7 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         inputLocked = false;
         draggedStep = null;
         StopBoatReadyShake(false);
+        toolAlertMessages?.HideAll();
 
         if (reportDelayRoutine != null)
         {
@@ -578,6 +615,349 @@ public sealed class CycloneMissionTwoController : MonoBehaviour
         SetActive(playRoot, false);
         SetActive(completeScreen, true);
         reportDelayRoutine = null;
+    }
+
+    private void ConfigureNotifications()
+    {
+        if (notificationContent != null)
+        {
+            notificationContentStartSize = notificationContent.sizeDelta;
+        }
+
+        if (notificationTemplate != null)
+        {
+            notificationTemplate.gameObject.SetActive(false);
+        }
+
+        ConfigureNotificationScrollbar();
+        notificationsConfigured = true;
+    }
+
+    private void ClearNotifications()
+    {
+        for (int i = 0; i < activeNotifications.Count; i++)
+        {
+            Image notification = activeNotifications[i];
+            if (notification != null)
+            {
+                Destroy(notification.gameObject);
+            }
+        }
+
+        activeNotifications.Clear();
+
+        if (notificationTemplate != null)
+        {
+            notificationTemplate.gameObject.SetActive(false);
+        }
+
+        if (notificationsConfigured)
+        {
+            ResetNotificationScroll();
+        }
+    }
+
+    private void ShowToolNotification(MissionTwoStep step)
+    {
+        int fallbackIndex = GetStepIndex(step);
+        Sprite sprite = GetNotificationSprite(notificationPlacementIndex, fallbackIndex);
+        notificationPlacementIndex++;
+        ShowNotification(sprite);
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (notificationTemplate == null)
+        {
+            return;
+        }
+
+        RectTransform parent = notificationContent != null
+            ? notificationContent
+            : notificationTemplate.transform.parent as RectTransform;
+
+        if (parent == null)
+        {
+            return;
+        }
+
+        Image notification = Instantiate(notificationTemplate, parent);
+        notification.gameObject.SetActive(true);
+        notification.raycastTarget = false;
+
+        if (sprite != null)
+        {
+            notification.sprite = sprite;
+        }
+
+        if (useNotificationNativeSize && notification.sprite != null)
+        {
+            notification.SetNativeSize();
+        }
+
+        notification.rectTransform.SetAsLastSibling();
+        activeNotifications.Add(notification);
+        ScrollNotificationsToLatest();
+    }
+
+    private Sprite GetNotificationSprite(int placementIndex, int fallbackIndex)
+    {
+        if (IsGujaratiEnabled())
+        {
+            Sprite gujaratiSprite = GetNotificationSpriteAt(gujaratiNotificationSprites, placementIndex)
+                ?? GetNotificationSpriteAt(gujaratiNotificationSprites, fallbackIndex);
+
+            if (gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+        }
+
+        return GetNotificationSpriteAt(englishNotificationSprites, placementIndex)
+            ?? GetNotificationSpriteAt(englishNotificationSprites, fallbackIndex);
+    }
+
+    private static Sprite GetNotificationSpriteAt(Sprite[] sprites, int index)
+    {
+        return sprites != null && index >= 0 && index < sprites.Length ? sprites[index] : null;
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
+    }
+
+    private int GetStepIndex(MissionTwoStep step)
+    {
+        for (int i = 0; i < steps.Length; i++)
+        {
+            if (steps[i] == step)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    private void ResetNotificationScroll()
+    {
+        if (notificationContent == null)
+        {
+            UpdateNotificationScrollbar(0f, 1f);
+            return;
+        }
+
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = 0f;
+        notificationContent.anchoredPosition = anchoredPosition;
+        notificationContent.sizeDelta = notificationContentStartSize;
+        UpdateNotificationScrollbar(0f, 1f);
+    }
+
+    private void ScrollNotificationsToLatest()
+    {
+        if (notificationContent == null)
+        {
+            return;
+        }
+
+        UpdateNotificationContentHeight();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(notificationContent);
+
+        RectTransform viewport = GetNotificationViewport();
+        if (viewport == null || viewport == notificationContent)
+        {
+            UpdateNotificationScrollbar(0f, 1f);
+            return;
+        }
+
+        float overflow = GetNotificationOverflow(viewport);
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = overflow > 0f ? overflow + notificationBottomPadding : 0f;
+        notificationContent.anchoredPosition = anchoredPosition;
+        UpdateNotificationScrollbar(overflow, overflow > 0f ? 0f : 1f);
+    }
+
+    private void UpdateNotificationContentHeight()
+    {
+        RectTransform viewport = GetNotificationViewport();
+        if (viewport == null || viewport == notificationContent)
+        {
+            return;
+        }
+
+        float contentHeight = 0f;
+        for (int i = 0; i < activeNotifications.Count; i++)
+        {
+            Image notification = activeNotifications[i];
+            if (notification == null)
+            {
+                continue;
+            }
+
+            contentHeight += notification.rectTransform.rect.height;
+            if (i < activeNotifications.Count - 1)
+            {
+                contentHeight += notificationSpacing;
+            }
+        }
+
+        float preferredHeight = LayoutUtility.GetPreferredHeight(notificationContent);
+        if (preferredHeight > 0f)
+        {
+            contentHeight = Mathf.Max(contentHeight, preferredHeight);
+        }
+
+        Vector2 size = notificationContent.sizeDelta;
+        size.y = Mathf.Max(notificationContentStartSize.y, viewport.rect.height, contentHeight);
+        notificationContent.sizeDelta = size;
+    }
+
+    private void ConfigureNotificationScrollbar()
+    {
+        if (notificationScrollbar == null)
+        {
+            return;
+        }
+
+        notificationScrollbar.direction = Scrollbar.Direction.BottomToTop;
+
+        if (!notificationScrollbarWired)
+        {
+            notificationScrollbar.onValueChanged.AddListener(HandleNotificationScrollbarChanged);
+            notificationScrollbarWired = true;
+        }
+
+        UpdateNotificationScrollbar(0f, 1f);
+    }
+
+    private void HandleNotificationScrollbarChanged(float value)
+    {
+        if (suppressNotificationScrollbarCallback || notificationContent == null)
+        {
+            return;
+        }
+
+        RectTransform viewport = GetNotificationViewport();
+        if (viewport == null || viewport == notificationContent)
+        {
+            return;
+        }
+
+        UpdateNotificationContentHeight();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(notificationContent);
+
+        float overflow = GetNotificationOverflow(viewport);
+        if (overflow <= 0f)
+        {
+            return;
+        }
+
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = Mathf.Lerp(overflow + notificationBottomPadding, 0f, value);
+        notificationContent.anchoredPosition = anchoredPosition;
+    }
+
+    private void UpdateNotificationScrollInput()
+    {
+        if (notificationContent == null || !notificationContent.gameObject.activeInHierarchy)
+        {
+            return;
+        }
+
+        Mouse mouse = Mouse.current;
+        if (mouse == null)
+        {
+            return;
+        }
+
+        float scrollY = mouse.scroll.ReadValue().y;
+        if (Mathf.Approximately(scrollY, 0f))
+        {
+            return;
+        }
+
+        RectTransform viewport = GetNotificationViewport();
+        if (viewport == null || viewport == notificationContent)
+        {
+            return;
+        }
+
+        UpdateNotificationContentHeight();
+        Canvas.ForceUpdateCanvases();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(notificationContent);
+
+        float overflow = GetNotificationOverflow(viewport);
+        if (overflow <= 0f)
+        {
+            UpdateNotificationScrollbar(0f, 1f);
+            return;
+        }
+
+        float maxScroll = overflow + notificationBottomPadding;
+        Vector2 anchoredPosition = notificationContent.anchoredPosition;
+        anchoredPosition.y = Mathf.Clamp(
+            anchoredPosition.y - scrollY * notificationScrollWheelSensitivity,
+            0f,
+            maxScroll);
+        notificationContent.anchoredPosition = anchoredPosition;
+        SetNotificationScrollbarValue(GetNotificationScrollbarValueForContentY(anchoredPosition.y, overflow));
+    }
+
+    private float GetNotificationScrollbarValueForContentY(float contentY, float overflow)
+    {
+        return overflow > 0f ? Mathf.InverseLerp(overflow + notificationBottomPadding, 0f, contentY) : 1f;
+    }
+
+    private RectTransform GetNotificationViewport()
+    {
+        return notificationViewport != null
+            ? notificationViewport
+            : notificationContent != null
+                ? notificationContent.parent as RectTransform
+                : null;
+    }
+
+    private float GetNotificationOverflow(RectTransform viewport)
+    {
+        if (notificationContent == null || viewport == null)
+        {
+            return 0f;
+        }
+
+        return Mathf.Max(0f, notificationContent.rect.height - viewport.rect.height);
+    }
+
+    private void UpdateNotificationScrollbar(float overflow, float normalizedPosition)
+    {
+        if (notificationScrollbar == null)
+        {
+            return;
+        }
+
+        RectTransform viewport = GetNotificationViewport();
+        float contentHeight = notificationContent != null ? notificationContent.rect.height : 0f;
+        float viewportHeight = viewport != null ? viewport.rect.height : 0f;
+        bool canScroll = overflow > 0f && contentHeight > 0f && viewportHeight > 0f;
+
+        notificationScrollbar.interactable = canScroll;
+        notificationScrollbar.size = canScroll ? Mathf.Clamp01(viewportHeight / contentHeight) : 1f;
+        SetNotificationScrollbarValue(canScroll ? normalizedPosition : 1f);
+    }
+
+    private void SetNotificationScrollbarValue(float value)
+    {
+        if (notificationScrollbar == null)
+        {
+            return;
+        }
+
+        suppressNotificationScrollbarCallback = true;
+        notificationScrollbar.value = Mathf.Clamp01(value);
+        suppressNotificationScrollbarCallback = false;
     }
 
     private bool IsBoatDockingStep(MissionTwoStep step)

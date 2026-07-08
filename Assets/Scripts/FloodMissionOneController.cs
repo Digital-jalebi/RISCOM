@@ -13,6 +13,8 @@ public sealed class FloodMissionOneController : MonoBehaviour
     [SerializeField] private Slider missionProgressSlider;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
     [SerializeField] private RectTransform dragMarkerTransform;
     [SerializeField] private Image dragMarkerImage;
     [SerializeField] private Sprite dragMarkerSprite;
@@ -20,6 +22,8 @@ public sealed class FloodMissionOneController : MonoBehaviour
     [SerializeField] private float missionDurationSeconds = 600f;
     [SerializeField] private FloodMarkerTool[] markerTools;
     [SerializeField] private FloodDistrictTarget[] districts;
+
+    [SerializeField] private FloodToolAlertMessageSequence toolAlertMessages;
 
     private FloodMarkerTool draggedTool;
     private float timeRemaining;
@@ -39,12 +43,14 @@ public sealed class FloodMissionOneController : MonoBehaviour
         CacheMarkerTools();
         CacheDistricts();
         ConfigureSliders();
+        notificationPanel.Configure();
 
         if (dragMarkerTransform != null)
         {
             dragMarkerTransform.gameObject.SetActive(false);
         }
 
+        toolAlertMessages?.Configure();
         configured = true;
     }
 
@@ -63,8 +69,10 @@ public sealed class FloodMissionOneController : MonoBehaviour
         SetActive(missionBackground, true);
         ResetMarkerTools();
         ResetDistricts();
+        notificationPanel.Clear();
         SetActive(playRoot, true);
         SetActive(completeScreen, false);
+        toolAlertMessages?.SetActiveIndex(0);
         UpdateProgress();
         UpdateTimerDisplay();
     }
@@ -77,6 +85,8 @@ public sealed class FloodMissionOneController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -93,6 +103,7 @@ public sealed class FloodMissionOneController : MonoBehaviour
         {
             isRunning = false;
             StopActiveDrag();
+            toolAlertMessages?.HideAll();
             Debug.LogWarning("Flood Mission 1 timer expired.");
         }
     }
@@ -222,6 +233,7 @@ public sealed class FloodMissionOneController : MonoBehaviour
     private void AcceptPlacement(FloodDistrictTarget district)
     {
         district.MarkPlaced();
+        ShowDistrictNotification(district);
         placedDistricts++;
         UpdateProgress();
 
@@ -236,6 +248,7 @@ public sealed class FloodMissionOneController : MonoBehaviour
         isComplete = true;
         isRunning = false;
         StopActiveDrag();
+        toolAlertMessages?.HideAll();
         SetActive(missionBackground, false);
         SetActive(playRoot, false);
         SetActive(completeScreen, true);
@@ -473,6 +486,27 @@ public sealed class FloodMissionOneController : MonoBehaviour
         }
     }
 
+    private void ShowDistrictNotification(FloodDistrictTarget district)
+    {
+        if (district == null)
+        {
+            return;
+        }
+
+        Sprite notificationSprite = district.GetNotificationSprite(IsGujaratiEnabled());
+        if (notificationSprite == null)
+        {
+            return;
+        }
+
+        notificationPanel.Show(notificationSprite);
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
+    }
+
     private void UpdateTimerDisplay()
     {
         if (timeRemainingSlider != null)
@@ -561,6 +595,8 @@ public sealed class FloodMissionOneController : MonoBehaviour
         [SerializeField] private RectTransform districtTransform;
         [SerializeField] private Image districtImage;
         [SerializeField] private Sprite colouredSprite;
+        [SerializeField] private Sprite englishNotificationSprite;
+        [SerializeField] private Sprite gujaratiNotificationSprite;
 
         private Sprite initialSprite;
         private Color initialColor;
@@ -596,6 +632,13 @@ public sealed class FloodMissionOneController : MonoBehaviour
             {
                 districtImage.sprite = colouredSprite;
             }
+        }
+
+        public Sprite GetNotificationSprite(bool useGujarati)
+        {
+            return useGujarati && gujaratiNotificationSprite != null
+                ? gujaratiNotificationSprite
+                : englishNotificationSprite;
         }
 
         public void ResetDistrict()
