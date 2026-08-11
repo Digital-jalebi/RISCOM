@@ -86,7 +86,6 @@ public sealed class FloodMissionOneController : MonoBehaviour
 
         UpdateTimer();
         notificationPanel.UpdateScrollInput();
-        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {

@@ -123,7 +123,6 @@ public sealed class CycloneMissionController : MonoBehaviour
         timeRemaining = Mathf.Max(0f, timeRemaining - Time.deltaTime);
         UpdateTimerDisplay();
         UpdateNotificationScrollInput();
-        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (timeRemaining <= 0f)
         {

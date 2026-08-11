@@ -175,6 +175,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         ResetSandbagTargets();
         ResetDrainTargets();
         ResetSirenTargets();
+        ReapplyActiveLanguageAfterTargetReset();
         notificationPanel.Clear();
         SetActive(floodImage, false);
         SetActive(cloggedDrainsRoot, false);
@@ -209,6 +210,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         ResetSandbagTargets();
         ResetDrainTargets();
         ResetSirenTargets();
+        ReapplyActiveLanguageAfterTargetReset();
         notificationPanel.Clear();
         SetActive(floodImage, false);
         SetActive(cloggedDrainsRoot, false);
@@ -764,6 +766,7 @@ public sealed class FloodMissionTwoController : MonoBehaviour
 
     private void HandleLanguageChanged(bool useGujarati)
     {
+        RefreshUnclearedDrainSprites();
         RefreshClearedDrainSprites(useGujarati);
     }
 
@@ -777,6 +780,25 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         for (int i = 0; i < drainTargets.Count; i++)
         {
             drainTargets[i]?.RefreshClearedSprite(useGujarati);
+        }
+    }
+
+    private void ReapplyActiveLanguageAfterTargetReset()
+    {
+        if (languageToggleController != null)
+        {
+            languageToggleController.ApplyLanguage(languageToggleController.IsGujaratiEnabled);
+            return;
+        }
+
+        RefreshUnclearedDrainSprites();
+    }
+
+    private void RefreshUnclearedDrainSprites()
+    {
+        for (int i = 0; i < drainTargets.Count; i++)
+        {
+            drainTargets[i]?.CacheCurrentDrainState();
         }
     }
 
@@ -1053,11 +1075,21 @@ public sealed class FloodMissionTwoController : MonoBehaviour
         {
             if (drainImage != null)
             {
-                initialSprite = drainImage.sprite;
-                initialColor = drainImage.color;
+                CacheCurrentDrainState();
                 drainImage.raycastTarget = true;
             }
 
+        }
+
+        public void CacheCurrentDrainState()
+        {
+            if (drainImage == null || isCleared)
+            {
+                return;
+            }
+
+            initialSprite = drainImage.sprite;
+            initialColor = drainImage.color;
         }
 
         public bool CanAccept(RectTransform toolTransform)

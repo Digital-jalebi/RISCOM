@@ -147,6 +147,7 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
         StopMissionRoutines();
         ResetPairs();
+        ReapplyActiveLanguageAfterPairReset();
         notificationPanel.Clear();
         toolAlertMessages?.SetActiveIndex(0);
         UpdateTimerDisplay();
@@ -526,12 +527,41 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
     private void HandleLanguageChanged(bool useGujarati)
     {
+        RefreshUnfulfilledNeedSprites();
         RefreshFulfilledSprites();
     }
 
     private bool IsGujaratiEnabled()
     {
         return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
+    }
+
+    private void ReapplyActiveLanguageAfterPairReset()
+    {
+        if (languageToggleController != null)
+        {
+            languageToggleController.ApplyLanguage(languageToggleController.IsGujaratiEnabled);
+            return;
+        }
+
+        RefreshUnfulfilledNeedSprites();
+    }
+
+    private void RefreshUnfulfilledNeedSprites()
+    {
+        if (pairs == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < pairs.Length; i++)
+        {
+            MissionFourPair pair = pairs[i];
+            if (pair != null && !pair.Fulfilled)
+            {
+                pair.CacheCurrentNeedState();
+            }
+        }
     }
 
     private void ShowNeedNotification(MissionFourPair pair)
@@ -784,9 +814,19 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
             if (NeedImage != null)
             {
-                InitialNeedSprite = NeedImage.sprite;
-                InitialNeedPreserveAspect = NeedImage.preserveAspect;
+                CacheCurrentNeedState();
             }
+        }
+
+        public void CacheCurrentNeedState()
+        {
+            if (NeedImage == null)
+            {
+                return;
+            }
+
+            InitialNeedSprite = NeedImage.sprite;
+            InitialNeedPreserveAspect = NeedImage.preserveAspect;
         }
 
         public Sprite GetFulfilledSprite(bool useGujarati)

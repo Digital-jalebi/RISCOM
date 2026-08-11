@@ -4066,7 +4066,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1369342556}
-  - {fileID: 685280136}
   - {fileID: 300531360}
   m_Father: {fileID: 1856854528}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8493,7 +8492,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 68.8, y: 0}
-  m_SizeDelta: {x: 95, y: 41}
+  m_SizeDelta: {x: 122, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188694354
 MonoBehaviour:
@@ -8515,7 +8514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e72b61d57a5764643be7bc16a6bdbe82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0877d85cc1b21d4194a0bd282429525, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16692,8 +16691,8 @@ MonoBehaviour:
   setNativeSizeAfterSwap: 1
   cycloneTextImageSwaps:
   - textImage: {fileID: 853769588}
-    englishSprite: {fileID: -855298285791758126, guid: bbac4c0e6d6546340955aa1662e1a884, type: 3}
-    gujaratiSprite: {fileID: -855298285791758126, guid: 955a2a26e5a789147a9be2068c6ec93b, type: 3}
+    englishSprite: {fileID: 21300000, guid: bbac4c0e6d6546340955aa1662e1a884, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 7863ead1fa8218744876b72ac360b417, type: 3}
   - textImage: {fileID: 1543020957}
     englishSprite: {fileID: 7864736559111288526, guid: f6d0edc4a9244ad4b9b7bb294da97598, type: 3}
     gujaratiSprite: {fileID: -6551690676813609843, guid: d526e50f09433ed408c94cb10619e506, type: 3}
@@ -16808,6 +16807,12 @@ MonoBehaviour:
   - textImage: {fileID: 666059594}
     englishSprite: {fileID: 21300000, guid: ad1230eea110e1341ac377cf73ff541e, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 1137ab3b89c5a7e4c97d60a289e34a9f, type: 3}
+  - textImage: {fileID: 1369342557}
+    englishSprite: {fileID: 1574822407111015968, guid: c40bbfdab468d6241974cc91c77f6ffb, type: 3}
+    gujaratiSprite: {fileID: 3995490682841565733, guid: 2ab9e34dd4ecf724da06d077fbcb7edf, type: 3}
+  - textImage: {fileID: 690369535}
+    englishSprite: {fileID: 8037943663571231698, guid: 804c32ac1a3be184c8cdeed6e3ee8cfb, type: 3}
+    gujaratiSprite: {fileID: 8037943663571231698, guid: 6c947fdf753afe943b1afbef44807170, type: 3}
   - textImage: {fileID: 273370129}
     englishSprite: {fileID: 2878500096443800913, guid: d0ad135195977b8428336d5e69650d4d, type: 3}
     gujaratiSprite: {fileID: 5207813627429835742, guid: 40abd5f5b1916d34385ed1c46b3ccb27, type: 3}
@@ -16908,10 +16913,10 @@ MonoBehaviour:
     englishSprite: {fileID: 21300000, guid: f3b26b4b2961da94fad51d9df6817be4, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 754133145daa4234784a4cf30402ef68, type: 3}
   - textImage: {fileID: 1413082401}
-    englishSprite: {fileID: 3838443625342918022, guid: 8ff8d666aee8f464dbeb2440cd7d79d3, type: 3}
+    englishSprite: {fileID: 21300000, guid: 8ff8d666aee8f464dbeb2440cd7d79d3, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 71f6487a7dcd5854ea5afc57d3c838ff, type: 3}
   - textImage: {fileID: 1812375352}
-    englishSprite: {fileID: 2344689695610240050, guid: a3b50e9d0b9d44b49810473a172fda82, type: 3}
+    englishSprite: {fileID: 21300000, guid: a3b50e9d0b9d44b49810473a172fda82, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: ae9734ec1a2c8cd4682b5e806d9f7d9b, type: 3}
   - textImage: {fileID: 407115900}
     englishSprite: {fileID: 8037943663571231698, guid: 1a3db03744210874d809cd51f81f7f72, type: 3}
@@ -17014,14 +17019,14 @@ MonoBehaviour:
     englishSprite: {fileID: 21300000, guid: 299b0bcfb21366f44b0f51c6656da460, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 030a7f677dc32e241bfd7114ed2edfb7, type: 3}
   - textImage: {fileID: 1724234767}
-    englishSprite: {fileID: 21300000, guid: e72b61d57a5764643be7bc16a6bdbe82, type: 3}
-    gujaratiSprite: {fileID: -4812004082925887182, guid: eda996931dea4884483f0f4953f89bfd, type: 3}
+    englishSprite: {fileID: 21300000, guid: b0877d85cc1b21d4194a0bd282429525, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: c4543b6d8d03445469bfbb616d0d23b4, type: 3}
   - textImage: {fileID: 706051746}
-    englishSprite: {fileID: 21300000, guid: e72b61d57a5764643be7bc16a6bdbe82, type: 3}
-    gujaratiSprite: {fileID: -4812004082925887182, guid: eda996931dea4884483f0f4953f89bfd, type: 3}
+    englishSprite: {fileID: 21300000, guid: b0877d85cc1b21d4194a0bd282429525, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: c4543b6d8d03445469bfbb616d0d23b4, type: 3}
   - textImage: {fileID: 188694354}
-    englishSprite: {fileID: 21300000, guid: e72b61d57a5764643be7bc16a6bdbe82, type: 3}
-    gujaratiSprite: {fileID: -4812004082925887182, guid: eda996931dea4884483f0f4953f89bfd, type: 3}
+    englishSprite: {fileID: 21300000, guid: b0877d85cc1b21d4194a0bd282429525, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: c4543b6d8d03445469bfbb616d0d23b4, type: 3}
   - textImage: {fileID: 1505514184}
     englishSprite: {fileID: 21300000, guid: 8e1619acf3201f84da7df3d4ad9dee57, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: d8fab95d0a3455c4c90ab88594e6e0a7, type: 3}
@@ -17093,7 +17098,7 @@ MonoBehaviour:
     gujaratiSprite: {fileID: 21300000, guid: 156c635eafc3dea43a22ee67e2fe063d, type: 3}
   - textImage: {fileID: 876265195}
     englishSprite: {fileID: 21300000, guid: 94839ec9ce64e224989510a4f669e98e, type: 3}
-    gujaratiSprite: {fileID: 21300000, guid: 8e232e83e8e10c14bb0bd1dcefe0dfd9, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 3ba3b79a5d495a046a8fac29d814cff0, type: 3}
   - textImage: {fileID: 1702382461}
     englishSprite: {fileID: 21300000, guid: eb8e59473aabe074c859aeecb390fe8f, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: f9e7cf4a53f7f914f94b0b57761c7ddd, type: 3}
@@ -17102,7 +17107,7 @@ MonoBehaviour:
     gujaratiSprite: {fileID: 21300000, guid: 6aa00313d9bf0f5409170c3f5c600f11, type: 3}
   - textImage: {fileID: 736921806}
     englishSprite: {fileID: 21300000, guid: 43d75de7e9eb19a4e9350b688c2d57e6, type: 3}
-    gujaratiSprite: {fileID: 21300000, guid: 336a3c10c362f6348b56698197832c96, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 080f734af62f07541a11f41a1e7f8a56, type: 3}
   - textImage: {fileID: 1907584024}
     englishSprite: {fileID: 21300000, guid: 226da0bc7a255124d830b4ec438adabb, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 53a1a3e894d718a4bb6b9ffc058c38b6, type: 3}
@@ -17221,6 +17226,9 @@ MonoBehaviour:
   - textImage: {fileID: 1953842583}
     englishSprite: {fileID: 21300000, guid: 53c024b8ef970114ab201f53a18274d1, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 5911fa11182d12245a93e1195c48773c, type: 3}
+  - textImage: {fileID: 656979994}
+    englishSprite: {fileID: 21300000, guid: 2ca4a18f0c83e704290d65f001a37c2f, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 939985b853cb4624f82058891ade0833, type: 3}
   - textImage: {fileID: 1527099960}
     englishSprite: {fileID: 21300000, guid: 95df415b28c71944995bb64e1d2a7b5e, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: e44d4cbf756ff3c44a93388ccde2ca6f, type: 3}
@@ -17389,7 +17397,7 @@ MonoBehaviour:
     gujaratiSprite: {fileID: 21300000, guid: 2668fe0a07900d64299fd1022cc5e1a6, type: 3}
   - textImage: {fileID: 1307379411}
     englishSprite: {fileID: -7654462848769556840, guid: cd60e8522c3f1e740afe0b1c83cbd77b, type: 3}
-    gujaratiSprite: {fileID: 21300000, guid: 0517337f1491a764587896d3668d64fb, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 8deb1c68e6f07984bbd9005a9fa42b38, type: 3}
   - textImage: {fileID: 747175918}
     englishSprite: {fileID: 21300000, guid: 93e9fbb3342c01e4aa81d1ca27b81bf5, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 610f10da8bd98c641a8716f01a734396, type: 3}
@@ -17440,7 +17448,7 @@ MonoBehaviour:
     gujaratiSprite: {fileID: 21300000, guid: 029e57b99f140d64785c7eeda1b35e67, type: 3}
   - textImage: {fileID: 1070105846}
     englishSprite: {fileID: -7654462848769556840, guid: cd60e8522c3f1e740afe0b1c83cbd77b, type: 3}
-    gujaratiSprite: {fileID: 21300000, guid: 0517337f1491a764587896d3668d64fb, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 8deb1c68e6f07984bbd9005a9fa42b38, type: 3}
   - textImage: {fileID: 95440214}
     englishSprite: {fileID: 21300000, guid: 7ce5466247917cc4ea6fe3d7115ab949, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: cb5a2810d4900144b9235c0d7958a0cf, type: 3}
@@ -17485,7 +17493,7 @@ MonoBehaviour:
     gujaratiSprite: {fileID: 21300000, guid: c120c7b9c6a55df40874465fa401df8b, type: 3}
   - textImage: {fileID: 823696544}
     englishSprite: {fileID: -7654462848769556840, guid: cd60e8522c3f1e740afe0b1c83cbd77b, type: 3}
-    gujaratiSprite: {fileID: 21300000, guid: 0517337f1491a764587896d3668d64fb, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 8deb1c68e6f07984bbd9005a9fa42b38, type: 3}
   - textImage: {fileID: 515479533}
     englishSprite: {fileID: 21300000, guid: 7b595c18a7a9ceb4b90c00c0369ec0e7, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 0d91dd4e4c7f96149a838da0c20d2a25, type: 3}
@@ -17527,7 +17535,7 @@ MonoBehaviour:
     gujaratiSprite: {fileID: 21300000, guid: 06f7844d5356a474fbe8d1d928d7c873, type: 3}
   - textImage: {fileID: 1773126801}
     englishSprite: {fileID: -7654462848769556840, guid: cd60e8522c3f1e740afe0b1c83cbd77b, type: 3}
-    gujaratiSprite: {fileID: 21300000, guid: 0517337f1491a764587896d3668d64fb, type: 3}
+    gujaratiSprite: {fileID: 21300000, guid: 8deb1c68e6f07984bbd9005a9fa42b38, type: 3}
   - textImage: {fileID: 1999343402}
     englishSprite: {fileID: 21300000, guid: 6dd5167581f472b418257cab081347cd, type: 3}
     gujaratiSprite: {fileID: 21300000, guid: 041450c7aea3a69479714024d779b000, type: 3}
@@ -18462,7 +18470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &459771238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26845,81 +26853,6 @@ RectTransform:
   m_AnchoredPosition: {x: -384.4, y: 83.4}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &685280135
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 685280136}
-  - component: {fileID: 685280138}
-  - component: {fileID: 685280137}
-  m_Layer: 5
-  m_Name: InstructorImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &685280136
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685280135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 82152112}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 42, y: -71}
-  m_SizeDelta: {x: 313, y: 313}
-  m_Pivot: {x: 0, y: 1}
---- !u!114 &685280137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685280135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 8869252943536380371, guid: e71d9e57bbd22f348bf32d736d948381, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &685280138
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685280135}
-  m_CullTransparentMesh: 1
 --- !u!1 &685567066
 GameObject:
   m_ObjectHideFlags: 0
@@ -27903,7 +27836,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 68.8, y: 0}
-  m_SizeDelta: {x: 95, y: 41}
+  m_SizeDelta: {x: 122, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706051746
 MonoBehaviour:
@@ -27925,7 +27858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e72b61d57a5764643be7bc16a6bdbe82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0877d85cc1b21d4194a0bd282429525, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34404,7 +34337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -855298285791758126, guid: bbac4c0e6d6546340955aa1662e1a884, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bbac4c0e6d6546340955aa1662e1a884, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -52718,7 +52651,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31, y: -155.57755}
+  m_AnchoredPosition: {x: -31, y: -148.93921}
   m_SizeDelta: {x: 425, y: 527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1326288933
@@ -62076,7 +62009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1597786728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -62278,7 +62211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1610331804
 RectTransform:
   m_ObjectHideFlags: 0
@@ -66415,7 +66348,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 68.8, y: 0}
-  m_SizeDelta: {x: 95, y: 41}
+  m_SizeDelta: {x: 122, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724234767
 MonoBehaviour:
@@ -66437,7 +66370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e72b61d57a5764643be7bc16a6bdbe82, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0877d85cc1b21d4194a0bd282429525, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -72535,8 +72468,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d3c90a315247f634eb72d9673c914df4, type: 3}
     gujaratiToolSprites:
     - {fileID: 21300000, guid: a904cb66890ceb54cbd0a95ca876f4f0, type: 3}
-    - {fileID: 21300000, guid: 02b4aded9466c5d42a3cdd9eab7c09c6, type: 3}
     - {fileID: 21300000, guid: 87b67d5ce4378584d9858c131a6d1869, type: 3}
+    - {fileID: 21300000, guid: 02b4aded9466c5d42a3cdd9eab7c09c6, type: 3}
   - settlementName: LowRiskSettlement 2
     dropTarget: {fileID: 1164753407}
     appliedToolObject: {fileID: 1530746430}
@@ -72548,8 +72481,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d3c90a315247f634eb72d9673c914df4, type: 3}
     gujaratiToolSprites:
     - {fileID: 21300000, guid: a904cb66890ceb54cbd0a95ca876f4f0, type: 3}
-    - {fileID: 21300000, guid: 02b4aded9466c5d42a3cdd9eab7c09c6, type: 3}
     - {fileID: 21300000, guid: 87b67d5ce4378584d9858c131a6d1869, type: 3}
+    - {fileID: 21300000, guid: 02b4aded9466c5d42a3cdd9eab7c09c6, type: 3}
   toolAlertMessages: {fileID: 1901093327}
 --- !u!114 &1901093327
 MonoBehaviour:
@@ -73777,7 +73710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1923870582
 RectTransform:
   m_ObjectHideFlags: 0
@@ -77665,6 +77598,7 @@ RectTransform:
   - {fileID: 135971460}
   - {fileID: 1363136096}
   - {fileID: 317451867}
+  - {fileID: 324791647}
   - {fileID: 618766676}
   - {fileID: 112731173}
   - {fileID: 836268525}
@@ -77674,7 +77608,6 @@ RectTransform:
   - {fileID: 1832397619}
   - {fileID: 295077813}
   - {fileID: 1413105825}
-  - {fileID: 324791647}
   m_Father: {fileID: 887463252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -82793,7 +82726,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142000023}
   m_HandleRect: {fileID: 2142000021}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.9786655
   m_Size: 0.40957287
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -82867,8 +82800,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2142000011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.59042716}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0.5778307}
+  m_AnchorMax: {x: 1, y: 0.9874035}
   m_AnchoredPosition: {x: 0, y: 14}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

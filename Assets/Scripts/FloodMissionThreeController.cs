@@ -170,6 +170,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         ResetTools();
         ResetSosHouseTargets();
         ResetBuildingTargets();
+        ReapplyActiveLanguageAfterTargetReset();
         notificationPanel.Clear();
         SetToolUsable(boatTool, true);
         SetToolUsable(generatorTool, false);
@@ -201,6 +202,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         ResetTools();
         ResetSosHouseTargets();
         ResetBuildingTargets();
+        ReapplyActiveLanguageAfterTargetReset();
         notificationPanel.Clear();
     }
 
@@ -750,6 +752,7 @@ public sealed class FloodMissionThreeController : MonoBehaviour
 
     private void HandleLanguageChanged(bool useGujarati)
     {
+        RefreshUnpumpedBuildingSprites();
         RefreshPlacedPumpSprites(useGujarati);
     }
 
@@ -765,6 +768,25 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         for (int i = 0; i < buildingTargets.Count; i++)
         {
             buildingTargets[i]?.RefreshPumpSprite(useGujarati, fallbackSprite);
+        }
+    }
+
+    private void ReapplyActiveLanguageAfterTargetReset()
+    {
+        if (languageToggleController != null)
+        {
+            languageToggleController.ApplyLanguage(languageToggleController.IsGujaratiEnabled);
+            return;
+        }
+
+        RefreshUnpumpedBuildingSprites();
+    }
+
+    private void RefreshUnpumpedBuildingSprites()
+    {
+        for (int i = 0; i < buildingTargets.Count; i++)
+        {
+            buildingTargets[i]?.CacheCurrentGeneratorState();
         }
     }
 
@@ -1208,12 +1230,22 @@ public sealed class FloodMissionThreeController : MonoBehaviour
         {
             if (generatorImage != null)
             {
-                initialGeneratorSprite = generatorImage.sprite;
-                initialGeneratorColor = generatorImage.color;
-                initialGeneratorPreserveAspect = generatorImage.preserveAspect;
+                CacheCurrentGeneratorState();
             }
 
             SetActive(generatorObject, false);
+        }
+
+        public void CacheCurrentGeneratorState()
+        {
+            if (generatorImage == null || isPumpPlaced)
+            {
+                return;
+            }
+
+            initialGeneratorSprite = generatorImage.sprite;
+            initialGeneratorColor = generatorImage.color;
+            initialGeneratorPreserveAspect = generatorImage.preserveAspect;
         }
 
         public bool CanAcceptGenerator(RectTransform toolTransform)
