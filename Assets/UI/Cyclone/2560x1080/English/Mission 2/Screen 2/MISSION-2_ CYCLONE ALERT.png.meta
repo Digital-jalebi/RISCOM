@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 4c04c28427db20a438ea3cd9854f3364
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1469662584722261365
+    second: MISSION-2_ CYCLONE ALERT_0
+  - first:
+      213: -7901939673434671859
+    second: MISSION-2_ CYCLONE ALERT_1
+  - first:
+      213: -9109278870982607007
+    second: MISSION-2_ CYCLONE ALERT_2
+  - first:
+      213: -2457096993232117466
+    second: MISSION-2_ CYCLONE ALERT_3
+  - first:
+      213: 3380368318755639180
+    second: MISSION-2_ CYCLONE ALERT_4
+  - first:
+      213: 4679475090670075940
+    second: MISSION-2_ CYCLONE ALERT_5
+  - first:
+      213: -8443682029922329221
+    second: MISSION-2_ CYCLONE ALERT_6
+  - first:
+      213: -9100720313221224666
+    second: MISSION-2_ CYCLONE ALERT_7
+  - first:
+      213: 6734576776111377011
+    second: MISSION-2_ CYCLONE ALERT_8
+  - first:
+      213: 4556119801000761620
+    second: MISSION-2_ CYCLONE ALERT_9
+  - first:
+      213: -1857963866176459365
+    second: MISSION-2_ CYCLONE ALERT_10
+  - first:
+      213: 6424134307115321495
+    second: MISSION-2_ CYCLONE ALERT_11
+  - first:
+      213: 264711956647971155
+    second: MISSION-2_ CYCLONE ALERT_12
+  - first:
+      213: -857430604493288506
+    second: MISSION-2_ CYCLONE ALERT_13
+  - first:
+      213: 7857430468930490595
+    second: MISSION-2_ CYCLONE ALERT_14
+  - first:
+      213: 8397919365320452865
+    second: MISSION-2_ CYCLONE ALERT_15
+  - first:
+      213: 8826840895868155711
+    second: MISSION-2_ CYCLONE ALERT_16
+  - first:
+      213: 5175171742046956135
+    second: MISSION-2_ CYCLONE ALERT_17
+  - first:
+      213: 6618679657348327536
+    second: MISSION-2_ CYCLONE ALERT_18
+  - first:
+      213: -2430963104781764885
+    second: MISSION-2_ CYCLONE ALERT_19
+  - first:
+      213: 3172731181423531829
+    second: MISSION-2_ CYCLONE ALERT_20
+  - first:
+      213: -1204880320166233509
+    second: MISSION-2_ CYCLONE ALERT_21
+  - first:
+      213: 3880868192612619251
+    second: MISSION-2_ CYCLONE ALERT_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5758d0e855a456410800000000000000
+      internalID: 1469662584722261365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 10
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d053c58bbbba65290800000000000000
+      internalID: -7901939673434671859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f3c1f3127559180800000000000000
+      internalID: -9109278870982607007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62128bb8d43a6edd0800000000000000
+      internalID: -2457096993232117466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 10
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f0a61731b79ee20800000000000000
+      internalID: 3380368318755639180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420cda25dc5d0f040800000000000000
+      internalID: 4679475090670075940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d512a2ee302da80800000000000000
+      internalID: -8443682029922329221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_7
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 12
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6276442c71fb3b180800000000000000
+      internalID: -9100720313221224666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ac6b485e5067d50800000000000000
+      internalID: 6734576776111377011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41916c4d1d69a3f30800000000000000
+      internalID: 4556119801000761620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d6a0725bf2736e0800000000000000
+      internalID: -1857963866176459365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7984205ad1c172950800000000000000
+      internalID: 6424134307115321495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3590dcf3f127ca300800000000000000
+      internalID: 264711956647971155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb01a7786bc914f0800000000000000
+      internalID: -857430604493288506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_14
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0deeb81633b0d60800000000000000
+      internalID: 7857430468930490595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_15
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bac4e2b276b8470800000000000000
+      internalID: 8397919365320452865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_16
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37bc17370d3f7a70800000000000000
+      internalID: 8826840895868155711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_17
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a2958b747e1d740800000000000000
+      internalID: 5175171742046956135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_18
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078e952c4164adb50800000000000000
+      internalID: 6618679657348327536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_19
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 0
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6f66d9feb734ed0800000000000000
+      internalID: -2430963104781764885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_20
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5371e8c133ec70c20800000000000000
+      internalID: 3172731181423531829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_21
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5af1a78bb7674fe0800000000000000
+      internalID: -1204880320166233509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MISSION-2_ CYCLONE ALERT_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f399c83f0d9bd530800000000000000
+      internalID: 3880868192612619251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MISSION-2_ CYCLONE ALERT_0: 1469662584722261365
+      MISSION-2_ CYCLONE ALERT_1: -7901939673434671859
+      MISSION-2_ CYCLONE ALERT_10: -1857963866176459365
+      MISSION-2_ CYCLONE ALERT_11: 6424134307115321495
+      MISSION-2_ CYCLONE ALERT_12: 264711956647971155
+      MISSION-2_ CYCLONE ALERT_13: -857430604493288506
+      MISSION-2_ CYCLONE ALERT_14: 7857430468930490595
+      MISSION-2_ CYCLONE ALERT_15: 8397919365320452865
+      MISSION-2_ CYCLONE ALERT_16: 8826840895868155711
+      MISSION-2_ CYCLONE ALERT_17: 5175171742046956135
+      MISSION-2_ CYCLONE ALERT_18: 6618679657348327536
+      MISSION-2_ CYCLONE ALERT_19: -2430963104781764885
+      MISSION-2_ CYCLONE ALERT_2: -9109278870982607007
+      MISSION-2_ CYCLONE ALERT_20: 3172731181423531829
+      MISSION-2_ CYCLONE ALERT_21: -1204880320166233509
+      MISSION-2_ CYCLONE ALERT_22: 3880868192612619251
+      MISSION-2_ CYCLONE ALERT_3: -2457096993232117466
+      MISSION-2_ CYCLONE ALERT_4: 3380368318755639180
+      MISSION-2_ CYCLONE ALERT_5: 4679475090670075940
+      MISSION-2_ CYCLONE ALERT_6: -8443682029922329221
+      MISSION-2_ CYCLONE ALERT_7: -9100720313221224666
+      MISSION-2_ CYCLONE ALERT_8: 6734576776111377011
+      MISSION-2_ CYCLONE ALERT_9: 4556119801000761620
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
