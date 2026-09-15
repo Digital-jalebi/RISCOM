@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public sealed class RISCOMMenuController : MonoBehaviour
@@ -26,9 +27,18 @@ public sealed class RISCOMMenuController : MonoBehaviour
 
     public string SelectedHazard { get; private set; }
 
+    private void Update()
+    {
+        if (WasResetShortcutPressed())
+        {
+            ShowLanguageSelection();
+        }
+    }
+
     private void Awake()
     {
         CacheReferences();
+        ConfigureDisasterFlowCompletionCallbacks();
         WireButtons();
 
         if (languageSelectionScreen != null)
@@ -46,7 +56,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
         SetActive(languageSelectionScreen, true);
         SetActive(startMenuScreen, false);
         SetActive(hazardSelectionScreen, false);
-        HideHazardFlows();
+        ResetAllHazardFlows();
         ClearHazardSelection();
     }
 
@@ -55,7 +65,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
         SetActive(languageSelectionScreen, false);
         SetActive(startMenuScreen, true);
         SetActive(hazardSelectionScreen, false);
-        HideHazardFlows();
+        ResetAllHazardFlows();
         ClearHazardSelection();
     }
 
@@ -64,7 +74,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
         SetActive(languageSelectionScreen, false);
         SetActive(startMenuScreen, false);
         SetActive(hazardSelectionScreen, true);
-        HideHazardFlows();
+        ResetAllHazardFlows();
         ClearHazardSelection();
     }
 
@@ -102,12 +112,53 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
+        StartHazardTour(SelectedHazard);
+    }
+
+    private void ConfigureDisasterFlowCompletionCallbacks()
+    {
+        cycloneFlowController?.Configure(HandleCycloneFlowCompleted);
+        floodFlowController?.Configure(HandleFloodFlowCompleted);
+        droughtFlowController?.Configure(HandleDroughtFlowCompleted);
+        industrialFlowController?.Configure(HandleIndustrialFlowCompleted);
+    }
+
+    private void HandleCycloneFlowCompleted()
+    {
+        StartHazardTour("Flood");
+    }
+
+    private void HandleFloodFlowCompleted()
+    {
+        StartHazardTour("Drought");
+    }
+
+    private void HandleDroughtFlowCompleted()
+    {
+        StartHazardTour("Industrial");
+    }
+
+    private void HandleIndustrialFlowCompleted()
+    {
+        ShowHazardSelection();
+    }
+
+    private void StartHazardTour(string hazardName)
+    {
+        if (string.IsNullOrWhiteSpace(hazardName))
+        {
+            Debug.LogWarning("No hazard was provided to start.");
+            return;
+        }
+
+        SelectedHazard = hazardName;
+
         SetActive(languageSelectionScreen, false);
         SetActive(startMenuScreen, false);
         SetActive(hazardSelectionScreen, false);
-        HideHazardFlows();
+        ResetAllHazardFlows();
 
-        if (string.Equals(SelectedHazard, "Cyclone", StringComparison.OrdinalIgnoreCase))
+        if (string.Equals(hazardName, "Cyclone", StringComparison.OrdinalIgnoreCase))
         {
             if (cycloneFlowController == null)
             {
@@ -120,7 +171,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
-        if (string.Equals(SelectedHazard, "Flood", StringComparison.OrdinalIgnoreCase))
+        if (string.Equals(hazardName, "Flood", StringComparison.OrdinalIgnoreCase))
         {
             if (floodFlowController == null)
             {
@@ -133,20 +184,7 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
-        if (string.Equals(SelectedHazard, "Industrial", StringComparison.OrdinalIgnoreCase))
-        {
-            if (industrialFlowController == null)
-            {
-                Debug.LogWarning("Industrial flow controller is not assigned.");
-                return;
-            }
-
-            industrialFlowController.BeginFlow();
-            Debug.Log("Starting Industrial tour.");
-            return;
-        }
-
-        if (string.Equals(SelectedHazard, "Drought", StringComparison.OrdinalIgnoreCase))
+        if (string.Equals(hazardName, "Drought", StringComparison.OrdinalIgnoreCase))
         {
             if (droughtFlowController == null)
             {
@@ -159,15 +197,28 @@ public sealed class RISCOMMenuController : MonoBehaviour
             return;
         }
 
-        GameObject hazardFlow = FindHazardFlowFor(SelectedHazard);
+        if (string.Equals(hazardName, "Industrial", StringComparison.OrdinalIgnoreCase))
+        {
+            if (industrialFlowController == null)
+            {
+                Debug.LogWarning("Industrial flow controller is not assigned.");
+                return;
+            }
+
+            industrialFlowController.BeginFlow();
+            Debug.Log("Starting Industrial tour.");
+            return;
+        }
+
+        GameObject hazardFlow = FindHazardFlowFor(hazardName);
         if (hazardFlow == null)
         {
-            Debug.LogWarning($"No game flow has been configured yet for {SelectedHazard}.");
+            Debug.LogWarning($"No game flow has been configured yet for {hazardName}.");
             return;
         }
 
         hazardFlow.SetActive(true);
-        Debug.Log($"Starting {SelectedHazard} tour.");
+        Debug.Log($"Starting {hazardName} tour.");
     }
 
     private void CacheReferences()
@@ -325,6 +376,15 @@ public sealed class RISCOMMenuController : MonoBehaviour
         }
     }
 
+    private void ResetAllHazardFlows()
+    {
+        cycloneFlowController?.ResetFlow();
+        floodFlowController?.ResetFlow();
+        droughtFlowController?.ResetFlow();
+        industrialFlowController?.ResetFlow();
+        HideHazardFlows();
+    }
+
     private GameObject FindHazardFlowFor(string hazardName)
     {
         foreach (GameObject hazardFlow in hazardFlows)
@@ -402,6 +462,18 @@ public sealed class RISCOMMenuController : MonoBehaviour
         {
             target.SetActive(active);
         }
+    }
+
+    private static bool WasResetShortcutPressed()
+    {
+        Keyboard keyboard = Keyboard.current;
+        if (keyboard == null)
+        {
+            return false;
+        }
+
+        bool ctrlPressed = keyboard.leftCtrlKey.isPressed || keyboard.rightCtrlKey.isPressed;
+        return ctrlPressed && keyboard.rKey.wasPressedThisFrame;
     }
 
     private sealed class HazardOption

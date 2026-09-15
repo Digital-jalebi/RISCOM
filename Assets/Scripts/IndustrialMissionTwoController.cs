@@ -26,6 +26,12 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
     [SerializeField] private GameObject exitGateObject;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites ppeKitsCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites ventilationCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites safetyBarriersCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites personnelEvacuatedNotification = new PhaseNotificationSprites();
     [SerializeField] private float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] private float completionDelaySeconds = 1f;
     [SerializeField] private IndustrialMissionTwoTool ppeKitsTool;
@@ -41,10 +47,12 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
     private int protectedWorkers;
     private bool configured;
     private bool buttonsWired;
+    private bool languageControllerWired;
     private bool isRunning;
     private bool isComplete;
     private Coroutine shakeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private IndustrialToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(System.Action reportNextHandler)
     {
@@ -65,6 +73,8 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
             buttonsWired = true;
         }
 
+        WireLanguageController();
+
         if (configured)
         {
             return;
@@ -76,6 +86,8 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         exitGateTool?.CacheInitialState();
         CacheWorkerTargets();
         ConfigureTimerSlider();
+        notificationPanel.Configure();
+        toolAlertMessages?.Configure();
 
         configured = true;
     }
@@ -105,6 +117,8 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -138,6 +152,8 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
 
         ResetTools();
         ResetWorkerTargets();
+        notificationPanel.Clear();
+        toolAlertMessages?.SetActiveIndex(0);
         SetActive(smokesRoot, true);
         SetActive(ventilatorFanObject, false);
         SetActive(barrierObject, false);
@@ -168,6 +184,8 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
 
         ResetTools();
         ResetWorkerTargets();
+        notificationPanel.Clear();
+        toolAlertMessages?.HideAll();
         SetActive(smokesRoot, true);
         SetActive(ventilatorFanObject, false);
         SetActive(barrierObject, false);
@@ -183,6 +201,7 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         {
             isRunning = false;
             StopActiveDrag();
+            toolAlertMessages?.HideAll();
             Debug.LogWarning("Industrial Mission 2 timer expired.");
         }
     }
@@ -345,6 +364,7 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
 
         if (!HasPendingWorkers())
         {
+            ShowNotification(ppeKitsCompleteNotification.GetSprite(IsGujaratiEnabled()));
             EnterVentilatorPhase();
         }
 
@@ -361,8 +381,10 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         SetActive(ventilatorFanObject, true);
         SetActive(smokesRoot, false);
         ResetTool(ventilatorFanTool, false);
+        ShowNotification(ventilationCompleteNotification.GetSprite(IsGujaratiEnabled()));
         phase = MissionPhase.Barrier;
         SetToolUsable(barrierTool, true);
+        toolAlertMessages?.SetActiveIndex(2);
         return true;
     }
 
@@ -375,8 +397,10 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
 
         SetActive(barrierObject, true);
         ResetTool(barrierTool, false);
+        ShowNotification(safetyBarriersCompleteNotification.GetSprite(IsGujaratiEnabled()));
         phase = MissionPhase.ExitGate;
         SetToolUsable(exitGateTool, true);
+        toolAlertMessages?.SetActiveIndex(3);
         return true;
     }
 
@@ -390,6 +414,7 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         SetActive(exitGateObject, true);
         ResetTool(exitGateTool, false);
         DeactivateWorkers();
+        ShowNotification(personnelEvacuatedNotification.GetSprite(IsGujaratiEnabled()));
         CompleteMissionAfterDelay();
         return true;
     }
@@ -420,6 +445,7 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         SetToolUsable(ventilatorFanTool, true);
         SetToolUsable(barrierTool, false);
         SetToolUsable(exitGateTool, false);
+        toolAlertMessages?.SetActiveIndex(1);
     }
 
     private void CompleteMissionAfterDelay()
@@ -432,6 +458,7 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         isRunning = false;
         isComplete = true;
         StopActiveDrag();
+        toolAlertMessages?.HideAll();
 
         if (completionRoutine != null)
         {
@@ -439,6 +466,19 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -586,6 +626,30 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
         }
     }
 
+    private void WireLanguageController()
+    {
+        if (languageToggleController == null || languageControllerWired)
+        {
+            return;
+        }
+
+        languageToggleController.LanguageChanged += HandleLanguageChanged;
+        languageControllerWired = true;
+    }
+
+    private void HandleLanguageChanged(bool useGujarati)
+    {
+        RefreshToolLanguageState();
+    }
+
+    private void RefreshToolLanguageState()
+    {
+        ppeKitsTool?.CacheCurrentLanguageState();
+        ventilatorFanTool?.CacheCurrentLanguageState();
+        barrierTool?.CacheCurrentLanguageState();
+        exitGateTool?.CacheCurrentLanguageState();
+    }
+
     private void ResetTools()
     {
         ppeKitsTool?.ResetPosition();
@@ -707,6 +771,23 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
     }
 
     [System.Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
+        }
+    }
+
+    [System.Serializable]
     private sealed class IndustrialMissionTwoTool
     {
         [SerializeField] private RectTransform toolTransform;
@@ -745,6 +826,20 @@ public sealed class IndustrialMissionTwoController : MonoBehaviour
                 initialColor = toolImage.color;
                 initialPreserveAspect = toolImage.preserveAspect;
                 toolImage.raycastTarget = true;
+            }
+        }
+
+        public void CacheCurrentLanguageState()
+        {
+            if (toolTransform != null)
+            {
+                initialSizeDelta = toolTransform.sizeDelta;
+            }
+
+            if (toolImage != null)
+            {
+                initialSprite = toolImage.sprite;
+                initialPreserveAspect = toolImage.preserveAspect;
             }
         }
 

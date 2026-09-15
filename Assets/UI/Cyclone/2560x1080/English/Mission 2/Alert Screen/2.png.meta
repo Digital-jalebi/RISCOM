@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 44b8664cb8c6a904eb2f047eafc40601
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7190445142003877132
+    second: Deploy the radio transmitter for emergency communication_0
+  - first:
+      213: -3243351727612101670
+    second: Deploy the radio transmitter for emergency communication_1
+  - first:
+      213: -6526650614262431365
+    second: Deploy the radio transmitter for emergency communication_2
+  - first:
+      213: 6473857754529586101
+    second: Deploy the radio transmitter for emergency communication_3
+  - first:
+      213: 3589344251696255791
+    second: Deploy the radio transmitter for emergency communication_4
+  - first:
+      213: 2016596707306027166
+    second: Deploy the radio transmitter for emergency communication_5
+  - first:
+      213: -4725381128372218288
+    second: Deploy the radio transmitter for emergency communication_6
+  - first:
+      213: -7285324503461076221
+    second: Deploy the radio transmitter for emergency communication_7
+  - first:
+      213: -194924841509308062
+    second: Deploy the radio transmitter for emergency communication_8
+  - first:
+      213: 9089222383136418144
+    second: Deploy the radio transmitter for emergency communication_9
+  - first:
+      213: 665559484471932286
+    second: Deploy the radio transmitter for emergency communication_10
+  - first:
+      213: -1866381743733199430
+    second: Deploy the radio transmitter for emergency communication_11
+  - first:
+      213: -8176543730414753680
+    second: Deploy the radio transmitter for emergency communication_12
+  - first:
+      213: 7589761544978553722
+    second: Deploy the radio transmitter for emergency communication_13
+  - first:
+      213: -3396946775512865159
+    second: Deploy the radio transmitter for emergency communication_14
+  - first:
+      213: -4042109760774749929
+    second: Deploy the radio transmitter for emergency communication_15
+  - first:
+      213: 1265850645048538390
+    second: Deploy the radio transmitter for emergency communication_16
+  - first:
+      213: 1919395510312845052
+    second: Deploy the radio transmitter for emergency communication_17
+  - first:
+      213: -2474043894641912407
+    second: Deploy the radio transmitter for emergency communication_18
+  - first:
+      213: 6185849420121109344
+    second: Deploy the radio transmitter for emergency communication_19
+  - first:
+      213: 3381334604043368024
+    second: Deploy the radio transmitter for emergency communication_20
+  - first:
+      213: 154641039710480101
+    second: Deploy the radio transmitter for emergency communication_21
+  - first:
+      213: -2992238822785964804
+    second: Deploy the radio transmitter for emergency communication_22
+  - first:
+      213: -9052277715895054424
+    second: Deploy the radio transmitter for emergency communication_23
+  - first:
+      213: -7348512099413276642
+    second: Deploy the radio transmitter for emergency communication_24
+  - first:
+      213: 4878732807303681934
+    second: Deploy the radio transmitter for emergency communication_25
+  - first:
+      213: -2684954610387496393
+    second: Deploy the radio transmitter for emergency communication_26
+  - first:
+      213: -6905799926222204447
+    second: Deploy the radio transmitter for emergency communication_27
+  - first:
+      213: 6629732944267697375
+    second: Deploy the radio transmitter for emergency communication_28
+  - first:
+      213: -8199148694670535008
+    second: Deploy the radio transmitter for emergency communication_29
+  - first:
+      213: -5144147199939171839
+    second: Deploy the radio transmitter for emergency communication_30
+  - first:
+      213: 3533239604847246818
+    second: Deploy the radio transmitter for emergency communication_31
+  - first:
+      213: 8257750175992549508
+    second: Deploy the radio transmitter for emergency communication_32
+  - first:
+      213: -6118341994207285912
+    second: Deploy the radio transmitter for emergency communication_33
+  - first:
+      213: 6234563328671500006
+    second: Deploy the radio transmitter for emergency communication_34
+  - first:
+      213: -3910086855640618710
+    second: Deploy the radio transmitter for emergency communication_35
+  - first:
+      213: -6109799175278062271
+    second: Deploy the radio transmitter for emergency communication_36
+  - first:
+      213: -4644004114377424229
+    second: Deploy the radio transmitter for emergency communication_37
+  - first:
+      213: -5278798171011126546
+    second: Deploy the radio transmitter for emergency communication_38
+  - first:
+      213: -4651033841659754511
+    second: Deploy the radio transmitter for emergency communication_39
+  - first:
+      213: 3674186061506084189
+    second: Deploy the radio transmitter for emergency communication_40
+  - first:
+      213: -6781653007910232113
+    second: Deploy the radio transmitter for emergency communication_41
+  - first:
+      213: 3380501855205176281
+    second: Deploy the radio transmitter for emergency communication_42
+  - first:
+      213: 1805643286439274113
+    second: Deploy the radio transmitter for emergency communication_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05031292c799c360800000000000000
+      internalID: 7190445142003877132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbf70aa9cc4df2d0800000000000000
+      internalID: -3243351727612101670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 33
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b718dc398ddac65a0800000000000000
+      internalID: -6526650614262431365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbd429e353c7d950800000000000000
+      internalID: 6473857754529586101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 33
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2312fa6499efc130800000000000000
+      internalID: 3589344251696255791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 37
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98b23a55046cfb10800000000000000
+      internalID: 2016596707306027166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 37
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0561a0f56e21c6eb0800000000000000
+      internalID: -4725381128372218288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303e0c1a6f355ea90800000000000000
+      internalID: -7285324503461076221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 37
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26930ffa3ec7b4df0800000000000000
+      internalID: -194924841509308062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_9
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 37
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0692067c997632e70800000000000000
+      internalID: 9089222383136418144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 37
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7577d823da8c3900800000000000000
+      internalID: 665559484471932286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 37
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd228d41b74916e0800000000000000
+      internalID: -1866381743733199430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0786e226cc4178e80800000000000000
+      internalID: -8176543730414753680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 37
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bdd52b9ef345960800000000000000
+      internalID: 7589761544978553722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_14
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 37
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976a5acc7ee9bd0d0800000000000000
+      internalID: -3396946775512865159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_15
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711c1eda69a87e7c0800000000000000
+      internalID: -4042109760774749929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_16
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61531d47474319110800000000000000
+      internalID: 1265850645048538390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 37
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe3da71c0013aa10800000000000000
+      internalID: 1919395510312845052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 37
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a515259f2e6aadd0800000000000000
+      internalID: -2474043894641912407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 37
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063ff58064d88d550800000000000000
+      internalID: 6185849420121109344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_20
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 37
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856bdb448e9ecee20800000000000000
+      internalID: 3381334604043368024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6e3afc435652200800000000000000
+      internalID: 154641039710480101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_22
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 37
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4a5bce4ae6976d0800000000000000
+      internalID: -2992238822785964804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 37
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af04efd069df5280800000000000000
+      internalID: -9052277715895054424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_24
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 37
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18cfcefd27d40a90800000000000000
+      internalID: -7348512099413276642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87516db3adb4b340800000000000000
+      internalID: 4878732807303681934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_26
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7325ec1e1002dbad0800000000000000
+      internalID: -2684954610387496393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_27
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e15b9b3e8ba920a0800000000000000
+      internalID: -6905799926222204447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_28
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcd7caacfa810c50800000000000000
+      internalID: 6629732944267697375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a61e8104b5c63e80800000000000000
+      internalID: -8199148694670535008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_30
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a2e4360615c98b0800000000000000
+      internalID: -5144147199939171839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_31
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edf24163b6980130800000000000000
+      internalID: 3533239604847246818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48094fb980c699270800000000000000
+      internalID: 8257750175992549508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d6be46f58471ba0800000000000000
+      internalID: -6118341994207285912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_34
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e64427b05e958650800000000000000
+      internalID: 6234563328671500006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_35
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29ed98a8b49cb9c0800000000000000
+      internalID: -3910086855640618710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_36
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 3
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145939c6502a53ba0800000000000000
+      internalID: -6109799175278062271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_37
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92c41becde2d8fb0800000000000000
+      internalID: -4644004114377424229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_38
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea66ef1801fdb6b0800000000000000
+      internalID: -5278798171011126546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_39
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 3
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7cc8dfc55347fb0800000000000000
+      internalID: -4651033841659754511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_40
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5df2ca91c45df230800000000000000
+      internalID: 3674186061506084189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_41
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf1d81258ab2e1a0800000000000000
+      internalID: -6781653007910232113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_42
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 3
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3bd02d684f9ee20800000000000000
+      internalID: 3380501855205176281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deploy the radio transmitter for emergency communication_43
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1862847900fee0910800000000000000
+      internalID: 1805643286439274113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Deploy the radio transmitter for emergency communication_0: 7190445142003877132
+      Deploy the radio transmitter for emergency communication_1: -3243351727612101670
+      Deploy the radio transmitter for emergency communication_10: 665559484471932286
+      Deploy the radio transmitter for emergency communication_11: -1866381743733199430
+      Deploy the radio transmitter for emergency communication_12: -8176543730414753680
+      Deploy the radio transmitter for emergency communication_13: 7589761544978553722
+      Deploy the radio transmitter for emergency communication_14: -3396946775512865159
+      Deploy the radio transmitter for emergency communication_15: -4042109760774749929
+      Deploy the radio transmitter for emergency communication_16: 1265850645048538390
+      Deploy the radio transmitter for emergency communication_17: 1919395510312845052
+      Deploy the radio transmitter for emergency communication_18: -2474043894641912407
+      Deploy the radio transmitter for emergency communication_19: 6185849420121109344
+      Deploy the radio transmitter for emergency communication_2: -6526650614262431365
+      Deploy the radio transmitter for emergency communication_20: 3381334604043368024
+      Deploy the radio transmitter for emergency communication_21: 154641039710480101
+      Deploy the radio transmitter for emergency communication_22: -2992238822785964804
+      Deploy the radio transmitter for emergency communication_23: -9052277715895054424
+      Deploy the radio transmitter for emergency communication_24: -7348512099413276642
+      Deploy the radio transmitter for emergency communication_25: 4878732807303681934
+      Deploy the radio transmitter for emergency communication_26: -2684954610387496393
+      Deploy the radio transmitter for emergency communication_27: -6905799926222204447
+      Deploy the radio transmitter for emergency communication_28: 6629732944267697375
+      Deploy the radio transmitter for emergency communication_29: -8199148694670535008
+      Deploy the radio transmitter for emergency communication_3: 6473857754529586101
+      Deploy the radio transmitter for emergency communication_30: -5144147199939171839
+      Deploy the radio transmitter for emergency communication_31: 3533239604847246818
+      Deploy the radio transmitter for emergency communication_32: 8257750175992549508
+      Deploy the radio transmitter for emergency communication_33: -6118341994207285912
+      Deploy the radio transmitter for emergency communication_34: 6234563328671500006
+      Deploy the radio transmitter for emergency communication_35: -3910086855640618710
+      Deploy the radio transmitter for emergency communication_36: -6109799175278062271
+      Deploy the radio transmitter for emergency communication_37: -4644004114377424229
+      Deploy the radio transmitter for emergency communication_38: -5278798171011126546
+      Deploy the radio transmitter for emergency communication_39: -4651033841659754511
+      Deploy the radio transmitter for emergency communication_4: 3589344251696255791
+      Deploy the radio transmitter for emergency communication_40: 3674186061506084189
+      Deploy the radio transmitter for emergency communication_41: -6781653007910232113
+      Deploy the radio transmitter for emergency communication_42: 3380501855205176281
+      Deploy the radio transmitter for emergency communication_43: 1805643286439274113
+      Deploy the radio transmitter for emergency communication_5: 2016596707306027166
+      Deploy the radio transmitter for emergency communication_6: -4725381128372218288
+      Deploy the radio transmitter for emergency communication_7: -7285324503461076221
+      Deploy the radio transmitter for emergency communication_8: -194924841509308062
+      Deploy the radio transmitter for emergency communication_9: 9089222383136418144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

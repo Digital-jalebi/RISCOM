@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: fbf38d1a3029e754598af03f71b87f4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 694139364774042553
+    second: Instructor-spritesheet_0
+  - first:
+      213: 5833039257460934962
+    second: Instructor-spritesheet_1
+  - first:
+      213: 7605063586990625471
+    second: Instructor-spritesheet_2
+  - first:
+      213: 2972369482978360495
+    second: Instructor-spritesheet_3
+  - first:
+      213: -6998975091388240455
+    second: Instructor-spritesheet_4
+  - first:
+      213: -3077682788084499132
+    second: Instructor-spritesheet_5
+  - first:
+      213: -7519611879144601551
+    second: Instructor-spritesheet_6
+  - first:
+      213: 3557351110145178223
+    second: Instructor-spritesheet_7
+  - first:
+      213: -7899608335335045770
+    second: Instructor-spritesheet_8
+  - first:
+      213: 2987860141556860667
+    second: Instructor-spritesheet_9
+  - first:
+      213: 8333005393632870038
+    second: Instructor-spritesheet_10
+  - first:
+      213: -5242869960978101191
+    second: Instructor-spritesheet_11
+  - first:
+      213: -4373881259834318564
+    second: Instructor-spritesheet_12
+  - first:
+      213: -8402283392825127988
+    second: Instructor-spritesheet_13
+  - first:
+      213: -4502417306978371632
+    second: Instructor-spritesheet_14
+  - first:
+      213: -3673628089573494961
+    second: Instructor-spritesheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Instructor-spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 844
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbd8f5131412a900800000000000000
+      internalID: 694139364774042553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 844
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2390ed5cc4e13f050800000000000000
+      internalID: 5833039257460934962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 844
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb295dcf90d9a8960800000000000000
+      internalID: 7605063586990625471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 844
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: facf226eb4aff3920800000000000000
+      internalID: 2972369482978360495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 588
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd2ffd8c35aede90800000000000000
+      internalID: -6998975091388240455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 588
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44db3ec7fcfd945d0800000000000000
+      internalID: -3077682788084499132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 588
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13847c626d8f4a790800000000000000
+      internalID: -7519611879144601551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 588
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a7b8dacff3e5130800000000000000
+      internalID: 3557351110145178223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 332
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675c3aba214fe5290800000000000000
+      internalID: -7899608335335045770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 332
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf68b08e7f2077920800000000000000
+      internalID: 2987860141556860667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 332
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69eb6ee5148c4a370800000000000000
+      internalID: 8333005393632870038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 332
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c85546c859d37b0800000000000000
+      internalID: -5242869960978101191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1166d10b2adc43c0800000000000000
+      internalID: -4373881259834318564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 76
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb8e7c75c7156b80800000000000000
+      internalID: -8402283392825127988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 76
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7bbfa60533481c0800000000000000
+      internalID: -4502417306978371632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Instructor-spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 76
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f231c57b6a40dc0800000000000000
+      internalID: -3673628089573494961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Instructor-spritesheet_0: 694139364774042553
+      Instructor-spritesheet_1: 5833039257460934962
+      Instructor-spritesheet_10: 8333005393632870038
+      Instructor-spritesheet_11: -5242869960978101191
+      Instructor-spritesheet_12: -4373881259834318564
+      Instructor-spritesheet_13: -8402283392825127988
+      Instructor-spritesheet_14: -4502417306978371632
+      Instructor-spritesheet_15: -3673628089573494961
+      Instructor-spritesheet_2: 7605063586990625471
+      Instructor-spritesheet_3: 2972369482978360495
+      Instructor-spritesheet_4: -6998975091388240455
+      Instructor-spritesheet_5: -3077682788084499132
+      Instructor-spritesheet_6: -7519611879144601551
+      Instructor-spritesheet_7: 3557351110145178223
+      Instructor-spritesheet_8: -7899608335335045770
+      Instructor-spritesheet_9: 2987860141556860667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

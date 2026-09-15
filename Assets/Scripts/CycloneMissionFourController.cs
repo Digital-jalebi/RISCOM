@@ -17,6 +17,7 @@ public sealed class CycloneMissionFourController : MonoBehaviour
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
     [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
     [SerializeField] private MissionFourPair[] pairs;
 
     private Action onReportNext;
@@ -32,6 +33,7 @@ public sealed class CycloneMissionFourController : MonoBehaviour
     private Coroutine shakeRoutine;
     private readonly Vector3[] draggedToolWorldCorners = new Vector3[4];
     private readonly Vector3[] targetWorldCorners = new Vector3[4];
+    [SerializeField] private CycloneToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(Action reportNextHandler = null)
     {
@@ -79,6 +81,8 @@ public sealed class CycloneMissionFourController : MonoBehaviour
             timeRemainingSlider.interactable = false;
         }
 
+        notificationPanel.Configure();
+        toolAlertMessages?.Configure();
         configured = true;
     }
 
@@ -110,6 +114,8 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
         if (isRunning && !isComplete)
         {
             UpdateDragInput();
@@ -141,6 +147,9 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
         StopMissionRoutines();
         ResetPairs();
+        ReapplyActiveLanguageAfterPairReset();
+        notificationPanel.Clear();
+        toolAlertMessages?.SetActiveIndex(0);
         UpdateTimerDisplay();
     }
 
@@ -151,6 +160,8 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         isComplete = false;
         inputLocked = false;
         StopMissionRoutines();
+        notificationPanel.Clear();
+        toolAlertMessages?.HideAll();
     }
 
     private void StopMissionRoutines()
@@ -416,6 +427,7 @@ public sealed class CycloneMissionFourController : MonoBehaviour
     {
         pair.Fulfilled = true;
         ApplyFulfilledSprite(pair);
+        ShowNeedNotification(pair);
 
         bool toolStillNeeded = HasPendingNeedForTool(pair.ToolTransform);
         ResetTool(pair, toolStillNeeded);
@@ -424,7 +436,10 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         if (AreAllPairsFulfilled())
         {
             CompleteMission();
+            return;
         }
+
+        UpdateAlertMessageForProgress();
     }
 
     private static bool CanFulfillNeedWithTool(MissionFourPair targetPair, MissionFourPair draggedPair)
@@ -512,12 +527,46 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
     private void HandleLanguageChanged(bool useGujarati)
     {
+        RefreshUnfulfilledNeedSprites();
         RefreshFulfilledSprites();
     }
 
     private bool IsGujaratiEnabled()
     {
         return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
+    }
+
+    private void ReapplyActiveLanguageAfterPairReset()
+    {
+        if (languageToggleController != null)
+        {
+            languageToggleController.ApplyLanguage(languageToggleController.IsGujaratiEnabled);
+            return;
+        }
+
+        RefreshUnfulfilledNeedSprites();
+    }
+
+    private void RefreshUnfulfilledNeedSprites()
+    {
+        if (pairs == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < pairs.Length; i++)
+        {
+            MissionFourPair pair = pairs[i];
+            if (pair != null && !pair.Fulfilled)
+            {
+                pair.CacheCurrentNeedState();
+            }
+        }
+    }
+
+    private void ShowNeedNotification(MissionFourPair pair)
+    {
+        notificationPanel.Show(pair != null ? pair.GetNotificationSprite(IsGujaratiEnabled()) : null);
     }
 
     private bool AreAllPairsFulfilled()
@@ -547,6 +596,37 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
         SetActive(playRoot, false);
         SetActive(completeScreen, true);
+        toolAlertMessages?.HideAll();
+    }
+
+    private void UpdateAlertMessageForProgress()
+    {
+        int messageCount = toolAlertMessages != null ? toolAlertMessages.Count : 0;
+        if (messageCount <= 0)
+        {
+            return;
+        }
+
+        toolAlertMessages?.SetActiveIndex(Mathf.Min(GetFulfilledPairCount(), messageCount - 1));
+    }
+
+    private int GetFulfilledPairCount()
+    {
+        if (pairs == null)
+        {
+            return 0;
+        }
+
+        int fulfilledCount = 0;
+        for (int i = 0; i < pairs.Length; i++)
+        {
+            if (pairs[i] != null && pairs[i].Fulfilled)
+            {
+                fulfilledCount++;
+            }
+        }
+
+        return fulfilledCount;
     }
 
     private void ResetPairs()
@@ -708,6 +788,8 @@ public sealed class CycloneMissionFourController : MonoBehaviour
         [SerializeField] private Image needImage;
         [SerializeField] private Sprite fulfilledSprite;
         [SerializeField] private Sprite gujaratiFulfilledSprite;
+        [SerializeField] private Sprite englishNotificationSprite;
+        [SerializeField] private Sprite gujaratiNotificationSprite;
 
         public RectTransform ToolTransform => toolTransform;
         public Image ToolImage => toolImage;
@@ -732,9 +814,19 @@ public sealed class CycloneMissionFourController : MonoBehaviour
 
             if (NeedImage != null)
             {
-                InitialNeedSprite = NeedImage.sprite;
-                InitialNeedPreserveAspect = NeedImage.preserveAspect;
+                CacheCurrentNeedState();
             }
+        }
+
+        public void CacheCurrentNeedState()
+        {
+            if (NeedImage == null)
+            {
+                return;
+            }
+
+            InitialNeedSprite = NeedImage.sprite;
+            InitialNeedPreserveAspect = NeedImage.preserveAspect;
         }
 
         public Sprite GetFulfilledSprite(bool useGujarati)
@@ -742,6 +834,13 @@ public sealed class CycloneMissionFourController : MonoBehaviour
             return useGujarati && gujaratiFulfilledSprite != null
                 ? gujaratiFulfilledSprite
                 : fulfilledSprite;
+        }
+
+        public Sprite GetNotificationSprite(bool useGujarati)
+        {
+            return useGujarati && gujaratiNotificationSprite != null
+                ? gujaratiNotificationSprite
+                : englishNotificationSprite;
         }
     }
 }

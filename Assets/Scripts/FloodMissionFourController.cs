@@ -24,6 +24,10 @@ public sealed class FloodMissionFourController : MonoBehaviour
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
     [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites reliefCampCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites reliefKitsCompleteNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites medicalTeamsCompleteNotification = new PhaseNotificationSprites();
     [SerializeField] private float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] private float completionDelaySeconds = 2f;
     [SerializeField] private FloodTool reliefCampTool;
@@ -47,6 +51,7 @@ public sealed class FloodMissionFourController : MonoBehaviour
     private bool inputLocked;
     private Coroutine shakeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private FloodToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(Action reportNextHandler = null)
     {
@@ -88,7 +93,9 @@ public sealed class FloodMissionFourController : MonoBehaviour
 
         CacheBuildingTargets();
         ConfigureTimerSlider();
+        notificationPanel.Configure();
 
+        toolAlertMessages?.Configure();
         configured = true;
     }
 
@@ -122,6 +129,8 @@ public sealed class FloodMissionFourController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -157,8 +166,10 @@ public sealed class FloodMissionFourController : MonoBehaviour
 
         ResetTools();
         ResetBuildingTargets();
+        notificationPanel.Clear();
         SetActiveToolPhase(phaseIndex);
         UpdateTimerDisplay();
+        toolAlertMessages?.SetActiveIndex(0);
 
         if (GetBuildingTargetCount() == 0)
         {
@@ -168,6 +179,7 @@ public sealed class FloodMissionFourController : MonoBehaviour
 
     private void StopMission()
     {
+        toolAlertMessages?.HideAll();
         ResetActiveDrag();
         StopMissionRoutines();
 
@@ -182,6 +194,7 @@ public sealed class FloodMissionFourController : MonoBehaviour
 
         ResetTools();
         ResetBuildingTargets();
+        notificationPanel.Clear();
     }
 
     private void StopMissionRoutines()
@@ -358,6 +371,7 @@ public sealed class FloodMissionFourController : MonoBehaviour
 
             if (phaseComplete)
             {
+                ShowNotification(GetPhaseNotificationSprite(phaseIndex));
                 AdvancePhaseOrComplete();
             }
 
@@ -392,10 +406,12 @@ public sealed class FloodMissionFourController : MonoBehaviour
         phaseIndex++;
         placedInCurrentPhase = 0;
         SetActiveToolPhase(phaseIndex);
+        toolAlertMessages?.SetActiveIndex(phaseIndex);
     }
 
     private void CompleteMissionAfterDelay()
     {
+        toolAlertMessages?.HideAll();
         isRunning = false;
         isComplete = true;
         inputLocked = true;
@@ -407,6 +423,14 @@ public sealed class FloodMissionFourController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -421,6 +445,26 @@ public sealed class FloodMissionFourController : MonoBehaviour
     private FloodTool GetActiveTool()
     {
         return phaseIndex >= 0 && phaseIndex < tools.Length ? tools[phaseIndex] : null;
+    }
+
+    private Sprite GetPhaseNotificationSprite(int completedPhaseIndex)
+    {
+        if (completedPhaseIndex == 0)
+        {
+            return reliefCampCompleteNotification.GetSprite(IsGujaratiEnabled());
+        }
+
+        if (completedPhaseIndex == 1)
+        {
+            return reliefKitsCompleteNotification.GetSprite(IsGujaratiEnabled());
+        }
+
+        if (completedPhaseIndex == 2)
+        {
+            return medicalTeamsCompleteNotification.GetSprite(IsGujaratiEnabled());
+        }
+
+        return null;
     }
 
     private void SetActiveToolPhase(int activePhaseIndex)
@@ -651,6 +695,23 @@ public sealed class FloodMissionFourController : MonoBehaviour
         if (target != null)
         {
             target.SetActive(active);
+        }
+    }
+
+    [Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
         }
     }
 

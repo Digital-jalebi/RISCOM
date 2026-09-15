@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: b876871b9b4b6ba42882eb6c4a8dee45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3611186991828301884
+    second: Manage jetty capacity for the safe docking of boats_0
+  - first:
+      213: -6151819765541353327
+    second: Manage jetty capacity for the safe docking of boats_1
+  - first:
+      213: -1595094730323450558
+    second: Manage jetty capacity for the safe docking of boats_2
+  - first:
+      213: -2166858581273990220
+    second: Manage jetty capacity for the safe docking of boats_3
+  - first:
+      213: -5317035843748194672
+    second: Manage jetty capacity for the safe docking of boats_4
+  - first:
+      213: 4776697485732474579
+    second: Manage jetty capacity for the safe docking of boats_5
+  - first:
+      213: -1916871272084017925
+    second: Manage jetty capacity for the safe docking of boats_6
+  - first:
+      213: -2523650710935738115
+    second: Manage jetty capacity for the safe docking of boats_7
+  - first:
+      213: -6058338070128722363
+    second: Manage jetty capacity for the safe docking of boats_8
+  - first:
+      213: 194148781595435142
+    second: Manage jetty capacity for the safe docking of boats_9
+  - first:
+      213: -7670492168889915387
+    second: Manage jetty capacity for the safe docking of boats_10
+  - first:
+      213: 1485751790745375159
+    second: Manage jetty capacity for the safe docking of boats_11
+  - first:
+      213: 2669465085277055397
+    second: Manage jetty capacity for the safe docking of boats_12
+  - first:
+      213: -8897353302337739668
+    second: Manage jetty capacity for the safe docking of boats_13
+  - first:
+      213: 6728822095153944373
+    second: Manage jetty capacity for the safe docking of boats_14
+  - first:
+      213: -5298747440313068860
+    second: Manage jetty capacity for the safe docking of boats_15
+  - first:
+      213: -4258783812345503689
+    second: Manage jetty capacity for the safe docking of boats_16
+  - first:
+      213: 3850177552880172693
+    second: Manage jetty capacity for the safe docking of boats_17
+  - first:
+      213: -8154068530846768536
+    second: Manage jetty capacity for the safe docking of boats_18
+  - first:
+      213: -8269558540278877219
+    second: Manage jetty capacity for the safe docking of boats_19
+  - first:
+      213: 7956837159644389835
+    second: Manage jetty capacity for the safe docking of boats_20
+  - first:
+      213: -129232924107652361
+    second: Manage jetty capacity for the safe docking of boats_21
+  - first:
+      213: -8926652629300100647
+    second: Manage jetty capacity for the safe docking of boats_22
+  - first:
+      213: -3723749639912954666
+    second: Manage jetty capacity for the safe docking of boats_23
+  - first:
+      213: -3270400393158246897
+    second: Manage jetty capacity for the safe docking of boats_24
+  - first:
+      213: 6743433951623157867
+    second: Manage jetty capacity for the safe docking of boats_25
+  - first:
+      213: 2855334988662528155
+    second: Manage jetty capacity for the safe docking of boats_26
+  - first:
+      213: -6060356751159528723
+    second: Manage jetty capacity for the safe docking of boats_27
+  - first:
+      213: -3887866739434111550
+    second: Manage jetty capacity for the safe docking of boats_28
+  - first:
+      213: -1030544428970027617
+    second: Manage jetty capacity for the safe docking of boats_29
+  - first:
+      213: -6802362431599561357
+    second: Manage jetty capacity for the safe docking of boats_30
+  - first:
+      213: -1962089577348618499
+    second: Manage jetty capacity for the safe docking of boats_31
+  - first:
+      213: -2490938663162649493
+    second: Manage jetty capacity for the safe docking of boats_32
+  - first:
+      213: 4797265413239521931
+    second: Manage jetty capacity for the safe docking of boats_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c70096509c72edc0800000000000000
+      internalID: -3611186991828301884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 37
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1984ea8548850aaa0800000000000000
+      internalID: -6151819765541353327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_2
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 37
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24529ff3bc51dd9e0800000000000000
+      internalID: -1595094730323450558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb28a0d995cde1e0800000000000000
+      internalID: -2166858581273990220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 33
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0969e5b22181636b0800000000000000
+      internalID: -5317035843748194672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dee5942e0d3a4240800000000000000
+      internalID: 4776697485732474579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 33
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfce74bebb7e565e0800000000000000
+      internalID: -1916871272084017925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_7
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8638d9c013afcd0800000000000000
+      internalID: -2523650710935738115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 33
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e70c8af957ceba0800000000000000
+      internalID: -6058338070128722363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 37
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6802298c941c1b200800000000000000
+      internalID: 194148781595435142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_10
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 33
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508a6ec2300fc8590800000000000000
+      internalID: -7670492168889915387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b157cfb1637e9410800000000000000
+      internalID: 1485751790745375159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_12
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 37
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a92f340a58db0520800000000000000
+      internalID: 2669465085277055397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 33
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64a20dcf40468480800000000000000
+      internalID: -8897353302337739668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_14
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 37
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53753727b04916d50800000000000000
+      internalID: 6728822095153944373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_15
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 37
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c211a9e6411776b0800000000000000
+      internalID: -5298747440313068860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_16
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 37
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73066f9cfa2c5e4c0800000000000000
+      internalID: -4258783812345503689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_17
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 37
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59efa91d5149e6530800000000000000
+      internalID: 3850177552880172693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_18
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862efa09fdde6de80800000000000000
+      internalID: -8154068530846768536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_19
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 37
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd331655250ac3d80800000000000000
+      internalID: -8269558540278877219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_20
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 37
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc16b345d3d5c6e60800000000000000
+      internalID: 7956837159644389835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_21
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 37
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f24749175fd43ef0800000000000000
+      internalID: -129232924107652361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_22
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 37
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1c245aab82e1480800000000000000
+      internalID: -8926652629300100647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4ef788e65925cc0800000000000000
+      internalID: -3723749639912954666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e31847b243d92d0800000000000000
+      internalID: -3270400393158246897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_25
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b689ec4637d759d50800000000000000
+      internalID: 6743433951623157867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_26
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9859f14b0030a720800000000000000
+      internalID: 2855334988662528155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_27
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2fefad4a945eba0800000000000000
+      internalID: -6060356751159528723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd39fd9cc58b0ac0800000000000000
+      internalID: -3887866739434111550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95dbf94d45c2b1f0800000000000000
+      internalID: -1030544428970027617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_30
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375bb0fa8672991a0800000000000000
+      internalID: -6802362431599561357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6a3accce145c4e0800000000000000
+      internalID: -1962089577348618499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_32
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6467e0cb786e6dd0800000000000000
+      internalID: -2490938663162649493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Manage jetty capacity for the safe docking of boats_33
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 3
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82c861f97f439240800000000000000
+      internalID: 4797265413239521931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Manage jetty capacity for the safe docking of boats_0: -3611186991828301884
+      Manage jetty capacity for the safe docking of boats_1: -6151819765541353327
+      Manage jetty capacity for the safe docking of boats_10: -7670492168889915387
+      Manage jetty capacity for the safe docking of boats_11: 1485751790745375159
+      Manage jetty capacity for the safe docking of boats_12: 2669465085277055397
+      Manage jetty capacity for the safe docking of boats_13: -8897353302337739668
+      Manage jetty capacity for the safe docking of boats_14: 6728822095153944373
+      Manage jetty capacity for the safe docking of boats_15: -5298747440313068860
+      Manage jetty capacity for the safe docking of boats_16: -4258783812345503689
+      Manage jetty capacity for the safe docking of boats_17: 3850177552880172693
+      Manage jetty capacity for the safe docking of boats_18: -8154068530846768536
+      Manage jetty capacity for the safe docking of boats_19: -8269558540278877219
+      Manage jetty capacity for the safe docking of boats_2: -1595094730323450558
+      Manage jetty capacity for the safe docking of boats_20: 7956837159644389835
+      Manage jetty capacity for the safe docking of boats_21: -129232924107652361
+      Manage jetty capacity for the safe docking of boats_22: -8926652629300100647
+      Manage jetty capacity for the safe docking of boats_23: -3723749639912954666
+      Manage jetty capacity for the safe docking of boats_24: -3270400393158246897
+      Manage jetty capacity for the safe docking of boats_25: 6743433951623157867
+      Manage jetty capacity for the safe docking of boats_26: 2855334988662528155
+      Manage jetty capacity for the safe docking of boats_27: -6060356751159528723
+      Manage jetty capacity for the safe docking of boats_28: -3887866739434111550
+      Manage jetty capacity for the safe docking of boats_29: -1030544428970027617
+      Manage jetty capacity for the safe docking of boats_3: -2166858581273990220
+      Manage jetty capacity for the safe docking of boats_30: -6802362431599561357
+      Manage jetty capacity for the safe docking of boats_31: -1962089577348618499
+      Manage jetty capacity for the safe docking of boats_32: -2490938663162649493
+      Manage jetty capacity for the safe docking of boats_33: 4797265413239521931
+      Manage jetty capacity for the safe docking of boats_4: -5317035843748194672
+      Manage jetty capacity for the safe docking of boats_5: 4776697485732474579
+      Manage jetty capacity for the safe docking of boats_6: -1916871272084017925
+      Manage jetty capacity for the safe docking of boats_7: -2523650710935738115
+      Manage jetty capacity for the safe docking of boats_8: -6058338070128722363
+      Manage jetty capacity for the safe docking of boats_9: 194148781595435142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

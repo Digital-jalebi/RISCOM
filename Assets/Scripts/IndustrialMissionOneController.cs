@@ -18,6 +18,11 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
     [SerializeField] private GameObject missionBackground;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private PhaseNotificationSprites alarmActivatedNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites hazardsIdentifiedNotification = new PhaseNotificationSprites();
+    [SerializeField] private PhaseNotificationSprites leaksIsolatedNotification = new PhaseNotificationSprites();
     [SerializeField] private RectTransform dragPreviewTransform;
     [SerializeField] private Image dragPreviewImage;
     [SerializeField] private RectTransform alarmDropTarget;
@@ -45,6 +50,7 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
     private bool isComplete;
     private Coroutine shakeRoutine;
     private Coroutine completionRoutine;
+    [SerializeField] private IndustrialToolAlertMessageSequence toolAlertMessages;
 
     public void Configure()
     {
@@ -58,6 +64,8 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         gasValveTool?.CacheInitialState();
         CacheHazardMarkers();
         ConfigureTimerSlider();
+        notificationPanel.Configure();
+        toolAlertMessages?.Configure();
 
         if (dragPreviewTransform != null)
         {
@@ -86,12 +94,14 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         SetActive(completeScreen, false);
         SetActive(alarmsRoot, false);
         SetActive(smokeObject, true);
+        notificationPanel.Clear();
 
         ResetTools();
         ResetHazardMarkers();
         SetToolUsable(activateAlarmTool, true);
         SetToolUsable(identifyHazardTool, false);
         SetToolUsable(gasValveTool, false);
+        toolAlertMessages?.SetActiveIndex(0);
         UpdateTimerDisplay();
     }
 
@@ -103,6 +113,8 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -119,6 +131,7 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         {
             isRunning = false;
             StopActiveDrag();
+            toolAlertMessages?.HideAll();
             Debug.LogWarning("Industrial Mission 1 timer expired.");
         }
     }
@@ -286,6 +299,8 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         SetToolUsable(activateAlarmTool, false);
         SetToolUsable(identifyHazardTool, true);
         SetToolUsable(gasValveTool, false);
+        toolAlertMessages?.SetActiveIndex(1);
+        ShowNotification(alarmActivatedNotification.GetSprite(IsGujaratiEnabled()));
         return true;
     }
 
@@ -302,9 +317,11 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
 
         if (detectedHazards >= GetHazardMarkerCount())
         {
+            ShowNotification(hazardsIdentifiedNotification.GetSprite(IsGujaratiEnabled()));
             phase = MissionPhase.IsolateLeaks;
             SetToolUsable(identifyHazardTool, false);
             SetToolUsable(gasValveTool, true);
+            toolAlertMessages?.SetActiveIndex(2);
             draggedTool = null;
             DestroyDragPreview();
         }
@@ -349,6 +366,7 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
 
         if (completedIsolations >= GetHazardMarkerCount())
         {
+            ShowNotification(leaksIsolatedNotification.GetSprite(IsGujaratiEnabled()));
             CompleteMissionAfterDelay();
         }
     }
@@ -391,6 +409,7 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         isRunning = false;
         isComplete = true;
         StopActiveDrag();
+        toolAlertMessages?.HideAll();
 
         if (completionRoutine != null)
         {
@@ -398,6 +417,19 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         }
 
         completionRoutine = StartCoroutine(ShowCompletionAfterDelay());
+    }
+
+    private void ShowNotification(Sprite sprite)
+    {
+        if (sprite != null)
+        {
+            notificationPanel.Show(sprite);
+        }
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
     }
 
     private IEnumerator ShowCompletionAfterDelay()
@@ -708,6 +740,23 @@ public sealed class IndustrialMissionOneController : MonoBehaviour
         ActivateAlarm,
         IdentifyHazards,
         IsolateLeaks
+    }
+
+    [Serializable]
+    private sealed class PhaseNotificationSprites
+    {
+        [SerializeField] private Sprite englishSprite;
+        [SerializeField] private Sprite gujaratiSprite;
+
+        public Sprite GetSprite(bool useGujarati)
+        {
+            if (useGujarati && gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+
+            return englishSprite;
+        }
     }
 
     [Serializable]

@@ -18,11 +18,18 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     [SerializeField] private Button reportNextButton;
     [SerializeField] private Slider timeRemainingSlider;
     [SerializeField] private TextMeshProUGUI timeRemainingLabel;
+    [SerializeField] private RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] private RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] private VillageRescueNotification[] villageRescueNotifications;
+    [SerializeField] private Sprite[] englishVillageNotificationSprites;
+    [SerializeField] private Sprite[] gujaratiVillageNotificationSprites;
     [SerializeField] private RectTransform busCapacity200Tool;
     [SerializeField] private Image busCapacity200ToolImage;
     [SerializeField] private RectTransform busCapacity100Tool;
     [SerializeField] private Image busCapacity100ToolImage;
     [SerializeField] private RectTransform missionBus;
+    [SerializeField] private Image missionBusImage;
+    [SerializeField] private BusDirectionSprites missionBusSprites = new BusDirectionSprites();
     [SerializeField] private RectTransform[] villages;
     [SerializeField] private TextMeshProUGUI[] villageCountLabels;
     [SerializeField] private int[] villageInitialCounts;
@@ -39,6 +46,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     private readonly List<Vector3> pathBuffer = new List<Vector3>();
     private readonly Vector3[] draggedToolWorldCorners = new Vector3[4];
     private readonly Vector3[] targetWorldCorners = new Vector3[4];
+    [SerializeField] private CycloneToolAlertMessageSequence toolAlertMessages;
 
     private Action onReportNext;
     private bool configured;
@@ -95,12 +103,19 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         if (missionBus != null)
         {
             busInitialPosition = missionBus.position;
+            if (missionBusImage == null)
+            {
+                missionBusImage = missionBus.GetComponent<Image>();
+            }
+
             missionBus.gameObject.SetActive(false);
         }
 
         villageRemainingCounts = CopyOrCreateCounts(villageInitialCounts, villages);
         shelterOccupiedCounts = CreateZeroCounts(shelters);
         NormalizePreferredDirectShelterRoutes();
+        notificationPanel.Configure();
+        toolAlertMessages?.Configure();
 
         if (timeRemainingSlider != null)
         {
@@ -191,6 +206,8 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
         if (isRunning && !isComplete)
         {
             UpdateDragInput();
@@ -235,6 +252,8 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
         UpdateVillageLabels();
         UpdateShelterLabels();
+        notificationPanel.Clear();
+        toolAlertMessages?.SetActiveIndex(0);
         UpdateTimerDisplay();
     }
 
@@ -251,6 +270,9 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
             missionBus.position = busInitialPosition;
             missionBus.gameObject.SetActive(false);
         }
+
+        notificationPanel.Clear();
+        toolAlertMessages?.HideAll();
     }
 
     private void StopMissionRoutines()
@@ -528,6 +550,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         inputLocked = true;
         SetToolsInteractable(false);
         ResetBusTool(tool, true);
+        ShowVillageNotification(villageIndex, passengerCount);
 
         if (tripRoutine != null)
         {
@@ -647,6 +670,8 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         for (int i = 0; i < pathBuffer.Count; i++)
         {
             Vector3 target = pathBuffer[i];
+            ApplyMissionBusDirection(current, target);
+
             while (Vector3.Distance(current, target) > 0.5f)
             {
                 current = Vector3.MoveTowards(current, target, busMoveSpeed * Time.deltaTime);
@@ -656,6 +681,15 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
             current = target;
             missionBus.position = current;
+        }
+    }
+
+    private void ApplyMissionBusDirection(Vector3 from, Vector3 to)
+    {
+        Sprite sprite = missionBusSprites.GetSprite(from, to);
+        if (missionBusImage != null && sprite != null)
+        {
+            missionBusImage.sprite = sprite;
         }
     }
 
@@ -673,6 +707,54 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
         SetToolsInteractable(true);
     }
 
+    private void ShowVillageNotification(int villageIndex, int rescuedCount)
+    {
+        notificationPanel.Show(GetVillageNotificationSprite(villageIndex, rescuedCount));
+    }
+
+    private Sprite GetVillageNotificationSprite(int villageIndex, int rescuedCount)
+    {
+        VillageRescueNotification rescueNotification = GetVillageRescueNotification(villageIndex);
+        if (rescueNotification != null)
+        {
+            Sprite rescuedCountSprite = rescueNotification.GetSprite(rescuedCount, IsGujaratiEnabled());
+            if (rescuedCountSprite != null)
+            {
+                return rescuedCountSprite;
+            }
+        }
+
+        if (IsGujaratiEnabled())
+        {
+            Sprite gujaratiSprite = GetSpriteAt(gujaratiVillageNotificationSprites, villageIndex);
+            if (gujaratiSprite != null)
+            {
+                return gujaratiSprite;
+            }
+        }
+
+        return GetSpriteAt(englishVillageNotificationSprites, villageIndex);
+    }
+
+    private VillageRescueNotification GetVillageRescueNotification(int villageIndex)
+    {
+        return villageRescueNotifications != null &&
+               villageIndex >= 0 &&
+               villageIndex < villageRescueNotifications.Length
+            ? villageRescueNotifications[villageIndex]
+            : null;
+    }
+
+    private bool IsGujaratiEnabled()
+    {
+        return languageToggleController != null && languageToggleController.IsGujaratiEnabled;
+    }
+
+    private static Sprite GetSpriteAt(Sprite[] sprites, int index)
+    {
+        return sprites != null && index >= 0 && index < sprites.Length ? sprites[index] : null;
+    }
+
     private void CompleteMission()
     {
         isRunning = false;
@@ -688,6 +770,7 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
         SetActive(playRoot, false);
         SetActive(completeScreen, true);
+        toolAlertMessages?.HideAll();
     }
 
     private void ResetBusToolWithShake(MissionThreeBusTool tool)
@@ -1566,6 +1649,33 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
     }
 
     [Serializable]
+    private sealed class VillageRescueNotification
+    {
+        [SerializeField] private Sprite englishRescued100Sprite;
+        [SerializeField] private Sprite englishRescued200Sprite;
+        [SerializeField] private Sprite gujaratiRescued100Sprite;
+        [SerializeField] private Sprite gujaratiRescued200Sprite;
+
+        public Sprite GetSprite(int rescuedCount, bool useGujarati)
+        {
+            bool useTwoHundredSprite = rescuedCount > 100;
+            if (useGujarati)
+            {
+                Sprite gujaratiSprite = useTwoHundredSprite
+                    ? gujaratiRescued200Sprite
+                    : gujaratiRescued100Sprite;
+
+                if (gujaratiSprite != null)
+                {
+                    return gujaratiSprite;
+                }
+            }
+
+            return useTwoHundredSprite ? englishRescued200Sprite : englishRescued100Sprite;
+        }
+    }
+
+    [Serializable]
     private sealed class ShelterRoute
     {
         [SerializeField] private RectTransform[] points;
@@ -1690,6 +1800,41 @@ public sealed class CycloneMissionThreeController : MonoBehaviour
 
         public int ShelterIndex => shelterIndex;
         public RectTransform[] Points => points;
+    }
+
+    [Serializable]
+    private sealed class BusDirectionSprites
+    {
+        [SerializeField] private Sprite upSprite;
+        [SerializeField] private Sprite downSprite;
+        [SerializeField] private Sprite leftSprite;
+        [SerializeField] private Sprite rightSprite;
+
+        public Sprite GetSprite(Vector3 from, Vector3 to)
+        {
+            Vector3 delta = to - from;
+            if (delta.sqrMagnitude <= 0.01f)
+            {
+                return null;
+            }
+
+            if (Mathf.Approximately(delta.x, 0f))
+            {
+                return delta.y >= 0f ? upSprite : downSprite;
+            }
+
+            if (Mathf.Approximately(delta.y, 0f))
+            {
+                return delta.x >= 0f ? rightSprite : leftSprite;
+            }
+
+            if (delta.y > 0f)
+            {
+                return delta.x < 0f ? upSprite : rightSprite;
+            }
+
+            return delta.x < 0f ? leftSprite : downSprite;
+        }
     }
 
     private sealed class MissionThreeBusTool

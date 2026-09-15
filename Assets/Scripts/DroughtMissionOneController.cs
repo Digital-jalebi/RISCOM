@@ -14,6 +14,10 @@ public class DroughtMissionOneController : MonoBehaviour
     private const float WrongDropShakeDuration = 0.25f;
     private const float WrongDropShakeFrequency = 48f;
     private const float WrongDropShakeAmplitude = 12f;
+    private const float PriorityFlashPulsesPerSecond = 1.25f;
+    private const float PriorityFlashMinAlpha = 0.2f;
+    private const float PriorityFlashMaxAlpha = 1f;
+
 
     [SerializeField] protected string missionLabel = "Drought Mission";
     [SerializeField] protected GameObject introScreen;
@@ -27,6 +31,10 @@ public class DroughtMissionOneController : MonoBehaviour
     [SerializeField] protected Slider timeRemainingSlider;
     [SerializeField] protected TextMeshProUGUI timeRemainingLabel;
     [SerializeField] protected RISCOMLanguageToggleController languageToggleController;
+    [SerializeField] protected RISCOMNotificationPanel notificationPanel = new RISCOMNotificationPanel();
+    [SerializeField] protected Animator instructorAnimator;
+    [SerializeField] protected string instructorSpeakingStateName = "Instructor";
+    [SerializeField] protected List<DroughtToolNotification> toolNotifications = new List<DroughtToolNotification>();
     [SerializeField] protected float missionDurationSeconds = DefaultMissionDurationSeconds;
     [SerializeField] protected List<DroughtTool> tools = new List<DroughtTool>();
     [SerializeField] protected List<SettlementTarget> highRiskSettlements = new List<SettlementTarget>();
@@ -45,7 +53,9 @@ public class DroughtMissionOneController : MonoBehaviour
     private bool isComplete;
     private bool inputLocked;
     private Coroutine shakeRoutine;
+    private Animator resolvedInstructorAnimator;
     private readonly Dictionary<SettlementTarget, Coroutine> fillRoutines = new Dictionary<SettlementTarget, Coroutine>();
+    [SerializeField] private DroughtToolAlertMessageSequence toolAlertMessages;
 
     public void Configure(Action completeNextHandler = null)
     {
@@ -85,6 +95,9 @@ public class DroughtMissionOneController : MonoBehaviour
         CacheTargets(highRiskSettlements);
         CacheTargets(lowRiskSettlements);
         ConfigureSliders();
+        notificationPanel.Configure();
+        ResolveInstructorAnimator();
+        toolAlertMessages?.Configure();
 
         configured = true;
     }
@@ -128,6 +141,9 @@ public class DroughtMissionOneController : MonoBehaviour
         ResetTargets(highRiskSettlements);
         ResetTargets(lowRiskSettlements);
         SetActiveToolPhase(phaseIndex);
+        toolAlertMessages?.SetActiveIndex(phaseIndex);
+        UpdatePrioritySettlementFlashes();
+        notificationPanel.Clear();
         UpdateProgressDisplay();
         UpdateTimerDisplay();
 
@@ -165,11 +181,16 @@ public class DroughtMissionOneController : MonoBehaviour
         ResetTools();
         ResetTargets(highRiskSettlements);
         ResetTargets(lowRiskSettlements);
+        StopPrioritySettlementFlashes();
+        toolAlertMessages?.HideAll();
+        notificationPanel.Clear();
     }
 
     private void OnDisable()
     {
         StopMissionRoutines();
+        StopPrioritySettlementFlashes();
+        toolAlertMessages?.HideAll();
         UnwireLanguageController();
         isRunning = false;
         isComplete = false;
@@ -185,6 +206,9 @@ public class DroughtMissionOneController : MonoBehaviour
         }
 
         UpdateTimer();
+        notificationPanel.UpdateScrollInput();
+        UpdatePrioritySettlementFlashes();
+        toolAlertMessages?.UpdatePulse(Time.unscaledTime);
 
         if (isRunning && !isComplete)
         {
@@ -202,6 +226,8 @@ public class DroughtMissionOneController : MonoBehaviour
             isRunning = false;
             inputLocked = true;
             SetActiveToolPhase(-1);
+            StopPrioritySettlementFlashes();
+            toolAlertMessages?.HideAll();
             Debug.LogWarning($"{missionLabel} timer expired.");
         }
     }
@@ -376,32 +402,36 @@ public class DroughtMissionOneController : MonoBehaviour
 
     private void ApplyToolToTarget(DroughtTool droppedTool, SettlementTarget target)
     {
-        target.ApplyTool(phaseIndex, IsGujaratiEnabled(), droppedTool.ToolSprite);
+        bool isHighRiskTarget = IsTargetInGroup(target, highRiskSettlements);
+        int completedPhaseIndex = phaseIndex;
+        target.ApplyTool(completedPhaseIndex, IsGujaratiEnabled(), droppedTool.ToolSprite);
+        UpdatePrioritySettlementFlashes();
 
         completedPlacements++;
         UpdateProgressDisplay();
 
-        bool phaseComplete = IsPhaseComplete(phaseIndex);
+        bool phaseComplete = IsPhaseComplete(completedPhaseIndex);
         ResetTool(droppedTool, !phaseComplete);
 
         if (phaseComplete)
         {
             inputLocked = true;
             SetActiveToolPhase(-1);
-            StartTargetFill(target, AdvancePhaseOrCompleteAfterFill);
+            StartTargetFill(target, () => AdvancePhaseOrCompleteAfterFill(completedPhaseIndex, isHighRiskTarget));
             return;
         }
 
         StartTargetFill(target);
     }
 
-    private void AdvancePhaseOrCompleteAfterFill()
+    private void AdvancePhaseOrCompleteAfterFill(int completedPhaseIndex, bool isHighRiskTarget)
     {
         if (!isRunning || isComplete)
         {
             return;
         }
 
+        ShowToolNotification(completedPhaseIndex, isHighRiskTarget);
         inputLocked = false;
         AdvancePhaseOrComplete();
     }
@@ -416,6 +446,8 @@ public class DroughtMissionOneController : MonoBehaviour
 
         phaseIndex++;
         SetActiveToolPhase(phaseIndex);
+        UpdatePrioritySettlementFlashes();
+        toolAlertMessages?.SetActiveIndex(phaseIndex);
     }
 
     private bool IsPhaseComplete(int targetPhaseIndex)
@@ -450,6 +482,8 @@ public class DroughtMissionOneController : MonoBehaviour
         inputLocked = true;
         draggedTool = null;
         SetActiveToolPhase(-1);
+        StopPrioritySettlementFlashes();
+        toolAlertMessages?.HideAll();
         UpdateTimerDisplay();
 
         SetActive(introScreen, false);
@@ -484,6 +518,151 @@ public class DroughtMissionOneController : MonoBehaviour
         }
 
         missionProgressSlider.value = completedPlacements;
+    }
+
+    private void ShowToolNotification(int targetPhaseIndex, bool isHighRiskTarget)
+    {
+        DroughtToolNotification notification = GetToolNotification(targetPhaseIndex);
+        if (notification == null)
+        {
+            return;
+        }
+
+        Sprite alertSprite = notification.GetSprite(isHighRiskTarget, IsGujaratiEnabled());
+        notificationPanel.Show(alertSprite);
+        if (alertSprite != null)
+        {
+            PlayInstructorSpeakingAnimation();
+        }
+    }
+
+    private DroughtToolNotification GetToolNotification(int targetPhaseIndex)
+    {
+        return toolNotifications != null &&
+               targetPhaseIndex >= 0 &&
+               targetPhaseIndex < toolNotifications.Count
+            ? toolNotifications[targetPhaseIndex]
+            : null;
+    }
+
+    private static bool IsTargetInGroup(SettlementTarget target, List<SettlementTarget> targets)
+    {
+        return target != null && targets != null && targets.Contains(target);
+    }
+
+
+
+    private void PlayInstructorSpeakingAnimation()
+    {
+        Animator animator = ResolveInstructorAnimator();
+        if (animator == null)
+        {
+            return;
+        }
+
+        if (!animator.gameObject.activeSelf)
+        {
+            animator.gameObject.SetActive(true);
+        }
+
+        animator.enabled = true;
+        animator.Play(instructorSpeakingStateName, 0, 0f);
+        animator.Update(0f);
+    }
+
+    private Animator ResolveInstructorAnimator()
+    {
+        if (instructorAnimator != null)
+        {
+            resolvedInstructorAnimator = instructorAnimator;
+            return resolvedInstructorAnimator;
+        }
+
+        if (resolvedInstructorAnimator != null)
+        {
+            return resolvedInstructorAnimator;
+        }
+
+        Animator[] childAnimators = GetComponentsInChildren<Animator>(true);
+        for (int i = 0; i < childAnimators.Length; i++)
+        {
+            Animator childAnimator = childAnimators[i];
+            if (childAnimator != null && IsInstructorAnimator(childAnimator, true))
+            {
+                resolvedInstructorAnimator = childAnimator;
+                return resolvedInstructorAnimator;
+            }
+        }
+
+        for (int i = 0; i < childAnimators.Length; i++)
+        {
+            Animator childAnimator = childAnimators[i];
+            if (childAnimator != null && IsInstructorAnimator(childAnimator, false))
+            {
+                resolvedInstructorAnimator = childAnimator;
+                return resolvedInstructorAnimator;
+            }
+        }
+
+        return null;
+    }
+
+    private static bool IsInstructorAnimator(Animator animator, bool requireNameMatch)
+    {
+        string objectName = animator.gameObject.name;
+        bool nameMatches = objectName.IndexOf("Instructor", StringComparison.OrdinalIgnoreCase) >= 0;
+        if (requireNameMatch)
+        {
+            return nameMatches;
+        }
+
+        RuntimeAnimatorController controller = animator.runtimeAnimatorController;
+        return nameMatches ||
+               (controller != null &&
+                controller.name.IndexOf("Instructor", StringComparison.OrdinalIgnoreCase) >= 0);
+    }
+
+    private void UpdatePrioritySettlementFlashes()
+    {
+        if (!isRunning || isComplete || phaseIndex < 0)
+        {
+            StopPrioritySettlementFlashes();
+            return;
+        }
+
+        bool flashHighRisk = HasIncompleteTarget(highRiskSettlements, phaseIndex);
+        bool flashLowRisk = !flashHighRisk && HasIncompleteTarget(lowRiskSettlements, phaseIndex);
+        float time = Time.unscaledTime;
+
+        UpdateSettlementFlashGroup(highRiskSettlements, flashHighRisk, time);
+        UpdateSettlementFlashGroup(lowRiskSettlements, flashLowRisk, time);
+    }
+
+    private void StopPrioritySettlementFlashes()
+    {
+        UpdateSettlementFlashGroup(highRiskSettlements, false, 0f);
+        UpdateSettlementFlashGroup(lowRiskSettlements, false, 0f);
+    }
+
+    private void UpdateSettlementFlashGroup(List<SettlementTarget> targets, bool groupIsActive, float time)
+    {
+        if (targets == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < targets.Count; i++)
+        {
+            SettlementTarget target = targets[i];
+            if (target == null)
+            {
+                continue;
+            }
+
+            bool shouldFlash = groupIsActive && target.CompletedPhase < phaseIndex;
+            target.UpdatePriorityFlash(shouldFlash, time, PriorityFlashMinAlpha,
+                PriorityFlashMaxAlpha, PriorityFlashPulsesPerSecond);
+        }
     }
 
     private void ConfigureSliders()
@@ -855,6 +1034,31 @@ public class DroughtMissionOneController : MonoBehaviour
         }
     }
 
+
+
+    [Serializable]
+    protected sealed class DroughtToolNotification
+    {
+        [SerializeField] private Sprite englishHighRiskSprite;
+        [SerializeField] private Sprite englishLowRiskSprite;
+        [SerializeField] private Sprite gujaratiHighRiskSprite;
+        [SerializeField] private Sprite gujaratiLowRiskSprite;
+
+        public Sprite GetSprite(bool isHighRiskTarget, bool useGujarati)
+        {
+            if (useGujarati)
+            {
+                Sprite gujaratiSprite = isHighRiskTarget ? gujaratiHighRiskSprite : gujaratiLowRiskSprite;
+                if (gujaratiSprite != null)
+                {
+                    return gujaratiSprite;
+                }
+            }
+
+            return isHighRiskTarget ? englishHighRiskSprite : englishLowRiskSprite;
+        }
+    }
+
     [Serializable]
     protected sealed class DroughtTool
     {
@@ -949,6 +1153,9 @@ public class DroughtMissionOneController : MonoBehaviour
         private Sprite initialSprite;
         private Color initialColor;
         private bool initialPreserveAspect;
+        private Image priorityFlashImage;
+        private Color initialPriorityFlashColor;
+        private bool isPriorityFlashing;
         private int completedPhase = -1;
 
         public int CompletedPhase => completedPhase;
@@ -962,6 +1169,12 @@ public class DroughtMissionOneController : MonoBehaviour
                 initialPreserveAspect = appliedToolImage.preserveAspect;
             }
 
+            priorityFlashImage = ResolvePriorityFlashImage();
+            if (priorityFlashImage != null)
+            {
+                initialPriorityFlashColor = priorityFlashImage.color;
+            }
+
             if (toolFillSlider != null)
             {
                 toolFillSlider.minValue = 0f;
@@ -971,6 +1184,7 @@ public class DroughtMissionOneController : MonoBehaviour
 
             SetActive(appliedToolObject, false);
             SetProgress(0f);
+            RestorePriorityFlash();
         }
 
         public bool CanAcceptPhase(int phaseIndex, RectTransform toolTransform)
@@ -1030,6 +1244,108 @@ public class DroughtMissionOneController : MonoBehaviour
 
             SetActive(appliedToolObject, false);
             SetProgress(0f);
+            RestorePriorityFlash();
+        }
+
+        public void UpdatePriorityFlash(bool shouldFlash, float time, float minAlpha,
+            float maxAlpha, float pulsesPerSecond)
+        {
+            if (priorityFlashImage == null)
+            {
+                return;
+            }
+
+            if (!shouldFlash)
+            {
+                RestorePriorityFlash();
+                return;
+            }
+
+            float wave = (Mathf.Sin(time * pulsesPerSecond * Mathf.PI * 2f) + 1f) * 0.5f;
+            Color targetColor = initialPriorityFlashColor;
+            targetColor.a = Mathf.Lerp(minAlpha, maxAlpha, wave);
+
+            priorityFlashImage.color = targetColor;
+            isPriorityFlashing = true;
+        }
+
+        private void RestorePriorityFlash()
+        {
+            if (!isPriorityFlashing || priorityFlashImage == null)
+            {
+                return;
+            }
+
+            priorityFlashImage.color = initialPriorityFlashColor;
+            isPriorityFlashing = false;
+        }
+
+        private Image ResolvePriorityFlashImage()
+        {
+            if (dropTarget == null)
+            {
+                return null;
+            }
+
+            Image namedImage = FindNamedPriorityFlashImage();
+            if (namedImage != null)
+            {
+                return namedImage;
+            }
+
+            Image directImage = dropTarget.GetComponent<Image>();
+            if (IsValidPriorityFlashImage(directImage))
+            {
+                return directImage;
+            }
+
+            Image[] childImages = dropTarget.GetComponentsInChildren<Image>(true);
+            for (int i = 0; i < childImages.Length; i++)
+            {
+                Image childImage = childImages[i];
+                if (IsValidPriorityFlashImage(childImage))
+                {
+                    return childImage;
+                }
+            }
+
+            return null;
+        }
+
+        private Image FindNamedPriorityFlashImage()
+        {
+            Image[] childImages = dropTarget.GetComponentsInChildren<Image>(true);
+            for (int i = 0; i < childImages.Length; i++)
+            {
+                Image childImage = childImages[i];
+                if (IsValidPriorityFlashImage(childImage) && IsPriorityFlashName(childImage.gameObject.name))
+                {
+                    return childImage;
+                }
+            }
+
+            return null;
+        }
+
+        private static bool IsPriorityFlashName(string objectName)
+        {
+            return string.Equals(objectName, "highriskSettlementBg", StringComparison.OrdinalIgnoreCase) ||
+                   string.Equals(objectName, "LowRiskSettlementBg", StringComparison.OrdinalIgnoreCase);
+        }
+
+        private bool IsValidPriorityFlashImage(Image candidate)
+        {
+            if (candidate == null || candidate == appliedToolImage)
+            {
+                return false;
+            }
+
+            if (toolFillSlider != null && candidate.transform.IsChildOf(toolFillSlider.transform))
+            {
+                return false;
+            }
+
+            return appliedToolObject == null || !candidate.transform.IsChildOf(appliedToolObject.transform);
         }
 
         private Sprite GetReplacementSprite(int phaseIndex, bool useGujarati, Sprite fallbackSprite)

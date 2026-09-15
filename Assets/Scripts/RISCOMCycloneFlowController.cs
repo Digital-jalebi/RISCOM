@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,17 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
 
     private bool buttonsWired;
     private int currentSummaryIndex;
+    private Action onFlowCompleted;
+
+    public void Configure(Action flowCompletedHandler = null)
+    {
+        if (flowCompletedHandler != null)
+        {
+            onFlowCompleted = flowCompletedHandler;
+        }
+
+        WireButtons();
+    }
 
     public void BeginFlow()
     {
@@ -30,6 +42,7 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
         PrepareMissionFour();
 
         gameObject.SetActive(true);
+        ResetFlowState(false);
         HideDirectFlowChildren();
 
         SetActive(cycloneSummary, true);
@@ -116,7 +129,7 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
             return;
         }
 
-        missionFourController.Configure();
+        missionFourController.Configure(HandleMissionFourReportNext);
     }
 
     private void HandleSummaryNext(int screenIndex)
@@ -235,6 +248,40 @@ public sealed class RISCOMCycloneFlowController : MonoBehaviour
         HideSummaryScreens();
 
         missionFourController?.ShowIntro();
+    }
+
+    private void HandleMissionFourReportNext()
+    {
+        ResetFlowState(true);
+        onFlowCompleted?.Invoke();
+    }
+
+    public void ResetFlow()
+    {
+        ResetFlowState(true);
+    }
+
+    private void ResetFlowState(bool hideRoot)
+    {
+        missionTwoController?.Hide();
+        missionThreeController?.Hide();
+        missionFourController?.Hide();
+
+        SetActive(cycloneSummary, false);
+        SetActive(summaryBackground, false);
+        SetActive(instructorImage, false);
+        SetActive(missionOneGame, false);
+        SetActive(missionOneGameplayLayout, false);
+        SetActive(missionCompleteScreen, false);
+        HideSummaryScreens();
+        HideDirectFlowChildren();
+
+        currentSummaryIndex = 0;
+
+        if (hideRoot)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void HideDirectFlowChildren()
