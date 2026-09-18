@@ -10,7 +10,10 @@ using UnityEngine.UI;
 public sealed class CycloneMissionController : MonoBehaviour
 {
     private const int TotalMarkers = 7;
-    private const float MissionDurationSeconds = 600f;
+    private const float MissionDurationSeconds = 180f;
+    private const float WrongPlacementPenaltySeconds = 5f;
+    private const float IncorrectBlinkDurationSeconds = 2.4f;
+    private const float IncorrectBlinkIntervalSeconds = 0.2f;
 
     [SerializeField] private GameObject missionBackground;
     [SerializeField] private RectTransform markerTransform;
@@ -35,16 +38,21 @@ public sealed class CycloneMissionController : MonoBehaviour
     [SerializeField] private float notificationBottomPadding = 1f;
     [SerializeField] private float notificationSpacing = 0f;
     [SerializeField] private float notificationScrollWheelSensitivity = 1f;
+    [SerializeField] private CycloneToolAlertMessageSequence toolAlertMessages;
+    [SerializeField] private GameObject incorrectDistrictPopup;
+    [SerializeField] private GameObject missionIncompletePopup;
+    [SerializeField] private Button tryAgainButton;
 
     private readonly List<RaycastResult> raycastResults = new List<RaycastResult>();
     private readonly List<Image> activeNotifications = new List<Image>();
-    [SerializeField] private CycloneToolAlertMessageSequence toolAlertMessages;
 
     private Vector2 notificationContentStartSize;
     private bool notificationScrollbarWired;
     private bool suppressNotificationScrollbarCallback;
+    private bool tryAgainButtonWired;
     private Vector2 markerStartPosition;
     private Coroutine shakeRoutine;
+    private Coroutine incorrectPopupRoutine;
     private Action onMissionComplete;
     private int markersRemaining;
     private int placedMarkers;
@@ -59,6 +67,8 @@ public sealed class CycloneMissionController : MonoBehaviour
         {
             return;
         }
+
+        ResolvePopupReferences();
 
         if (markerTransform != null)
         {
@@ -86,6 +96,7 @@ public sealed class CycloneMissionController : MonoBehaviour
         CacheDropZones();
         ConfigureSliders();
         ConfigureNotifications();
+        ConfigurePopups();
         toolAlertMessages?.Configure();
 
         isConfigured = true;
@@ -103,6 +114,9 @@ public sealed class CycloneMissionController : MonoBehaviour
         isComplete = false;
 
         SetActive(missionBackground, true);
+        StopIncorrectPopupBlink();
+        SetActive(incorrectDistrictPopup, false);
+        SetActive(missionIncompletePopup, false);
         ResetDropZones();
         ClearNotifications();
         DestroyDragMarker();
@@ -126,10 +140,7 @@ public sealed class CycloneMissionController : MonoBehaviour
 
         if (timeRemaining <= 0f)
         {
-            isRunning = false;
-            DestroyDragMarker();
-            toolAlertMessages?.HideAll();
-            Debug.LogWarning("Cyclone mission timer expired.");
+            HandleTimerExpired();
         }
     }
 
@@ -170,10 +181,12 @@ public sealed class CycloneMissionController : MonoBehaviour
 
         if (dropZone != null && dropZone.CanAcceptMarker)
         {
+            StopIncorrectPopupBlink();
             PlaceMarker(dropZone);
             return;
         }
 
+        HandleWrongMarkerPlacement();
         ResetMarkerWithShake();
     }
 
@@ -213,6 +226,9 @@ public sealed class CycloneMissionController : MonoBehaviour
         DestroyDragMarker();
         SetMarkerVisible(false);
         SetActive(missionBackground, false);
+        StopIncorrectPopupBlink();
+        SetActive(incorrectDistrictPopup, false);
+        SetActive(missionIncompletePopup, false);
         toolAlertMessages?.HideAll();
         onMissionComplete?.Invoke();
     }
@@ -786,5 +802,132 @@ public sealed class CycloneMissionController : MonoBehaviour
         {
             target.SetActive(active);
         }
+    }
+
+    private void OnDisable()
+    {
+        StopIncorrectPopupBlink();
+
+        if (shakeRoutine != null)
+        {
+            StopCoroutine(shakeRoutine);
+            shakeRoutine = null;
+        }
+    }
+
+    private void ResolvePopupReferences()
+    {
+        if (incorrectDistrictPopup == null)
+        {
+            Transform t = transform.Find("Incorrect District PopUp");
+            if (t != null)
+            {
+                incorrectDistrictPopup = t.gameObject;
+            }
+        }
+
+        if (missionIncompletePopup == null)
+        {
+            Transform t = transform.Find("Mission Incomple PopUp");
+            if (t != null)
+            {
+                missionIncompletePopup = t.gameObject;
+            }
+        }
+
+        if (tryAgainButton == null && missionIncompletePopup != null)
+        {
+            tryAgainButton = missionIncompletePopup.GetComponentInChildren<Button>(true);
+        }
+    }
+
+    private void ConfigurePopups()
+    {
+        if (tryAgainButton != null && !tryAgainButtonWired)
+        {
+            tryAgainButton.onClick.AddListener(HandleTryAgain);
+            tryAgainButtonWired = true;
+        }
+
+        SetActive(incorrectDistrictPopup, false);
+        SetActive(missionIncompletePopup, false);
+    }
+
+    private void HandleWrongMarkerPlacement()
+    {
+        timeRemaining = Mathf.Max(0f, timeRemaining - WrongPlacementPenaltySeconds);
+        UpdateTimerDisplay();
+
+        TriggerIncorrectDistrictBlink();
+
+        if (timeRemaining <= 0f)
+        {
+            HandleTimerExpired();
+        }
+    }
+
+    private void TriggerIncorrectDistrictBlink()
+    {
+        StopIncorrectPopupBlink();
+        incorrectPopupRoutine = StartCoroutine(BlinkIncorrectDistrictPopup());
+    }
+
+    private void StopIncorrectPopupBlink()
+    {
+        if (incorrectPopupRoutine != null)
+        {
+            StopCoroutine(incorrectPopupRoutine);
+            incorrectPopupRoutine = null;
+        }
+
+        SetActive(incorrectDistrictPopup, false);
+    }
+
+    private IEnumerator BlinkIncorrectDistrictPopup()
+    {
+        if (incorrectDistrictPopup == null)
+        {
+            yield break;
+        }
+
+        float elapsed = 0f;
+        bool isVisible = true;
+        incorrectDistrictPopup.SetActive(true);
+
+        while (elapsed < IncorrectBlinkDurationSeconds)
+        {
+            yield return new WaitForSeconds(IncorrectBlinkIntervalSeconds);
+            elapsed += IncorrectBlinkIntervalSeconds;
+            isVisible = !isVisible;
+            if (incorrectDistrictPopup != null)
+            {
+                incorrectDistrictPopup.SetActive(isVisible);
+            }
+        }
+
+        if (incorrectDistrictPopup != null)
+        {
+            incorrectDistrictPopup.SetActive(false);
+        }
+
+        incorrectPopupRoutine = null;
+    }
+
+    private void HandleTimerExpired()
+    {
+        isRunning = false;
+        DestroyDragMarker();
+        SetMarkerVisible(false);
+        toolAlertMessages?.HideAll();
+        StopIncorrectPopupBlink();
+
+        SetActive(missionIncompletePopup, true);
+        Debug.LogWarning("Cyclone mission timer expired.");
+    }
+
+    private void HandleTryAgain()
+    {
+        SetActive(missionIncompletePopup, false);
+        BeginMission(onMissionComplete);
     }
 }
